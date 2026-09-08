@@ -60,34 +60,38 @@ export default function TestimonialsSection() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsSchema) }}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#e31777] bg-pink-50 border border-pink-200 px-3.5 py-1 rounded-full">
-            Real Experiences &bull; 100% Confidential
-          </span>
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
-            Captivating <span className="text-[#e31777]">Client Stories</span> &amp; Reviews
-          </h2>
-          <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Our premier Indore escort service has left a trail of delighted corporate guests, hotel travelers, and locals who rave about discretion, punctual arrival, and authentic profiles.
-          </p>
-          <div className="inline-flex items-center gap-2 pt-2 text-xs font-bold text-slate-700 bg-white px-4 py-1.5 rounded-full border border-slate-200 shadow-xs">
-            <div className="flex text-amber-400">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-              ))}
-            </div>
-            <span><strong>4.9 / 5.0</strong> based on 140+ verified appointments in Indore</span>
+      {/* Section Header */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center space-y-3">
+        <span className="text-xs font-bold uppercase tracking-widest text-[#e31777] bg-pink-50 border border-pink-200 px-3.5 py-1 rounded-full inline-block">
+          Genuine Guest Experiences &bull; 100% Confidential
+        </span>
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
+          What Our Guests Say About Their <span className="text-[#e31777]">Time With Us</span>
+        </h2>
+        <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-2xl mx-auto">
+          From executive business travelers to gentlemen seeking relaxed private company, read genuine feedback from guests who trust our discretion, real photos, and warm hospitality.
+        </p>
+        <div className="inline-flex items-center gap-2 pt-2 text-xs font-bold text-slate-700 bg-white px-4 py-1.5 rounded-full border border-slate-200 shadow-xs">
+          <div className="flex text-amber-400">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+            ))}
           </div>
+          <span><strong>4.9 / 5.0</strong> rating across 140+ verified appointments in Indore</span>
         </div>
+      </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {TESTIMONIALS.map((t) => (
+      {/* Testimonials Continuous Marquee (Moving Right to Left) */}
+      <div className="relative w-full overflow-hidden py-4">
+        {/* Left & Right Gradient Shadows for Seamless Look */}
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-r from-white via-white/80 to-transparent z-10" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-l from-white via-white/80 to-transparent z-10" />
+
+        <div className="animate-marquee-rtl flex gap-6 px-4">
+          {[...TESTIMONIALS, ...TESTIMONIALS].map((t, index) => (
             <div
-              key={t.id}
-              className="relative rounded-2xl bg-white border border-slate-200 hover:border-[#e31777] p-6 shadow-xs hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group"
+              key={`${t.id}-${index}`}
+              className="w-[300px] sm:w-[360px] shrink-0 relative rounded-2xl bg-white border border-slate-200 hover:border-[#e31777] p-6 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group select-none"
             >
               <div className="space-y-4">
                 {/* Top Row: Stars + Verified Badge */}
@@ -139,23 +143,25 @@ export default function TestimonialsSection() {
             </div>
           ))}
         </div>
+      </div>
 
-        {/* Bottom Assurance Bar */}
-        <div className="mt-12 rounded-2xl bg-white border border-pink-100 p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xs text-center sm:text-left">
+      {/* Bottom Customer Assurance Bar */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+        <div className="rounded-2xl bg-white border border-pink-100 p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xs text-center sm:text-left">
           <div className="space-y-1">
             <h3 className="text-base sm:text-lg font-heading font-bold text-slate-900">
-              Want to Experience the Same High Standard of Companionship?
+              Ready for a Relaxing, Memorable Evening in Indore?
             </h3>
             <p className="text-xs sm:text-sm text-slate-500">
-              Direct telephone or WhatsApp coordination. 100% privacy, verified photos, zero hidden advance fees.
+              Connect directly with our friendly coordinator. Handpicked companions, 100% privacy, pay only when you meet.
             </p>
           </div>
           <div className="shrink-0 flex items-center gap-3">
             <a
               href="tel:+919006236133"
-              className="py-3 px-6 rounded-full bg-[#e31777] hover:bg-[#c2185b] text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all"
+              className="py-3 px-6 rounded-full bg-[#e31777] hover:bg-[#c2185b] text-white font-bold text-xs sm:text-sm shadow-md hover:shadow-lg transition-all animate-pulse-subtle"
             >
-              Call Concierge Desk
+              Call Our Coordinator
             </a>
             <a
               href="https://wa.me/919006236133?text=Hi%2C%20I'm%20interested%20in%20arranging%20a%20verified%20companion%20in%20Indore."

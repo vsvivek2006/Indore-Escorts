@@ -784,3 +784,60 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
   background: #e31777;
 }
+
+/* =========================================================================
+   MARQUEE & LUXURY MICRO-ANIMATIONS (SEO & Performance Friendly)
+   ========================================================================= */
+
+@keyframes marquee-rtl {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee-rtl {
+  display: flex;
+  width: max-content;
+  animation: marquee-rtl 40s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-rtl:hover {
+  animation-play-state: paused;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 15px rgba(227, 23, 119, 0.25);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(227, 23, 119, 0.45);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
+
+@keyframes shimmer-slow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.shimmer-gradient {
+  background-size: 200% 200%;
+  animation: shimmer-slow 8s ease infinite;
+}
+
