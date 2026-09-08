@@ -1,0 +1,11 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow internal Next.js assets & endpoints
+Disallow: /api/
+Disallow: /_next/
+
+# Host and Sitemaps
+Host: https://mysecretgirl69.com
+Sitemap: https://mysecretgirl69.com/sitemap.xml

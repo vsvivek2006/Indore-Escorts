@@ -1,23 +1,16 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans, Outfit } from "next/font/google";
+import { Jost } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCTA from "@/components/FloatingCTA";
 import AgeVerificationModal from "@/components/AgeVerificationModal";
 
-const plusJakartaSans = Plus_Jakarta_Sans({
+const jost = Jost({
   subsets: ["latin"],
-  variable: "--font-body",
+  variable: "--font-jost",
   display: "swap",
-  weight: ["300", "400", "500", "600", "700", "800"]
-});
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  variable: "--font-heading",
-  display: "swap",
-  weight: ["500", "600", "700", "800", "900"]
+  weight: ["300", "400", "500", "600", "700", "800", "900"]
 });
 
 export const viewport: Viewport = {
@@ -91,6 +84,15 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1
     }
+  },
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" }
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" }
+    ]
   }
 };
 
@@ -127,7 +129,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${plusJakartaSans.variable} ${outfit.variable}`}>
+    <html lang="en" className={jost.variable}>
       <head>
         <script
           type="application/ld+json"

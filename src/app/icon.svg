@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff007a" />
+      <stop offset="50%" stop-color="#e31777" />
+      <stop offset="100%" stop-color="#8a003f" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff275" />
+      <stop offset="50%" stop-color="#ffd700" />
+      <stop offset="100%" stop-color="#d4af37" />
+    </linearGradient>
+  </defs>
+  <!-- Background Badge -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#pinkGrad)" stroke="url(#goldGrad)" stroke-width="2" />
+  <!-- Small Crown -->
+  <path d="M24 22 L28 26 L32 20 L36 26 L40 22 L39 28 L25 28 Z" fill="url(#goldGrad)" />
+  <circle cx="24" cy="21" r="1" fill="#fff" />
+  <circle cx="32" cy="19" r="1.2" fill="#fff" />
+  <circle cx="40" cy="21" r="1" fill="#fff" />
+  <!-- Text 69 -->
+  <text x="32" y="47" font-family="'Jost', system-ui, -apple-system, sans-serif" font-weight="900" font-size="23" fill="#ffffff" text-anchor="middle" letter-spacing="-1">69</text>
+</svg>
