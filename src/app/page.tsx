@@ -17,12 +17,12 @@ import {
   CheckCircle2,
   Compass,
   ArrowRight,
-  BookOpen,
   Crown,
   Building,
   Heart,
   Users,
-  Hotel
+  Hotel,
+  Check
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -75,26 +75,18 @@ export default function HomePage() {
     }
   ];
 
-  const homeFaqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: homeFaqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer
-      }
-    }))
-  };
-
   const localServiceSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "MySecretGirl69 Indore",
+    name: "MySecretGirl69 Indore Escorts Service",
     image: "https://mysecretgirl69.com/images/hero_banner.jpg",
     telephone: "+91-9006236133",
     url: "https://mysecretgirl69.com",
+    priceRange: "₹₹₹",
+    currenciesAccepted: "INR",
+    paymentAccepted: "Cash, UPI",
+    description:
+      "Premier verified escort services in Indore offering 24/7 hotel room delivery across Vijay Nagar, Palasia, Super Corridor, and 48 localities. 100% genuine photos and direct payment on meeting.",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Scheme 54, Vijay Nagar",
@@ -121,22 +113,17 @@ export default function HomePage() {
       ],
       opens: "00:00",
       closes: "23:59"
-    },
-    priceRange: "₹₹₹"
+    }
   };
 
   return (
     <div className="flex flex-col w-full text-slate-900 bg-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }}
-      />
-      <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localServiceSchema) }}
       />
 
-      {/* 1. HERO BANNER SECTION (Godelhiescort Style) */}
+      {/* 1. HERO BANNER SECTION (Godelhiescort Style: #e31777 theme) */}
       <section className="hero-banner-wrap" aria-label="Hero Banner">
         <div className="hero-bg-img">
           <Image
@@ -149,9 +136,19 @@ export default function HomePage() {
         </div>
 
         <div className="hero-banner-overlay">
+          {/* Trust Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md text-white text-xs font-semibold uppercase tracking-wider mb-4 border border-white/20 shadow-lg">
+            <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+            <span>#1 Indore Escorts Service &bull; 100% Genuine Profiles &bull; 24/7 Delivery</span>
+          </div>
+
           <h1 className="hero-main-title">
             Hot Call Girls in Indore Escorts Service Free Hotel Delivery
           </h1>
+
+          <p className="text-white/90 text-sm sm:text-base max-w-2xl text-center mb-8 drop-shadow-md">
+            Verified independent companions for 5-star hotel suites, dinner dates, and executive stays in Vijay Nagar, Palasia &amp; 48 Indore zones. Fast 30–45 min dispatch.
+          </p>
 
           <div className="hero-cta-row">
             <a className="hero-btn call-btn" href="tel:+919006236133">
@@ -167,6 +164,22 @@ export default function HomePage() {
               <MessageCircle className="w-5 h-5 inline-block mr-2" />
               WhatsApp
             </a>
+          </div>
+
+          {/* Quick Pillars Strip */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs text-white/90 font-medium">
+            <span className="flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              <span>30–45 Min Room Delivery</span>
+            </span>
+            <span className="flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              <span>Direct Payment on Meeting</span>
+            </span>
+            <span className="flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              <span>100% Real Photos</span>
+            </span>
           </div>
         </div>
       </section>
@@ -189,7 +202,7 @@ export default function HomePage() {
                     <span className="px-3 py-1 rounded-full bg-[#e31777] text-white text-[11px] font-bold uppercase tracking-wider">
                       Verified Elite Escort
                     </span>
-                    <h3 className="text-xl font-bold font-heading">Aarohi Sharma, 23</h3>
+                    <h3 className="text-xl font-bold font-sans text-white">Aarohi Sharma, 23</h3>
                     <p className="text-xs text-slate-300">Vijay Nagar &bull; Sayaji Luxury Suites</p>
                   </div>
                 </div>
@@ -202,16 +215,16 @@ export default function HomePage() {
                 <span className="text-xs font-bold uppercase tracking-widest text-[#e31777] bg-pink-50 border border-pink-200 px-3.5 py-1 rounded-full">
                   Premier Escorts Service
                 </span>
-                <h2 className="text-2xl sm:text-4xl font-heading font-extrabold text-slate-900 leading-tight">
+                <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f] leading-tight">
                   Unforgettable Experiences with Elite <span className="text-[#e31777]">Call Girls in Indore</span>
                 </h2>
               </div>
 
               <p className="text-sm text-slate-700 leading-relaxed">
-                Welcome to the leading <strong>escorts service in Indore</strong> in the commercial capital of Madhya Pradesh, where elegance, charm, and complete discretion blend into moments that linger in your memory. We are committed to providing you with the most outstanding companionship—a refined mix of class and thrill tailored to satisfy your personal preferences.
+                Welcome to <strong>MySecretGirl69</strong>, Indore&apos;s premier independent <strong>escorts service in Indore</strong>. We connect discerning business travelers, tourists, and local gentlemen with charming, articulate, and verified companions designed for seamless corporate dates, luxury staycations, and private hotel encounters.
               </p>
               <p className="text-sm text-slate-700 leading-relaxed">
-                Whether you desire an articulate date for corporate conventions at the <strong>Brilliant Convention Centre</strong>, a romantic dinner at <strong>Mediterra (Sayaji)</strong> or <strong>Radisson Blu</strong>, or an intimate private suite rendezvous along the <strong>Indore Bypass</strong>, our high-profile <Link href="/models" className="text-[#e31777] font-bold underline">Indore call girls</Link> ensure an unforgettable stay. Affordability, reliability, and 100% genuine satisfaction are our highest priorities.
+                Whether you desire an articulate partner for business summits at the <strong>Brilliant Convention Centre</strong>, a romantic candlelit dinner at <strong>Sayaji (Mediterra)</strong> or <strong>Radisson Blu</strong>, or private suite relaxation along the <strong>Indore Bypass</strong>, our high-profile <Link href="/models" className="text-[#e31777] font-bold underline">Indore call girls</Link> guarantee complete confidentiality and direct in-person settlement with zero advance deposits.
               </p>
 
               {/* 4 Feature Boxes (Godelhiescort .about-new-box Style) */}
@@ -222,7 +235,7 @@ export default function HomePage() {
                       <Lock className="w-5 h-5 text-white" />
                     </div>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-black text-white leading-tight">100%</h3>
+                  <h3 className="text-xl sm:text-2xl font-normal text-white leading-tight">100%</h3>
                   <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5">Privacy &amp; Discretion</span>
                 </div>
 
@@ -232,7 +245,7 @@ export default function HomePage() {
                       <ShieldCheck className="w-5 h-5 text-white" />
                     </div>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-black text-white leading-tight">No Fake</h3>
+                  <h3 className="text-xl sm:text-2xl font-normal text-white leading-tight">No Fake</h3>
                   <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5">Profiles &amp; Real Photos</span>
                 </div>
 
@@ -242,7 +255,7 @@ export default function HomePage() {
                       <MapPin className="w-5 h-5 text-white" />
                     </div>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-black text-white leading-tight">48 Zones</h3>
+                  <h3 className="text-xl sm:text-2xl font-normal text-white leading-tight">48 Zones</h3>
                   <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5">Best Indore Areas</span>
                 </div>
 
@@ -252,7 +265,7 @@ export default function HomePage() {
                       <Users className="w-5 h-5 text-white" />
                     </div>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-black text-white leading-tight">5,000+</h3>
+                  <h3 className="text-xl sm:text-2xl font-normal text-white leading-tight">5,000+</h3>
                   <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5">Satisfied Guests</span>
                 </div>
               </div>
@@ -264,13 +277,13 @@ export default function HomePage() {
       {/* 3. FAST PHONE CALL STRIP (Godelhiescort .phone-no-sec) */}
       <section className="py-8 bg-gradient-to-r from-[#b30000] via-[#e31777] to-[#b30000] text-center px-4 shadow-lg text-white">
         <div className="max-w-3xl mx-auto space-y-2">
-          <p className="text-sm font-extrabold tracking-wide uppercase text-amber-200">
+          <p className="text-sm font-bold tracking-wide uppercase text-amber-200">
             So hurry up and get in touch with us now!!!
           </p>
           <div>
             <a
               href="tel:+919006236133"
-              className="inline-flex items-center gap-3 py-3 px-8 rounded-full bg-white text-[#b30000] hover:text-[#e31777] font-black text-xl sm:text-2xl shadow-xl hover:scale-105 transition-all"
+              className="inline-flex items-center gap-3 py-3 px-8 rounded-full bg-white text-[#b30000] hover:text-[#e31777] font-bold text-xl sm:text-2xl shadow-xl hover:scale-105 transition-all"
             >
               <Phone className="w-6 h-6 fill-[#b30000]" />
               <span>+91 90062 36133</span>
@@ -288,30 +301,49 @@ export default function HomePage() {
                 <span className="text-xs font-bold uppercase tracking-widest text-[#e31777]">
                   Cleanest &amp; Most Dynamic Commercial Capital
                 </span>
-                <h2 className="text-2xl sm:text-4xl font-heading font-extrabold text-slate-900">
+                <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f]">
                   Discover the Allure of <span className="text-[#e31777]">Call Girls in Indore</span>
                 </h2>
               </div>
               <p className="text-sm text-slate-700 leading-relaxed">
-                Indore is a fascinating metropolis celebrating royal Holkar heritage, world-renowned street food at <strong>Sarafa Bazaar</strong> and <strong>56 Dukan</strong>, and a booming automobile and IT corridor. The city offers the ultimate romantic backdrop for unforgettable experiences with our independent companions.
+                Indore is a captivating metropolis celebrating royal Holkar heritage, world-renowned culinary lanes at <strong>Sarafa Bazaar</strong> and <strong>56 Dukan</strong>, and a flourishing commercial IT corridor. The city offers the ultimate backdrop for unforgettable experiences with our independent companions.
               </p>
               <p className="text-sm text-slate-700 leading-relaxed">
-                <strong>Local Areas &amp; Experience:</strong> Our <Link href="/models" className="text-[#e31777] font-bold underline">Indore call girls</Link> cater to the cosmopolitan crowd in <strong>Vijay Nagar</strong>, Scheme 54, and the elite residential avenues of <strong>Palasia &amp; New Palasia</strong>. For corporate executives staying near the <strong>Super Corridor IT Corridor</strong> or guests enjoying five-star luxury suites on <strong>MR-10</strong>, our companions provide a discreet, well-spoken, and sensual presence that guarantees complete privacy.
+                <strong>Local Presence:</strong> Our <Link href="/models" className="text-[#e31777] font-bold underline">Indore call girls</Link> cater to guests in <strong>Vijay Nagar</strong>, Scheme 54, <strong>Palasia &amp; New Palasia</strong>, and five-star luxury suites along the <strong>Indore Bypass</strong> and <strong>MR-10</strong>.
               </p>
-              <ul className="space-y-2 text-xs sm:text-sm text-slate-700 pt-1">
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-[#e31777]" />
-                  <span><strong>Cosmopolitan Standard:</strong> Educated and articulate models fluent in English and Hindi for executive dinners.</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-[#e31777]" />
-                  <span><strong>Resort &amp; Suite Luxury:</strong> Private, secure companions available at Sheraton Grand Palace and luxury retreats along the Indore Bypass.</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-[#e31777]" />
-                  <span><strong>Fast 30-45 Minute Dispatch:</strong> Real-time coordination across all 48 Indore sectors with zero delay.</span>
-                </li>
-              </ul>
+
+              {/* 3 Sleek Feature Cards */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                <div className="p-3.5 bg-white rounded-xl border border-slate-200 shadow-xs space-y-1">
+                  <div className="w-8 h-8 rounded-lg bg-pink-100 text-[#e31777] flex items-center justify-center mb-2">
+                    <Crown className="w-4 h-4" />
+                  </div>
+                  <h4 className="text-xs font-bold font-sans text-slate-900">Cosmopolitan Standard</h4>
+                  <p className="text-[11px] text-slate-600 leading-relaxed">
+                    Articulate companions fluent in English and Hindi for executive business dinners.
+                  </p>
+                </div>
+
+                <div className="p-3.5 bg-white rounded-xl border border-slate-200 shadow-xs space-y-1">
+                  <div className="w-8 h-8 rounded-lg bg-pink-100 text-[#e31777] flex items-center justify-center mb-2">
+                    <Hotel className="w-4 h-4" />
+                  </div>
+                  <h4 className="text-xs font-bold font-sans text-slate-900">Suite &amp; Resort Luxury</h4>
+                  <p className="text-[11px] text-slate-600 leading-relaxed">
+                    Discreet room delivery to Sayaji, Radisson Blu, and Bypass luxury retreats.
+                  </p>
+                </div>
+
+                <div className="p-3.5 bg-white rounded-xl border border-slate-200 shadow-xs space-y-1">
+                  <div className="w-8 h-8 rounded-lg bg-pink-100 text-[#e31777] flex items-center justify-center mb-2">
+                    <Clock className="w-4 h-4" />
+                  </div>
+                  <h4 className="text-xs font-bold font-sans text-slate-900">30–45 Min Dispatch</h4>
+                  <p className="text-[11px] text-slate-600 leading-relaxed">
+                    Direct real-time arrival across all 48 Indore sectors with zero advance deposit.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="lg:col-span-5">
@@ -322,20 +354,29 @@ export default function HomePage() {
                   fill
                   className="object-cover"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-5">
+                  <div className="text-white">
+                    <span className="px-2.5 py-0.5 rounded-full bg-[#e31777] text-white text-[10px] font-bold uppercase tracking-wider">
+                      5-Star Suite Specialist
+                    </span>
+                    <h4 className="text-lg font-bold font-sans text-white mt-1">Natasha Verma, 24</h4>
+                    <p className="text-xs text-slate-200">Radisson Blu &bull; Indore Bypass</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 5. MEMBER PROFILES GALLERY (Expanded from 8 to 20 Profiles) */}
+      {/* 5. MEMBER PROFILES GALLERY (20 Verified Profiles) */}
       <section id="curated-profiles" className="py-16 bg-white border-b border-slate-200/80 w-full" aria-label="Curated Profiles Gallery">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#e31777] bg-pink-50 border border-pink-200 px-3.5 py-1 rounded-full">
               Exclusive 2026 Portfolio
             </span>
-            <h2 className="text-2xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f] tracking-tight">
               Browse Charming <span className="text-[#e31777]">Indore Call Girls</span> – Select from Our Exclusive Profiles
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
@@ -362,57 +403,143 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. SEDUCTIVE ESCORT SERVICES TAILORED TO YOUR DESIRES */}
+      {/* 6. REDESIGNED COMPANION SERVICES */}
       <section className="py-16 bg-slate-50 border-b border-slate-200/80">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-8">
-          <div className="text-center sm:text-left space-y-2">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-10">
+          <div className="text-center max-w-2xl mx-auto space-y-2">
             <span className="text-xs font-bold uppercase tracking-widest text-[#e31777]">
               Tailored Companionship
             </span>
-            <h2 className="text-2xl sm:text-4xl font-heading font-extrabold text-slate-900">
-              Seductive Escort Services in Indore Tailored to Your Desires
+            <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f]">
+              Seductive Escort Services in Indore <span className="text-[#e31777]">Tailored to Your Desires</span>
             </h2>
+            <p className="text-xs sm:text-sm text-slate-600">
+              Personalized arrangements designed for complete privacy, effortless comfort, and genuine connection.
+            </p>
           </div>
-          <p className="text-sm text-slate-700 leading-relaxed">
-            Our <strong>Indore call girl services</strong> are designed to ignite your senses and fulfill your personal desires. We offer a wide array of options, each crafted to provide a thrilling, sensual, and unforgettable experience that leaves you completely refreshed:
-          </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {/* In-Call & Out-Call */}
-            <div className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-pink-100 text-[#e31777] flex items-center justify-center font-bold">
-                <Hotel className="w-5 h-5" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Service 1: Hotel Out-Call */}
+            <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-[#e31777] transition-all hover:shadow-md flex flex-col justify-between space-y-4">
+              <div className="space-y-3">
+                <div className="w-12 h-12 rounded-xl bg-pink-50 text-[#e31777] flex items-center justify-center font-bold">
+                  <Hotel className="w-6 h-6" />
+                </div>
+                <span className="text-[11px] font-bold text-[#e31777] uppercase tracking-wider block">
+                  30–45 Min Arrival
+                </span>
+                <h3 className="text-lg font-bold font-sans text-slate-900">
+                  Hotel &amp; Suite Out-Call
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Direct visits to your hotel room or suite in Vijay Nagar, Palasia, or along the Indore Bypass. Punctual, discreet arrival with direct in-person payment.
+                </p>
+                <ul className="space-y-1.5 text-xs text-slate-600 pt-1">
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                    <span>5-Star Hotels &amp; Luxury Resorts</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                    <span>Discreet In-Room Check-In</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                    <span>Zero Advance Payment Required</span>
+                  </li>
+                </ul>
               </div>
-              <h3 className="text-lg font-heading font-bold text-slate-900">
-                In-Call &amp; Out-Call Delivery
-              </h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                <strong>Out-Call Passion:</strong> Prefer a private rendezvous at your chosen hotel or residence? Our call girls can visit your suite in Vijay Nagar, Palasia, or the Indore Bypass, bringing irresistible charm directly to your doorstep within 30 to 45 minutes.
-              </p>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                <strong>In-Call Indulgence:</strong> Step into a discreet, peaceful, and clean setting arranged for your comfort, ensuring total relaxation and confidentiality.
-              </p>
+              <a
+                href="https://wa.me/919006236133?text=Hi%2C%20I'm%20interested%20in%20Hotel%20Out-Call%20service%20in%20Indore."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-pink-50 text-[#e31777] hover:bg-[#e31777] hover:text-white transition"
+              >
+                Book Out-Call via WhatsApp
+              </a>
             </div>
 
-            {/* Customized Encounters */}
-            <div className="p-6 rounded-3xl bg-white border border-slate-200/80 shadow-xs space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-pink-100 text-[#e31777] flex items-center justify-center font-bold">
-                <Sparkles className="w-5 h-5" />
+            {/* Service 2: Corporate & Dinner Dates */}
+            <div className="p-6 rounded-2xl bg-white border-2 border-[#e31777] shadow-md transition-all hover:shadow-lg flex flex-col justify-between space-y-4 relative">
+              <span className="absolute -top-3 right-4 bg-[#e31777] text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase">
+                Most Popular
+              </span>
+              <div className="space-y-3">
+                <div className="w-12 h-12 rounded-xl bg-pink-100 text-[#e31777] flex items-center justify-center font-bold">
+                  <Crown className="w-6 h-6" />
+                </div>
+                <span className="text-[11px] font-bold text-[#e31777] uppercase tracking-wider block">
+                  Articulate &amp; Bilingual
+                </span>
+                <h3 className="text-lg font-bold font-sans text-slate-900">
+                  Corporate &amp; Dinner Dates
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Turn heads at executive summits, conventions at Brilliant Convention Centre, or enjoy private dining at Sayaji Mediterra with a well-spoken date.
+                </p>
+                <ul className="space-y-1.5 text-xs text-slate-600 pt-1">
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                    <span>Fluent in English &amp; Hindi</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                    <span>Polished Social Etiquette</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                    <span>Sophisticated Evening Attire</span>
+                  </li>
+                </ul>
               </div>
-              <h3 className="text-lg font-heading font-bold text-slate-900">
-                Sensual Customized Encounters
-              </h3>
-              <ul className="space-y-2 text-xs sm:text-sm text-slate-600">
-                <li>
-                  <strong>Romantic Intimacy:</strong> Candlelit dinners at Mediterra, rooftop cocktails at Sky Blue Sports Lounge, or late-night culinary strolls through Sarafa Bazaar.
-                </li>
-                <li>
-                  <strong>Corporate Allure:</strong> Turn heads at business galas, symposiums, and networking events with an articulate, polished companion.
-                </li>
-                <li>
-                  <strong>Sensual Stress Relief:</strong> Unwind after strenuous corporate travel with gentle, attentive companionship that eases all fatigue.
-                </li>
-              </ul>
+              <a
+                href="https://wa.me/919006236133?text=Hi%2C%20I'm%20interested%20in%20Corporate%20Dinner%20Date%20companionship%20in%20Indore."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-[#e31777] text-white hover:bg-[#c2185b] transition shadow-xs"
+              >
+                Reserve Dinner Date
+              </a>
+            </div>
+
+            {/* Service 3: Overnight Suite Luxury */}
+            <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-[#e31777] transition-all hover:shadow-md flex flex-col justify-between space-y-4">
+              <div className="space-y-3">
+                <div className="w-12 h-12 rounded-xl bg-pink-50 text-[#e31777] flex items-center justify-center font-bold">
+                  <Heart className="w-6 h-6" />
+                </div>
+                <span className="text-[11px] font-bold text-[#e31777] uppercase tracking-wider block">
+                  10–12 Hours Stay
+                </span>
+                <h3 className="text-lg font-bold font-sans text-slate-900">
+                  Overnight Suite Luxury
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Complete overnight companionship for luxury suites and farmhouse resorts along the Indore Bypass. Unhurried romance, intimacy, and relaxed morning company.
+                </p>
+                <ul className="space-y-1.5 text-xs text-slate-600 pt-1">
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                    <span>Full Night 10–12 Hours Duration</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                    <span>Total Discretion &amp; Calm Vibe</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                    <span>Direct In-Person Payment</span>
+                  </li>
+                </ul>
+              </div>
+              <a
+                href="https://wa.me/919006236133?text=Hi%2C%20I'm%20interested%20in%20Overnight%20Stay%20companionship%20in%20Indore."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-pink-50 text-[#e31777] hover:bg-[#e31777] hover:text-white transition"
+              >
+                Inquire Overnight Package
+              </a>
             </div>
           </div>
         </div>
@@ -420,121 +547,207 @@ export default function HomePage() {
 
       {/* 7. HOTEL BOOKING GUIDE (Godelhiescort Feature) */}
       <section className="py-16 bg-white border-b border-slate-200/80" aria-label="Hotel Booking Guide">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-10">
           <div className="space-y-2 text-center sm:text-left">
             <span className="text-xs font-bold uppercase tracking-widest text-[#e31777]">
               Indore Hospitality Scene
             </span>
-            <h2 className="text-2xl sm:text-4xl font-heading font-extrabold text-slate-900">
-              Booking a Hotel for Your Encounter in Indore
+            <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f]">
+              Booking a Hotel for Your <span className="text-[#e31777]">Encounter in Indore</span>
             </h2>
             <p className="text-sm text-slate-600 leading-relaxed">
-              To make your experience with our <strong>Indore escorts</strong> seamless, we guide you through choosing the perfect hotel setting across the city.
+              To make your experience with our <strong>Indore escorts</strong> seamless and discreet, here is our recommended guide for hotel accommodations across the city:
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-              <h3 className="font-heading font-bold text-slate-900 text-base">1. Luxury 5-Star Hotels</h3>
+            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2.5">
+              <div className="w-9 h-9 rounded-lg bg-pink-100 text-[#e31777] flex items-center justify-center font-bold">
+                <Hotel className="w-5 h-5" />
+              </div>
+              <h3 className="font-sans font-bold text-slate-900 text-base">1. Luxury 5-Star Hotels</h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Opt for <strong>Sayaji Hotel</strong>, <strong>Radisson Blu</strong>, <strong>Indore Marriott</strong>, or <strong>Sheraton Grand Palace</strong>. These properties offer discreet check-in, spacious luxury suites, and 24/7 in-room dining.
+                Opt for <strong>Sayaji Hotel</strong>, <strong>Radisson Blu</strong>, <strong>Indore Marriott</strong>, or <strong>Sheraton Grand Palace</strong>. These properties offer discreet check-in, spacious suites, and 24/7 in-room dining.
               </p>
             </div>
-            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-              <h3 className="font-heading font-bold text-slate-900 text-base">2. Boutique Hotels</h3>
+            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2.5">
+              <div className="w-9 h-9 rounded-lg bg-pink-100 text-[#e31777] flex items-center justify-center font-bold">
+                <Building className="w-5 h-5" />
+              </div>
+              <h3 className="font-sans font-bold text-slate-900 text-base">2. Boutique Hotels</h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                For a more intimate vibe, boutique properties in <strong>Vijay Nagar</strong>, <strong>New Palasia</strong>, and near <strong>MR-10</strong> offer cozy, quiet rooms ideal for unhurried evenings.
+                For a more intimate vibe, boutique suites in <strong>Vijay Nagar</strong>, <strong>New Palasia</strong>, and near <strong>MR-10</strong> offer cozy, quiet rooms ideal for unhurried evenings.
               </p>
             </div>
-            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-              <h3 className="font-heading font-bold text-slate-900 text-base">3. Budget-Friendly Stays</h3>
+            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2.5">
+              <div className="w-9 h-9 rounded-lg bg-pink-100 text-[#e31777] flex items-center justify-center font-bold">
+                <MapPin className="w-5 h-5" />
+              </div>
+              <h3 className="font-sans font-bold text-slate-900 text-base">3. Budget-Friendly Stays</h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                If affordability is key, trusted 3-star business hotels near <strong>Indore Junction</strong>, <strong>Bhawarkuan</strong>, and <strong>Airport Road</strong> maintain clean comfort and privacy on a modest budget.
+                Trusted business hotels near <strong>Indore Junction</strong>, <strong>Bhawarkuan</strong>, and <strong>Airport Road</strong> maintain clean comfort and total privacy on a modest budget.
               </p>
             </div>
           </div>
 
           {/* 5-Step Arrangement Process */}
-          <div className="rounded-3xl bg-pink-50/50 border border-pink-100 p-6 sm:p-8 space-y-4">
-            <h3 className="text-lg sm:text-xl font-heading font-bold text-slate-900">
-              How to Book in 5 Easy Steps:
-            </h3>
-            <ol className="grid grid-cols-1 sm:grid-cols-5 gap-4 text-xs sm:text-sm text-slate-700">
-              <li className="p-3 bg-white rounded-xl border border-pink-200/60 space-y-1">
-                <span className="font-bold text-[#e31777] block text-sm">Step 01</span>
-                <strong>Explore Profiles:</strong> Browse our gallery of 20 verified models.
-              </li>
-              <li className="p-3 bg-white rounded-xl border border-pink-200/60 space-y-1">
-                <span className="font-bold text-[#e31777] block text-sm">Step 02</span>
-                <strong>Contact Concierge:</strong> WhatsApp or call us at +91 90062 36133.
-              </li>
-              <li className="p-3 bg-white rounded-xl border border-pink-200/60 space-y-1">
-                <span className="font-bold text-[#e31777] block text-sm">Step 03</span>
-                <strong>Share Venue:</strong> Inform your hotel name &amp; preferred timing.
-              </li>
-              <li className="p-3 bg-white rounded-xl border border-pink-200/60 space-y-1">
-                <span className="font-bold text-[#e31777] block text-sm">Step 04</span>
-                <strong>Swift Arrival:</strong> Companion arrives at your room in 30–45 mins.
-              </li>
-              <li className="p-3 bg-white rounded-xl border border-pink-200/60 space-y-1">
-                <span className="font-bold text-[#e31777] block text-sm">Step 05</span>
-                <strong>Meet &amp; Settle Directly:</strong> Direct in-person payment, total satisfaction.
-              </li>
-            </ol>
+          <div className="rounded-3xl bg-pink-50/50 border border-pink-100 p-6 sm:p-8 space-y-6">
+            <div className="text-center sm:text-left space-y-1">
+              <h3 className="text-lg sm:text-xl font-heading font-normal text-[#45474f]">
+                How to Book in <span className="text-[#e31777]">5 Easy Steps</span>
+              </h3>
+              <p className="text-xs text-slate-600">Quick, safe, and transparent coordination with zero hassle.</p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-5 gap-3 text-xs text-slate-700">
+              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1">
+                <span className="w-7 h-7 rounded-full bg-[#e31777] text-white font-bold flex items-center justify-center text-xs mb-2">01</span>
+                <strong className="block text-slate-900 font-sans">Browse Profiles</strong>
+                <p className="text-[11px] text-slate-500">Pick your favorite companion from 20 verified profiles.</p>
+              </div>
+
+              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1">
+                <span className="w-7 h-7 rounded-full bg-[#e31777] text-white font-bold flex items-center justify-center text-xs mb-2">02</span>
+                <strong className="block text-slate-900 font-sans">Contact Desk</strong>
+                <p className="text-[11px] text-slate-500">WhatsApp or call us directly at +91 90062 36133.</p>
+              </div>
+
+              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1">
+                <span className="w-7 h-7 rounded-full bg-[#e31777] text-white font-bold flex items-center justify-center text-xs mb-2">03</span>
+                <strong className="block text-slate-900 font-sans">Share Venue</strong>
+                <p className="text-[11px] text-slate-500">Provide hotel name and preferred timing.</p>
+              </div>
+
+              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1">
+                <span className="w-7 h-7 rounded-full bg-[#e31777] text-white font-bold flex items-center justify-center text-xs mb-2">04</span>
+                <strong className="block text-slate-900 font-sans">Swift Arrival</strong>
+                <p className="text-[11px] text-slate-500">Companion arrives at your room in 30–45 mins.</p>
+              </div>
+
+              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1">
+                <span className="w-7 h-7 rounded-full bg-[#e31777] text-white font-bold flex items-center justify-center text-xs mb-2">05</span>
+                <strong className="block text-slate-900 font-sans">Meet &amp; Pay</strong>
+                <p className="text-[11px] text-slate-500">Direct in-person payment, total satisfaction.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* 8. TEMPTING PRICING & PACKAGES */}
       <section className="py-16 bg-slate-50 border-b border-slate-200/80">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-6">
-          <div className="text-center sm:text-left space-y-2">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-8">
+          <div className="text-center max-w-2xl mx-auto space-y-2">
             <span className="text-xs font-bold uppercase tracking-widest text-[#e31777]">
               Honest &amp; Transparent Rates
             </span>
-            <h2 className="text-2xl sm:text-4xl font-heading font-extrabold text-slate-900">
-              Tempting Pricing for Every Desire in Indore
+            <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f]">
+              Tempting Pricing for Every <span className="text-[#e31777]">Desire in Indore</span>
             </h2>
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              100% transparent rates with zero advance deposits. Settle directly when your companion arrives.
+            </p>
           </div>
-          <p className="text-sm text-slate-700 leading-relaxed">
-            We believe companionship should be accessible without compromising safety, beauty, or service quality. Our pricing is 100% transparent with zero hidden advance charges:
-          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-xs space-y-3">
-              <span className="text-xs font-bold text-[#e31777] uppercase tracking-wider block">Short Rendezvous</span>
-              <h3 className="text-xl font-bold font-heading text-slate-900">Standard Seduction</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Affordable rates for quick 2-hour encounters and relaxed hotel dates with charming college and independent models.
-              </p>
-              <div className="pt-2 text-xs font-bold text-slate-800">
-                &bull; Direct Hotel Dispatch &bull; Direct Payment on Meet
+            {/* Standard */}
+            <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-xs space-y-4 flex flex-col justify-between">
+              <div className="space-y-3">
+                <span className="text-xs font-bold text-[#e31777] uppercase tracking-wider block">Short Rendezvous</span>
+                <h3 className="text-xl font-bold font-sans text-slate-900">Standard Seduction</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Affordable rates for relaxed 2-hour encounters with charming college and independent models.
+                </p>
+                <ul className="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-slate-100">
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <span>2 Hours Intimate Companionship</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <span>Direct Hotel Room Dispatch</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <span>Cash or UPI Upon Meeting</span>
+                  </li>
+                </ul>
               </div>
+              <a
+                href="tel:+919006236133"
+                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-slate-100 text-slate-900 hover:bg-slate-200 transition"
+              >
+                Call to Check Rates
+              </a>
             </div>
 
-            <div className="p-6 rounded-3xl bg-white border-2 border-[#e31777] shadow-md space-y-3 relative">
+            {/* VIP Elite */}
+            <div className="p-6 rounded-3xl bg-white border-2 border-[#e31777] shadow-md space-y-4 flex flex-col justify-between relative">
               <span className="absolute -top-3 right-4 bg-[#e31777] text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase">
                 Most Popular
               </span>
-              <span className="text-xs font-bold text-[#e31777] uppercase tracking-wider block">Dinner &amp; Evening</span>
-              <h3 className="text-xl font-bold font-heading text-slate-900">VIP Elite Passion</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Unrushed evening companionship for corporate gala dinners, lounge dates, and convention networking in Vijay Nagar.
-              </p>
-              <div className="pt-2 text-xs font-bold text-[#e31777]">
-                &bull; Articulate &bull; Fluent English &bull; Elegant Attire
+              <div className="space-y-3">
+                <span className="text-xs font-bold text-[#e31777] uppercase tracking-wider block">Dinner &amp; Evening</span>
+                <h3 className="text-xl font-bold font-sans text-slate-900">VIP Elite Passion</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Unrushed evening companionship for corporate gala dinners, lounge dates, and convention networking.
+                </p>
+                <ul className="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-slate-100">
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <span>4 to 6 Hours Extended Duration</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <span>Fluent English &amp; Hindi Models</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <span>Executive Dinner Attendance</span>
+                  </li>
+                </ul>
               </div>
+              <a
+                href="https://wa.me/919006236133?text=Hi%2C%20I'm%20interested%20in%20the%20VIP%20Elite%20Passion%20package."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-[#e31777] text-white hover:bg-[#c2185b] transition shadow-xs"
+              >
+                Reserve VIP Package
+              </a>
             </div>
 
-            <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-xs space-y-3">
-              <span className="text-xs font-bold text-[#e31777] uppercase tracking-wider block">Full Night Stay</span>
-              <h3 className="text-xl font-bold font-heading text-slate-900">Overnight Luxury</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Complete overnight companionship for luxury suites at Sayaji, Radisson Blu, and farmhouse resort staycations on the Bypass.
-              </p>
-              <div className="pt-2 text-xs font-bold text-slate-800">
-                &bull; 10-12 Hours &bull; Total Discretion &bull; Unrushed Intimacy
+            {/* Overnight */}
+            <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-xs space-y-4 flex flex-col justify-between">
+              <div className="space-y-3">
+                <span className="text-xs font-bold text-[#e31777] uppercase tracking-wider block">Full Night Stay</span>
+                <h3 className="text-xl font-bold font-sans text-slate-900">Overnight Luxury</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Complete overnight stay for luxury suites at Sayaji, Radisson Blu, and Bypass resorts.
+                </p>
+                <ul className="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-slate-100">
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <span>10–12 Hours Full Night Stay</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <span>Complete Unhurried Intimacy</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-600" />
+                    <span>100% Discretion Guaranteed</span>
+                  </li>
+                </ul>
               </div>
+              <a
+                href="https://wa.me/919006236133?text=Hi%2C%20I'm%20interested%20in%20the%20Overnight%20Luxury%20package."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-slate-100 text-slate-900 hover:bg-slate-200 transition"
+              >
+                Inquire Overnight Rates
+              </a>
             </div>
           </div>
         </div>
@@ -543,45 +756,45 @@ export default function HomePage() {
       {/* 9. TESTIMONIALS SECTION (Captivating Client Stories) */}
       <TestimonialsSection />
 
-      {/* 10. SULTRY SAFETY, HYGIENE & ETHICAL STANDARDS */}
+      {/* 10. SAFETY, DISCRETION & ETHICAL STANDARDS */}
       <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 space-y-8">
         <div className="space-y-2 text-center sm:text-left">
           <span className="text-xs font-bold uppercase tracking-widest text-[#e31777]">
             Trust &amp; Ethics
           </span>
-          <h2 className="text-2xl sm:text-4xl font-heading font-extrabold text-slate-900">
-            Sultry Safety and Ethical Standards
+          <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f]">
+            Safety, Discretion &amp; <span className="text-[#e31777]">Ethical Standards</span>
           </h2>
           <p className="text-sm text-slate-600 leading-relaxed">
-            At our escort directory, we prioritize your pleasure, safety, and complete peace of mind:
+            At our escort directory, we prioritize your privacy, personal comfort, and complete peace of mind:
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
-            <h3 className="font-heading font-bold text-slate-900 text-base flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-emerald-600" />
-              <span>Confirmed Real Temptresses</span>
+            <h3 className="font-sans font-bold text-slate-900 text-base flex items-center gap-2">
+              <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
+              <span>100% Verified Real Photos</span>
             </h3>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Every companion is thoroughly verified in person. What you see in our photo gallery is exactly who arrives at your suite.
+              Every companion is screened and verified in person. The companion in the gallery is exactly who arrives at your suite.
             </p>
           </div>
 
           <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
-            <h3 className="font-heading font-bold text-slate-900 text-base flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+            <h3 className="font-sans font-bold text-slate-900 text-base flex items-center gap-2">
+              <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
               <span>Safe In-Person Transactions</span>
             </h3>
             <p className="text-xs text-slate-600 leading-relaxed">
-              We arrange direct payments upon meeting your companion, safeguarding you against deceptive advance payment scams.
+              We arrange direct payments upon meeting your companion, safeguarding you completely against online advance payment scams.
             </p>
           </div>
 
           <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
-            <h3 className="font-heading font-bold text-slate-900 text-base flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-emerald-600" />
-              <span>Consensual &amp; Adult Autonomy</span>
+            <h3 className="font-sans font-bold text-slate-900 text-base flex items-center gap-2">
+              <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
+              <span>100% Consensual &amp; Independent Models</span>
             </h3>
             <p className="text-xs text-slate-600 leading-relaxed">
               We foster mutual courtesy and respect. All independent models listed on our platform are 18+ consenting adults participating freely.
@@ -589,9 +802,9 @@ export default function HomePage() {
           </div>
 
           <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
-            <h3 className="font-heading font-bold text-slate-900 text-base flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-emerald-600" />
-              <span>Absolute Cleanliness &amp; Privacy</span>
+            <h3 className="font-sans font-bold text-slate-900 text-base flex items-center gap-2">
+              <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
+              <span>Strict Discretion &amp; Privacy Safeguards</span>
             </h3>
             <p className="text-xs text-slate-600 leading-relaxed">
               Companions maintain pristine hygiene standards. We never record personal phone numbers or share information with third parties.
@@ -608,8 +821,8 @@ export default function HomePage() {
               <Compass className="w-3.5 h-3.5" />
               <span>Complete City Index</span>
             </div>
-            <h2 className="text-2xl sm:text-4xl font-heading font-extrabold text-slate-900">
-              Companion Directory Across All 48 Localities
+            <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f]">
+              Companion Directory Across <span className="text-[#e31777]">All 48 Localities</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               Click any locality to view detailed area guides, hotel venues, transit access, and local companion availability.
@@ -621,7 +834,7 @@ export default function HomePage() {
               <Link
                 key={loc.slug}
                 href={`/locations/${loc.slug}`}
-                className="p-3 rounded-xl bg-white hover:bg-pink-50 border border-slate-200 hover:border-[#e31777] text-slate-700 hover:text-[#e31777] font-bold transition-all text-center truncate shadow-xs hover:shadow-md hover:-translate-y-0.5 min-h-[46px] flex items-center justify-center"
+                className="p-3 rounded-xl bg-white hover:bg-pink-50 border border-slate-200 hover:border-[#e31777] text-slate-700 hover:text-[#e31777] font-semibold transition-all text-center truncate shadow-xs hover:shadow-md hover:-translate-y-0.5 min-h-[46px] flex items-center justify-center font-sans"
               >
                 {loc.name}
               </Link>

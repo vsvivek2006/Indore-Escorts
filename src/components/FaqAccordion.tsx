@@ -45,7 +45,7 @@ export default function FaqAccordion({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="text-center max-w-3xl mx-auto mb-8">
-        <h2 id="faq-section-heading" className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">
+        <h2 id="faq-section-heading" className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f] tracking-tight">
           {title}
         </h2>
         {subtitle && (

@@ -94,7 +94,7 @@ export default function Footer() {
               <Sparkles className="w-3.5 h-3.5" />
               <span>24/7 VIP Concierge Service in Indore</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-sans font-bold text-white tracking-tight">
               Ready for Sophisticated Accompaniment in Indore?
             </h2>
             <p className="text-white/90 text-xs sm:text-sm leading-relaxed">

@@ -66,7 +66,7 @@ export default function TestimonialsSection() {
           <span className="text-xs font-bold uppercase tracking-widest text-[#e31777] bg-pink-50 border border-pink-200 px-3.5 py-1 rounded-full">
             Real Experiences &bull; 100% Confidential
           </span>
-          <h2 className="text-2xl sm:text-4xl font-heading font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f] tracking-tight">
             Captivating <span className="text-[#e31777]">Client Stories</span> &amp; Reviews
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -121,7 +121,7 @@ export default function TestimonialsSection() {
                     {t.clientName.slice(0, 2)}
                   </div>
                   <div>
-                    <h3 className="text-xs sm:text-sm font-heading font-bold text-slate-900">
+                    <h3 className="text-xs sm:text-sm font-sans font-bold text-slate-900">
                       {t.clientName}
                     </h3>
                     <p className="text-[11px] text-slate-500">{t.clientRole}</p>
