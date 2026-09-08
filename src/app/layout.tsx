@@ -136,8 +136,14 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${jost.variable} ${pacifico.variable}`}>
+    <html lang="en" className={`${jost.variable} ${pacifico.variable} ${jost.className}`}>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+          rel="stylesheet"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
@@ -147,7 +153,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-white text-[#1c1c1c] antialiased selection:bg-[#e31777] selection:text-white relative">
+      <body className={`${jost.className} min-h-screen flex flex-col bg-white text-[#1c1c1c] antialiased selection:bg-[#e31777] selection:text-white relative`}>
         <a href="#main-content" className="skip-to-content">
           Skip to main content
         </a>

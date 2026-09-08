@@ -216,7 +216,7 @@ export default function HomePage() {
 
               {/* 4 Feature Boxes (Godelhiescort .about-new-box Style) */}
               <div className="grid grid-cols-2 gap-4 pt-2">
-                <div className="p-4 rounded-xl bg-[#e31777] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-lg transition-transform hover:-translate-y-1">
+                <div className="about-new-box p-4 rounded-xl bg-[#e31777] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-lg transition-transform hover:-translate-y-1">
                   <div className="flex justify-center mb-2">
                     <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
                       <Lock className="w-5 h-5 text-white" />
@@ -226,7 +226,7 @@ export default function HomePage() {
                   <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5">Privacy &amp; Discretion</span>
                 </div>
 
-                <div className="p-4 rounded-xl bg-[#e31777] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-lg transition-transform hover:-translate-y-1">
+                <div className="about-new-box p-4 rounded-xl bg-[#e31777] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-lg transition-transform hover:-translate-y-1">
                   <div className="flex justify-center mb-2">
                     <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
                       <ShieldCheck className="w-5 h-5 text-white" />
@@ -236,7 +236,7 @@ export default function HomePage() {
                   <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5">Profiles &amp; Real Photos</span>
                 </div>
 
-                <div className="p-4 rounded-xl bg-[#e31777] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-lg transition-transform hover:-translate-y-1">
+                <div className="about-new-box p-4 rounded-xl bg-[#e31777] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-lg transition-transform hover:-translate-y-1">
                   <div className="flex justify-center mb-2">
                     <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
                       <MapPin className="w-5 h-5 text-white" />
@@ -246,7 +246,7 @@ export default function HomePage() {
                   <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5">Best Indore Areas</span>
                 </div>
 
-                <div className="p-4 rounded-xl bg-[#e31777] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-lg transition-transform hover:-translate-y-1">
+                <div className="about-new-box p-4 rounded-xl bg-[#e31777] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-lg transition-transform hover:-translate-y-1">
                   <div className="flex justify-center mb-2">
                     <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
                       <Users className="w-5 h-5 text-white" />
