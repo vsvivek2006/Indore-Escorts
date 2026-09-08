@@ -108,7 +108,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     etiquetteAndExpectations: [
       "Strict screening and verification required for first-time VIP bookings.",
       "Zero tolerance for illicit solicitation, non-consensual behavior, or photography.",
-      "Seamless encrypted communication via Telegram or Signal."
+      "Seamless encrypted communication via private WhatsApp desk."
     ]
   }
 ];

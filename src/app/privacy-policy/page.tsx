@@ -53,7 +53,7 @@ export default function PrivacyPolicyPage() {
         <section className="space-y-2">
           <h2 className="text-lg font-bold text-[#45474f]">4. Third-Party Links &amp; External Platforms</h2>
           <p>
-            Our website provides direct links to communication platforms such as WhatsApp and Telegram. When communicating over external third-party apps, your interactions are governed by their respective end-to-end encryption and privacy policies. We encourage users to enable disappearing messages for added peace of mind.
+            Our website provides direct links to communication platforms such as phone and WhatsApp. When communicating over external messaging apps, your interactions are governed by their respective end-to-end encryption and privacy policies. We encourage users to enable disappearing messages for added peace of mind.
           </p>
         </section>
 

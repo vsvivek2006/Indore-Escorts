@@ -6,7 +6,6 @@ import FaqAccordion from "@/components/FaqAccordion";
 import {
   Phone,
   MessageCircle,
-  Send,
   MapPin,
   Clock,
   ShieldCheck,
@@ -48,6 +47,9 @@ export default function ContactPage() {
           "@id": "https://mysecretgirl69.com/#website",
           name: "MySecretGirl69 Indore",
           url: "https://mysecretgirl69.com"
+        },
+        breadcrumb: {
+          "@id": "https://mysecretgirl69.com/contact#breadcrumb"
         }
       },
       {
@@ -78,7 +80,7 @@ export default function ContactPage() {
     },
     {
       question: "Do I need to pay any advance deposit or cab fare during booking?",
-      answer: "No. We enforce a 100% Cash on Delivery (COD) policy across Indore. You never pay any advance booking fees, registration charges, or taxi allowances. You settle the agreed honorarium directly with your companion upon her arrival."
+      answer: "No. We enforce a zero upfront payment policy across Indore. You never pay any advance booking fees, registration charges, or taxi allowances. You settle the agreed honorarium directly upon meeting your companion."
     },
     {
       question: "What details do I need to provide when placing a booking?",
@@ -157,24 +159,6 @@ export default function ContactPage() {
                 </span>
               </div>
             </a>
-
-            {/* Telegram */}
-            <a
-              href="https://t.me/mysecretgirl69"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-4 rounded-xl bg-gray-50 border border-gray-200 hover:border-sky-500 flex items-center gap-3.5 transition group"
-            >
-              <div className="w-10 h-10 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center shrink-0">
-                <Send className="w-5 h-5" />
-              </div>
-              <div>
-                <span className="text-xs text-gray-500 block">Encrypted Telegram</span>
-                <span className="text-sm font-bold text-gray-900 group-hover:text-sky-600 transition">
-                  @mysecretgirl69
-                </span>
-              </div>
-            </a>
           </div>
 
           {/* Operational Standards Box */}
@@ -186,7 +170,7 @@ export default function ContactPage() {
             <p><strong>Operating Hours:</strong> 24 Hours / 7 Days a Week</p>
             <p><strong>Central HQ:</strong> Scheme 54, Vijay Nagar, Indore</p>
             <p><strong>Response Time:</strong> Under 5 minutes via WhatsApp</p>
-            <p><strong>Payment Policy:</strong> 100% Cash on Delivery (Zero Advance)</p>
+            <p><strong>Payment Policy:</strong> Direct In-Person Settlement (Zero Advance)</p>
           </div>
         </div>
 

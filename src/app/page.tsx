@@ -28,7 +28,7 @@ import {
 export const metadata: Metadata = {
   title: "Escorts in Indore Call Girls | Hot Call Girls in Indore Hotel Delivery",
   description:
-    "Book the hottest Indore call girls and Escorts Service today. Elite companions with fast hotel delivery across Vijay Nagar, Palasia, Super Corridor, and 48 localities. 24/7, 100% safety, cash on delivery, and verified real photos.",
+    "Book the hottest Indore call girls and Escorts Service today. Elite companions with fast hotel delivery across Vijay Nagar, Palasia, Super Corridor, and 48 localities. 24/7, 100% safety, direct payment on meet, and verified real photos.",
   alternates: {
     canonical: "https://mysecretgirl69.com"
   },
@@ -62,8 +62,8 @@ export default function HomePage() {
       answer: "Yes, many independent companions listed in our directory possess polished social etiquette, articulate English and Hindi fluency, and elegant attire suitable for business dinners, convention galas at the Brilliant Convention Centre, and executive social events."
     },
     {
-      question: "Is cash on delivery available for companion bookings in Indore?",
-      answer: "Yes, we strongly encourage transparent cash-on-delivery arrangements directly with the companion upon arrival at your hotel or residence. We do not require suspicious upfront booking fees or gift card advance payments."
+      question: "What payment methods are accepted for companion bookings in Indore?",
+      answer: "We support flexible and transparent payment arrangements settled directly upon meeting your companion. Whether you prefer cash or digital transfer upon arrival, zero advance deposits or registration fees are required."
     },
     {
       question: "Which luxury hotels in Indore are companion-friendly and discreet?",
@@ -478,7 +478,7 @@ export default function HomePage() {
               </li>
               <li className="p-3 bg-white rounded-xl border border-pink-200/60 space-y-1">
                 <span className="font-bold text-[#e31777] block text-sm">Step 05</span>
-                <strong>Enjoy &amp; Pay COD:</strong> Cash on delivery, total satisfaction.
+                <strong>Meet &amp; Settle Directly:</strong> Direct in-person payment, total satisfaction.
               </li>
             </ol>
           </div>
@@ -508,7 +508,7 @@ export default function HomePage() {
                 Affordable rates for quick 2-hour encounters and relaxed hotel dates with charming college and independent models.
               </p>
               <div className="pt-2 text-xs font-bold text-slate-800">
-                &bull; Direct Hotel Dispatch &bull; Cash on Delivery
+                &bull; Direct Hotel Dispatch &bull; Direct Payment on Meet
               </div>
             </div>
 
@@ -571,10 +571,10 @@ export default function HomePage() {
           <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
             <h3 className="font-heading font-bold text-slate-900 text-base flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-emerald-600" />
-              <span>Safe Transactions (Cash on Delivery)</span>
+              <span>Safe In-Person Transactions</span>
             </h3>
             <p className="text-xs text-slate-600 leading-relaxed">
-              We provide cash-on-delivery payments upon meeting your companion, safeguarding you against deceptive advance payment scams.
+              We arrange direct payments upon meeting your companion, safeguarding you against deceptive advance payment scams.
             </p>
           </div>
 
@@ -645,7 +645,7 @@ export default function HomePage() {
         <FaqAccordion
           faqs={homeFaqs}
           title="Frequently Asked Questions"
-          subtitle="Clear answers regarding companion arrangements, cash on delivery, hotel visits, and privacy in Indore."
+          subtitle="Clear answers regarding companion arrangements, flexible in-person payment, hotel visits, and privacy in Indore."
         />
       </section>
     </div>

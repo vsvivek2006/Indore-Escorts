@@ -62,9 +62,9 @@ export const BLOG_POSTS: BlogPost[] = [
     content: [
       "The online classified space for personal companionship in India is fraught with illicit operators, fraudulent websites, and financial extortion syndicates. Educating yourself on consumer safety protocols is the single most important step before engaging any companion directory.",
       "Exercise Caution with Digital Transfers: Online classifieds may feature bad actors who request upfront deposits, registration fees, or transportation charges via UPI handles before an in-person meeting. Users should exercise caution and verify authenticity independently.",
-      "Verify Real Identity & Video Confirmation: Legitimate independent companions are always willing to send a quick real-time video greeting or voice note on Telegram/WhatsApp before finalizing an appointment. If a contact relies entirely on stock photos or refuses simple verification, cease communication immediately.",
+      "Verify Real Identity & Video Confirmation: Legitimate independent companions are always willing to send a quick real-time voice note or short selfie greeting on WhatsApp before finalizing an appointment. If a contact relies entirely on stock photos or refuses simple verification, cease communication immediately.",
       "Choose Safe, Neutral Venues: First-time meetings should always take place in reputable, public or star-rated commercial establishments — such as a five-star hotel coffee shop or renowned restaurant lounge. Avoid isolated private apartments, unlisted guest houses, or suspicious suburban outskirts.",
-      "Digital Privacy & Metadata Hygiene: Protect your personal identity by communicating through secure channels such as Telegram with auto-deleting chats enabled. Avoid sharing sensitive workplace credentials, credit card details, or home addresses.",
+      "Digital Privacy & Metadata Hygiene: Protect your personal identity by communicating through secure channels such as WhatsApp with disappearing messages enabled. Avoid sharing sensitive workplace credentials, credit card details, or home addresses.",
       "Zero Tolerance for Illegal Activity: Ensure that interactions are purely consensual social companionship between consenting adults. Our directory complies strictly with Indian legal statutes including the Immoral Traffic (Prevention) Act (ITPA)."
     ]
   }

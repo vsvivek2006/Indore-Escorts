@@ -15,6 +15,12 @@
     box-sizing: border-box;
   }
 
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    max-width: 100vw;
+  }
+
   body {
     background: #ffffff;
     color: #1c1c1c;
@@ -329,18 +335,9 @@
   }
   .hero-btn {
     width: 100%;
-    max-width: 300px;
+    max-width: 320px;
     font-size: 17px;
     padding: 12px 20px;
-  }
-  .hero-search-card {
-    padding: 10px;
-  }
-  .hero-search-title {
-    font-size: 20px;
-  }
-  .hero-search-note {
-    font-size: 13px;
   }
 }
 
@@ -640,72 +637,17 @@ footer {
 }
 
 .whatsapp-icon {
-  bottom: 190px;
+  bottom: 105px;
 }
 .whatsapp-icon a {
   background: #25d366;
 }
 
 .call-icon {
-  bottom: 115px;
+  bottom: 35px;
 }
 .call-icon a {
   background: #ff006f;
-}
-
-.telegram-icon {
-  bottom: 40px;
-}
-.telegram-icon a {
-  background: #229ed9;
-}
-
-/* Mobile Fixed Call/WhatsApp Strip (.nowcalling1) */
-.nowcalling1 {
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 9999;
-  padding-bottom: env(safe-area-inset-bottom, 0px);
-  box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.2);
-}
-
-.lcol, .rcol {
-  flex: 1;
-}
-
-.lcol a, .rcol a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  min-height: 48px;
-  padding: 12px 0;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 700;
-}
-.lcol a:active, .rcol a:active {
-  opacity: 0.85;
-}
-
-.lcol {
-  background-color: #c2185b;
-}
-
-.rcol {
-  background-color: #1fa34a;
-}
-
-@media (min-width: 769px) {
-  .nowcalling1 {
-    display: none;
-  }
 }
 
 @media (max-width: 768px) {

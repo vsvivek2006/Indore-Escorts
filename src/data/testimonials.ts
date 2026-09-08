@@ -73,7 +73,7 @@ export const TESTIMONIALS: Testimonial[] = [
     locality: "South Tukoganj (Indore Marriott)",
     rating: 5,
     reviewDate: "June 2026",
-    quote: "After stressful meetings, spending an unhurried evening with Natasha was the perfect stress relief. Seamless cash on delivery arrangement, no advance scam, and total professionalism. Will definitely coordinate again on my next Indore trip.",
+    quote: "After stressful meetings, spending an unhurried evening with Natasha was the perfect stress relief. Seamless direct payment on meeting, no advance scam, and total professionalism. Will definitely coordinate again on my next Indore trip.",
     companionBooked: "Natasha Singhania",
     verifiedBooking: true
   }

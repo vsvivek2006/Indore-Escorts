@@ -125,7 +125,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
     },
     {
       question: `Is advance payment or registration fee required for ${service.title}?`,
-      answer: `Never. We enforce a strict 100% Cash on Delivery (COD) policy across all our services. You settle the honorarium directly in person upon meeting your verified companion.`
+      answer: `Never. We enforce a strict zero advance policy across all our services. You settle the honorarium directly upon meeting your verified companion.`
     },
     {
       question: `Can the companion accompany me to luxury hotel restaurants in Indore?`,
@@ -159,7 +159,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           </span>
           <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-rose-100 text-[#b30000] text-xs font-bold">
             <Banknote className="w-3.5 h-3.5" />
-            100% Cash on Delivery
+            Direct Payment on Meet
           </span>
         </div>
 
@@ -278,7 +278,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           ))}
           <li className="flex items-start gap-2">
             <AlertCircle className="w-4 h-4 text-[#e31777] mt-0.5 shrink-0" />
-            <span><strong>Cash on Delivery:</strong> No advance deposits or registration fees are ever demanded. Settle honorariums directly upon meeting.</span>
+            <span><strong>Direct Payment:</strong> No advance deposits or registration fees are ever demanded. Settle honorariums directly upon meeting.</span>
           </li>
         </ul>
       </div>

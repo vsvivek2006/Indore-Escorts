@@ -84,7 +84,7 @@ export default function SafetyGuidePage() {
       </div>
 
       <div className="space-y-10 my-10">
-        {/* Core Principle: 100% Cash on Delivery */}
+        {/* Core Principle: Direct Payment on Meet */}
         <section className="rounded-3xl bg-gradient-to-br from-rose-50/70 via-pink-50/50 to-amber-50/50 border border-pink-200 p-6 sm:p-10 space-y-4 shadow-sm">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-2xl bg-rose-100 text-[#b30000] flex items-center justify-center shrink-0">
@@ -92,7 +92,7 @@ export default function SafetyGuidePage() {
             </div>
             <div>
               <h2 className="text-xl sm:text-2xl font-black text-gray-900">
-                Rule #1: Never Pay Advance Fees — Demand Cash on Delivery
+                Rule #1: Never Pay Advance Fees — Pay Directly on Meeting
               </h2>
               <span className="text-xs text-[#b30000] font-bold uppercase tracking-wider">
                 Zero Financial Risk Standard
@@ -122,7 +122,7 @@ export default function SafetyGuidePage() {
             </ul>
           </div>
           <p className="text-xs sm:text-sm text-gray-700 leading-relaxed font-medium">
-            At MySecretGirl69 Indore, <strong>you never transfer a single rupee prior to your companion&apos;s physical arrival</strong>. You inspect your companion in person, confirm mutual comfort, and settle the honorarium directly via Cash on Delivery.
+            At MySecretGirl69 Indore, <strong>you never transfer a single rupee prior to your companion&apos;s physical arrival</strong>. You inspect your companion in person, confirm mutual comfort, and settle the honorarium directly upon meeting.
           </p>
         </section>
 
@@ -218,7 +218,7 @@ export default function SafetyGuidePage() {
           <ul className="space-y-3 text-xs sm:text-sm text-[#616161]">
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />
-              <span><strong>Use Secondary Messaging Channels:</strong> Utilize Telegram or secondary WhatsApp numbers with auto-deleting message timers enabled to protect your communication trail.</span>
+              <span><strong>Use Secondary Messaging Channels:</strong> Utilize private WhatsApp chat windows with auto-deleting or disappearing message timers enabled to protect your communication trail.</span>
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 shrink-0" />

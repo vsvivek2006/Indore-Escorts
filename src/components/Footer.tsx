@@ -98,7 +98,7 @@ export default function Footer() {
               Ready for Sophisticated Accompaniment in Indore?
             </h2>
             <p className="text-white/90 text-xs sm:text-sm leading-relaxed">
-              Instant 30 to 45-minute companion dispatch to luxury hotel suites in Vijay Nagar, Palasia, and the Super Corridor. 100% Cash on Delivery.
+              Instant 30 to 45-minute companion dispatch to luxury hotel suites in Vijay Nagar, Palasia, and the Super Corridor. Direct payment upon meeting.
             </p>
           </div>
 
@@ -128,7 +128,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
           <div className="flex items-center justify-center gap-2 text-white/90 font-semibold text-xs">
             <Banknote className="w-4 h-4 text-emerald-400" />
-            <span>100% Cash on Delivery</span>
+            <span>Direct Payment on Arrival</span>
           </div>
           <div className="flex items-center justify-center gap-2 text-white/90 font-semibold text-xs">
             <ShieldCheck className="w-4 h-4 text-[#e31777]" />
@@ -351,7 +351,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-2 justify-center shrink-0 text-emerald-400 font-semibold">
               <ShieldCheck className="w-4 h-4" />
-              <span>100% Cash on Delivery Assurance</span>
+              <span>Direct Payment on Arrival Assurance</span>
             </div>
           </div>
 

@@ -202,7 +202,7 @@ export default async function ModelProfilePage({ params }: PageProps) {
               </a>
             </div>
             <p className="text-[11px] text-gray-500 text-center pt-1">
-              Zero advance deposit required • 100% Cash on Delivery
+              Zero advance deposit required • Direct In-Person Payment
             </p>
           </div>
 
@@ -222,7 +222,7 @@ export default async function ModelProfilePage({ params }: PageProps) {
               </div>
               <div className="flex justify-between py-1 border-b border-pink-100">
                 <span className="text-gray-500">Payment Mode:</span>
-                <span className="font-bold text-[#b30000]">Cash on Delivery</span>
+                <span className="font-bold text-[#b30000]">Direct on Meet</span>
               </div>
               <div className="flex justify-between py-1">
                 <span className="text-gray-500">Verification:</span>
@@ -357,11 +357,11 @@ export default async function ModelProfilePage({ params }: PageProps) {
             </p>
           </div>
 
-          {/* Zero Advance & Cash on Delivery Protocol */}
+          {/* Zero Advance & Direct Payment Protocol */}
           <div className="p-5 rounded-2xl bg-emerald-50/60 border border-emerald-200 text-xs sm:text-sm text-emerald-950 space-y-2 shadow-xs">
             <div className="flex items-center gap-2 font-bold text-emerald-900 text-sm">
               <Banknote className="w-4 h-4 text-emerald-700" />
-              <span>Strict Cash on Delivery (COD) Assurance</span>
+              <span>Direct In-Person Payment Assurance</span>
             </div>
             <p className="leading-relaxed">
               We uphold strict consumer protection standards. You are <strong>never asked to pay advance registration fees</strong>, security deposits, or cab allowances before meeting {model.name}. All financial settlements occur directly between you and {model.name} upon her verified arrival in person. For full details on avoiding cyber scams, please review our <Link href="/safety-guide" className="text-emerald-800 font-bold underline">Safety &amp; Anti-Fraud Advisory</Link>.

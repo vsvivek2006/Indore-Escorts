@@ -81,7 +81,7 @@ export default function AboutPage() {
           About MySecretGirl69 Indore
         </h1>
         <p className="text-sm sm:text-base text-[#616161] leading-relaxed">
-          Elevating adult companionship in central India through transparent standards, genuine identity verification, uncompromising client privacy, and 100% Cash on Delivery assurance.
+          Elevating adult companionship in central India through transparent standards, genuine identity verification, uncompromising client privacy, and direct in-person payment assurance.
         </p>
       </div>
 
@@ -117,9 +117,9 @@ export default function AboutPage() {
 
           <div className="rounded-2xl bg-white border border-gray-200 p-6 sm:p-8 space-y-3 shadow-sm">
             <Banknote className="w-7 h-7 text-emerald-700" />
-            <h3 className="text-lg font-bold text-[#45474f]">100% Cash on Delivery (Zero Advance)</h3>
+            <h3 className="text-lg font-bold text-[#45474f]">Direct In-Person Settlement (Zero Advance)</h3>
             <p className="text-xs sm:text-sm text-[#616161] leading-relaxed">
-              We never ask for advance UPI transfers, bank deposits, or &quot;registration fees.&quot; All financial honorariums are settled strictly in person via Cash on Delivery after your companion arrives and mutual satisfaction is verified.
+              We never ask for advance UPI transfers, bank deposits, or &quot;registration fees.&quot; All financial honorariums are settled directly in person upon your companion&apos;s arrival after mutual comfort is verified.
             </p>
           </div>
 
@@ -127,7 +127,7 @@ export default function AboutPage() {
             <Lock className="w-7 h-7 text-[#e31777]" />
             <h3 className="text-lg font-bold text-[#45474f]">Absolute Privacy &amp; Digital Hygiene</h3>
             <p className="text-xs sm:text-sm text-[#616161] leading-relaxed">
-              Your personal data, phone numbers, and reservation itineraries are never recorded, cataloged, or shared with third parties. Booking communications are handled confidentially via encrypted channels like WhatsApp and Telegram.
+              Your personal data, phone numbers, and reservation itineraries are never recorded, cataloged, or shared with third parties. Booking communications are handled confidentially via direct phone or WhatsApp lines.
             </p>
           </div>
 

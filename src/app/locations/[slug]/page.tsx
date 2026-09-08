@@ -177,7 +177,7 @@ export default async function LocationDetailPage({ params }: PageProps) {
             </span>
             <span className="px-3 py-1 rounded-full bg-rose-100 border border-rose-200 text-[#b30000] flex items-center gap-1 font-bold">
               <Banknote className="w-3.5 h-3.5" />
-              100% Cash on Delivery
+              Direct Payment on Meet
             </span>
           </div>
 
@@ -315,14 +315,14 @@ export default async function LocationDetailPage({ params }: PageProps) {
             </p>
           </div>
 
-          {/* Cash on Delivery (COD) & Zero-Advance Policy */}
+          {/* Direct In-Person Payment & Zero-Advance Policy */}
           <div className="rounded-2xl bg-white border border-gray-200 p-6 sm:p-8 space-y-3 shadow-sm">
             <h3 className="text-lg font-bold text-[#45474f] flex items-center gap-2">
               <Banknote className="w-5 h-5 text-emerald-600" />
-              <span>100% Cash on Delivery &amp; Zero Advance Assurance</span>
+              <span>Direct In-Person Payment &amp; Zero Advance Assurance</span>
             </h3>
             <p className="text-xs sm:text-sm text-[#616161] leading-relaxed">
-              In an industry frequently targeted by fraudulent operators demanding upfront UPI payments or fabricated &quot;hotel registration charges,&quot; our directory operates on an uncompromising <strong>100% Cash on Delivery (COD)</strong> basis in {location.name}.
+              In an industry frequently targeted by fraudulent operators demanding upfront UPI payments or fabricated &quot;hotel registration charges,&quot; our directory operates on an uncompromising <strong>Direct In-Person Payment</strong> basis in {location.name}.
             </p>
             <p className="text-xs sm:text-sm text-[#616161] leading-relaxed">
               You never transfer advance deposits, security fees, or taxi allowances to unverified handles. You only settle the agreed honorarium directly with your chosen companion in person upon meeting at your designated venue. Read our comprehensive <Link href="/safety-guide" className="text-[#e31777] font-semibold hover:underline">Client Safety &amp; Anti-Scam Advisory</Link> to ensure your complete financial and personal peace of mind.
@@ -483,9 +483,9 @@ export default async function LocationDetailPage({ params }: PageProps) {
             <span className="w-7 h-7 rounded-full bg-pink-100 text-[#e31777] font-bold text-xs flex items-center justify-center">
               4
             </span>
-            <h4 className="text-sm font-bold text-gray-900">Meet &amp; Pay COD</h4>
+            <h4 className="text-sm font-bold text-gray-900">Meet &amp; Settle Directly</h4>
             <p className="text-xs text-gray-600 leading-relaxed">
-              Meet your companion in person, verify mutual comfort, and complete the honorarium via Cash on Delivery with zero stress.
+              Meet your companion in person, verify mutual comfort, and complete the honorarium directly with zero stress.
             </p>
           </div>
         </div>
@@ -498,7 +498,7 @@ export default async function LocationDetailPage({ params }: PageProps) {
             ...location.faqs,
             {
               question: `Is advance payment mandatory for companion bookings in ${location.name}?`,
-              answer: `No. We never ask for advance booking deposits, card clearances, or UPI transfers. You pay directly via Cash on Delivery only after your companion arrives at your venue in ${location.name}.`
+              answer: `No. We never ask for advance booking deposits, card clearances, or UPI transfers. You pay directly upon meeting your companion after she arrives at your venue in ${location.name}.`
             },
             {
               question: `Which hotels in ${location.name} allow private companion visits?`,
