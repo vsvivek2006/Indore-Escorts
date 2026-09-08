@@ -362,7 +362,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(227, 23, 119, 0.25), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(135deg, rgba(227, 23, 119, 0.38) 0%, rgba(194, 24, 91, 0.28) 45%, rgba(11, 23, 45, 0.88) 100%);
   z-index: -1;
 }
 

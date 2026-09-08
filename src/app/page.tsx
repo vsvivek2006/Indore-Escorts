@@ -116,6 +116,11 @@ export default function HomePage() {
     }
   };
 
+  // Top 8 Featured Companions for homepage to prevent infinite scroll fatigue
+  const featuredModels = COMPANION_MODELS.slice(0, 8);
+  // Top 18 Localities for quick access on homepage
+  const primeLocalities = INDORE_LOCATIONS.slice(0, 18);
+
   return (
     <div className="flex flex-col w-full text-slate-900 bg-white">
       <script
@@ -123,7 +128,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localServiceSchema) }}
       />
 
-      {/* 1. HERO BANNER SECTION (Godelhiescort Style: #e31777 theme) */}
+      {/* 1. HERO BANNER SECTION (Godelhiescort Style with Radiant Gradient) */}
       <section className="hero-banner-wrap" aria-label="Hero Banner">
         <div className="hero-bg-img">
           <Image
@@ -146,7 +151,7 @@ export default function HomePage() {
             Hot Call Girls in Indore Escorts Service Free Hotel Delivery
           </h1>
 
-          <p className="text-white/90 text-sm sm:text-base max-w-2xl text-center mb-8 drop-shadow-md">
+          <p className="text-white/90 text-sm sm:text-base max-w-2xl text-center mb-8 drop-shadow-md font-sans">
             Verified independent companions for 5-star hotel suites, dinner dates, and executive stays in Vijay Nagar, Palasia &amp; 48 Indore zones. Fast 30–45 min dispatch.
           </p>
 
@@ -184,8 +189,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. PREMIER ESCORTS SERVICE (4 Highlight Boxes - Godelhiescort .about-sec-new) */}
-      <section className="py-16 bg-white border-b border-slate-200/80" aria-label="Premier Escorts Overview">
+      {/* 2. PREMIER ESCORTS SERVICE (Soft Rose Gradient) */}
+      <section className="py-12 sm:py-14 bg-gradient-to-b from-white via-rose-50/30 to-white border-b border-slate-200/80" aria-label="Premier Escorts Overview">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             {/* Left Image Showcase */}
@@ -197,9 +202,9 @@ export default function HomePage() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex items-end p-6">
                   <div className="text-white space-y-1">
-                    <span className="px-3 py-1 rounded-full bg-[#e31777] text-white text-[11px] font-bold uppercase tracking-wider">
+                    <span className="px-3 py-1 rounded-full bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white text-[11px] font-bold uppercase tracking-wider shadow-sm">
                       Verified Elite Escort
                     </span>
                     <h3 className="text-xl font-bold font-sans text-white">Aarohi Sharma, 23</h3>
@@ -212,7 +217,7 @@ export default function HomePage() {
             {/* Right Narrative & 4 Stat Boxes */}
             <div className="lg:col-span-7 space-y-6">
               <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#e31777] bg-pink-50 border border-pink-200 px-3.5 py-1 rounded-full">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#e31777] bg-gradient-to-r from-pink-50 to-rose-50 border border-pink-200 px-3.5 py-1 rounded-full inline-block">
                   Premier Escorts Service
                 </span>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
@@ -227,46 +232,46 @@ export default function HomePage() {
                 Whether you desire an articulate partner for business summits at the <strong>Brilliant Convention Centre</strong>, a romantic candlelit dinner at <strong>Sayaji (Mediterra)</strong> or <strong>Radisson Blu</strong>, or private suite relaxation along the <strong>Indore Bypass</strong>, our high-profile <Link href="/models" className="text-[#e31777] font-bold underline">Indore call girls</Link> guarantee complete confidentiality and direct in-person settlement with zero advance deposits.
               </p>
 
-              {/* 4 Feature Boxes (Godelhiescort .about-new-box Style) */}
+              {/* 4 Feature Boxes (Gradient Glassmorphism) */}
               <div className="grid grid-cols-2 gap-4 pt-2">
-                <div className="about-new-box p-4 rounded-xl bg-[#e31777] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-lg transition-transform hover:-translate-y-1">
+                <div className="about-new-box p-4 rounded-xl bg-gradient-to-br from-[#e31777] via-[#d0156c] to-[#b80e5d] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
                   <div className="flex justify-center mb-2">
                     <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
                       <Lock className="w-5 h-5 text-white" />
                     </div>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-normal text-white leading-tight">100%</h3>
-                  <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5">Privacy &amp; Discretion</span>
+                  <h3 className="text-xl sm:text-2xl font-bold font-sans text-white leading-tight">100%</h3>
+                  <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5 font-sans">Privacy &amp; Discretion</span>
                 </div>
 
-                <div className="about-new-box p-4 rounded-xl bg-[#e31777] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-lg transition-transform hover:-translate-y-1">
+                <div className="about-new-box p-4 rounded-xl bg-gradient-to-br from-[#e31777] via-[#d0156c] to-[#b80e5d] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
                   <div className="flex justify-center mb-2">
                     <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
                       <ShieldCheck className="w-5 h-5 text-white" />
                     </div>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-normal text-white leading-tight">No Fake</h3>
-                  <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5">Profiles &amp; Real Photos</span>
+                  <h3 className="text-xl sm:text-2xl font-bold font-sans text-white leading-tight">No Fake</h3>
+                  <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5 font-sans">Profiles &amp; Real Photos</span>
                 </div>
 
-                <div className="about-new-box p-4 rounded-xl bg-[#e31777] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-lg transition-transform hover:-translate-y-1">
+                <div className="about-new-box p-4 rounded-xl bg-gradient-to-br from-[#e31777] via-[#d0156c] to-[#b80e5d] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
                   <div className="flex justify-center mb-2">
                     <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
                       <MapPin className="w-5 h-5 text-white" />
                     </div>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-normal text-white leading-tight">48 Zones</h3>
-                  <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5">Best Indore Areas</span>
+                  <h3 className="text-xl sm:text-2xl font-bold font-sans text-white leading-tight">48 Zones</h3>
+                  <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5 font-sans">Best Indore Areas</span>
                 </div>
 
-                <div className="about-new-box p-4 rounded-xl bg-[#e31777] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-lg transition-transform hover:-translate-y-1">
+                <div className="about-new-box p-4 rounded-xl bg-gradient-to-br from-[#e31777] via-[#d0156c] to-[#b80e5d] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
                   <div className="flex justify-center mb-2">
                     <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
                       <Users className="w-5 h-5 text-white" />
                     </div>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-normal text-white leading-tight">5,000+</h3>
-                  <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5">Satisfied Guests</span>
+                  <h3 className="text-xl sm:text-2xl font-bold font-sans text-white leading-tight">5,000+</h3>
+                  <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5 font-sans">Satisfied Guests</span>
                 </div>
               </div>
             </div>
@@ -274,8 +279,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. FAST PHONE CALL STRIP (Godelhiescort .phone-no-sec) */}
-      <section className="py-8 bg-gradient-to-r from-[#b30000] via-[#e31777] to-[#b30000] text-center px-4 shadow-lg text-white">
+      {/* 3. FAST PHONE CALL STRIP (Bold Gradient Strip) */}
+      <section className="py-7 bg-gradient-to-r from-[#b30000] via-[#e31777] to-[#b30000] text-center px-4 shadow-lg text-white">
         <div className="max-w-3xl mx-auto space-y-2">
           <p className="text-sm font-bold tracking-wide uppercase text-amber-200">
             So hurry up and get in touch with us now!!!
@@ -292,8 +297,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. DISCOVER THE ALLURE OF INDORE (Godelhiescort .socialDate-con style) */}
-      <section className="py-16 bg-slate-50 border-b border-slate-200/80">
+      {/* 4. DISCOVER THE ALLURE OF INDORE (Soft Diagonal Gradient) */}
+      <section className="py-12 sm:py-14 bg-gradient-to-br from-slate-50 via-rose-50/20 to-slate-50 border-b border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-7 space-y-5">
@@ -314,8 +319,8 @@ export default function HomePage() {
 
               {/* 3 Sleek Feature Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-                <div className="p-3.5 bg-white rounded-xl border border-slate-200 shadow-xs space-y-1">
-                  <div className="w-8 h-8 rounded-lg bg-pink-100 text-[#e31777] flex items-center justify-center mb-2">
+                <div className="p-4 bg-white rounded-xl border border-slate-200/80 shadow-xs hover:border-pink-200 transition-all space-y-1">
+                  <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-pink-100 to-rose-100 text-[#e31777] flex items-center justify-center mb-2">
                     <Crown className="w-4 h-4" />
                   </div>
                   <h4 className="text-xs font-bold font-sans text-slate-900">Cosmopolitan Standard</h4>
@@ -324,8 +329,8 @@ export default function HomePage() {
                   </p>
                 </div>
 
-                <div className="p-3.5 bg-white rounded-xl border border-slate-200 shadow-xs space-y-1">
-                  <div className="w-8 h-8 rounded-lg bg-pink-100 text-[#e31777] flex items-center justify-center mb-2">
+                <div className="p-4 bg-white rounded-xl border border-slate-200/80 shadow-xs hover:border-pink-200 transition-all space-y-1">
+                  <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-pink-100 to-rose-100 text-[#e31777] flex items-center justify-center mb-2">
                     <Hotel className="w-4 h-4" />
                   </div>
                   <h4 className="text-xs font-bold font-sans text-slate-900">Suite &amp; Resort Luxury</h4>
@@ -334,8 +339,8 @@ export default function HomePage() {
                   </p>
                 </div>
 
-                <div className="p-3.5 bg-white rounded-xl border border-slate-200 shadow-xs space-y-1">
-                  <div className="w-8 h-8 rounded-lg bg-pink-100 text-[#e31777] flex items-center justify-center mb-2">
+                <div className="p-4 bg-white rounded-xl border border-slate-200/80 shadow-xs hover:border-pink-200 transition-all space-y-1">
+                  <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-pink-100 to-rose-100 text-[#e31777] flex items-center justify-center mb-2">
                     <Clock className="w-4 h-4" />
                   </div>
                   <h4 className="text-xs font-bold font-sans text-slate-900">30–45 Min Dispatch</h4>
@@ -354,9 +359,9 @@ export default function HomePage() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-5">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-5">
                   <div className="text-white">
-                    <span className="px-2.5 py-0.5 rounded-full bg-[#e31777] text-white text-[10px] font-bold uppercase tracking-wider">
+                    <span className="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white text-[10px] font-bold uppercase tracking-wider">
                       5-Star Suite Specialist
                     </span>
                     <h4 className="text-lg font-bold font-sans text-white mt-1">Natasha Verma, 24</h4>
@@ -369,11 +374,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. MEMBER PROFILES GALLERY (20 Verified Profiles) */}
-      <section id="curated-profiles" className="py-16 bg-white border-b border-slate-200/80 w-full" aria-label="Curated Profiles Gallery">
+      {/* 5. MEMBER PROFILES GALLERY (Top 8 Curated Profiles - Eliminates Infinite Scroll) */}
+      <section id="curated-profiles" className="py-12 sm:py-14 bg-gradient-to-b from-white via-pink-50/20 to-white border-b border-slate-200/80 w-full" aria-label="Curated Profiles Gallery">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#e31777] bg-pink-50 border border-pink-200 px-3.5 py-1 rounded-full">
+          <div className="text-center max-w-3xl mx-auto mb-10 space-y-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#e31777] bg-gradient-to-r from-pink-50 to-rose-50 border border-pink-200 px-3.5 py-1 rounded-full inline-block">
               Exclusive 2026 Portfolio
             </span>
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed max-w-3xl mx-auto">
@@ -384,19 +389,29 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* 20 Profiles Grid: 2 columns on mobile, 4 columns on desktop */}
+          {/* Featured 8 Profiles Grid: 2 columns on mobile, 4 columns on desktop */}
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
-            {COMPANION_MODELS.map((model) => (
+            {featuredModels.map((model) => (
               <ModelCard key={model.id} model={model} />
             ))}
           </div>
 
-          <div className="text-center pt-10">
+          {/* All 20 Profiles Expansion Banner */}
+          <div className="mt-8 p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-pink-50 via-rose-50/80 to-pink-50 border border-pink-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left shadow-xs">
+            <div>
+              <h3 className="font-sans font-bold text-slate-900 text-sm sm:text-base flex items-center justify-center sm:justify-start gap-2">
+                <Sparkles className="w-4 h-4 text-[#e31777]" />
+                <span>Looking for More Profiles, Specific Tastes &amp; Rates?</span>
+              </h3>
+              <p className="text-xs text-slate-600 mt-1">
+                Explore our full roster of 20 verified models with complete photos, statistics, availability, and direct booking.
+              </p>
+            </div>
             <Link
               href="/models"
-              className="inline-flex items-center gap-2 py-3.5 px-8 rounded-full bg-[#e31777] text-white hover:bg-[#c2185b] font-bold text-xs sm:text-sm shadow-lg hover:shadow-xl transition-all"
+              className="shrink-0 inline-flex items-center gap-2 py-3 px-6 rounded-full bg-gradient-to-r from-[#e31777] via-[#d0156c] to-[#c2185b] text-white hover:brightness-110 font-bold text-xs sm:text-sm shadow-md transition-all hover:scale-105"
             >
-              <span>Explore All Verified Companion Profiles &amp; Rates</span>
+              <span>Explore All 20 Companion Profiles</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -404,7 +419,7 @@ export default function HomePage() {
       </section>
 
       {/* 6. REDESIGNED COMPANION SERVICES */}
-      <section className="py-16 bg-slate-50 border-b border-slate-200/80">
+      <section className="py-12 sm:py-14 bg-gradient-to-b from-slate-50 via-pink-50/15 to-slate-50 border-b border-slate-200/80">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-10">
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <span className="text-xs font-bold uppercase tracking-widest text-[#e31777]">
@@ -422,7 +437,7 @@ export default function HomePage() {
             {/* Service 1: Hotel Out-Call */}
             <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-[#e31777] transition-all hover:shadow-md flex flex-col justify-between space-y-4">
               <div className="space-y-3">
-                <div className="w-12 h-12 rounded-xl bg-pink-50 text-[#e31777] flex items-center justify-center font-bold">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-pink-100 to-rose-100 text-[#e31777] flex items-center justify-center font-bold">
                   <Hotel className="w-6 h-6" />
                 </div>
                 <span className="text-[11px] font-bold text-[#e31777] uppercase tracking-wider block">
@@ -453,19 +468,19 @@ export default function HomePage() {
                 href="https://wa.me/919006236133?text=Hi%2C%20I'm%20interested%20in%20Hotel%20Out-Call%20service%20in%20Indore."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-pink-50 text-[#e31777] hover:bg-[#e31777] hover:text-white transition"
+                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-pink-50 text-[#e31777] hover:bg-gradient-to-r hover:from-[#e31777] hover:to-[#c2185b] hover:text-white transition"
               >
                 Book Out-Call via WhatsApp
               </a>
             </div>
 
             {/* Service 2: Corporate & Dinner Dates */}
-            <div className="p-6 rounded-2xl bg-white border-2 border-[#e31777] shadow-md transition-all hover:shadow-lg flex flex-col justify-between space-y-4 relative">
-              <span className="absolute -top-3 right-4 bg-[#e31777] text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase">
+            <div className="p-6 rounded-2xl bg-gradient-to-b from-white via-pink-50/20 to-white border-2 border-[#e31777] shadow-md transition-all hover:shadow-lg flex flex-col justify-between space-y-4 relative">
+              <span className="absolute -top-3 right-4 bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase shadow-xs">
                 Most Popular
               </span>
               <div className="space-y-3">
-                <div className="w-12 h-12 rounded-xl bg-pink-100 text-[#e31777] flex items-center justify-center font-bold">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-pink-100 to-rose-200 text-[#e31777] flex items-center justify-center font-bold">
                   <Crown className="w-6 h-6" />
                 </div>
                 <span className="text-[11px] font-bold text-[#e31777] uppercase tracking-wider block">
@@ -496,7 +511,7 @@ export default function HomePage() {
                 href="https://wa.me/919006236133?text=Hi%2C%20I'm%20interested%20in%20Corporate%20Dinner%20Date%20companionship%20in%20Indore."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-[#e31777] text-white hover:bg-[#c2185b] transition shadow-xs"
+                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-gradient-to-r from-[#e31777] via-[#d0156c] to-[#c2185b] text-white hover:brightness-110 transition shadow-xs"
               >
                 Reserve Dinner Date
               </a>
@@ -505,7 +520,7 @@ export default function HomePage() {
             {/* Service 3: Overnight Suite Luxury */}
             <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-[#e31777] transition-all hover:shadow-md flex flex-col justify-between space-y-4">
               <div className="space-y-3">
-                <div className="w-12 h-12 rounded-xl bg-pink-50 text-[#e31777] flex items-center justify-center font-bold">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-pink-100 to-rose-100 text-[#e31777] flex items-center justify-center font-bold">
                   <Heart className="w-6 h-6" />
                 </div>
                 <span className="text-[11px] font-bold text-[#e31777] uppercase tracking-wider block">
@@ -536,7 +551,7 @@ export default function HomePage() {
                 href="https://wa.me/919006236133?text=Hi%2C%20I'm%20interested%20in%20Overnight%20Stay%20companionship%20in%20Indore."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-pink-50 text-[#e31777] hover:bg-[#e31777] hover:text-white transition"
+                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-pink-50 text-[#e31777] hover:bg-gradient-to-r hover:from-[#e31777] hover:to-[#c2185b] hover:text-white transition"
               >
                 Inquire Overnight Package
               </a>
@@ -545,9 +560,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. HOTEL BOOKING GUIDE (Godelhiescort Feature) */}
-      <section className="py-16 bg-white border-b border-slate-200/80" aria-label="Hotel Booking Guide">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-10">
+      {/* 7. HOTEL BOOKING GUIDE (Soft Slate Gradient) */}
+      <section className="py-12 sm:py-14 bg-gradient-to-b from-white via-slate-50/40 to-white border-b border-slate-200/80" aria-label="Hotel Booking Guide">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-8">
           <div className="space-y-2 text-center sm:text-left">
             <span className="text-xs font-bold uppercase tracking-widest text-[#e31777]">
               Indore Hospitality Scene
@@ -560,8 +575,8 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2.5">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2.5">
               <div className="w-9 h-9 rounded-lg bg-pink-100 text-[#e31777] flex items-center justify-center font-bold">
                 <Hotel className="w-5 h-5" />
               </div>
@@ -570,7 +585,7 @@ export default function HomePage() {
                 Opt for <strong>Sayaji Hotel</strong>, <strong>Radisson Blu</strong>, <strong>Indore Marriott</strong>, or <strong>Sheraton Grand Palace</strong>. These properties offer discreet check-in, spacious suites, and 24/7 in-room dining.
               </p>
             </div>
-            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2.5">
+            <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2.5">
               <div className="w-9 h-9 rounded-lg bg-pink-100 text-[#e31777] flex items-center justify-center font-bold">
                 <Building className="w-5 h-5" />
               </div>
@@ -579,7 +594,7 @@ export default function HomePage() {
                 For a more intimate vibe, boutique suites in <strong>Vijay Nagar</strong>, <strong>New Palasia</strong>, and near <strong>MR-10</strong> offer cozy, quiet rooms ideal for unhurried evenings.
               </p>
             </div>
-            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2.5">
+            <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2.5">
               <div className="w-9 h-9 rounded-lg bg-pink-100 text-[#e31777] flex items-center justify-center font-bold">
                 <MapPin className="w-5 h-5" />
               </div>
@@ -591,41 +606,41 @@ export default function HomePage() {
           </div>
 
           {/* 5-Step Arrangement Process */}
-          <div className="rounded-3xl bg-pink-50/50 border border-pink-100 p-6 sm:p-8 space-y-6">
+          <div className="rounded-3xl bg-gradient-to-br from-pink-50/60 via-rose-50/40 to-pink-50/60 border border-pink-200/70 p-6 sm:p-7 space-y-5">
             <div className="text-center sm:text-left space-y-1">
-              <h3 className="text-lg sm:text-xl font-sans font-bold text-slate-900">
+              <h3 className="text-base sm:text-lg font-sans font-bold text-slate-900">
                 How to Book in <span className="text-[#e31777]">5 Easy Steps</span>
               </h3>
               <p className="text-xs text-slate-600">Quick, safe, and transparent coordination with zero hassle.</p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-5 gap-3 text-xs text-slate-700">
-              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1">
-                <span className="w-7 h-7 rounded-full bg-[#e31777] text-white font-bold flex items-center justify-center text-xs mb-2">01</span>
+              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1 shadow-2xs">
+                <span className="w-7 h-7 rounded-full bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white font-bold flex items-center justify-center text-xs mb-2">01</span>
                 <strong className="block text-slate-900 font-sans">Browse Profiles</strong>
-                <p className="text-[11px] text-slate-500">Pick your favorite companion from 20 verified profiles.</p>
+                <p className="text-[11px] text-slate-500">Pick your favorite companion from verified profiles.</p>
               </div>
 
-              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1">
-                <span className="w-7 h-7 rounded-full bg-[#e31777] text-white font-bold flex items-center justify-center text-xs mb-2">02</span>
+              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1 shadow-2xs">
+                <span className="w-7 h-7 rounded-full bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white font-bold flex items-center justify-center text-xs mb-2">02</span>
                 <strong className="block text-slate-900 font-sans">Contact Desk</strong>
                 <p className="text-[11px] text-slate-500">WhatsApp or call us directly at +91 90062 36133.</p>
               </div>
 
-              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1">
-                <span className="w-7 h-7 rounded-full bg-[#e31777] text-white font-bold flex items-center justify-center text-xs mb-2">03</span>
+              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1 shadow-2xs">
+                <span className="w-7 h-7 rounded-full bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white font-bold flex items-center justify-center text-xs mb-2">03</span>
                 <strong className="block text-slate-900 font-sans">Share Venue</strong>
                 <p className="text-[11px] text-slate-500">Provide hotel name and preferred timing.</p>
               </div>
 
-              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1">
-                <span className="w-7 h-7 rounded-full bg-[#e31777] text-white font-bold flex items-center justify-center text-xs mb-2">04</span>
+              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1 shadow-2xs">
+                <span className="w-7 h-7 rounded-full bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white font-bold flex items-center justify-center text-xs mb-2">04</span>
                 <strong className="block text-slate-900 font-sans">Swift Arrival</strong>
                 <p className="text-[11px] text-slate-500">Companion arrives at your room in 30–45 mins.</p>
               </div>
 
-              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1">
-                <span className="w-7 h-7 rounded-full bg-[#e31777] text-white font-bold flex items-center justify-center text-xs mb-2">05</span>
+              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1 shadow-2xs">
+                <span className="w-7 h-7 rounded-full bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white font-bold flex items-center justify-center text-xs mb-2">05</span>
                 <strong className="block text-slate-900 font-sans">Meet &amp; Pay</strong>
                 <p className="text-[11px] text-slate-500">Direct in-person payment, total satisfaction.</p>
               </div>
@@ -634,8 +649,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 8. TEMPTING PRICING & PACKAGES */}
-      <section className="py-16 bg-slate-50 border-b border-slate-200/80">
+      {/* 8. TEMPTING PRICING & PACKAGES (Rose Gradient) */}
+      <section className="py-12 sm:py-14 bg-gradient-to-b from-slate-50 via-rose-50/25 to-slate-50 border-b border-slate-200/80">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-8">
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <span className="text-xs font-bold uppercase tracking-widest text-[#e31777]">
@@ -675,15 +690,15 @@ export default function HomePage() {
               </div>
               <a
                 href="tel:+919006236133"
-                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-slate-100 text-slate-900 hover:bg-slate-200 transition"
+                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-900 transition"
               >
                 Call to Check Rates
               </a>
             </div>
 
             {/* VIP Elite */}
-            <div className="p-6 rounded-3xl bg-white border-2 border-[#e31777] shadow-md space-y-4 flex flex-col justify-between relative">
-              <span className="absolute -top-3 right-4 bg-[#e31777] text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase">
+            <div className="p-6 rounded-3xl bg-gradient-to-b from-white via-pink-50/25 to-white border-2 border-[#e31777] shadow-md space-y-4 flex flex-col justify-between relative">
+              <span className="absolute -top-3 right-4 bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase shadow-xs">
                 Most Popular
               </span>
               <div className="space-y-3">
@@ -711,7 +726,7 @@ export default function HomePage() {
                 href="https://wa.me/919006236133?text=Hi%2C%20I'm%20interested%20in%20the%20VIP%20Elite%20Passion%20package."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-[#e31777] text-white hover:bg-[#c2185b] transition shadow-xs"
+                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-gradient-to-r from-[#e31777] via-[#d0156c] to-[#c2185b] text-white hover:brightness-110 transition shadow-xs"
               >
                 Reserve VIP Package
               </a>
@@ -744,7 +759,7 @@ export default function HomePage() {
                 href="https://wa.me/919006236133?text=Hi%2C%20I'm%20interested%20in%20the%20Overnight%20Luxury%20package."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-slate-100 text-slate-900 hover:bg-slate-200 transition"
+                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-900 transition"
               >
                 Inquire Overnight Rates
               </a>
@@ -757,7 +772,7 @@ export default function HomePage() {
       <TestimonialsSection />
 
       {/* 10. SAFETY, DISCRETION & ETHICAL STANDARDS */}
-      <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 space-y-8">
+      <section className="py-12 sm:py-14 max-w-5xl mx-auto px-4 sm:px-6 space-y-8">
         <div className="space-y-2 text-center sm:text-left">
           <span className="text-xs font-bold uppercase tracking-widest text-[#e31777]">
             Trust &amp; Ethics
@@ -813,11 +828,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 11. 48 INDORE LOCALITIES MATRIX */}
-      <section className="py-16 bg-slate-50 border-t border-slate-200/80 w-full" aria-label="48 Indore Localities Matrix">
+      {/* 11. 48 INDORE LOCALITIES MATRIX (Top 18 Hotspots + Full Hub Link) */}
+      <section className="py-12 sm:py-14 bg-gradient-to-b from-slate-50 via-rose-50/20 to-white border-t border-slate-200/80 w-full" aria-label="48 Indore Localities Matrix">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           <div className="text-center max-w-3xl mx-auto space-y-3">
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#e31777] bg-pink-50 border border-pink-200 px-3.5 py-1 rounded-full">
+            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#e31777] bg-gradient-to-r from-pink-50 to-rose-50 border border-pink-200 px-3.5 py-1 rounded-full">
               <Compass className="w-3.5 h-3.5" />
               <span>Complete City Index</span>
             </div>
@@ -825,28 +840,28 @@ export default function HomePage() {
               Companion Directory Across <span className="text-[#e31777]">All 48 Localities</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
-              Click any locality to view detailed area guides, hotel venues, transit access, and local companion availability.
+              Quick access to premier hotel hubs, corporate IT corridors, and private avenues across Indore.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 text-xs">
-            {INDORE_LOCATIONS.map((loc) => (
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2.5 text-xs">
+            {primeLocalities.map((loc) => (
               <Link
                 key={loc.slug}
                 href={`/locations/${loc.slug}`}
-                className="p-3 rounded-xl bg-white hover:bg-pink-50 border border-slate-200 hover:border-[#e31777] text-slate-700 hover:text-[#e31777] font-semibold transition-all text-center truncate shadow-xs hover:shadow-md hover:-translate-y-0.5 min-h-[46px] flex items-center justify-center font-sans"
+                className="p-3 rounded-xl bg-white hover:bg-gradient-to-r hover:from-pink-50 hover:to-rose-50 border border-slate-200 hover:border-[#e31777] text-slate-700 hover:text-[#e31777] font-semibold transition-all text-center truncate shadow-2xs hover:shadow-xs min-h-[44px] flex items-center justify-center font-sans"
               >
                 {loc.name}
               </Link>
             ))}
           </div>
 
-          <div className="text-center pt-4">
+          <div className="text-center pt-2">
             <Link
               href="/locations"
-              className="inline-flex items-center gap-2 text-xs font-bold text-[#e31777] hover:text-[#c2185b] transition py-3 px-8 rounded-full bg-pink-50 border border-pink-200 hover:shadow-md"
+              className="inline-flex items-center gap-2 text-xs font-bold text-white transition py-3 px-8 rounded-full bg-gradient-to-r from-[#e31777] via-[#d0156c] to-[#c2185b] shadow-md hover:brightness-110 hover:shadow-lg hover:scale-105"
             >
-              <span>Explore Interactive Locality Hub with Regional Filters</span>
+              <span>Explore Complete 48 Locality Hub &amp; Area Guides</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -854,7 +869,7 @@ export default function HomePage() {
       </section>
 
       {/* 12. FAQS SECTION */}
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 py-16 w-full">
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-14 w-full">
         <FaqAccordion
           faqs={homeFaqs}
           title="Frequently Asked Questions"
