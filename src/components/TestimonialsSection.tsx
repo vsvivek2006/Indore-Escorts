@@ -66,7 +66,7 @@ export default function TestimonialsSection() {
           <span className="text-xs font-bold uppercase tracking-widest text-[#e31777] bg-pink-50 border border-pink-200 px-3.5 py-1 rounded-full">
             Real Experiences &bull; 100% Confidential
           </span>
-          <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f] tracking-tight">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
             Captivating <span className="text-[#e31777]">Client Stories</span> &amp; Reviews
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">

@@ -215,7 +215,7 @@ export default function HomePage() {
                 <span className="text-xs font-bold uppercase tracking-widest text-[#e31777] bg-pink-50 border border-pink-200 px-3.5 py-1 rounded-full">
                   Premier Escorts Service
                 </span>
-                <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f] leading-tight">
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
                   Unforgettable Experiences with Elite <span className="text-[#e31777]">Call Girls in Indore</span>
                 </h2>
               </div>
@@ -301,7 +301,7 @@ export default function HomePage() {
                 <span className="text-xs font-bold uppercase tracking-widest text-[#e31777]">
                   Cleanest &amp; Most Dynamic Commercial Capital
                 </span>
-                <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f]">
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
                   Discover the Allure of <span className="text-[#e31777]">Call Girls in Indore</span>
                 </h2>
               </div>
@@ -376,8 +376,8 @@ export default function HomePage() {
             <span className="text-xs font-bold uppercase tracking-widest text-[#e31777] bg-pink-50 border border-pink-200 px-3.5 py-1 rounded-full">
               Exclusive 2026 Portfolio
             </span>
-            <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f] tracking-tight">
-              Browse Charming <span className="text-[#e31777]">Indore Call Girls</span> – Select from Our Exclusive Profiles
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed max-w-3xl mx-auto">
+              Browse Charming <span className="text-[#e31777]">Indore Call Girls</span> &bull; Select from Our Exclusive Profiles
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
               Hand-picked independent companions available for hotel visits, corporate conventions, dinner dates, and social appointments across Indore.
@@ -410,7 +410,7 @@ export default function HomePage() {
             <span className="text-xs font-bold uppercase tracking-widest text-[#e31777]">
               Tailored Companionship
             </span>
-            <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f]">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
               Seductive Escort Services in Indore <span className="text-[#e31777]">Tailored to Your Desires</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
@@ -552,7 +552,7 @@ export default function HomePage() {
             <span className="text-xs font-bold uppercase tracking-widest text-[#e31777]">
               Indore Hospitality Scene
             </span>
-            <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f]">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
               Booking a Hotel for Your <span className="text-[#e31777]">Encounter in Indore</span>
             </h2>
             <p className="text-sm text-slate-600 leading-relaxed">
@@ -593,7 +593,7 @@ export default function HomePage() {
           {/* 5-Step Arrangement Process */}
           <div className="rounded-3xl bg-pink-50/50 border border-pink-100 p-6 sm:p-8 space-y-6">
             <div className="text-center sm:text-left space-y-1">
-              <h3 className="text-lg sm:text-xl font-heading font-normal text-[#45474f]">
+              <h3 className="text-lg sm:text-xl font-sans font-bold text-slate-900">
                 How to Book in <span className="text-[#e31777]">5 Easy Steps</span>
               </h3>
               <p className="text-xs text-slate-600">Quick, safe, and transparent coordination with zero hassle.</p>
@@ -641,7 +641,7 @@ export default function HomePage() {
             <span className="text-xs font-bold uppercase tracking-widest text-[#e31777]">
               Honest &amp; Transparent Rates
             </span>
-            <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f]">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
               Tempting Pricing for Every <span className="text-[#e31777]">Desire in Indore</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -762,7 +762,7 @@ export default function HomePage() {
           <span className="text-xs font-bold uppercase tracking-widest text-[#e31777]">
             Trust &amp; Ethics
           </span>
-          <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f]">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
             Safety, Discretion &amp; <span className="text-[#e31777]">Ethical Standards</span>
           </h2>
           <p className="text-sm text-slate-600 leading-relaxed">
@@ -821,7 +821,7 @@ export default function HomePage() {
               <Compass className="w-3.5 h-3.5" />
               <span>Complete City Index</span>
             </div>
-            <h2 className="text-2xl sm:text-4xl font-heading font-normal text-[#45474f]">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
               Companion Directory Across <span className="text-[#e31777]">All 48 Localities</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
