@@ -1,0 +1,372 @@
+export interface CompanionModel {
+  id: string;
+  name: string;
+  age: number;
+  height: string;
+  category: "VIP Elite" | "Dinner Date" | "Corporate Escort" | "College Model" | "Celebrity Companion";
+  languages: string[];
+  locationsServed: string[];
+  bio: string;
+  image: string;
+  isVerified: boolean;
+  availability: "Available Today" | "Advance Booking Only" | "Weekend Special";
+  personalityTraits: string[];
+  interests: string[];
+  phone: string;
+  whatsappNumber: string;
+}
+
+export const COMPANION_MODELS: CompanionModel[] = [
+  {
+    id: "aarohi-sharma",
+    name: "Aarohi Sharma",
+    age: 23,
+    height: "5 ft 6 in",
+    category: "VIP Elite",
+    languages: ["English", "Hindi"],
+    locationsServed: ["Vijay Nagar", "Palasia", "South Tukoganj", "Bicholi Mardana"],
+    bio: "Articulate, sophisticated, and graceful. Aarohi specializes in high-profile corporate dinner dates, luxury hotel stays, and private executive gatherings in Indore. With an innate appreciation for fine dining and cosmopolitan conversation, she ensures total discretion and an unforgettable experience.",
+    image: "/images/model_aarohi.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Charming", "Well-Spoken", "Discreet", "Elegant"],
+    interests: ["Wine Tasting", "Modern Art", "Fine Dining at Sayaji", "Travel"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "meera-kapoor",
+    name: "Meera Kapoor",
+    age: 24,
+    height: "5 ft 7 in",
+    category: "Dinner Date",
+    languages: ["English", "Hindi", "Punjabi"],
+    locationsServed: ["Vijay Nagar", "Palasia", "Bhawarkuan", "Saket & Tilak Nagar"],
+    bio: "Chic, warm, and engaging. Meera brings vibrant energy and impeccable style to candlelit evenings, culinary food tours through 56 Dukan, and private social soirees. Her effortless charm puts anyone at immediate ease.",
+    image: "/images/model_meera.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Bubbly", "Cultured", "Passionate", "Attentive"],
+    interests: ["Gastronomy", "Live Jazz", "Fashion", "Boutique Cafes"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "ananya-sen",
+    name: "Ananya Sen",
+    age: 22,
+    height: "5 ft 5 in",
+    category: "Corporate Escort",
+    languages: ["English", "Hindi", "Bengali"],
+    locationsServed: ["Super Corridor", "Vijay Nagar", "Rau & Rajendra Nagar", "Bhawarkuan"],
+    bio: "Educated in business communications, Ananya is the ideal companion for visiting corporate executives, tech symposium delegates, and business travelers around the Super Corridor and Brilliant Convention Centre.",
+    image: "/images/model_ananya.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Intellectual", "Poised", "Confidential", "Adaptable"],
+    interests: ["Tech Innovations", "Literature", "Classical Music", "Coffee Strolls"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "kavya-malhotra",
+    name: "Kavya Malhotra",
+    age: 25,
+    height: "5 ft 8 in",
+    category: "VIP Elite",
+    languages: ["English", "Hindi"],
+    locationsServed: ["Bicholi Mardana", "Nipania & Mahalaxmi", "Vijay Nagar", "South Tukoganj"],
+    bio: "A true connoisseur of luxury living. Kavya is frequently reserved for private palace resort staycations at Sheraton Grand Palace, farmhouse events along the Indore Bypass, and luxury shopping at Phoenix Citadel.",
+    image: "/images/model_kavya.jpg",
+    isVerified: true,
+    availability: "Advance Booking Only",
+    personalityTraits: ["Regal", "Empathetic", "Discreet", "Fashion-Forward"],
+    interests: ["Spa Retreats", "Luxury Shopping", "High Fashion", "Champagne"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "tanya-singh",
+    name: "Tanya Singh",
+    age: 21,
+    height: "5 ft 4 in",
+    category: "College Model",
+    languages: ["English", "Hindi"],
+    locationsServed: ["Bhawarkuan", "Khajrana", "Palasia", "Annapurna Road"],
+    bio: "Young, youthful, and naturally cheerful. Tanya brings radiant laughter and relaxed warmth to movie dates, casual cafe hangouts, and evening long drives along the Ring Road.",
+    image: "/images/model_riya.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Sweet", "Playful", "Honest", "Energetic"],
+    interests: ["Cinema", "Street Food Walks", "Photography", "Music"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "riya-verma",
+    name: "Riya Verma",
+    age: 23,
+    height: "5 ft 6 in",
+    category: "Corporate Escort",
+    languages: ["English", "Hindi"],
+    locationsServed: ["Vijay Nagar", "Super Corridor", "Annapurna Road", "Bhawarkuan"],
+    bio: "Sleek and polished with a natural magnetic presence. Riya is equally comfortable at corporate networking dinners in Vijay Nagar or quiet, secluded evenings at luxury five-star suites.",
+    image: "/images/model_pooja.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Professional", "Charming", "Polished", "Friendly"],
+    interests: ["Business Networking", "Cocktail Mixology", "Fitness", "City Skyline Views"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "simran-kaur",
+    name: "Simran Kaur",
+    age: 24,
+    height: "5 ft 7 in",
+    category: "Dinner Date",
+    languages: ["English", "Hindi", "Punjabi"],
+    locationsServed: ["Saket & Tilak Nagar", "Nipania & Mahalaxmi", "Palasia", "Annapurna Road"],
+    bio: "Warm-hearted, stunningly poised, and a wonderful listener. Simran specializes in unhurried dinner dates, heartfelt companionship, and cultural excursions across Indore.",
+    image: "/images/model_simran.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Warm", "Graceful", "Good Listener", "Sophisticated"],
+    interests: ["Culinary Arts", "Aromatherapy", "Gardening", "Poetry"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "pooja-joshi",
+    name: "Pooja Joshi",
+    age: 22,
+    height: "5 ft 5 in",
+    category: "College Model",
+    languages: ["Hindi", "English"],
+    locationsServed: ["Rajwada", "Khajrana", "Annapurna Road", "Bhawarkuan"],
+    bio: "Local Indore native who knows every secret nook and heritage corner of the city. Pooja is an enthusiastic and charming guide for historic walks around Rajwada and late-night Sarafa food crawls.",
+    image: "/images/model_isha.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Authentic", "Cheerful", "Cultural", "Adventurous"],
+    interests: ["Indore Heritage", "Street Food", "Festivals", "Bollywood"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "tara-deshmukh",
+    name: "Tara Deshmukh",
+    age: 24,
+    height: "5 ft 7 in",
+    category: "VIP Elite",
+    languages: ["English", "Hindi", "Marathi"],
+    locationsServed: ["Vijay Nagar", "Indore Bypass", "Bicholi Mardana", "Palasia"],
+    bio: "Regal, cultured, and immensely charming. Tara embodies classic aristocratic grace, making her the prime choice for five-star hotel stays at Sayaji, Marriott, and private farmhouse getaways on the Bypass.",
+    image: "/images/model_tara.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Regal", "Intellectual", "Affectionate", "Discreet"],
+    interests: ["Classical Music", "Luxury Resorts", "Fine Dining", "Modern Literature"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "natasha-singhania",
+    name: "Natasha Singhania",
+    age: 25,
+    height: "5 ft 8 in",
+    category: "Celebrity Companion",
+    languages: ["English", "Hindi"],
+    locationsServed: ["Vijay Nagar", "Super Corridor", "Nipania & Mahalaxmi", "South Tukoganj"],
+    bio: "Stunningly glamorous and globally traveled. Natasha is an elite socialite and companion reserved for luxury VIP events, gala nights at Brilliant Convention Centre, and exclusive lounge dates.",
+    image: "/images/model_natasha.jpg",
+    isVerified: true,
+    availability: "Advance Booking Only",
+    personalityTraits: ["Glamorous", "High-Fashion", "Magnetic", "Sophisticated"],
+    interests: ["High Fashion", "Champagne", "Private Lounges", "World Travel"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "sanjana-patel",
+    name: "Sanjana Patel",
+    age: 22,
+    height: "5 ft 5 in",
+    category: "College Model",
+    languages: ["English", "Hindi", "Gujarati"],
+    locationsServed: ["Palasia", "New Palasia", "Bhawarkuan", "Rau & Rajendra Nagar"],
+    bio: "Radiant, vivacious, and naturally cheerful. Sanjana loves cozy cafe hangouts in New Palasia, late-evening coffee conversations, and relaxed companionship that melts away daily stress.",
+    image: "/images/model_sanjana.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Friendly", "Candid", "Sweet", "Attentive"],
+    interests: ["Cafe Hopping", "Boutique Coffee", "Indie Music", "Photography"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "alisha-khan",
+    name: "Alisha Khan",
+    age: 25,
+    height: "5 ft 7 in",
+    category: "VIP Elite",
+    languages: ["English", "Hindi", "Urdu"],
+    locationsServed: ["Vijay Nagar", "MR-10", "Indore Bypass", "South Tukoganj"],
+    bio: "Exquisitely styled and breathtakingly poised. Alisha offers an elite, private accompaniment for candlelit dinners at Mediterra, Radisson Blu luxury suites, and bespoke weekend staycations.",
+    image: "/images/model_alisha.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Poetic", "Hypnotic", "Discreet", "Passionate"],
+    interests: ["Urdu Poetry", "Luxury Spas", "Gourmet Cuisine", "Private Dining"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "kriti-sharma",
+    name: "Kriti Sharma",
+    age: 23,
+    height: "5 ft 6 in",
+    category: "Corporate Escort",
+    languages: ["English", "Hindi"],
+    locationsServed: ["Super Corridor", "Vijay Nagar", "Scheme 54", "Airport Road"],
+    bio: "Sharp, articulate, and effortlessly elegant. Kriti is an MBA graduate who understands the corporate tempo, offering peerless companionship for business delegates staying in Indore's premier hotels.",
+    image: "/images/model_kriti.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Smart", "Articulate", "Confident", "Warm"],
+    interests: ["Business Trends", "Podcasts", "Fine Dining", "Fitness"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "zoya-akhtar",
+    name: "Zoya Akhtar",
+    age: 21,
+    height: "5 ft 4 in",
+    category: "College Model",
+    languages: ["English", "Hindi"],
+    locationsServed: ["Bhawarkuan", "Khajrana", "Geeta Bhawan", "Palasia"],
+    bio: "Spontaneous, enthusiastic, and full of youthful warmth. Zoya brings a playful, refreshing spark to long drives, culinary adventures in Sarafa, and romantic afternoon cafe dates.",
+    image: "/images/model_zoya.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Cheerful", "Spontaneous", "Sweet", "Playful"],
+    interests: ["Street Food", "Romantic Cinema", "Road Trips", "Art"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "shalini-gupta",
+    name: "Shalini Gupta",
+    age: 26,
+    height: "5 ft 6 in",
+    category: "Dinner Date",
+    languages: ["English", "Hindi"],
+    locationsServed: ["Vijay Nagar", "Palasia", "Nipania & Mahalaxmi", "MR-10"],
+    bio: "Mature, empathetic, and exceptionally well-mannered. Shalini is beloved for her relaxed, calming conversation and attentive nature, perfect for unwinding after strenuous business conferences.",
+    image: "/images/model_shalini.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Empathetic", "Calm", "Sophisticated", "Charming"],
+    interests: ["Meditation", "Wine & Dine", "Jazz", "Boutique Books"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "riddhi-shukla",
+    name: "Riddhi Shukla",
+    age: 22,
+    height: "5 ft 5 in",
+    category: "College Model",
+    languages: ["Hindi", "English"],
+    locationsServed: ["Rau & Rajendra Nagar", "Bhawarkuan", "Annapurna Road", "Chhatribagh"],
+    bio: "Lively college student with an innocent charm and infectious laughter. Riddhi is wonderful company for casual evening strolls, movies, and shopping at Phoenix Citadel.",
+    image: "/images/model_riddhi.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Innocent", "Sweet", "Vibrant", "Helpful"],
+    interests: ["Fashion Styling", "Dance", "Food Walks", "Instagramming"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "kashika-roy",
+    name: "Kashika Roy",
+    age: 24,
+    height: "5 ft 7 in",
+    category: "Celebrity Companion",
+    languages: ["English", "Hindi", "Bengali"],
+    locationsServed: ["Bicholi Mardana", "Indore Bypass", "Vijay Nagar", "South Tukoganj"],
+    bio: "Exquisite fashion model with high runway poise and captivating eyes. Kashika is reserved by elite connoisseurs seeking unforgettable luxury companionship in Indore's finest resorts.",
+    image: "/images/model_kashika.jpg",
+    isVerified: true,
+    availability: "Advance Booking Only",
+    personalityTraits: ["Captivating", "High-Profile", "Regal", "Discreet"],
+    interests: ["Runway Modeling", "Luxury Travel", "Cocktails", "Spa Retreats"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "lavanya-bose",
+    name: "Lavanya Bose",
+    age: 25,
+    height: "5 ft 6 in",
+    category: "VIP Elite",
+    languages: ["English", "Hindi"],
+    locationsServed: ["Palasia", "Vijay Nagar", "MR-10", "Scheme 54"],
+    bio: "Enchanting conversationalist with refined aesthetic taste. Lavanya specializes in VIP executive dinners and tranquil suite appointments, ensuring seamless comfort and privacy.",
+    image: "/images/model_lavanya.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Refined", "Attentive", "Sensual", "Discreet"],
+    interests: ["Contemporary Art", "Fine Champagne", "Piano", "Fine Dining"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "aditi-verma",
+    name: "Aditi Verma",
+    age: 23,
+    height: "5 ft 6 in",
+    category: "Dinner Date",
+    languages: ["English", "Hindi"],
+    locationsServed: ["Vijay Nagar", "Palasia", "South Tukoganj", "Bhawarkuan"],
+    bio: "Warm, radiant, and delightfully communicative. Aditi makes every romantic dinner date at Sayaji or Radisson Blu feel magical, intimate, and effortlessly spontaneous.",
+    image: "/images/model_aditi.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Romantic", "Gentle", "Charming", "Polished"],
+    interests: ["Candlelit Dinners", "Acoustic Music", "Poetry", "City Lights"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  },
+  {
+    id: "tanvi-saxena",
+    name: "Tanvi Saxena",
+    age: 21,
+    height: "5 ft 5 in",
+    category: "College Model",
+    languages: ["English", "Hindi"],
+    locationsServed: ["Super Corridor", "Airport Road", "Vijay Nagar", "Bhawarkuan"],
+    bio: "Brimming with positive vibes, youthful vivacity, and a radiant smile. Tanvi is an ideal companion for guests who appreciate youthful cheer and easygoing, lighthearted conversation.",
+    image: "/images/model_tanvi.jpg",
+    isVerified: true,
+    availability: "Available Today",
+    personalityTraits: ["Cheerful", "Spontaneous", "Sweet", "Enthusiastic"],
+    interests: ["Cafe Brunches", "Fitness", "City Travel", "Cinema"],
+    phone: "+919006236133",
+    whatsappNumber: "919006236133"
+  }
+];
+
+export function getModelById(id: string): CompanionModel | undefined {
+  return COMPANION_MODELS.find((m) => m.id === id);
+}
+
+export function getModelsByLocation(locationSlug: string): CompanionModel[] {
+  return COMPANION_MODELS.filter((m) =>
+    m.locationsServed.some((loc) =>
+      loc.toLowerCase().includes(locationSlug.replace("-", " "))
+    )
+  );
+}

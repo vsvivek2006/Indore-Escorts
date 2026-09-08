@@ -1,26 +1,730 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --primary-pink: #e31777;
+    --primary-dark-pink: #c2185b;
+    --navy-dark: #0b172d;
+    --accent-gold: #f0be27;
+    --green-call: #1fa34a;
+    --whatsapp-green: #25d366;
+    --focus-ring: #e31777;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #ffffff;
+    color: #1c1c1c;
+    font-family: var(--font-body), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+    font-weight: 400;
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading), var(--font-body), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+    color: #1c1c1c;
+  }
+
+  p {
+    font-family: var(--font-body), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+    color: #4a4a4a;
+  }
+
+  a {
+    transition: all 0.25s ease;
+    text-decoration: none;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Skip to main content */
+.skip-to-content {
+  position: absolute;
+  top: -9999px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0b172d;
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 0 0 8px 8px;
+  font-weight: 700;
+  font-size: 14px;
+  z-index: 100000;
+  transition: top 0.2s ease;
+}
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* =========================================================================
+   EXACT GODELHIESCORT.COM THEME COLORS & HEADER
+   ========================================================================= */
+
+.site-header-main {
+  background: #e31777;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.site-navbar-main {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+  position: relative;
+}
+
+.site-logo-main {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: -0.01em;
+}
+.site-logo-main:hover {
+  color: #ffffff;
+  opacity: 0.95;
+}
+
+.site-menu-main {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-menu-main a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  padding: 6px 0;
+}
+
+.site-menu-main a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.site-menu-main a:hover::after,
+.site-menu-main a.active::after {
+  width: 100%;
+}
+
+.site-menu-main a.active {
+  color: #ffd600;
+}
+
+@media (max-width: 991px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 26px;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 6px;
+  }
+}
+
+@media (min-width: 992px) {
+  .site-mobile-drawer {
+    display: none !important;
+  }
+  .menu-toggle {
+    display: none !important;
+  }
+}
+
+/* Mobile Responsive Navigation Drawer */
+.site-mobile-drawer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #e31777;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.35s ease-in-out, opacity 0.25s ease-in-out;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+.site-mobile-drawer.show {
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
+  opacity: 1;
+}
+
+.mobile-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  transition: background 0.2s ease;
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link.active-link {
+  background: rgba(0, 0, 0, 0.15);
+  color: #ffd600;
+}
+
+/* =========================================================================
+   HERO & SEARCH COMPONENT (godelhiescort style: #e31777)
+   ========================================================================= */
+
+.hero-banner-wrap {
+  position: relative;
+  min-height: 480px;
+  overflow: hidden;
+}
+
+.hero-bg-img {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero-bg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.38);
+}
+
+.hero-banner-overlay {
+  position: relative;
+  z-index: 2;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 16px;
+}
+
+.hero-banner-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(227, 23, 119, 0.25), rgba(0, 0, 0, 0.7));
+  z-index: -1;
+}
+
+.hero-main-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 38px;
+  line-height: 1.25;
+  font-weight: 800;
+  max-width: 950px;
+  margin: 0 auto 32px;
+  padding: 0 16px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  font-family: var(--font-heading), sans-serif;
+}
+
+.hero-cta-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-btn {
+  min-width: 200px;
+  text-align: center;
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #ffffff !important;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.call-btn {
+  background: linear-gradient(135deg, #b30000, #ff2b2b);
+  color: #ffffff;
+}
+.whatsapp-btn {
+  background: linear-gradient(135deg, #1fa34a, #33d36f);
+  color: #ffffff;
+}
+.hero-btn:hover {
+  transform: translateY(-2px);
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .hero-main-title {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  .hero-cta-row {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 20px;
+  }
+  .hero-btn {
+    width: 100%;
+    max-width: 300px;
+    font-size: 17px;
+    padding: 12px 20px;
+  }
+  .hero-search-card {
+    padding: 10px;
+  }
+  .hero-search-title {
+    font-size: 20px;
+  }
+  .hero-search-note {
+    font-size: 13px;
+  }
+}
+
+/* Call and WhatsApp CTA Buttons (Exact godelhiescort.com) */
+.call-btn-green {
+  background: #1fa34a;
+  color: #ffffff !important;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s ease;
+}
+.call-btn-green:hover {
+  background: #15803d;
+  transform: scale(1.04);
+}
+
+.call-btn-red {
+  background: linear-gradient(135deg, #b30000, #ff2b2b);
+  color: #ffffff !important;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(179, 0, 0, 0.3);
+  transition: all 0.25s ease;
+}
+.call-btn-red:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 20px rgba(255, 43, 43, 0.4);
+}
+
+.whatsapp-btn-green {
+  background: linear-gradient(135deg, #1fa34a, #33d36f);
+  color: #ffffff !important;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(31, 163, 74, 0.3);
+  transition: all 0.25s ease;
+}
+.whatsapp-btn-green:hover {
+  transform: scale(1.04);
+}
+
+/* =========================================================================
+   MODEL CARDS (.member-box: Exact godelhiescort.com)
+   ========================================================================= */
+
+.member-box {
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+  display: block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(227, 23, 119, 0.2);
+}
+
+.img-block {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+}
+
+.img-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.member-box:hover .img-block img {
+  transform: scale(1.05);
+}
+
+.img-block-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(227, 23, 119, 0.2);
+  pointer-events: none;
+}
+
+.text-block {
+  padding: 10px 12px;
+  position: absolute;
+  width: 100%;
+  border-bottom: 5px solid #e31777;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 2;
+}
+
+.member-name {
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 2px;
+  text-align: center;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.member-age {
+  color: #ffffff;
+  font-size: 13px;
+  text-align: center;
+  opacity: 0.95;
+}
+
+.escort-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.escort-icons .phone,
+.escort-icons .whatsapp {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+.escort-icons .phone {
+  background: #ff006f;
+}
+
+.escort-icons .whatsapp {
+  background: #25d366;
+}
+
+.escort-icons .phone:hover,
+.escort-icons .whatsapp:hover {
+  transform: scale(1.15);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 480px) {
+  .member-name {
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+  .member-age {
+    font-size: 11px;
+  }
+  .text-block {
+    padding: 6px 8px;
+    border-bottom: 4px solid #e31777;
+  }
+  .escort-icons {
+    gap: 10px;
+    margin-top: 4px;
+  }
+  .escort-icons .phone,
+  .escort-icons .whatsapp {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* =========================================================================
+   FOOTER (Exact godelhiescort.com: Pink Menu, Dark Pink Middle, Navy Bottom)
+   ========================================================================= */
+
+footer {
+  background: #e31777;
+  position: relative;
+  border-top: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.footer-menu {
+  list-style: none;
+  margin: 0;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  background: #e31777;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.footer-menu li a:hover {
+  color: #ffd600;
+}
+
+.footer-top {
+  background-color: #c2185b;
+  color: #ffffff;
+  text-align: center;
+  padding: 45px 16px 30px;
+}
+
+.footer-top .navbar-brand {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.footer-top p {
+  color: #ffffff;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-botom {
+  padding: 20px 16px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  background: #0b172d;
+}
+
+.footer-botom p {
+  color: #ffffff;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.footer-botom a {
+  color: #f0be27;
+  font-weight: 600;
+}
+.footer-botom a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================================
+   FLOATING ICONS & MOBILE FIXED BAR (Exact godelhiescort.com)
+   ========================================================================= */
+
+.floating-icon {
+  position: fixed;
+  right: 25px;
+  width: 56px;
+  height: 56px;
+  z-index: 99999;
+}
+
+.floating-icon a {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease;
+  color: #ffffff;
+}
+
+.floating-icon a:hover {
+  transform: scale(1.08);
+}
+
+.whatsapp-icon {
+  bottom: 190px;
+}
+.whatsapp-icon a {
+  background: #25d366;
+}
+
+.call-icon {
+  bottom: 115px;
+}
+.call-icon a {
+  background: #ff006f;
+}
+
+.telegram-icon {
+  bottom: 40px;
+}
+.telegram-icon a {
+  background: #229ed9;
+}
+
+/* Mobile Fixed Call/WhatsApp Strip (.nowcalling1) */
+.nowcalling1 {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.lcol, .rcol {
+  flex: 1;
+}
+
+.lcol a, .rcol a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 12px 0;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+}
+.lcol a:active, .rcol a:active {
+  opacity: 0.85;
+}
+
+.lcol {
+  background-color: #c2185b;
+}
+
+.rcol {
+  background-color: #1fa34a;
+}
+
+@media (min-width: 769px) {
+  .nowcalling1 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .floating-icon {
+    display: none;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e31777;
 }
