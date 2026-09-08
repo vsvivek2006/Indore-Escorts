@@ -19,7 +19,9 @@
     --focus-ring: #e31777;
   }
 
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     box-sizing: border-box;
   }
 
@@ -44,7 +46,9 @@
   }
 
   /* Section Showcase Titles: Pacifico cursive with refined scale and generous letter-spacing */
-  h1, h2, .font-heading {
+  h1,
+  h2,
+  .font-heading {
     font-family: var(--font-pacifico), "Pacifico", cursive !important;
     color: #45474f;
     font-weight: 400 !important;
@@ -67,12 +71,18 @@
     color: #45474f;
   }
 
-  h2 span, h1 span, h3 span.highlight, h2 b {
+  h2 span,
+  h1 span,
+  h3 span.highlight,
+  h2 b {
     color: #e31777;
   }
 
   /* Subheadings, Card Titles, and Badges: Clean, crisp, modern Jost sans-serif */
-  h3, h4, h5, h6 {
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-jost), "Jost", -apple-system, BlinkMacSystemFont, sans-serif !important;
     color: #1c1c1c;
     font-weight: 700;
@@ -102,7 +112,14 @@
   }
 
   /* Content & Paragraphs: Jost sans-serif exactly matching godelhiescort.com */
-  p, ul, ol, li, input, button, select, textarea {
+  p,
+  ul,
+  ol,
+  li,
+  input,
+  button,
+  select,
+  textarea {
     font-family: var(--font-jost), "Jost", sans-serif;
   }
 
@@ -112,7 +129,8 @@
     color: #4a4a4a;
   }
 
-  p strong, p b {
+  p strong,
+  p b {
     color: #1c1c1c;
     font-weight: 700;
   }
@@ -143,7 +161,9 @@
     font-weight: 400 !important;
   }
 
-  .font-body, .font-jost, .font-sans {
+  .font-body,
+  .font-jost,
+  .font-sans {
     font-family: var(--font-jost), "Jost", sans-serif !important;
   }
 
@@ -168,6 +188,7 @@
   z-index: 100000;
   transition: top 0.2s ease;
 }
+
 .skip-to-content:focus {
   top: 0;
 }
@@ -206,6 +227,7 @@
   gap: 8px;
   letter-spacing: -0.01em;
 }
+
 .site-logo-main:hover {
   color: #ffffff;
   opacity: 0.95;
@@ -254,6 +276,7 @@
   .desktop-only {
     display: none !important;
   }
+
   .menu-toggle {
     display: flex;
     align-items: center;
@@ -272,6 +295,7 @@
   .site-mobile-drawer {
     display: none !important;
   }
+
   .menu-toggle {
     display: none !important;
   }
@@ -403,14 +427,17 @@
   justify-content: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 .call-btn {
   background: linear-gradient(135deg, #b30000, #ff2b2b);
   color: #ffffff;
 }
+
 .whatsapp-btn {
   background: linear-gradient(135deg, #1fa34a, #33d36f);
   color: #ffffff;
 }
+
 .hero-btn:hover {
   transform: translateY(-2px);
   color: #ffffff;
@@ -423,11 +450,13 @@
     line-height: 1.3;
     margin-bottom: 20px;
   }
+
   .hero-cta-row {
     flex-direction: column;
     gap: 12px;
     padding: 0 20px;
   }
+
   .hero-btn {
     width: 100%;
     max-width: 320px;
@@ -451,6 +480,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
   transition: all 0.25s ease;
 }
+
 .call-btn-green:hover {
   background: #15803d;
   transform: scale(1.04);
@@ -470,6 +500,7 @@
   box-shadow: 0 4px 15px rgba(179, 0, 0, 0.3);
   transition: all 0.25s ease;
 }
+
 .call-btn-red:hover {
   transform: scale(1.04);
   box-shadow: 0 6px 20px rgba(255, 43, 43, 0.4);
@@ -489,6 +520,7 @@
   box-shadow: 0 4px 15px rgba(31, 163, 74, 0.3);
   transition: all 0.25s ease;
 }
+
 .whatsapp-btn-green:hover {
   transform: scale(1.04);
 }
@@ -499,7 +531,7 @@
 
 .member-box {
   -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(216, 5, 5, 0.08);
   display: block;
   overflow: hidden;
   position: relative;
@@ -529,6 +561,7 @@
   object-fit: cover;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .member-box:hover .img-block img {
   transform: scale(1.06);
 }
@@ -626,17 +659,21 @@
     font-size: 15px;
     margin-bottom: 0px;
   }
+
   .member-age {
     font-size: 11px;
   }
+
   .text-block {
     padding: 8px 8px;
     border-bottom: 4px solid #e31777;
   }
+
   .escort-icons {
     gap: 8px;
     margin-top: 4px;
   }
+
   .escort-icons .phone,
   .escort-icons .whatsapp {
     width: 32px;
@@ -645,142 +682,73 @@
 }
 
 /* =========================================================================
-   FOOTER (Exact godelhiescort.com: Pink Menu, Dark Pink Middle, Navy Bottom)
+   LUXURY FIGMA SHADOWS, GRADIENTS & MICRO-INTERACTIONS
    ========================================================================= */
 
-footer {
-  background: #e31777;
-  position: relative;
-  border-top: 1px solid #ffffff;
-  color: #ffffff;
+.shadow-luxury-card {
+  box-shadow: 0 10px 30px -5px rgba(227, 23, 119, 0.08), 0 4px 12px -2px rgba(11, 23, 45, 0.04);
 }
 
-.footer-menu {
-  list-style: none;
-  margin: 0;
-  padding: 15px 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 18px;
-  background: #e31777;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+.shadow-luxury-hover:hover {
+  box-shadow: 0 20px 40px -5px rgba(227, 23, 119, 0.18), 0 8px 16px -4px rgba(11, 23, 45, 0.08);
 }
 
-.footer-menu li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-.footer-menu li a:hover {
-  color: #ffd600;
+.shadow-glow-pink {
+  box-shadow: 0 0 25px rgba(227, 23, 119, 0.28);
 }
 
-.footer-top {
-  background-color: #c2185b;
-  color: #ffffff;
-  text-align: center;
-  padding: 45px 16px 30px;
+.shadow-glow-card {
+  box-shadow: 0 15px 35px -5px rgba(227, 23, 119, 0.12), 0 0 0 1px rgba(227, 23, 119, 0.08);
 }
 
-.footer-top .navbar-brand {
-  color: #ffffff;
-  font-size: 28px;
-  font-weight: 800;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 10px;
-}
+@keyframes float-slow {
 
-.footer-top p {
-  color: #ffffff;
-  font-size: 15px;
-  margin-bottom: 15px;
-}
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
 
-.footer-botom {
-  padding: 20px 16px;
-  text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  background: #0b172d;
-}
-
-.footer-botom p {
-  color: #ffffff;
-  font-size: 13px;
-  margin-bottom: 0;
-}
-
-.footer-botom a {
-  color: #f0be27;
-  font-weight: 600;
-}
-.footer-botom a:hover {
-  text-decoration: underline;
-}
-
-/* =========================================================================
-   FLOATING ICONS & MOBILE FIXED BAR (Exact godelhiescort.com)
-   ========================================================================= */
-
-.floating-icon {
-  position: fixed;
-  right: 25px;
-  width: 56px;
-  height: 56px;
-  z-index: 99999;
-}
-
-.floating-icon a {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
-  transition: transform 0.25s ease;
-  color: #ffffff;
-}
-
-.floating-icon a:hover {
-  transform: scale(1.08);
-}
-
-.whatsapp-icon {
-  bottom: 105px;
-}
-.whatsapp-icon a {
-  background: #25d366;
-}
-
-.call-icon {
-  bottom: 35px;
-}
-.call-icon a {
-  background: #ff006f;
-}
-
-@media (max-width: 768px) {
-  .floating-icon {
-    display: none;
+  50% {
+    transform: translateY(-6px);
   }
 }
 
+.animate-float-slow {
+  animation: float-slow 4s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 15px rgba(227, 23, 119, 0.25);
+  }
+
+  50% {
+    box-shadow: 0 0 30px rgba(227, 23, 119, 0.5);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+
 /* Custom Scrollbar */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #f1f5f9;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #cbd5e1;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #e31777;
 }
@@ -793,6 +761,7 @@ footer {
   0% {
     transform: translate3d(0, 0, 0);
   }
+
   100% {
     transform: translate3d(-50%, 0, 0);
   }
@@ -810,10 +779,13 @@ footer {
 }
 
 @keyframes pulse-subtle {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
     box-shadow: 0 4px 15px rgba(227, 23, 119, 0.25);
   }
+
   50% {
     transform: scale(1.03);
     box-shadow: 0 8px 25px rgba(227, 23, 119, 0.45);
@@ -828,9 +800,11 @@ footer {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -840,4 +814,3 @@ footer {
   background-size: 200% 200%;
   animation: shimmer-slow 8s ease infinite;
 }
-

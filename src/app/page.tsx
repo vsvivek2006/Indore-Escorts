@@ -6,6 +6,7 @@ import { INDORE_LOCATIONS } from "@/data/locations";
 import ModelCard from "@/components/ModelCard";
 import FaqAccordion from "@/components/FaqAccordion";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import InteractiveModelShowcase from "@/components/InteractiveModelShowcase";
 import {
   Phone,
   MessageCircle,
@@ -131,13 +132,28 @@ export default function HomePage() {
       {/* 1. HERO BANNER SECTION (Godelhiescort Style with Radiant Gradient) */}
       <section className="hero-banner-wrap" aria-label="Hero Banner">
         <div className="hero-bg-img">
-          <Image
-            src="/images/hero_banner.jpg"
-            alt="Indore Call Girls Escorts Service"
-            fill
-            priority
-            className="object-cover"
-          />
+          {/* Desktop Banner: banner-2.avif */}
+          <div className="hidden md:block relative w-full h-full">
+            <Image
+              src="/images/banner-2.avif"
+              alt="Indore Call Girls Escorts Service"
+              fill
+              priority
+              className="object-cover object-center"
+              sizes="100vw"
+            />
+          </div>
+          {/* Mobile Banner: hero_banner_mobile.webp */}
+          <div className="block md:hidden relative w-full h-full">
+            <Image
+              src="/images/hero_banner_mobile.webp"
+              alt="Indore Call Girls Escorts Service"
+              fill
+              priority
+              className="object-cover object-top"
+              sizes="100vw"
+            />
+          </div>
         </div>
 
         <div className="hero-banner-overlay">
@@ -389,34 +405,14 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Featured 8 Profiles Grid: 2 columns on mobile, 4 columns on desktop */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
-            {featuredModels.map((model) => (
-              <ModelCard key={model.id} model={model} />
-            ))}
-          </div>
-
-          {/* All 20 Profiles Expansion Banner */}
-          <div className="mt-8 p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-pink-50 via-rose-50/80 to-pink-50 border border-pink-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left shadow-xs">
-            <div>
-              <h3 className="font-sans font-bold text-slate-900 text-sm sm:text-base flex items-center justify-center sm:justify-start gap-2">
-                <Sparkles className="w-4 h-4 text-[#e31777]" />
-                <span>Looking for More Profiles, Specific Tastes &amp; Rates?</span>
-              </h3>
-              <p className="text-xs text-slate-600 mt-1">
-                Explore our full roster of 20 verified models with complete photos, statistics, availability, and direct booking.
-              </p>
-            </div>
-            <Link
-              href="/models"
-              className="shrink-0 inline-flex items-center gap-2 py-3 px-6 rounded-full bg-gradient-to-r from-[#e31777] via-[#d0156c] to-[#c2185b] text-white hover:brightness-110 font-bold text-xs sm:text-sm shadow-md transition-all hover:scale-105"
-            >
-              <span>Explore All 20 Companion Profiles</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
+          {/* Interactive Models Showcase with Real-Time Category Tabs */}
+          <InteractiveModelShowcase
+            initialModels={featuredModels}
+            allModels={COMPANION_MODELS}
+          />
         </div>
       </section>
+
 
       {/* 6. TAILORED COMPANIONSHIP & HONEST RATES (Single Clear Showcase) */}
       <section className="py-12 sm:py-14 bg-gradient-to-b from-slate-50 via-pink-50/15 to-slate-50 border-b border-slate-200/80" aria-label="Services and Rates">
@@ -435,7 +431,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Service 1: Hotel Out-Call */}
-            <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-[#e31777] transition-all hover:shadow-md flex flex-col justify-between space-y-4">
+            <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-[#e31777] transition-all duration-300 hover:shadow-md flex flex-col justify-between space-y-4">
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-pink-100 to-rose-100 text-[#e31777] flex items-center justify-center font-bold">
@@ -470,44 +466,44 @@ export default function HomePage() {
                 href="https://wa.me/919006236133?text=Hi%2C%20I'm%20interested%20in%20arranging%20a%20Hotel%20Out-Call%20rendezvous%20in%20Indore."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-pink-50 text-[#e31777] hover:bg-gradient-to-r hover:from-[#e31777] hover:to-[#c2185b] hover:text-white transition"
+                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-pink-50 text-[#e31777] hover:bg-gradient-to-r hover:from-[#e31777] hover:to-[#c2185b] hover:text-white transition duration-200"
               >
                 Book Hotel Rendezvous
               </a>
             </div>
 
-            {/* Service 2: Corporate & Dinner Dates */}
-            <div className="p-6 rounded-2xl bg-gradient-to-b from-white via-pink-50/20 to-white border-2 border-[#e31777] shadow-md transition-all hover:shadow-lg flex flex-col justify-between space-y-4 relative">
-              <span className="absolute -top-3 right-4 bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase shadow-xs">
-                Most Popular
+            {/* Service 2: Corporate & Dinner Dates (MOST POPULAR - Standout VIP Dark Luxury Styling with Transform) */}
+            <div className="p-7 rounded-3xl bg-gradient-to-b from-[#0b172d] via-[#111f3d] to-[#070e1c] text-white border-2 border-[#e31777] shadow-2xl shadow-pink-500/20 transform md:-translate-y-3 md:scale-105 transition-all duration-300 hover:scale-[1.07] hover:shadow-pink-500/30 flex flex-col justify-between space-y-5 relative z-10">
+              <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#e31777] via-[#ff2a8d] to-[#c2185b] text-white text-[11px] font-black tracking-widest px-4 py-1 rounded-full uppercase shadow-lg shadow-pink-600/40 border border-white/25 whitespace-nowrap">
+                ★ Most Popular ★
               </span>
-              <div className="space-y-3">
+              <div className="space-y-3 pt-1">
                 <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-pink-100 to-rose-200 text-[#e31777] flex items-center justify-center font-bold">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-[#e31777] to-[#c2185b] text-white flex items-center justify-center font-bold shadow-lg shadow-pink-600/30">
                     <Crown className="w-6 h-6" />
                   </div>
-                  <span className="text-[11px] font-bold text-[#e31777] bg-pink-100 px-2.5 py-1 rounded-full uppercase tracking-wider">
+                  <span className="text-[11px] font-bold text-pink-300 bg-white/10 border border-pink-400/30 px-3 py-1 rounded-full uppercase tracking-wider">
                     4–6 Hours
                   </span>
                 </div>
-                <h3 className="text-lg font-bold font-sans text-slate-900">
+                <h3 className="text-xl font-bold font-sans text-white">
                   Dinner Dates &amp; Social Galas
                 </h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
+                <p className="text-xs text-slate-300 leading-relaxed">
                   An articulate, charming companion by your side for business banquets at Brilliant Convention Centre, rooftop dinners at Sayaji, or casual drinks.
                 </p>
-                <ul className="space-y-1.5 text-xs text-slate-600 pt-1">
+                <ul className="space-y-2 text-xs text-slate-200 pt-1">
                   <li className="flex items-center gap-2">
-                    <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>Fluent in English &amp; Hindi</span>
+                    <Check className="w-4 h-4 text-pink-400 shrink-0" />
+                    <span className="text-white font-medium">Fluent in English &amp; Hindi</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>Elegant Social Presence &amp; Etiquette</span>
+                    <Check className="w-4 h-4 text-pink-400 shrink-0" />
+                    <span className="text-white font-medium">Elegant Social Presence &amp; Etiquette</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>Zero Advance &bull; Pay In Person</span>
+                    <Check className="w-4 h-4 text-pink-400 shrink-0" />
+                    <span className="text-white font-medium">Zero Advance &bull; Pay In Person</span>
                   </li>
                 </ul>
               </div>
@@ -515,14 +511,14 @@ export default function HomePage() {
                 href="https://wa.me/919006236133?text=Hi%2C%20I'm%20interested%20in%20a%20Dinner%20Date%20companion%20in%20Indore."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-gradient-to-r from-[#e31777] via-[#d0156c] to-[#c2185b] text-white hover:brightness-110 transition shadow-xs"
+                className="w-full py-3 text-center text-xs font-black tracking-wider uppercase rounded-xl bg-gradient-to-r from-[#e31777] via-[#ff2a8d] to-[#c2185b] text-white hover:brightness-110 transition duration-200 shadow-lg shadow-pink-600/40"
               >
                 Reserve Dinner Date
               </a>
             </div>
 
             {/* Service 3: Overnight Suite Luxury */}
-            <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-[#e31777] transition-all hover:shadow-md flex flex-col justify-between space-y-4">
+            <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-[#e31777] transition-all duration-300 hover:shadow-md flex flex-col justify-between space-y-4">
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-pink-100 to-rose-100 text-[#e31777] flex items-center justify-center font-bold">
@@ -557,7 +553,7 @@ export default function HomePage() {
                 href="https://wa.me/919006236133?text=Hi%2C%20I'm%20interested%20in%20arranging%20an%20Overnight%20Stay%20companion%20in%20Indore."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-pink-50 text-[#e31777] hover:bg-gradient-to-r hover:from-[#e31777] hover:to-[#c2185b] hover:text-white transition"
+                className="w-full py-2.5 text-center text-xs font-bold rounded-xl bg-pink-50 text-[#e31777] hover:bg-gradient-to-r hover:from-[#e31777] hover:to-[#c2185b] hover:text-white transition duration-200"
               >
                 Inquire Overnight Stay
               </a>
@@ -566,89 +562,184 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. HOTEL BOOKING & EASY 5-STEP ARRANGEMENT */}
-      <section className="py-12 sm:py-14 bg-gradient-to-b from-white via-slate-50/40 to-white border-b border-slate-200/80" aria-label="Hotel Booking Guide">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-8">
-          <div className="space-y-2 text-center sm:text-left">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#e31777]">
+      {/* 7. HOTEL BOOKING & EASY 5-STEP ARRANGEMENT (Refined Luxury Hotel Cards) */}
+      <section className="py-14 sm:py-16 bg-gradient-to-b from-slate-50 via-pink-50/20 to-slate-50 border-b border-slate-200/80 relative overflow-hidden" aria-label="Hotel Booking Guide">
+        {/* Decorative soft ambient glow */}
+        <div className="pointer-events-none absolute top-10 right-10 w-96 h-96 rounded-full bg-[#e31777]/5 blur-3xl" />
+        <div className="pointer-events-none absolute bottom-10 left-10 w-96 h-96 rounded-full bg-pink-300/10 blur-3xl" />
+
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 space-y-12">
+          {/* Section Header */}
+          <div className="space-y-2 text-center max-w-2xl mx-auto">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#e31777] bg-pink-100/70 border border-pink-200 px-3.5 py-1 rounded-full inline-block">
               Easy &amp; Discreet Stays
             </span>
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
               Recommended Hotels For Your <span className="text-[#e31777]">Visit in Indore</span>
             </h2>
-            <p className="text-sm text-slate-600 leading-relaxed">
-              We frequently coordinate visits to Indore&apos;s top hospitality venues. Here are the best spots where guest privacy and comfort are guaranteed:
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              We frequently coordinate visits to Indore&apos;s top hospitality venues. Here are the premier spots where guest privacy, discreet check-in, and comfort are guaranteed:
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-            <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2.5">
-              <div className="w-9 h-9 rounded-lg bg-pink-100 text-[#e31777] flex items-center justify-center font-bold">
-                <Hotel className="w-5 h-5" />
+          {/* 3 Luxury Hotel Tier Cards (Subtle borders, clean hover effects, zero harsh gradients) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Card 1: 5-Star Luxury */}
+            <div className="p-7 rounded-3xl bg-white border border-slate-200/90 hover:border-pink-300 shadow-sm hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300 hover:-translate-y-1.5 group flex flex-col justify-between space-y-4">
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <div className="w-12 h-12 rounded-2xl bg-pink-50 text-[#e31777] group-hover:bg-[#e31777] group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-xs">
+                    <Hotel className="w-6 h-6" />
+                  </div>
+                  <span className="px-3 py-1 rounded-full text-[11px] font-bold bg-amber-50 text-amber-700 border border-amber-200/60 font-sans uppercase tracking-wider">
+                    5-Star Elite
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold font-sans text-slate-900 group-hover:text-[#e31777] transition-colors">
+                    Luxury 5-Star Hotels
+                  </h3>
+                  <p className="text-xs text-slate-600 leading-relaxed mt-2">
+                    <strong>Sayaji Hotel</strong>, <strong>Radisson Blu</strong>, <strong>Indore Marriott</strong>, and <strong>Sheraton Grand Palace</strong>. Smooth room key access, 24/7 in-room dining, and high discretion.
+                  </p>
+                </div>
               </div>
-              <h3 className="font-sans font-bold text-slate-900 text-base">1. Luxury 5-Star Hotels</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                <strong>Sayaji Hotel</strong>, <strong>Radisson Blu</strong>, <strong>Indore Marriott</strong>, and <strong>Sheraton Grand Palace</strong>. Smooth room key access, 24/7 dining, and high discretion.
-              </p>
+              <div className="pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-semibold text-emerald-700">
+                <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                <span>Discreet In-Room Keycard Entry</span>
+              </div>
             </div>
-            <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2.5">
-              <div className="w-9 h-9 rounded-lg bg-pink-100 text-[#e31777] flex items-center justify-center font-bold">
-                <Building className="w-5 h-5" />
+
+            {/* Card 2: Boutique Hotels */}
+            <div className="p-7 rounded-3xl bg-white border border-slate-200/90 hover:border-pink-300 shadow-sm hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300 hover:-translate-y-1.5 group flex flex-col justify-between space-y-4">
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <div className="w-12 h-12 rounded-2xl bg-pink-50 text-[#e31777] group-hover:bg-[#e31777] group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-xs">
+                    <Building className="w-6 h-6" />
+                  </div>
+                  <span className="px-3 py-1 rounded-full text-[11px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200/60 font-sans uppercase tracking-wider">
+                    Quiet &amp; Private
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold font-sans text-slate-900 group-hover:text-[#e31777] transition-colors">
+                    Boutique Stays &amp; Suites
+                  </h3>
+                  <p className="text-xs text-slate-600 leading-relaxed mt-2">
+                    Cozy boutique properties in <strong>Vijay Nagar</strong>, <strong>New Palasia</strong>, and along <strong>MR-10</strong> offer quiet, peaceful rooms ideal for private and unhurried evenings.
+                  </p>
+                </div>
               </div>
-              <h3 className="font-sans font-bold text-slate-900 text-base">2. Boutique Hotels</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Cozy boutique properties in <strong>Vijay Nagar</strong>, <strong>New Palasia</strong>, and along <strong>MR-10</strong> offer quiet rooms ideal for private, relaxing evenings.
-              </p>
+              <div className="pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-semibold text-emerald-700">
+                <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                <span>Serene Ambiance &amp; Fast Dispatch</span>
+              </div>
             </div>
-            <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs space-y-2.5">
-              <div className="w-9 h-9 rounded-lg bg-pink-100 text-[#e31777] flex items-center justify-center font-bold">
-                <MapPin className="w-5 h-5" />
+
+            {/* Card 3: Business & Transit */}
+            <div className="p-7 rounded-3xl bg-white border border-slate-200/90 hover:border-pink-300 shadow-sm hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300 hover:-translate-y-1.5 group flex flex-col justify-between space-y-4">
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <div className="w-12 h-12 rounded-2xl bg-pink-50 text-[#e31777] group-hover:bg-[#e31777] group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-xs">
+                    <MapPin className="w-6 h-6" />
+                  </div>
+                  <span className="px-3 py-1 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200/60 font-sans uppercase tracking-wider">
+                    Fast &amp; Reliable
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold font-sans text-slate-900 group-hover:text-[#e31777] transition-colors">
+                    Business &amp; Transit Hotels
+                  </h3>
+                  <p className="text-xs text-slate-600 leading-relaxed mt-2">
+                    Clean, reliable hotels near <strong>Indore Junction</strong>, <strong>Bhawarkuan</strong>, and <strong>Airport Road</strong> for dependable comfort, privacy, and hassle-free coordination.
+                  </p>
+                </div>
               </div>
-              <h3 className="font-sans font-bold text-slate-900 text-base">3. Business &amp; Transit Stays</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Clean, reliable hotels near <strong>Indore Junction</strong>, <strong>Bhawarkuan</strong>, and <strong>Airport Road</strong> for dependable comfort and hassle-free coordination.
-              </p>
+              <div className="pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-semibold text-emerald-700">
+                <Check className="w-4 h-4 text-emerald-600 shrink-0" />
+                <span>30–45 Minute Direct Arrival</span>
+              </div>
             </div>
           </div>
 
-          {/* 5-Step Arrangement Process */}
-          <div className="rounded-3xl bg-gradient-to-br from-pink-50/60 via-rose-50/40 to-pink-50/60 border border-pink-200/70 p-6 sm:p-7 space-y-5">
-            <div className="text-center sm:text-left space-y-1">
-              <h3 className="text-base sm:text-lg font-sans font-bold text-slate-900">
-                How to Book in <span className="text-[#e31777]">5 Simple Steps</span>
+          {/* 5-Step Arrangement Process (Dark Luxury Showstopper with Ambient Glow) */}
+          <div className="relative rounded-3xl bg-gradient-to-br from-[#0b172d] via-[#111f3d] to-[#070e1c] p-8 sm:p-10 shadow-2xl border border-pink-900/40 text-white overflow-hidden space-y-6">
+            <div className="pointer-events-none absolute -top-24 -right-24 w-80 h-80 rounded-full bg-[#e31777]/25 blur-3xl" />
+            <div className="pointer-events-none absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-[#c2185b]/20 blur-3xl" />
+
+            <div className="relative z-10 text-center sm:text-left space-y-1">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-xs border border-white/20 text-pink-300 text-[11px] font-bold uppercase tracking-wider mb-1">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>Quick &bull; Safe &bull; Effortless Coordination</span>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-sans font-bold text-white">
+                How to Book in <span className="text-[#e31777] font-pacifico text-2xl sm:text-3xl">5 Simple Steps</span>
               </h3>
-              <p className="text-xs text-slate-600">Quick, friendly, and transparent with zero upfront payments.</p>
+              <p className="text-xs sm:text-sm text-slate-300">
+                Zero advance deposits. Settle directly when your companion arrives at your door.
+              </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-5 gap-3 text-xs text-slate-700">
-              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1 shadow-2xs">
-                <span className="w-7 h-7 rounded-full bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white font-bold flex items-center justify-center text-xs mb-2">01</span>
-                <strong className="block text-slate-900 font-sans">Choose Companion</strong>
-                <p className="text-[11px] text-slate-500">Pick the companion you like from verified photos.</p>
+            <div className="relative z-10 grid grid-cols-1 sm:grid-cols-5 gap-3.5 text-xs text-slate-700">
+              <div className="p-4 sm:p-5 rounded-2xl bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 hover:border-pink-400/50 transition-all duration-300 hover:-translate-y-1 group space-y-2.5 shadow-lg">
+                <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#e31777] via-[#d0156c] to-[#b80e5d] text-white font-bold flex items-center justify-center text-xs shadow-md shadow-pink-500/40 group-hover:scale-110 transition-transform">
+                  01
+                </div>
+                <strong className="block text-white font-sans text-sm group-hover:text-pink-300 transition-colors">
+                  Choose Companion
+                </strong>
+                <p className="text-[11px] text-slate-300 leading-relaxed">
+                  Pick your favorite companion from verified in-person photos.
+                </p>
               </div>
 
-              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1 shadow-2xs">
-                <span className="w-7 h-7 rounded-full bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white font-bold flex items-center justify-center text-xs mb-2">02</span>
-                <strong className="block text-slate-900 font-sans">Message or Call</strong>
-                <p className="text-[11px] text-slate-500">Connect with our friendly desk on WhatsApp or phone.</p>
+              <div className="p-4 sm:p-5 rounded-2xl bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 hover:border-pink-400/50 transition-all duration-300 hover:-translate-y-1 group space-y-2.5 shadow-lg">
+                <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#e31777] via-[#d0156c] to-[#b80e5d] text-white font-bold flex items-center justify-center text-xs shadow-md shadow-pink-500/40 group-hover:scale-110 transition-transform">
+                  02
+                </div>
+                <strong className="block text-white font-sans text-sm group-hover:text-pink-300 transition-colors">
+                  Message or Call
+                </strong>
+                <p className="text-[11px] text-slate-300 leading-relaxed">
+                  Connect with our friendly desk on WhatsApp or phone.
+                </p>
               </div>
 
-              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1 shadow-2xs">
-                <span className="w-7 h-7 rounded-full bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white font-bold flex items-center justify-center text-xs mb-2">03</span>
-                <strong className="block text-slate-900 font-sans">Share Location</strong>
-                <p className="text-[11px] text-slate-500">Tell us your hotel or area and preferred time.</p>
+              <div className="p-4 sm:p-5 rounded-2xl bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 hover:border-pink-400/50 transition-all duration-300 hover:-translate-y-1 group space-y-2.5 shadow-lg">
+                <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#e31777] via-[#d0156c] to-[#b80e5d] text-white font-bold flex items-center justify-center text-xs shadow-md shadow-pink-500/40 group-hover:scale-110 transition-transform">
+                  03
+                </div>
+                <strong className="block text-white font-sans text-sm group-hover:text-pink-300 transition-colors">
+                  Share Location
+                </strong>
+                <p className="text-[11px] text-slate-300 leading-relaxed">
+                  Tell us your hotel or area and preferred meeting time.
+                </p>
               </div>
 
-              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1 shadow-2xs">
-                <span className="w-7 h-7 rounded-full bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white font-bold flex items-center justify-center text-xs mb-2">04</span>
-                <strong className="block text-slate-900 font-sans">Quick Arrival</strong>
-                <p className="text-[11px] text-slate-500">Your companion arrives at your door in 30–45 mins.</p>
+              <div className="p-4 sm:p-5 rounded-2xl bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 hover:border-pink-400/50 transition-all duration-300 hover:-translate-y-1 group space-y-2.5 shadow-lg">
+                <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#e31777] via-[#d0156c] to-[#b80e5d] text-white font-bold flex items-center justify-center text-xs shadow-md shadow-pink-500/40 group-hover:scale-110 transition-transform">
+                  04
+                </div>
+                <strong className="block text-white font-sans text-sm group-hover:text-pink-300 transition-colors">
+                  Quick Arrival
+                </strong>
+                <p className="text-[11px] text-slate-300 leading-relaxed">
+                  Your companion arrives at your door in 30–45 mins.
+                </p>
               </div>
 
-              <div className="p-3.5 bg-white rounded-xl border border-pink-200/60 space-y-1 shadow-2xs">
-                <span className="w-7 h-7 rounded-full bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white font-bold flex items-center justify-center text-xs mb-2">05</span>
-                <strong className="block text-slate-900 font-sans">Meet &amp; Settle</strong>
-                <p className="text-[11px] text-slate-500">Pay directly in person when you meet. Zero stress.</p>
+              <div className="p-4 sm:p-5 rounded-2xl bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 hover:border-pink-400/50 transition-all duration-300 hover:-translate-y-1 group space-y-2.5 shadow-lg">
+                <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-[#e31777] via-[#d0156c] to-[#b80e5d] text-white font-bold flex items-center justify-center text-xs shadow-md shadow-pink-500/40 group-hover:scale-110 transition-transform">
+                  05
+                </div>
+                <strong className="block text-white font-sans text-sm group-hover:text-pink-300 transition-colors">
+                  Meet &amp; Settle
+                </strong>
+                <p className="text-[11px] text-slate-300 leading-relaxed">
+                  Pay directly in person when you meet. Zero stress.
+                </p>
               </div>
             </div>
           </div>
@@ -658,62 +749,104 @@ export default function HomePage() {
       {/* 9. TESTIMONIALS SECTION (Captivating Client Stories) */}
       <TestimonialsSection />
 
-      {/* 10. SAFETY, DISCRETION & GUEST PEACE OF MIND */}
-      <section className="py-12 sm:py-14 max-w-5xl mx-auto px-4 sm:px-6 space-y-8" aria-label="Guest Peace of Mind">
-        <div className="space-y-2 text-center sm:text-left">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#e31777]">
-            Your Peace of Mind
-          </span>
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
-            Your Comfort, Privacy &amp; <span className="text-[#e31777]">Trust Always Come First</span>
-          </h2>
-          <p className="text-sm text-slate-600 leading-relaxed">
-            We know what matters most to our guests: real photos, reliable timing, and complete discretion.
-          </p>
-        </div>
+      {/* 10. SAFETY, DISCRETION & GUEST PEACE OF MIND (Glassmorphic Luxury Cards) */}
+      <section className="py-14 sm:py-18 bg-gradient-to-b from-white via-rose-50/30 to-white border-b border-slate-200/80 relative overflow-hidden" aria-label="Guest Peace of Mind">
+        {/* Soft radial backdrop aura */}
+        <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gradient-to-r from-pink-200/30 via-rose-100/20 to-pink-200/30 blur-3xl -z-0" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
-            <h3 className="font-sans font-bold text-slate-900 text-base flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
-              <span>100% Real In-Person Photos</span>
-            </h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Every companion is personally met and verified. The charming person you select in our gallery is exactly who greets you at your door.
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10 space-y-10">
+          <div className="space-y-2 text-center max-w-2xl mx-auto">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#e31777] bg-pink-100/70 border border-pink-200 px-3.5 py-1 rounded-full inline-block">
+              Your Peace of Mind
+            </span>
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
+              Your Comfort, Privacy &amp; <span className="text-[#e31777]">Trust Always Come First</span>
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              We know what matters most to our guests: real photos, reliable timing, and complete discretion.
             </p>
           </div>
 
-          <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
-            <h3 className="font-sans font-bold text-slate-900 text-base flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
-              <span>Pay Only When You Meet</span>
-            </h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Never pay a single rupee in advance. You settle the agreed amount directly with your companion only after she arrives and you feel comfortable.
-            </p>
-          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* Pillar 1: Real Photos */}
+            <div className="relative p-6 sm:p-8 rounded-3xl bg-white/90 backdrop-blur-md border border-pink-100 shadow-luxury-card hover:shadow-luxury-hover transition-all duration-300 hover:-translate-y-1.5 group overflow-hidden flex items-start gap-4">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#e31777] via-pink-400 to-[#c2185b] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="w-13 h-13 rounded-2xl bg-gradient-to-tr from-[#e31777] to-[#c2185b] text-white flex items-center justify-center shadow-md shadow-pink-500/25 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                <CheckCircle2 className="w-6 h-6" />
+              </div>
+              <div className="space-y-1.5">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#e31777] block">
+                  Verified Identity
+                </span>
+                <h3 className="font-sans font-bold text-slate-900 text-base sm:text-lg group-hover:text-[#e31777] transition-colors">
+                  100% Real In-Person Photos
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Every companion is personally met and verified. The charming person you select in our gallery is exactly who greets you at your door.
+                </p>
+              </div>
+            </div>
 
-          <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
-            <h3 className="font-sans font-bold text-slate-900 text-base flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
-              <span>Charming &amp; Courteous Companions</span>
-            </h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Independent, articulate ladies aged 18+ who bring genuine warmth, elegance, and positive energy to your evening.
-            </p>
-          </div>
+            {/* Pillar 2: Pay on Arrival */}
+            <div className="relative p-6 sm:p-8 rounded-3xl bg-white/90 backdrop-blur-md border border-pink-100 shadow-luxury-card hover:shadow-luxury-hover transition-all duration-300 hover:-translate-y-1.5 group overflow-hidden flex items-start gap-4">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#e31777] via-pink-400 to-[#c2185b] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="w-13 h-13 rounded-2xl bg-gradient-to-tr from-emerald-500 to-emerald-700 text-white flex items-center justify-center shadow-md shadow-emerald-500/25 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                <ShieldCheck className="w-6 h-6" />
+              </div>
+              <div className="space-y-1.5">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-700 block">
+                  Zero Financial Risk
+                </span>
+                <h3 className="font-sans font-bold text-slate-900 text-base sm:text-lg group-hover:text-emerald-700 transition-colors">
+                  Pay Only When You Meet
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Never pay a single rupee in advance. You settle the agreed amount directly with your companion only after she arrives and you feel comfortable.
+                </p>
+              </div>
+            </div>
 
-          <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-2">
-            <h3 className="font-sans font-bold text-slate-900 text-base flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
-              <span>Complete Discretion &amp; Privacy</span>
-            </h3>
-            <p className="text-xs text-slate-600 leading-relaxed">
-              Your contact details are strictly confidential. We never store personal records or contact details after your appointment.
-            </p>
+            {/* Pillar 3: Charming Companions */}
+            <div className="relative p-6 sm:p-8 rounded-3xl bg-white/90 backdrop-blur-md border border-pink-100 shadow-luxury-card hover:shadow-luxury-hover transition-all duration-300 hover:-translate-y-1.5 group overflow-hidden flex items-start gap-4">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#e31777] via-pink-400 to-[#c2185b] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="w-13 h-13 rounded-2xl bg-gradient-to-tr from-[#e31777] to-[#c2185b] text-white flex items-center justify-center shadow-md shadow-pink-500/25 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                <Sparkles className="w-6 h-6" />
+              </div>
+              <div className="space-y-1.5">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#e31777] block">
+                  Premier Hospitality
+                </span>
+                <h3 className="font-sans font-bold text-slate-900 text-base sm:text-lg group-hover:text-[#e31777] transition-colors">
+                  Charming &amp; Courteous Companions
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Independent, articulate ladies aged 18+ who bring genuine warmth, elegance, and positive energy to your evening.
+                </p>
+              </div>
+            </div>
+
+            {/* Pillar 4: Complete Discretion */}
+            <div className="relative p-6 sm:p-8 rounded-3xl bg-white/90 backdrop-blur-md border border-pink-100 shadow-luxury-card hover:shadow-luxury-hover transition-all duration-300 hover:-translate-y-1.5 group overflow-hidden flex items-start gap-4">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#e31777] via-pink-400 to-[#c2185b] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="w-13 h-13 rounded-2xl bg-gradient-to-tr from-[#0b172d] to-[#1e3a6e] text-pink-300 flex items-center justify-center shadow-md shadow-slate-900/25 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                <Lock className="w-6 h-6" />
+              </div>
+              <div className="space-y-1.5">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-700 block">
+                  Strict Confidentiality
+                </span>
+                <h3 className="font-sans font-bold text-slate-900 text-base sm:text-lg group-hover:text-[#e31777] transition-colors">
+                  Complete Discretion &amp; Privacy
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Your contact details are strictly confidential. We never store personal records or contact details after your appointment.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
 
 
       {/* 11. 48 INDORE LOCALITIES MATRIX (Top 18 Hotspots + Full Hub Link) */}

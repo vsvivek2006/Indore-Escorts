@@ -31,7 +31,6 @@ export default function Header() {
     { label: "Models", href: "/models" },
     { label: "Services", href: "/services" },
     { label: "48 Localities", href: "/locations" },
-    { label: "Safety Guide", href: "/safety-guide" },
     { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" }
   ];
