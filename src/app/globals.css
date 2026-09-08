@@ -24,7 +24,7 @@
   body {
     background: #ffffff;
     color: #1c1c1c;
-    font-family: var(--font-jost), "Jost", sans-serif;
+    font-family: var(--font-jost), "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-size: 15px;
     line-height: 1.65;
     font-weight: 400;
@@ -40,6 +40,13 @@
     letter-spacing: -0.01em;
     font-weight: 800;
     color: #1c1c1c;
+  }
+
+  /* Pacifico cursive accent font from godelhiescort.com */
+  .font-pacifico,
+  .brand-script,
+  .section-script-title {
+    font-family: var(--font-pacifico), "Pacifico", cursive !important;
   }
 
   p {
@@ -403,19 +410,21 @@
    ========================================================================= */
 
 .member-box {
-  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   display: block;
   overflow: hidden;
   position: relative;
-  border-radius: 8px;
+  border-radius: 14px;
   background: #ffffff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(227, 23, 119, 0.12);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .member-box:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 22px rgba(227, 23, 119, 0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(227, 23, 119, 0.22);
+  border-color: rgba(227, 23, 119, 0.35);
 }
 
 .img-block {
@@ -423,60 +432,63 @@
   width: 100%;
   aspect-ratio: 2 / 3;
   overflow: hidden;
+  background-color: #fce4ec;
 }
 
 .img-block img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s ease;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .member-box:hover .img-block img {
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
 .img-block-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(227, 23, 119, 0.2);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.8) 100%);
   pointer-events: none;
 }
 
 .text-block {
-  padding: 10px 12px;
+  padding: 12px 12px;
   position: absolute;
   width: 100%;
   border-bottom: 5px solid #e31777;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(11, 23, 45, 0.78);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   z-index: 2;
 }
 
 .member-name {
   color: #ffffff;
   font-size: 19px;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 2px;
   text-align: center;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+  letter-spacing: -0.01em;
 }
 
 .member-age {
-  color: #ffffff;
+  color: #f0be27;
   font-size: 13px;
+  font-weight: 600;
   text-align: center;
-  opacity: 0.95;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .escort-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   margin-top: 8px;
 }
 
@@ -488,23 +500,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
   color: #ffffff;
 }
 
 .escort-icons .phone {
-  background: #ff006f;
+  background: linear-gradient(135deg, #b30000, #ff2b2b);
 }
 
 .escort-icons .whatsapp {
-  background: #25d366;
+  background: linear-gradient(135deg, #1fa34a, #25d366);
 }
 
 .escort-icons .phone:hover,
 .escort-icons .whatsapp:hover {
-  transform: scale(1.15);
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+  transform: scale(1.18);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 480px) {
@@ -516,11 +528,11 @@
     font-size: 11px;
   }
   .text-block {
-    padding: 6px 8px;
+    padding: 8px 8px;
     border-bottom: 4px solid #e31777;
   }
   .escort-icons {
-    gap: 10px;
+    gap: 8px;
     margin-top: 4px;
   }
   .escort-icons .phone,

@@ -40,8 +40,9 @@ export default function Header() {
     <header className="site-header-main" role="banner">
       <nav className="site-navbar-main" aria-label="Main Navigation">
         {/* Logo */}
-        <Link className="site-logo-main flex items-center gap-1 text-white font-extrabold text-lg sm:text-xl tracking-tight" href="/" aria-label="MySecretGirl69 Home">
-          <span>MySecretGirl<span className="text-yellow-300">69</span></span>
+        <Link className="site-logo-main flex items-center gap-1.5 text-white font-extrabold text-xl sm:text-2xl tracking-tight group" href="/" aria-label="MySecretGirl69 Home">
+          <span className="font-pacifico tracking-wide drop-shadow-sm">MySecretGirl</span>
+          <span className="bg-yellow-400 text-slate-900 text-xs font-black px-1.5 py-0.5 rounded-md shadow-xs group-hover:scale-105 transition-transform">69</span>
         </Link>
 
         {/* Desktop Primary Nav */}

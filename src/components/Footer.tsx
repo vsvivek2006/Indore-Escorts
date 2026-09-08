@@ -151,11 +151,12 @@ export default function Footer() {
           {/* Column 1: Brand & Contact Info */}
           <div className="space-y-4">
             <div>
-              <Link href="/" className="text-lg font-black text-white hover:text-pink-400 transition block tracking-tight">
-                MySecretGirl69 Indore
+              <Link href="/" className="text-xl font-black text-white hover:text-pink-300 transition flex items-center gap-1.5 tracking-tight">
+                <span className="font-pacifico tracking-wide">MySecretGirl</span>
+                <span className="bg-yellow-400 text-slate-900 text-xs font-black px-1.5 py-0.5 rounded">69</span>
               </Link>
-              <span className="text-[11px] text-pink-400 font-bold uppercase tracking-wider block mt-0.5">
-                Elite Escorts &amp; Social Concierge
+              <span className="text-[11px] text-pink-400 font-bold uppercase tracking-wider block mt-1">
+                Elite Indore Escorts &amp; Social Concierge
               </span>
             </div>
             <p className="text-white/70 leading-relaxed text-xs">

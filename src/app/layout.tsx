@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Jost } from "next/font/google";
+import { Jost, Pacifico } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -11,6 +11,13 @@ const jost = Jost({
   variable: "--font-jost",
   display: "swap",
   weight: ["300", "400", "500", "600", "700", "800", "900"]
+});
+
+const pacifico = Pacifico({
+  subsets: ["latin"],
+  variable: "--font-pacifico",
+  display: "swap",
+  weight: ["400"]
 });
 
 export const viewport: Viewport = {
@@ -129,7 +136,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={jost.variable}>
+    <html lang="en" className={`${jost.variable} ${pacifico.variable}`}>
       <head>
         <script
           type="application/ld+json"

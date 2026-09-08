@@ -214,46 +214,46 @@ export default function HomePage() {
                 Whether you desire an articulate date for corporate conventions at the <strong>Brilliant Convention Centre</strong>, a romantic dinner at <strong>Mediterra (Sayaji)</strong> or <strong>Radisson Blu</strong>, or an intimate private suite rendezvous along the <strong>Indore Bypass</strong>, our high-profile <Link href="/models" className="text-[#e31777] font-bold underline">Indore call girls</Link> ensure an unforgettable stay. Affordability, reliability, and 100% genuine satisfaction are our highest priorities.
               </p>
 
-              {/* 4 Feature Boxes */}
-              <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 pt-2">
-                <div className="p-4 rounded-2xl bg-pink-50/60 border border-pink-200/80 flex items-center gap-3.5 hover:shadow-md transition-shadow">
-                  <div className="w-12 h-12 rounded-xl bg-[#e31777] text-white flex items-center justify-center shrink-0 shadow-xs">
-                    <Lock className="w-6 h-6" />
+              {/* 4 Feature Boxes (Godelhiescort .about-new-box Style) */}
+              <div className="grid grid-cols-2 gap-4 pt-2">
+                <div className="p-4 rounded-xl bg-[#e31777] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-lg transition-transform hover:-translate-y-1">
+                  <div className="flex justify-center mb-2">
+                    <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+                      <Lock className="w-5 h-5 text-white" />
+                    </div>
                   </div>
-                  <div>
-                    <strong className="text-base sm:text-lg font-extrabold text-slate-900 block leading-tight">100%</strong>
-                    <span className="text-xs text-slate-600 font-medium">Privacy &amp; Discretion</span>
-                  </div>
+                  <h3 className="text-xl sm:text-2xl font-black text-white leading-tight">100%</h3>
+                  <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5">Privacy &amp; Discretion</span>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-pink-50/60 border border-pink-200/80 flex items-center gap-3.5 hover:shadow-md transition-shadow">
-                  <div className="w-12 h-12 rounded-xl bg-[#e31777] text-white flex items-center justify-center shrink-0 shadow-xs">
-                    <ShieldCheck className="w-6 h-6" />
+                <div className="p-4 rounded-xl bg-[#e31777] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-lg transition-transform hover:-translate-y-1">
+                  <div className="flex justify-center mb-2">
+                    <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+                      <ShieldCheck className="w-5 h-5 text-white" />
+                    </div>
                   </div>
-                  <div>
-                    <strong className="text-base sm:text-lg font-extrabold text-slate-900 block leading-tight">No Fake</strong>
-                    <span className="text-xs text-slate-600 font-medium">Profiles &amp; Real Photos</span>
-                  </div>
+                  <h3 className="text-xl sm:text-2xl font-black text-white leading-tight">No Fake</h3>
+                  <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5">Profiles &amp; Real Photos</span>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-pink-50/60 border border-pink-200/80 flex items-center gap-3.5 hover:shadow-md transition-shadow">
-                  <div className="w-12 h-12 rounded-xl bg-[#e31777] text-white flex items-center justify-center shrink-0 shadow-xs">
-                    <MapPin className="w-6 h-6" />
+                <div className="p-4 rounded-xl bg-[#e31777] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-lg transition-transform hover:-translate-y-1">
+                  <div className="flex justify-center mb-2">
+                    <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+                      <MapPin className="w-5 h-5 text-white" />
+                    </div>
                   </div>
-                  <div>
-                    <strong className="text-base sm:text-lg font-extrabold text-slate-900 block leading-tight">48 Zones</strong>
-                    <span className="text-xs text-slate-600 font-medium">Best Indore Communities</span>
-                  </div>
+                  <h3 className="text-xl sm:text-2xl font-black text-white leading-tight">48 Zones</h3>
+                  <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5">Best Indore Areas</span>
                 </div>
 
-                <div className="p-4 rounded-2xl bg-pink-50/60 border border-pink-200/80 flex items-center gap-3.5 hover:shadow-md transition-shadow">
-                  <div className="w-12 h-12 rounded-xl bg-[#e31777] text-white flex items-center justify-center shrink-0 shadow-xs">
-                    <Users className="w-6 h-6" />
+                <div className="p-4 rounded-xl bg-[#e31777] text-white text-center border-l-4 border-r-4 border-white shadow-md hover:shadow-lg transition-transform hover:-translate-y-1">
+                  <div className="flex justify-center mb-2">
+                    <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+                      <Users className="w-5 h-5 text-white" />
+                    </div>
                   </div>
-                  <div>
-                    <strong className="text-base sm:text-lg font-extrabold text-slate-900 block leading-tight">5,000+</strong>
-                    <span className="text-xs text-slate-600 font-medium">Satisfied Appointments</span>
-                  </div>
+                  <h3 className="text-xl sm:text-2xl font-black text-white leading-tight">5,000+</h3>
+                  <span className="text-xs sm:text-sm font-normal text-white/95 block mt-0.5">Satisfied Guests</span>
                 </div>
               </div>
             </div>
