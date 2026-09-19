@@ -336,7 +336,7 @@ export default async function ModelProfilePage({ params }: PageProps) {
               <span>Social Presence &amp; Executive Accompaniment Etiquette</span>
             </h3>
             <p>
-              When coordinating time with {model.name}, you are engaging an escort who prides herself on conversational poise, emotional nuance, and impeccable dress sense. Whether accompanying you to high-profile executive gatherings, trade dinners at the Brilliant Convention Centre, or an intimate dinner date at Sayaji Hotel or Indore Marriott, {model.name} understands how to conduct herself with quiet grace that elevates your social stature.
+              When you&apos;re scheduling time with this escort, you are dealing with a partner that prides herself on being poised to converse, emotionally nuanced and impeccably dressed. She knows how to behave with grace and dignity, whether at high-profile corporate events, at the Brilliant Convention Centre for trade dinners or at a dinner date at Sayaji Hotel or Indore Marriott.
             </p>
             <p>
               She speaks fluent {model.languages.join(" and ")}, allowing effortless conversation across contemporary culture, business trends, travel, and personal passions. Clients frequently comment on her warm, unhurried demeanor that makes even the most stressful business trips feel relaxing and revitalizing.
@@ -350,7 +350,7 @@ export default async function ModelProfilePage({ params }: PageProps) {
               <span>Luxury Hotel Stays &amp; In-Room Discretion</span>
             </h3>
             <p>
-              {model.name} frequently attends private hotel bookings across Indore&apos;s leading hospitality properties, including Radisson Blu, Indore Marriott, Sheraton Grand Palace, and WOW Hotel. Her arrival is always completely discreet—arriving in smart, contemporary evening attire via private air-conditioned cab without drawing unwanted lobby attention.
+              Direct in-room visits are available in hotels with a 3 star rating in Vijay Nagar, Palasia and Indore Bypass corridor. Luxury hotel suites offer the ideal setting for a first-time client to take it easy and get help and assistance when they need it most—with room-service meals and secure service.
             </p>
             <p>
               To explore recommended five-star properties with friendly visitor policies and discreet elevator security, check our dedicated <Link href="/blog/top-luxury-hotels-indore" className="text-[#e31777] font-semibold hover:underline">Indore Luxury Hotel &amp; Suite Guide</Link>.
@@ -364,7 +364,7 @@ export default async function ModelProfilePage({ params }: PageProps) {
               <span>Direct In-Person Payment Assurance</span>
             </div>
             <p className="leading-relaxed">
-              We uphold strict consumer protection standards. You are <strong>never asked to pay advance registration fees</strong>, security deposits, or cab allowances before meeting {model.name}. All financial settlements occur directly between you and {model.name} upon her verified arrival in person. For full details on avoiding cyber scams, please review our <Link href="/safety-guide" className="text-emerald-800 font-bold underline">Safety &amp; Anti-Fraud Advisory</Link>.
+              No advance fees: Cash or check only when you meet in person. After your visit, your private appointment information, phone number and conversation history are erased for good. For full details on avoiding cyber scams, please review our <Link href="/safety-guide" className="text-emerald-800 font-bold underline">Safety &amp; Anti-Fraud Advisory</Link>.
             </p>
           </div>
 

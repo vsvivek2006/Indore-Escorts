@@ -30,7 +30,7 @@ export default function Footer() {
               Looking for Charming, Verified Company Tonight?
             </h2>
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-              We arrange quick 30–45 minute hotel visits in Vijay Nagar, Palasia, and across Indore. Settle directly with your companion when you meet.
+              We arrange quick 30-45 minute Hotel visits at Vijay Nagar, Palasia and throughout Indore. When you meet, arrange to meet with your partner directly.
             </p>
           </div>
 

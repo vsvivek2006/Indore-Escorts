@@ -177,7 +177,7 @@ export default function SafetyGuidePage() {
           </h2>
           <div className="space-y-4 text-xs sm:text-sm text-[#616161] leading-relaxed">
             <p>
-              Your physical safety and peace of mind depend heavily on choosing recognized, well-regulated venues. We strictly recommend meeting at established star-rated hotels that follow international guest hospitality practices:
+              The initial rendezvous should only be at a well-known and reputable commercial hotel that has key-card elevators and a known policy on the privacy of guests. Avoid meeting in unlisted suburban guest houses, private rented apartments in an unknown part of the town or secluded farmhouses without self-contained security.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
               <div className="p-4 rounded-xl bg-white border border-pink-200 space-y-2">
@@ -213,7 +213,7 @@ export default function SafetyGuidePage() {
             <span>Digital Privacy &amp; Operational Hygiene</span>
           </h2>
           <p className="text-xs sm:text-sm text-[#616161] leading-relaxed">
-            Maintaining total personal anonymity is essential when coordinating adult appointments. Follow these essential digital hygiene protocols:
+            Only send and receive messages via secure end-to-end encrypted messaging apps like WhatsApp. Enable disappearing messages. Avoid giving corporate logins, private banking info or home address to unknown people.
           </p>
           <ul className="space-y-3 text-xs sm:text-sm text-[#616161]">
             <li className="flex items-start gap-2.5">

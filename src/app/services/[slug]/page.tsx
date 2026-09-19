@@ -212,10 +212,10 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             {service.fullDescription}
           </p>
           <p>
-            Indore has evolved rapidly into central India&apos;s prime commercial and cultural capital. Between the high-density corporate offices of the Super Corridor, major industrial hubs in Pithampur and Sanwer Road, and premier convention venues like the Brilliant Convention Centre, visiting executives and discerning residents often find themselves seeking exceptional social company. Our dedicated service caters precisely to those who value intelligence, natural charm, and effortless social grace.
+            The city of Indore has grown phenomenally to become the chief business and cultural hub of the central region of India. Visitors and residents to the Super Corridor&apos;s high-density corporate offices, the booming industrial and manufacturing districts of Pithampur and Sanwer Road and the excellent convention centres, such as the Brilliant Convention Centre, are often looking for high-class social interaction. We&apos;re dedicated to serving those who appreciate intelligence, natural beauty, and social ease.
           </p>
           <p>
-            Every call girl available for this offering is rigorously pre-screened to ensure absolute authenticity, emotional maturity, and the ability to seamlessly integrate into high-end public or private environments. Whether attending a formal dinner at a five-star hotel restaurant or enjoying quiet in-suite relaxation, you are assured of an unhurried, thoroughly enjoyable encounter.
+            All escorts that are offered in this category are pre-screened for absolute authenticity, emotional maturity, and the ability to fit in to high end public and/or private settings. From formal dinners at five-star hotel restaurants to quiet time in-suite, you&apos;ll always have an unhurried and thoroughly enjoyable experience.
           </p>
         </div>
       </section>
@@ -267,7 +267,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           <span>Client Etiquette &amp; Confidentiality Protocol</span>
         </h3>
         <p className="text-xs sm:text-sm text-[#616161]">
-          To maintain the highest caliber of service and ensure mutual comfort, we ask clients to observe our foundational etiquette standards:
+          We expect our clients to follow our etiquette principles to allow us to continue providing the best service and comfort level to each other.
         </p>
         <ul className="space-y-2.5 text-xs sm:text-sm text-[#616161]">
           {service.etiquetteAndExpectations.map((eti, idx) => (

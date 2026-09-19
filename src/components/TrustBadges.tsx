@@ -5,26 +5,26 @@ export default function TrustBadges() {
     {
       icon: ShieldCheck,
       color: "text-emerald-600 bg-emerald-50 border-emerald-200",
-      title: "Direct Coordination",
-      description: "Direct, transparent communication with independent companions without middleman complications."
+      title: "No Upfront Financial Commitments",
+      description: "Avoid transferring money in advance. Settle directly with your model upon meeting in your hotel room."
+    },
+    {
+      icon: Sparkles,
+      color: "text-amber-600 bg-amber-50 border-amber-200",
+      title: "100% Verified Real Photos",
+      description: "All companion portfolios are checked directly with short real-time video welcome in WhatsApp."
+    },
+    {
+      icon: Clock,
+      color: "text-sky-600 bg-sky-50 border-sky-200",
+      title: "Fastest Way to Dispatch",
+      description: "Central co-ordination for quick private arrival from all the hotels of Vijay Nagar, Palasia & Bypass."
     },
     {
       icon: Lock,
       color: "text-[#e31777] bg-pink-50 border-pink-200",
       title: "Guaranteed Discretion",
       description: "Strict privacy safeguards, encrypted chats, and zero data logging of your personal details."
-    },
-    {
-      icon: Sparkles,
-      color: "text-amber-600 bg-amber-50 border-amber-200",
-      title: "Verified Real Profiles",
-      description: "Genuine independent companions screened for etiquette, conversational charm, and authentic photos."
-    },
-    {
-      icon: Clock,
-      color: "text-sky-600 bg-sky-50 border-sky-200",
-      title: "Fast Local Dispatch",
-      description: "Immediate 45-60 minute coordination across Vijay Nagar, Palasia, Super Corridor, and Bypass hotels."
     }
   ];
 
@@ -38,7 +38,7 @@ export default function TrustBadges() {
           Why Discerning Clients Trust Our Indore Directory
         </h2>
         <p className="text-sm text-gray-600 mt-2">
-          Setting the benchmark for safety, transparency, and elite companionship in Madhya Pradesh.
+          Establishing a standard of safety, transparency and top-notch companionship in Madhya Pradesh.
         </p>
       </div>
 

@@ -110,7 +110,7 @@ export default function ContactPage() {
           Contact Our Indore Concierge Desk
         </h1>
         <p className="text-sm sm:text-base text-[#616161] leading-relaxed">
-          Connect directly with our central booking coordinator via phone, WhatsApp, or encrypted messaging for instantaneous companion availability across Vijay Nagar, Palasia, and luxury hotels in Indore.
+          Please reach out to our central booking coordinator directly on phone, WhatsApp or encrypted messaging for an immediate availability of the companions in Vijay Nagar, Palasia, and luxury hotel in the city of Indore.
         </p>
       </div>
 
@@ -135,9 +135,12 @@ export default function ContactPage() {
                 <Phone className="w-5 h-5" />
               </div>
               <div>
-                <span className="text-xs text-gray-500 block">Telephone Hotline</span>
+                <span className="text-xs text-gray-500 block">Telephone Hotline (Method 2)</span>
                 <span className="text-sm font-bold text-gray-900 group-hover:text-[#e31777] transition">
                   +91 90062 36133
+                </span>
+                <span className="text-[11px] text-gray-500 block pt-0.5">
+                  Talk to our senior booking manager and receive immediate VIP dispatch, hotel suite coordination and outstation enquiries.
                 </span>
               </div>
             </a>
@@ -153,9 +156,12 @@ export default function ContactPage() {
                 <MessageCircle className="w-5 h-5" />
               </div>
               <div>
-                <span className="text-xs text-gray-500 block">WhatsApp Desk</span>
+                <span className="text-xs text-gray-500 block">WhatsApp Desk (Method 1)</span>
                 <span className="text-sm font-bold text-gray-900 group-hover:text-emerald-600 transition">
                   +91 90062 36133
+                </span>
+                <span className="text-[11px] text-gray-500 block pt-0.5">
+                  Two way instant co-ordination, real time photo confirmation and instant availability updates for all 48 indore sectors.
                 </span>
               </div>
             </a>
@@ -167,10 +173,10 @@ export default function ContactPage() {
               <MapPin className="w-4 h-4 text-[#e31777]" />
               <span>Service Area &amp; Availability</span>
             </div>
-            <p><strong>Operating Hours:</strong> 24 Hours / 7 Days a Week</p>
+            <p><strong>Operating Hours:</strong> Dispatch directly within 30-45 minutes of the call, available 24 Hours, 7 Days a week across all 48 Geographically Verified sectors in Indore.</p>
             <p><strong>Central HQ:</strong> Scheme 54, Vijay Nagar, Indore</p>
             <p><strong>Response Time:</strong> Under 5 minutes via WhatsApp</p>
-            <p><strong>Payment Policy:</strong> Direct In-Person Settlement (Zero Advance)</p>
+            <p><strong>Payment Policy:</strong> No advance payment: We work on a genuine cash settlement basis. You do not wire any money ahead of time. Settle with your companion directly upon arrival at your room.</p>
           </div>
         </div>
 
