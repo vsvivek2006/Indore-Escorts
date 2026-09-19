@@ -11,54 +11,7 @@ import {
   ArrowRight
 } from "lucide-react";
 
-const TAG_KEYWORDS: string[] = [
-  "Call Girl In Indore",
-  "Call Girl Near Me",
-  "Call Girl Number In Indore",
-  "Escort Service In Indore",
-  "Call Girls In Indore",
-  "Escort Service Indore",
-  "Indore Escorts",
-  "Indore Escort Service",
-  "Call Girl Contact Number Indore",
-  "Call Girl Price Indore",
-  "Call Girls Near Me",
-  "Indore Escort",
-  "Escorts Service In Indore",
-  "Low Price Call Girl in Indore",
-  "Call Girls Indore",
-  "Call Girls Number Indore",
-  "Escort In Indore",
-  "Escorts In Indore",
-  "Call Girl Pics Indore",
-  "Escort Girl In Indore",
-  "Call Girls Contact Number Indore",
-  "Call Girls Rate Indore",
-  "Call Girl Service Indore",
-  "Call Girls Pics Indore",
-  "Best Escort Service Indore",
-  "Low Price Call Girls Indore",
-  "Indore Call Girl Service",
-  "Cheap Call Girl Near Me",
-  "Call Girls Price Indore",
-  "Escort Near Me",
-  "Indore Call Girl Number",
-  "Escort Indore",
-  "Photo Call Girls Indore",
-  "Cheap call girls indore",
-  "High profile indore call girls",
-  "High profile girls Escort service indore",
-  "Hot call girls indore",
-  "Hotel call girls indore",
-  "Vip call girls in Indore",
-  "Vip escort service in indore",
-  "Geniune call girls service indore",
-  "Geniune escort service indore",
-  "premium escorts service indore",
-  "Russian call girls Indore",
-  "independent call girls in Indore",
-  "female companionship service in indore"
-];
+import { TAG_KEYWORDS_DATA } from "@/data/tags";
 
 export default function Footer() {
   return (
@@ -288,15 +241,28 @@ export default function Footer() {
       {/* 3.5. Tag Keywords SEO Section */}
       <div className="bg-[#050c1b] border-t border-white/10 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
-          <span className="text-xs font-bold text-slate-300 block uppercase tracking-wider font-sans">
-            Tag Keywords -
-          </span>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <span className="text-xs font-bold text-slate-300 uppercase tracking-wider font-sans">
+              Indore Companion Tags &amp; Search Directories:
+            </span>
+            <Link
+              href="/tags"
+              className="text-[11px] text-pink-400 hover:text-pink-300 underline font-semibold transition"
+            >
+              Browse All 46 Tags Directory →
+            </Link>
+          </div>
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-[11px] text-slate-400 leading-relaxed">
-            {TAG_KEYWORDS.map((tag, idx) => (
-              <span key={idx} className="inline-flex items-center gap-1.5 hover:text-pink-300 transition-colors">
-                <span className="text-[#e31777] select-none text-[12px]">☛</span>
-                <span>{tag}</span>
-              </span>
+            {TAG_KEYWORDS_DATA.map((item, idx) => (
+              <Link
+                key={idx}
+                href={`/tags/${item.slug}`}
+                className="inline-flex items-center gap-1.5 text-slate-400 hover:text-pink-300 transition-colors group"
+                title={`${item.kw} - Indore Escort Service`}
+              >
+                <span className="text-[#e31777] select-none text-[12px] group-hover:scale-110 transition-transform">☛</span>
+                <span className="hover:underline underline-offset-2">{item.kw}</span>
+              </Link>
             ))}
           </div>
         </div>

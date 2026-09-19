@@ -3,6 +3,7 @@ import { INDORE_LOCATIONS } from "@/data/locations";
 import { SERVICES_DATA } from "@/data/services";
 import { COMPANION_MODELS } from "@/data/models";
 import { BLOG_POSTS } from "@/data/blogs";
+import { TAG_KEYWORDS_DATA } from "@/data/tags";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 3600;
@@ -17,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/locations`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
     { url: `${baseUrl}/models`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
     { url: `${baseUrl}/services`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/tags`, lastModified: now, changeFrequency: "daily", priority: 0.85 },
     { url: `${baseUrl}/safety-guide`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
@@ -59,11 +61,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.65
   }));
 
+  // 46 Dedicated Tag Keyword Pages
+  const tagPages: MetadataRoute.Sitemap = TAG_KEYWORDS_DATA.map((tag) => ({
+    url: `${baseUrl}/tags/${tag.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.8
+  }));
+
   return [
     ...staticPages,
     ...locationPages,
     ...servicePages,
     ...modelPages,
-    ...blogPages
+    ...blogPages,
+    ...tagPages
   ];
 }

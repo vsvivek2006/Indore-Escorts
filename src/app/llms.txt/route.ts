@@ -3,6 +3,7 @@ import { INDORE_LOCATIONS } from "@/data/locations";
 import { SERVICES_DATA } from "@/data/services";
 import { COMPANION_MODELS } from "@/data/models";
 import { BLOG_POSTS } from "@/data/blogs";
+import { TAG_KEYWORDS_DATA } from "@/data/tags";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 3600;
@@ -25,6 +26,12 @@ export async function GET() {
     "## Core Services & Booking Options",
     ...SERVICES_DATA.map(
       (s) => `- [${s.title}](${baseUrl}/services/${s.slug}): ${s.shortDescription}`
+    ),
+    "",
+    `## Search Tags & Service Categories (${TAG_KEYWORDS_DATA.length} Dedicated Hubs)`,
+    `- [All 46 Tags Directory](${baseUrl}/tags): Complete categorized keyword and service search index.`,
+    ...TAG_KEYWORDS_DATA.slice(0, 15).map(
+      (t) => `- [${t.kw}](${baseUrl}/tags/${t.slug}): ${t.desc}`
     ),
     "",
     `## Verified Companion Roster (${COMPANION_MODELS.length} Profiles)`,

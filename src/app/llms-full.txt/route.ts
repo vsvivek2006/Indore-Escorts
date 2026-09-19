@@ -3,6 +3,7 @@ import { INDORE_LOCATIONS } from "@/data/locations";
 import { SERVICES_DATA } from "@/data/services";
 import { COMPANION_MODELS } from "@/data/models";
 import { BLOG_POSTS } from "@/data/blogs";
+import { TAG_KEYWORDS_DATA } from "@/data/tags";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 3600;
@@ -47,6 +48,11 @@ export async function GET() {
     `## City Guides & Blog (${BLOG_POSTS.length} Articles)`,
     ...BLOG_POSTS.map(
       (b) => `### ${b.title} (${baseUrl}/blog/${b.slug})\n${b.excerpt}`
+    ),
+    "",
+    `## Search Tags & Dedicated Keyword Hubs (${TAG_KEYWORDS_DATA.length} Pages)`,
+    ...TAG_KEYWORDS_DATA.map(
+      (t) => `### ${t.kw} (${baseUrl}/tags/${t.slug})\nCategory: ${t.category}\n${t.desc}`
     )
   ];
 
