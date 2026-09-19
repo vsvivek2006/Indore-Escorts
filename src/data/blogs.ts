@@ -24,10 +24,10 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription: "Discover the best luxury hotels in Indore for private, upscale stays. Reviewing Sayaji, Indore Marriott, Radisson Blu, and Sheraton Grand Palace.",
     content: [
       "Indore has grown at a fast pace from a commercial trading town to the most modern metropolitan city of Madhya Pradesh. The choice of hotel is everything when it comes to visiting executives, high-net-worth delegates and travelers who want nothing but the best when it comes to luxury and absolute privacy.",
-      "1. Sayaji Hotel (Vijay Nagar): Established as the pioneer of 5-star hospitality in Indore, Sayaji is the social address of Vijay Nagar. It features signature rooftop restaurant Mediterra, Chopstick City, and private executive suites, and makes for easy valet arrivals, secure elevators and very discreet staff.",
-      "2. Indore Marriott Hotel (Hawa Bangla / Ring Road Link): Contemporary International Marriott luxury: Spaceous Presidential Suite, Indore Kitchen (refined) and Diamante lounge. It's popular among corporate executives and celebrities who want to keep a low profile.",
-      "3. Radisson Blu Hotel (Ring Road / MR-10): Located at the heart of Ring Road/MR-10, Radisson Blu is the most convenient hotel for those arriving from Devi Ahilya Bai Holkar Airport and attending the Brilliant Convention Centre.",
-      "4. Sheraton Grand Palace Indore (Indore Bypass): Situated in lush manicured gardens along the eastern bypass, and is reminiscent of grand Greco-Roman and Rajput architecture. It is unparalleled in central India for outstation retreats, spa weekends and secluded farmhouse style privacy.",
+      "1. Indore Marriott (Meghdoot Garden): Business luxury hotel with separate entrance, private elevator.",
+      "2. Sayaji Hotel (Vijay Nagar): Classic accommodation featuring suites and rooftop dining at Mediterra.",
+      "3. Radisson Blu (Ring Road / MR-10): For visitors coming from Devi Ahilya Bai Holkar Airport as well as convention guests, they would be best served by staying at Radisson Blu (Ring Road / MR-10).",
+      "4. Sheraton Grand Palace (Bypass): Imposing Greco-Roman structure with rich gardens, perfect for privacy for an outstation getaway.",
       "Key Tip for Discretion: Always reserve executive club floor rooms or suites with direct elevator key access to ensure private, peaceful meetings without lobby disruptions."
     ]
   },
@@ -43,9 +43,9 @@ export const BLOG_POSTS: BlogPost[] = [
     metaDescription: "Experience Indore's best nightlife spots, romantic rooftop lounges, and late-night culinary gems across Vijay Nagar, Palasia, and historic Sarafa.",
     content: [
       "Indore by night is a revelation – the cleanest city in India for the last eight years. Over the course of the city, it goes from the energy and power of corporate meetings to a kaleidoscope of rooftop music lounges, gourmet craft breweries and century-old midnight food lanes.",
-      "Vijay Nagar: The Main Hub of Modern Lounges: There are some of the most amazing night lounges in central India at the MR-9 boulevard and Scheme 54. Romantic dates at venues such as Mediterra at Sayaji, Pitchers and 10 Downing Street will enjoy ambient house music and handcrafted cocktails, as well as private booth seating.",
-      "Palasia & 56 Dukan: A Relaxed Evening Vibe: Just south along AB Road, New Palasia offers a more muted, chat show vibe. Couples can have uninterrupted conversations in quaint European-style cafes, artisan gelato parlors and wine bistros near Greater Kailash Road.",
-      "Sarafa Bazaar: Asia's Midnight Street-Food Wonder: No night in Indore is complete without a trip to Sarafa Bazaar after midnight. Jewelry shops close by 9 PM, and the street becomes an open air gastronomic fair until 2 AM, right behind the historic Rajwada palace.",
+      "Vijay Nagar Lounges: There are the best music lounges at Scheme 54 and MR-9 boulevard, for those intimate dates.",
+      "New Palasia & 56 Dukan: Private conversation cafés and dessert parlors, relaxed European style.",
+      "Sarafa Bazaar: Food street located behind the Rajwada palace which is open till midnight and works for hot jalebis and bhutte ka kees.",
       "Recommended Itinerary: Begin with sunset cocktails at a Vijay Nagar rooftop, enjoy an intimate multi-course dinner at a five-star hotel, and conclude the night with hot jalebis and bhutte ka kees under the starry canopy of Sarafa."
     ]
   },

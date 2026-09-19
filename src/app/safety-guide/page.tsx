@@ -100,7 +100,7 @@ export default function SafetyGuidePage() {
             </div>
           </div>
           <p className="text-xs sm:text-sm text-[#616161] leading-relaxed">
-            The biggest scam in the online escort industry is the <strong>Advance Fee Scam</strong>. Unregulated classified websites and anonymous messaging systems are being flooded with fake operators, who steal fashion models&apos; pictures and ask for money upfront through UPI, Paytm or giftcards, before disappearing.
+            There is a high risk of fraud on online classifieds. Common traps include:
           </p>
           <div className="p-5 rounded-2xl bg-white border border-rose-200 space-y-3 text-xs sm:text-sm">
             <strong className="text-rose-900 block font-bold">
@@ -109,20 +109,20 @@ export default function SafetyGuidePage() {
             <ul className="space-y-2 text-gray-700">
               <li className="flex items-start gap-2">
                 <span className="text-rose-600 font-bold">•</span>
-                <span><strong>&quot;Medical Registration / Health Card Clearances&quot;</strong> — Making mandatory government registrations which require deposits of between ₹1,500 and ₹3,000. Completely fraudulent.</span>
+                <span><strong>Prices of Medical / Health Card fees:</strong> ₹1,500 – ₹3,000 for Government Registration in meeting. 100% fake.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-rose-600 font-bold">•</span>
-                <span><strong>&quot;Driver Transit / Petrol Allowances&quot;</strong> — Requesting the payment of ₹500 to ₹1,000 before reaching the private cab service. It&apos;s okay if it&apos;s a legitimate agency, they will cover their own transportation.</span>
+                <span><strong>Driver Petrol / Transit Advance:</strong> Requesting for Rs. 500 to 1000 in advance for hiring a cab.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-rose-600 font-bold">•</span>
-                <span><strong>&quot;Hotel Security &amp; Room Booking Tokens&quot;</strong> — False pretenses that an advance security bond is required for the hotel. Independent agencies don&apos;t get the hotel&apos;s asking for it.</span>
+                <span><strong>Hotel Security Tokens:</strong> Requesting security deposit in advance of hotel.</span>
               </li>
             </ul>
           </div>
           <p className="text-xs sm:text-sm text-gray-700 leading-relaxed font-medium">
-            MySecretGirl69 Indore doesn&apos;t send a single rupee until your date comes physically. You examine your companion in person and make sure that you are comfortable with each other, then give them the payment directly upon meeting.
+            Avoid paying any rupee in advance. Only move in after face-to-face contact. Settle directly with your model upon meeting in your hotel room.
           </p>
         </section>
 
@@ -130,7 +130,7 @@ export default function SafetyGuidePage() {
         <section className="rounded-3xl bg-white border border-gray-200 p-6 sm:p-10 space-y-5 shadow-sm">
           <h2 className="text-2xl font-bold text-[#45474f] flex items-center gap-2">
             <Eye className="w-6 h-6 text-sky-600" />
-            <span>How to Authenticate Real Companion Profiles</span>
+            <span>Rule 2 – Profile Verification 3-Step Test</span>
           </h2>
           <p className="text-xs sm:text-sm text-[#616161] leading-relaxed">
             Before inviting any companion to your venue, ensure you are interacting with the genuine individual rather than a cyber syndicate using downloaded stock imagery. Follow this practical 3-step verification checklist:
@@ -141,9 +141,9 @@ export default function SafetyGuidePage() {
               <div className="w-8 h-8 rounded-full bg-pink-100 text-[#e31777] font-bold text-xs flex items-center justify-center">
                 1
               </div>
-              <h3 className="text-sm font-bold text-gray-900">Personalized Voice Note</h3>
+              <h3 className="text-sm font-bold text-gray-900">Step 1: Voice Note</h3>
               <p className="text-xs text-gray-600 leading-relaxed">
-                Ask for a voice note on WhatsApp that says your name and the date. This can&apos;t be provided by scammers with bots.
+                Request a 5-second WhatsApp voice note with today&apos;s date and your name in it.
               </p>
             </div>
 
@@ -151,9 +151,9 @@ export default function SafetyGuidePage() {
               <div className="w-8 h-8 rounded-full bg-pink-100 text-[#e31777] font-bold text-xs flex items-center justify-center">
                 2
               </div>
-              <h3 className="text-sm font-bold text-gray-900">Brief Video Call</h3>
+              <h3 className="text-sm font-bold text-gray-900">Step 2: Quick Video Greeting</h3>
               <p className="text-xs text-gray-600 leading-relaxed">
-                Before dispatch a 5-10 second live video greeting eliminates 100% of the catfishing doubt and helps to verify that real photos are of real people.
+                5-10 second WhatsApp video greeting to stop any catfishing doubt.
               </p>
             </div>
 
@@ -161,9 +161,9 @@ export default function SafetyGuidePage() {
               <div className="w-8 h-8 rounded-full bg-pink-100 text-[#e31777] font-bold text-xs flex items-center justify-center">
                 3
               </div>
-              <h3 className="text-sm font-bold text-gray-900">Local Dialect &amp; Landmarks</h3>
+              <h3 className="text-sm font-bold text-gray-900">Step 3: Local Knowledge</h3>
               <p className="text-xs text-gray-600 leading-relaxed">
-                True Indore buddies will know the local areas such as Vijay Nagar, Chappan Dukan, and big hotels such as Sayaji or Marriott.
+                True companions are aware of local places such as C21 Mall, Chappan Dukan, Sayaji and Brilliant Convention Centre.
               </p>
             </div>
           </div>

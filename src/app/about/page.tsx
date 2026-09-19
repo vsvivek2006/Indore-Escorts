@@ -94,13 +94,10 @@ export default function AboutPage() {
           </h2>
           <div className="space-y-4 text-xs sm:text-sm text-[#616161] leading-relaxed">
             <p>
-              Indore has become the commercial, financial and educative hub of Central India rather quickly. The city graces itself with thousands of traveling business executives, entrepreneurs and world professionals every week with its expansion of the Super Corridor IT SEZ, which houses technology giants like TCS and Infosys, top-of-the-ranking academic institutions like IIM and IIT, and the Brilliant Convention Centre brimming with trade conventions.
+              Indore has come a long way to become a commercial hub of central India and it has seen the rise of a ton of online unmoderated classifieds for stolen pictures and advance payment scams. MySecretGirl69 Indore was established to help ensure that people looking for companions get verified, educated and refined companions from Indore and with cash settlement in person.
             </p>
             <p>
-              Traditionally, those looking to find adult companions in tier-2 Indian cities have been caught in a pit of online fraud: unmoderated classified platforms that often have fake profiles, stolen influencers&apos; images, and scams designed to trick them into paying in advance for &quot;booking tokens&quot;, &quot;medical insurance cards&quot; or &quot;transit fares.&quot; With this in mind, MySecretGirl69 Indore was founded to provide an alternative that is exclusive, genuine, and respectful to the undercurrent of this issue.
-            </p>
-            <p>
-              We are a high quality directory designed to match the most refined men with the most independent, educated, and polished female escorts who are extremely proud of their ability to talk and their social skills and emotional expression. All of our arrangements are fully respectful, safe and private.
+              We are a high quality directory designed to match discerning clients with independent, educated, and polished female companions who take pride in their conversational poise, social etiquette, and genuine charm. All appointments are strictly private, respectful, and safe.
             </p>
           </div>
         </section>
@@ -148,7 +145,7 @@ export default function AboutPage() {
           </h2>
           <div className="space-y-4 text-xs sm:text-sm text-[#616161] leading-relaxed">
             <p>
-              No out-of-state call centres have geographic awareness about Indore, but our head office call centre is located in Vijay Nagar, Scheme 54. We know local traffic patterns throughout AB Road, MR-10, Ring Road and the Super Corridor and can ensure you will be accompanied to your five-star hotel and upscale residential suites within 30 to 45 minutes.
+              Unlike outside call centers, our local coordination desk is located at Scheme 54, Vijay Nagar, which has a clear understanding of local traffic from AB Road to Ring Road, MR-10, and Super Corridor, which will enable you to get 30-45 minutes direct dispatch to star hotels.
             </p>
             <p>
               Regardless of where you are staying in the vicinity of C21 Mall in <Link href="/locations/vijay-nagar" className="text-[#e31777] font-semibold hover:underline">Vijay Nagar</Link>, <Link href="/locations/scheme-54" className="text-[#e31777] font-semibold hover:underline">Scheme 54</Link> or in luxury <Link href="/locations/palasia" className="text-[#e31777] font-semibold hover:underline">Palasia</Link> or in the vicinity of corporate IT corridors along the <Link href="/locations/super-corridor" className="text-[#e31777] font-semibold hover:underline">Super Corridor</Link>, our verified network offers extensive local coverage.
