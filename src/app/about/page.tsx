@@ -18,7 +18,7 @@ import {
 export const metadata: Metadata = {
   title: "About Us | MySecretGirl69 Indore & Concierge Directory",
   description:
-    "Learn about MySecretGirl69 Indore. Our founding mission, ethical screening standards, complete client privacy, cash-on-delivery guarantee, and responsible companionship in Indore, MP.",
+    "About MySecretGirl69 Indore. Our founding mission, ethical screening standards, client privacy, cash-on-arrival guarantee, and responsible companionship.",
   alternates: {
     canonical: "https://mysecretgirl69.com/about"
   }

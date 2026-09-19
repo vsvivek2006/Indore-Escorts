@@ -5,7 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Sparkles, ArrowRight, Star, Hotel, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Indore Companion Services | Dinner Dates, Corporate Escorts & VIP Concierge",
+  title: "Indore Escort Services | Dinner Dates & VIP Concierge",
   description:
     "Explore tailored companionship services in Indore. Professional social companions for candlelit dinners, corporate business travel, and luxury staycations.",
   alternates: {

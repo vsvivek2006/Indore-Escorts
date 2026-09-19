@@ -7,7 +7,7 @@ import { Sparkles, ShieldCheck } from "lucide-react";
 export const metadata: Metadata = {
   title: "Verified Escorts & Call Girls Directory | MySecretGirl69 Concierge",
   description:
-    "Browse authentic, verified call girl & escort profiles in Indore. Elite escorts for dinner dates, corporate events, and staycations in Vijay Nagar, Palasia, and luxury hotels.",
+    "Browse 20+ verified call girls & companion profiles in Indore. Elite models for dinner dates, business travel, and luxury stays. 100% real photos.",
   alternates: {
     canonical: "https://mysecretgirl69.com/models"
   },

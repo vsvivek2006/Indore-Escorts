@@ -19,7 +19,7 @@ import {
 export const metadata: Metadata = {
   title: "Contact Concierge Desk | MySecretGirl69 Indore & Escorts",
   description:
-    "Connect 24/7 with our central booking coordinator via telephone hotline or WhatsApp for immediate companion availability across Vijay Nagar, Palasia, and luxury hotels in Indore.",
+    "Contact our 24/7 Indore concierge desk via telephone or WhatsApp for immediate companion availability across Vijay Nagar, Palasia, and star hotels.",
   alternates: {
     canonical: "https://mysecretgirl69.com/contact"
   },

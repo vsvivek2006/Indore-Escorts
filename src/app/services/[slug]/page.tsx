@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const service = getServiceBySlug(slug);
 
   if (!service) {
-    return { title: "Service Not Found" };
+    return { title: "Service Not Found | MySecretGirl69 Indore" };
   }
 
   return {

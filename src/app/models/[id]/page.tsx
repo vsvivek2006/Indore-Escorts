@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const model = getModelById(id);
 
   if (!model) {
-    return { title: "Profile Not Found" };
+    return { title: "Profile Not Found | MySecretGirl69 Indore" };
   }
 
   return {

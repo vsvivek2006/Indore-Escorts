@@ -27,16 +27,16 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Escorts in Indore Call Girls | Hot Call Girls in Indore Hotel Delivery",
+  title: "Indore Call Girls | Elite Escort Service Indore MP",
   description:
-    "Book the hottest Indore call girls and Escorts Service today. Elite companions with fast hotel delivery across Vijay Nagar, Palasia, Super Corridor, and 48 localities. 24/7, 100% safety, direct payment on meet, and verified real photos.",
+    "Book verified Indore call girls & escorts with 30-min star hotel room delivery. 100% genuine photos, cash on arrival, zero advance. Call 24/7.",
   alternates: {
     canonical: "https://mysecretgirl69.com"
   },
   openGraph: {
-    title: "Escorts in Indore Call Girls | Hot Call Girls in Indore Hotel Delivery",
+    title: "Indore Call Girls | Elite Escort Service Indore MP",
     description:
-      "Book the hottest Indore call girls and Escorts Service today. Elite companions with fast hotel delivery across Vijay Nagar, Palasia, and 48 localities.",
+      "Book verified Indore call girls & escorts with 30-min star hotel room delivery. 100% genuine photos, cash on arrival, zero advance. Call 24/7.",
     url: "https://mysecretgirl69.com",
     siteName: "Indore Girls Escorts Service",
     type: "website",
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Escorts in Indore Call Girls | Hot Call Girls in Indore Hotel Delivery",
+    title: "Indore Call Girls | Elite Escort Service Indore MP",
     description:
-      "Book the hottest Indore call girls and Escorts Service today. Elite call girls with fast hotel delivery across Vijay Nagar, Palasia, and 48 localities.",
+      "Book verified Indore call girls & escorts with 30-min star hotel room delivery. 100% genuine photos, cash on arrival, zero advance. Call 24/7.",
     images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
   }
 };
@@ -153,7 +153,6 @@ export default function HomePage() {
               src="/images/banner-2.avif"
               alt="Indore Call Girls Escorts Service"
               fill
-              priority
               className="object-cover object-center"
               sizes="100vw"
             />
@@ -239,7 +238,7 @@ export default function HomePage() {
                     <span className="px-3 py-1 rounded-full bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white text-[11px] font-bold uppercase tracking-wider shadow-sm">
                       Verified Elite Escort
                     </span>
-                    <h3 className="text-xl font-bold font-sans text-white">Aarohi Sharma, 23</h3>
+                    <p className="text-xl font-bold font-sans text-white">Aarohi Sharma, 23</p>
                     <p className="text-xs text-slate-300">Vijay Nagar &bull; Sayaji Luxury Suites</p>
                   </div>
                 </div>
@@ -355,7 +354,7 @@ export default function HomePage() {
                   <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-pink-100 to-rose-100 text-[#e31777] flex items-center justify-center mb-2">
                     <Crown className="w-4 h-4" />
                   </div>
-                  <h4 className="text-xs font-bold font-sans text-slate-900">Cosmopolitan Standard</h4>
+                  <h3 className="text-xs font-bold font-sans text-slate-900">Cosmopolitan Standard</h3>
                   <p className="text-[11px] text-slate-600 leading-relaxed">
                     Articulate companions fluent in English and Hindi for executive business dinners.
                   </p>
@@ -365,7 +364,7 @@ export default function HomePage() {
                   <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-pink-100 to-rose-100 text-[#e31777] flex items-center justify-center mb-2">
                     <Hotel className="w-4 h-4" />
                   </div>
-                  <h4 className="text-xs font-bold font-sans text-slate-900">Suite &amp; Resort Luxury</h4>
+                  <h3 className="text-xs font-bold font-sans text-slate-900">Suite &amp; Resort Luxury</h3>
                   <p className="text-[11px] text-slate-600 leading-relaxed">
                     Discreet room delivery to Sayaji, Radisson Blu, and Bypass luxury retreats.
                   </p>
@@ -375,7 +374,7 @@ export default function HomePage() {
                   <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-pink-100 to-rose-100 text-[#e31777] flex items-center justify-center mb-2">
                     <Clock className="w-4 h-4" />
                   </div>
-                  <h4 className="text-xs font-bold font-sans text-slate-900">30–45 Min Dispatch</h4>
+                  <h3 className="text-xs font-bold font-sans text-slate-900">30–45 Min Dispatch</h3>
                   <p className="text-[11px] text-slate-600 leading-relaxed">
                     Direct real-time arrival across all 48 Indore sectors with zero advance deposit.
                   </p>
@@ -397,7 +396,7 @@ export default function HomePage() {
                     <span className="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-[#e31777] to-[#c2185b] text-white text-[10px] font-bold uppercase tracking-wider">
                       5-Star Suite Specialist
                     </span>
-                    <h4 className="text-lg font-bold font-sans text-white mt-1">Natasha Verma, 24</h4>
+                    <p className="text-lg font-bold font-sans text-white mt-1">Natasha Verma, 24</p>
                     <p className="text-xs text-slate-200">Radisson Blu &bull; Indore Bypass</p>
                   </div>
                 </div>

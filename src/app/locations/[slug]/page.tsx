@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!location) {
     return {
-      title: "Location Not Found"
+      title: "Location Not Found | MySecretGirl69 Indore"
     };
   }
 

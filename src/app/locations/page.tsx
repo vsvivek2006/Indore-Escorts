@@ -8,7 +8,7 @@ import { Compass, Navigation, ShieldCheck } from "lucide-react";
 export const metadata: Metadata = {
   title: "Indore Escorts & Companions Directory | 48 Verified Locality Hubs",
   description:
-    "Explore our verified directory across Indore's 48 primary localities. Detailed transit routes, luxury hotel zones, landmark guides, and local companion coordination for Vijay Nagar, Palasia, Bhawarkuan, Rau, Super Corridor, and beyond.",
+    "Explore verified call girls and escort services across all 48 Indore localities including Vijay Nagar, Palasia, Super Corridor, and Bypass. 24/7 dispatch.",
   alternates: {
     canonical: "https://mysecretgirl69.com/locations"
   }
