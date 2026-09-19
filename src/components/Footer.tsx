@@ -11,6 +11,55 @@ import {
   ArrowRight
 } from "lucide-react";
 
+const TAG_KEYWORDS: string[] = [
+  "Call Girl In Indore",
+  "Call Girl Near Me",
+  "Call Girl Number In Indore",
+  "Escort Service In Indore",
+  "Call Girls In Indore",
+  "Escort Service Indore",
+  "Indore Escorts",
+  "Indore Escort Service",
+  "Call Girl Contact Number Indore",
+  "Call Girl Price Indore",
+  "Call Girls Near Me",
+  "Indore Escort",
+  "Escorts Service In Indore",
+  "Low Price Call Girl in Indore",
+  "Call Girls Indore",
+  "Call Girls Number Indore",
+  "Escort In Indore",
+  "Escorts In Indore",
+  "Call Girl Pics Indore",
+  "Escort Girl In Indore",
+  "Call Girls Contact Number Indore",
+  "Call Girls Rate Indore",
+  "Call Girl Service Indore",
+  "Call Girls Pics Indore",
+  "Best Escort Service Indore",
+  "Low Price Call Girls Indore",
+  "Indore Call Girl Service",
+  "Cheap Call Girl Near Me",
+  "Call Girls Price Indore",
+  "Escort Near Me",
+  "Indore Call Girl Number",
+  "Escort Indore",
+  "Photo Call Girls Indore",
+  "Cheap call girls indore",
+  "High profile indore call girls",
+  "High profile girls Escort service indore",
+  "Hot call girls indore",
+  "Hotel call girls indore",
+  "Vip call girls in Indore",
+  "Vip escort service in indore",
+  "Geniune call girls service indore",
+  "Geniune escort service indore",
+  "premium escorts service indore",
+  "Russian call girls Indore",
+  "independent call girls in Indore",
+  "female companionship service in indore"
+];
+
 export default function Footer() {
   return (
     <footer className="bg-[#0b172d] text-white text-xs border-t border-pink-900/30" role="contentinfo">
@@ -232,6 +281,23 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 3.5. Tag Keywords SEO Section */}
+      <div className="bg-[#050c1b] border-t border-white/10 py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
+          <span className="text-xs font-bold text-slate-300 block uppercase tracking-wider font-sans">
+            Tag Keywords -
+          </span>
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-[11px] text-slate-400 leading-relaxed">
+            {TAG_KEYWORDS.map((tag, idx) => (
+              <span key={idx} className="inline-flex items-center gap-1.5 hover:text-pink-300 transition-colors">
+                <span className="text-[#e31777] select-none text-[12px]">☛</span>
+                <span>{tag}</span>
+              </span>
+            ))}
           </div>
         </div>
       </div>
