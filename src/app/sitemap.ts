@@ -4,6 +4,9 @@ import { SERVICES_DATA } from "@/data/services";
 import { COMPANION_MODELS } from "@/data/models";
 import { BLOG_POSTS } from "@/data/blogs";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 3600;
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://mysecretgirl69.com";
   const now = new Date();
