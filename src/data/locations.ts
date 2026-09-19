@@ -30,20 +30,20 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Vijay Nagar",
     city: "Indore",
     title: "Vijay Nagar Indore Escorts | Elite Call Girls Service in Vijay Nagar",
-    metaDescription: "Book verified Vijay Nagar escorts & call girls in Indore. Elite 24/7 companions for luxury hotel stays & dinner dates near C21 Mall & Sayaji Hotel.",
+    metaDescription: "Book verified Vijay Nagar escorts & call girls in Indore. Elite 24/7 call girls for luxury hotel stays & dinner dates near C21 Mall & Sayaji Hotel.",
     tagline: "Indore's Premier Commercial & Luxury Hotel Center",
     pincode: "452010",
     zone: "North-Eastern Corridor",
-    introduction: "Vijay Nagar is the beating commercial heart and luxury epicenter of modern Indore. Home to major shopping destinations like C21 Mall and Malhar Mega Mall, corporate IT parks, and prestigious five-star hotels, it is the most requested area for executive companionship.",
-    localContext: "Developed meticulously around Scheme 54 and Scheme 74, Vijay Nagar hosts high-net-worth business delegates attending exhibitions at the Brilliant Convention Centre as well as affluent local professionals. Its rooftop lounges, international dining, and vibrant nightlife make it ideal for upscale dinner dates.",
+    introduction: "Vijay Nagar is the pulse-point of the commercial and luxury hub of contemporary Indore. This is the most sought-after place for the executives to enjoy having their escort service as it has a number of shopping malls such as C21 Mall and Malhar Mega Mall, IT parks and five-star hotels.",
+    localContext: "Meticulously built around Scheme 54 and Scheme 74, Vijay Nagar will host high-net-worth business delegates for exhibitions at Brilliant Convention Centre, as well as upscale local professionals. It has its rooftop lounges, foreign dining and lively nightlife, making it perfect for a premium dinner date.",
     nearbyAreas: ["Scheme No. 54", "Scheme No. 74", "MR-10", "MR-9", "Palasia"],
     accessInformation: "Directly located on AB Road (NH 52) and intersected by MR-10. Serviced by i-Bus BRTS (Satya Sai & Vijay Nagar junctions) and upcoming Metro Line 3. Approx 20 mins from Devi Ahilya Airport via the Super Corridor.",
     keyLandmarks: ["C21 Mall & Malhar Mega Mall", "Brilliant Convention Centre", "Sayaji Hotel & Amber Convention", "Vijay Nagar Square"],
     luxuryHotelsNearby: ["Indore Marriott Hotel", "Sayaji Hotel Vijay Nagar", "Radisson Blu Hotel (MR-10)", "The Park Indore"],
     faqs: [
       {
-        question: "How fast can companions arrive in Vijay Nagar hotels?",
-        answer: "Because most companions are stationed near Scheme 54 and MR-10, dispatch typically takes only 30 to 45 minutes to major hotels in Vijay Nagar."
+        question: "How fast can call girls arrive in Vijay Nagar hotels?",
+        answer: "Because most call girls are stationed near Scheme 54 and MR-10, dispatch typically takes only 30 to 45 minutes to major hotels in Vijay Nagar."
       },
       {
         question: "Which are the best luxury dinner date spots in Vijay Nagar?",
@@ -63,15 +63,15 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     pincode: "452010",
     zone: "Vijay Nagar Commercial Sector",
     introduction: "Scheme No. 54 is the upscale commercial sector of Vijay Nagar, famous for the Brilliant Convention Centre, PU-4 corporate office clusters, and luxury serviced suites. Visiting corporate leaders frequently select Scheme 54 for convenient, quiet stays.",
-    localContext: "With modern wide boulevards, multi-cuisine dining options, and zero congestion, Scheme 54 offers unmatched privacy. Executive companions here are articulate, well-spoken, and accustomed to high-profile social galas.",
+    localContext: "With modern wide boulevards, multi-cuisine dining options, and zero congestion, Scheme 54 offers unmatched privacy. Executive call girls here are articulate, well-spoken, and accustomed to high-profile social galas.",
     nearbyAreas: ["Vijay Nagar", "Scheme No. 74", "MR-10", "MR-9"],
     accessInformation: "Located right behind C21 Mall, accessible from AB Road and MR-10. Quick 20-minute drive from Indore Airport via Super Corridor.",
     keyLandmarks: ["Brilliant Convention Centre", "PU-4 Commercial Sector", "The Park Hotel Circle", "C21 Business Park"],
     luxuryHotelsNearby: ["Sayaji Hotel", "The Park Indore", "Effotel by Sayaji"],
     faqs: [
       {
-        question: "Can companions accompany delegates to events at Brilliant Convention Centre?",
-        answer: "Yes, our corporate companions possess excellent etiquette and conversational skills, making them ideal partners for corporate galas and business networking dinners."
+        question: "Can call girls accompany delegates to events at Brilliant Convention Centre?",
+        answer: "Yes, our corporate call girls possess excellent etiquette and conversational skills, making them ideal partners for corporate galas and business networking dinners."
       }
     ],
     relatedLocations: ["vijay-nagar", "scheme-74", "mr-10", "mr-9"],
@@ -81,8 +81,8 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     slug: "scheme-74",
     name: "Scheme No. 74",
     city: "Indore",
-    title: "Scheme No. 74 Indore Escorts | Discreet Companions in Vijay Nagar",
-    metaDescription: "Verified Scheme 74 escorts in Indore. Sophisticated companions and independent call girls for hotel visits and quiet private dates near Sayaji rear avenue.",
+    title: "Scheme No. 74 Indore Escorts | Discreet Call Girls in Vijay Nagar",
+    metaDescription: "Verified Scheme 74 escorts in Indore. Sophisticated call girls and independent call girls for hotel visits and quiet private dates near Sayaji rear avenue.",
     tagline: "Tranquil Luxury Residential Enclave",
     pincode: "452010",
     zone: "North Vijay Nagar",
@@ -95,7 +95,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     faqs: [
       {
         question: "Is Scheme 74 recommended for discreet in-call meetings?",
-        answer: "Yes, Scheme 74's calm residential atmosphere and boutique guest accommodations make it exceptionally suited for quiet, discreet companionship."
+        answer: "Yes, Scheme 74's calm residential atmosphere and boutique guest accommodations make it exceptionally suited for quiet, discreet escort service."
       }
     ],
     relatedLocations: ["vijay-nagar", "scheme-54", "nipania", "mahalaxmi-nagar"],
@@ -106,20 +106,20 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Palasia",
     city: "Indore",
     title: "Palasia Indore Escorts | Elite Call Girls in Palasia & 56 Dukan",
-    metaDescription: "Premium Palasia Indore escort services. Verified call girls and charming social companions near 56 Dukan, Industry House, and Greater Kailash Road.",
+    metaDescription: "Premium Palasia Indore escort services. Verified call girls and charming social call girls near 56 Dukan, Industry House, and Greater Kailash Road.",
     tagline: "Central Indore's Lifestyle & Gastronomic Capital",
     pincode: "452001",
     zone: "Central Indore",
     introduction: "Palasia is the vibrant lifestyle, retail, and gastronomic heart of central Indore. Anchored by the world-famous 56 Dukan food street and historic tree-lined avenues, Palasia combines old-world Malwa charm with modern urban elegance.",
-    localContext: "Palasia attracts doctors, entrepreneurs, and discerning out-of-town visitors who enjoy fine culinary dining, boutique shopping, and relaxed evenings. Companions in Palasia are warm, cultured, and enthusiastic food-walk guides.",
+    localContext: "Palasia attracts doctors, entrepreneurs, and discerning out-of-town visitors who enjoy fine culinary dining, boutique shopping, and relaxed evenings. Call Girls in Palasia are warm, cultured, and enthusiastic food-walk guides.",
     nearbyAreas: ["New Palasia", "Old Palasia", "Geeta Bhawan", "South Tukoganj", "Saket Nagar"],
     accessInformation: "Directly on AB Road, connected by the Palasia i-Bus BRTS station. Just 10 minutes from Indore Railway Station and 22 minutes from Indore Airport.",
     keyLandmarks: ["56 Dukan (Chhappan Dukan)", "Industry House Square", "Greater Kailash Road", "Manorama Ganj"],
     luxuryHotelsNearby: ["Hotel Effotel by Sayaji", "Lemon Tree Hotel (RNT Marg)", "Hotel Surya Indore"],
     faqs: [
       {
-        question: "Can a companion join me for a culinary tour of 56 Dukan?",
-        answer: "Yes, our charming local companions love guiding gentlemen through 56 Dukan's artisanal chaats, hot dogs at Johny Hot Dog, and gourmet cafes."
+        question: "Can a call girl join me for a culinary tour of 56 Dukan?",
+        answer: "Yes, our charming local call girls love guiding gentlemen through 56 Dukan's artisanal chaats, hot dogs at Johny Hot Dog, and gourmet cafes."
       }
     ],
     relatedLocations: ["new-palasia", "old-palasia", "geeta-bhawan", "south-tukoganj", "saket-nagar"],
@@ -129,8 +129,8 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     slug: "new-palasia",
     name: "New Palasia",
     city: "Indore",
-    title: "New Palasia Indore Escorts | High-Class Companions in New Palasia",
-    metaDescription: "Verified New Palasia Indore call girls and VIP companions. Sophisticated social dates near Janjeerwala Square and Greater Kailash Hospital Road.",
+    title: "New Palasia Indore Escorts | High-Class Call Girls in New Palasia",
+    metaDescription: "Verified New Palasia Indore call girls and VIP call girls. Sophisticated social dates near Janjeerwala Square and Greater Kailash Hospital Road.",
     tagline: "Posh Residential & High-Street Cafe Strip",
     pincode: "452001",
     zone: "Central Indore",
@@ -143,7 +143,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     faqs: [
       {
         question: "Are there cozy, discreet cafes in New Palasia for casual meetings?",
-        answer: "Yes, New Palasia has numerous boutique cafes with secluded corner seating ideal for meeting your companion over coffee before dinner."
+        answer: "Yes, New Palasia has numerous boutique cafes with secluded corner seating ideal for meeting your call girl over coffee before dinner."
       }
     ],
     relatedLocations: ["palasia", "old-palasia", "south-tukoganj", "race-course-road"],
@@ -153,8 +153,8 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     slug: "old-palasia",
     name: "Old Palasia",
     city: "Indore",
-    title: "Old Palasia Indore Escorts | Elite Companions near Saket Club",
-    metaDescription: "Book discreet Old Palasia escorts in Indore. Cultured independent companions near Saket Club, Anand Bazaar, and lush historic residential estates.",
+    title: "Old Palasia Indore Escorts | Elite Call Girls near Saket Club",
+    metaDescription: "Book discreet Old Palasia escorts in Indore. Cultured independent call girls near Saket Club, Anand Bazaar, and lush historic residential estates.",
     tagline: "Aristocratic Bungalows & Shaded Avenues",
     pincode: "452001",
     zone: "Central-East Indore",
@@ -166,7 +166,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     luxuryHotelsNearby: ["Hotel Shreemaya Residency", "Lemon Tree Hotel"],
     faqs: [
       {
-        question: "How discreet is companion booking in Old Palasia?",
+        question: "How discreet is call girl booking in Old Palasia?",
         answer: "Extremely discreet. Old Palasia's quiet residential profile allows for quiet arrivals without neighborhood attention."
       }
     ],
@@ -178,12 +178,12 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Bhawarkuan",
     city: "Indore",
     title: "Bhawarkuan Indore Escorts | Call Girls in Bhawarkuan & Tower Square",
-    metaDescription: "Verified Bhawarkuan Indore escorts & energetic call girls. Youthful companions near Sapna Sangeeta, DAVV Takshashila, and Holkar Science College.",
+    metaDescription: "Verified Bhawarkuan Indore escorts & energetic call girls. Youthful call girls near Sapna Sangeeta, DAVV Takshashila, and Holkar Science College.",
     tagline: "South-Central High-Energy Student & Transit Hub",
     pincode: "452014",
     zone: "South-Central Corridor",
     introduction: "Bhawarkuan is the academic and youthful nerve center of Indore. Surrounding the famous Bhawarkuan Square and DAVV University campus, it is filled with lively coaching institutions, vibrant eateries, and rapid bus transit.",
-    localContext: "Youthful, lively, and energetic. Clients seeking youthful companions who are spontaneous, playful, and cheerful naturally choose Bhawarkuan.",
+    localContext: "Youthful, lively, and energetic. Clients seeking youthful call girls who are spontaneous, playful, and cheerful naturally choose Bhawarkuan.",
     nearbyAreas: ["Sapna Sangeeta", "Tower Square", "Navlakha", "Annapurna Road"],
     accessInformation: "Main southern terminal of the i-Bus BRTS. Directly connects to AB Road South and Khandwa Road (NH 347BG).",
     keyLandmarks: ["Bhawarkuan Square", "DAVV Takshashila Campus", "Holkar Science College", "Indore BRTS Terminal"],
@@ -201,7 +201,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     slug: "sapna-sangeeta",
     name: "Sapna Sangeeta",
     city: "Indore",
-    title: "Sapna Sangeeta Indore Escorts | Shopping & Dinner Date Companions",
+    title: "Sapna Sangeeta Indore Escorts | Shopping & Dinner Date Call Girls",
     metaDescription: "Find verified Sapna Sangeeta escorts in Indore. Charming call girls near Sapna Sangeeta Road, Inox multiplex, and Tower Square.",
     tagline: "Thriving High-Street Commercial & Cinema Strip",
     pincode: "452001",
@@ -214,8 +214,8 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     luxuryHotelsNearby: ["Crown Palace Hotel", "Hotel Shreemaya"],
     faqs: [
       {
-        question: "Can a companion accompany me for a movie at Sapna Sangeeta?",
-        answer: "Yes, our companions are delightful cinema partners who enjoy Hollywood and Bollywood films along with theater snacks and post-movie dinners."
+        question: "Can a call girl accompany me for a movie at Sapna Sangeeta?",
+        answer: "Yes, our call girls are delightful cinema partners who enjoy Hollywood and Bollywood films along with theater snacks and post-movie dinners."
       }
     ],
     relatedLocations: ["bhawarkuan", "tower-square", "south-tukoganj", "navlakha"],
@@ -250,7 +250,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "South Tukoganj",
     city: "Indore",
     title: "South Tukoganj Indore Escorts | VIP Escorts near Yeshwant Club",
-    metaDescription: "Elite South Tukoganj escorts & VIP call girls in Indore. Prestigious companions near Yeshwant Club, Race Course Road, and MG Road for executive dates.",
+    metaDescription: "Elite South Tukoganj escorts & VIP call girls in Indore. Prestigious call girls near Yeshwant Club, Race Course Road, and MG Road for executive dates.",
     tagline: "Aristocratic Enclave of Heritage Clubs & Executive Venues",
     pincode: "452001",
     zone: "Central Heritage Commercial",
@@ -262,7 +262,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     luxuryHotelsNearby: ["Lemon Tree Hotel Indore", "Hotel Shreemaya Residency", "Hotel President"],
     faqs: [
       {
-        question: "Why choose South Tukoganj for executive companionship?",
+        question: "Why choose South Tukoganj for executive escort service?",
         answer: "South Tukoganj's proximity to corporate offices on MG Road, top legal chambers, and luxury clubs makes it the prime choice for business visitors seeking discreet, intelligent company."
       }
     ],
@@ -274,7 +274,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Race Course Road",
     city: "Indore",
     title: "Race Course Road Indore Escorts | High-Profile Call Girls",
-    metaDescription: "Book high-profile Race Course Road escorts in Indore. Elite companions near Nehru Stadium and Yeshwant Club.",
+    metaDescription: "Book high-profile Race Course Road escorts in Indore. Elite call girls near Nehru Stadium and Yeshwant Club.",
     tagline: "Diplomatic Boulevards & Heritage Prestige",
     pincode: "452001",
     zone: "Central Heritage District",
@@ -286,7 +286,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     luxuryHotelsNearby: ["Lemon Tree Hotel", "Shreemaya Residency"],
     faqs: [
       {
-        question: "Are companions comfortable attending private club dinners here?",
+        question: "Are call girls comfortable attending private club dinners here?",
         answer: "Yes, our models are well-versed in high-society etiquette, formal dress codes, and polite conversation."
       }
     ],
@@ -298,20 +298,20 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Rajwada",
     city: "Indore",
     title: "Rajwada Indore Escorts | Heritage City Call Girls & Night Guides",
-    metaDescription: "Genuine Rajwada Indore escorts & companions. Charming local guides and call girls for midnight Sarafa tours, heritage walks, and hotel dates.",
+    metaDescription: "Genuine Rajwada Indore escorts & call girls. Charming local guides and call girls for midnight Sarafa tours, heritage walks, and hotel dates.",
     tagline: "The Historical Soul of Indore with Midnight Culinary Magic",
     pincode: "452002",
     zone: "Old City Heritage Core",
     introduction: "Built by the Holkar dynasty over two centuries ago, Rajwada stands as Indore's historical emblem. By day, its bustling bazaars thrive with textiles and jewelry; by night, it serves as the gateway to legendary Sarafa Bazaar.",
-    localContext: "Lively, authentic, and culturally rich. Local companions here know every secret lane, historical monument, and culinary stall.",
+    localContext: "Lively, authentic, and culturally rich. Local call girls here know every secret lane, historical monument, and culinary stall.",
     nearbyAreas: ["Sarafa Bazaar", "Siyaganj", "Juni Indore", "South Tukoganj"],
     accessInformation: "Connected via MG Road and Jawahar Marg. 2 km from Indore Junction and 18 minutes from Indore Airport.",
     keyLandmarks: ["Seven-Story Rajwada Holkar Palace", "Gopal Mandir", "Krishnapura Chhatris", "Sarafa Entry"],
     luxuryHotelsNearby: ["Hotel Surya Indore", "Shreemaya Hotel"],
     faqs: [
       {
-        question: "Can a companion guide me through historic monuments in Rajwada?",
-        answer: "Yes, companions with local Indore roots love sharing historical anecdotes and visiting the Holkar palace with cultural enthusiasts."
+        question: "Can a call girl guide me through historic monuments in Rajwada?",
+        answer: "Yes, call girls with local Indore roots love sharing historical anecdotes and visiting the Holkar palace with cultural enthusiasts."
       }
     ],
     relatedLocations: ["sarafa-bazaar", "siyaganj", "juni-indore", "south-tukoganj"],
@@ -321,20 +321,20 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     slug: "sarafa-bazaar",
     name: "Sarafa Bazaar",
     city: "Indore",
-    title: "Sarafa Bazaar Indore Escorts | Midnight Food Walk Companions",
-    metaDescription: "Book Sarafa Bazaar Indore escorts & night companions. Enjoy midnight street food tours, authentic Malwi delicacies, and romantic walks with charming escorts.",
+    title: "Sarafa Bazaar Indore Escorts | Midnight Food Walk Call Girls",
+    metaDescription: "Book Sarafa Bazaar Indore escorts & night call girls. Enjoy midnight street food tours, authentic Malwi delicacies, and romantic walks with charming escorts.",
     tagline: "Asia's Premier Midnight Culinary Fair",
     pincode: "452002",
     zone: "Old City Core",
     introduction: "Sarafa Bazaar is a worldwide sensation. As jewelry shops lower their shutters at 9 PM, the street transforms into a sparkling midnight food festival running until 2 AM with over 100 specialty sweet and savory delicacies.",
-    localContext: "Experiencing Sarafa's vibrant night energy with an attractive, charming companion by your side turns a simple food walk into a magical romantic adventure.",
+    localContext: "Experiencing Sarafa's vibrant night energy with an attractive, charming call girl by your side turns a simple food walk into a magical romantic adventure.",
     nearbyAreas: ["Rajwada", "Siyaganj", "MG Road"],
     accessInformation: "Directly behind Rajwada Palace. Easily accessible by night cabs and auto-rickshaws.",
     keyLandmarks: ["Sarafa Chowpatty", "Joshi Dahi Vada House", "Swamy Dosa Center", "Rathore Garadu"],
     luxuryHotelsNearby: ["Hotel Surya Indore", "Lemon Tree Hotel (10 mins)"],
     faqs: [
       {
-        question: "What are the recommended treats to try with a companion at Sarafa?",
+        question: "What are the recommended treats to try with a call girl at Sarafa?",
         answer: "Flying Dahi Vada, hot winter Garadu with Malwi masala, fresh Bhutte ka Kees, and giant Jalebas are must-tries."
       }
     ],
@@ -345,21 +345,21 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     slug: "super-corridor",
     name: "Super Corridor",
     city: "Indore",
-    title: "Super Corridor Indore Escorts | Airport & IT SEZ Companions",
-    metaDescription: "Fast, discreet Super Corridor escorts & call girls in Indore. Premium corporate companions near TCS, Infosys, Metro Line 3, and Indore Airport.",
+    title: "Super Corridor Indore Escorts | Airport & IT SEZ Call Girls",
+    metaDescription: "Fast, discreet Super Corridor escorts & call girls in Indore. Premium corporate call girls near TCS, Infosys, Metro Line 3, and Indore Airport.",
     tagline: "Modern Indore's IT Frontier & Metro Expressway",
     pincode: "452005",
     zone: "Western Tech & Aviation Corridor",
     introduction: "The Super Corridor is central India's fastest-growing tech and infrastructure expressway. Flanked by massive campuses of TCS and Infosys, premium educational hubs, and the new elevated metro rail.",
-    localContext: "The primary choice for tech executives, management consultants, and fly-in delegates arriving at Devi Ahilya Bai Holkar International Airport needing fast, reliable companionship.",
+    localContext: "The primary choice for tech executives, management consultants, and fly-in delegates arriving at Devi Ahilya Bai Holkar International Airport needing fast, reliable escort service.",
     nearbyAreas: ["Airport Road", "Vijay Nagar", "MR-10", "Nipania"],
     accessInformation: "8-lane signal-free highway connecting Indore Airport to MR-10 in 10 minutes. Operational stretch of Indore Metro Rail Line 3.",
     keyLandmarks: ["Devi Ahilya Bai Holkar Airport", "TCS Indore Campus", "Infosys SEZ", "Indore Metro Viaduct"],
     luxuryHotelsNearby: ["Hotel Playotel Inn Airport", "The Grand Bhagwati", "Radisson Blu (via MR-10 flyover)"],
     faqs: [
       {
-        question: "Can I book a companion for an immediate airport layover?",
-        answer: "Yes, companions servicing the Super Corridor zone can meet with minimal advance notice directly at airport-adjacent luxury hotels."
+        question: "Can I book a call girl for an immediate airport layover?",
+        answer: "Yes, call girls servicing the Super Corridor zone can meet with minimal advance notice directly at airport-adjacent luxury hotels."
       }
     ],
     relatedLocations: ["airport-road", "vijay-nagar", "mr-10"],
@@ -370,7 +370,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Airport Road",
     city: "Indore",
     title: "Airport Road Indore Escorts | Transit Call Girls near Indore Airport",
-    metaDescription: "Book verified Airport Road escorts in Indore. Fast dispatch call girls and discreet hotel companions near Devi Ahilya Bai Holkar Airport (IDR).",
+    metaDescription: "Book verified Airport Road escorts in Indore. Fast dispatch call girls and discreet hotel call girls near Devi Ahilya Bai Holkar Airport (IDR).",
     tagline: "Aviation Gateway & Transit Hospitality",
     pincode: "452005",
     zone: "West Indore",
@@ -382,7 +382,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     luxuryHotelsNearby: ["Playotel Inn Airport", "Hotel Airport City"],
     faqs: [
       {
-        question: "Can companions meet directly in my airport hotel suite?",
+        question: "Can call girls meet directly in my airport hotel suite?",
         answer: "Yes, verified independent models can arrive at your Airport Road hotel within 30 minutes of your flight touchdown."
       }
     ],
@@ -393,13 +393,13 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     slug: "nipania",
     name: "Nipania",
     city: "Indore",
-    title: "Nipania Indore Escorts | High-Rise Luxury Gated Society Companions",
-    metaDescription: "Exclusive Nipania Indore escorts and call girls. Sophisticated companions near Apollo DB City, Bombay Hospital, and luxury high-rise apartments.",
+    title: "Nipania Indore Escorts | High-Rise Luxury Gated Society Call Girls",
+    metaDescription: "Exclusive Nipania Indore escorts and call girls. Sophisticated call girls near Apollo DB City, Bombay Hospital, and luxury high-rise apartments.",
     tagline: "Modern High-Rise Gated Residential Haven",
     pincode: "452010",
     zone: "North-Eastern Residential",
     introduction: "Nipania is home to Indore's most affluent gated townships such as Apollo DB City and Platinum Paradise. Characterized by serene private parks, modern security gates, and wide roads.",
-    localContext: "Ideal for residents and out-of-town visitors staying in private luxury suites who require guaranteed privacy, peaceful surroundings, and verified companion screening.",
+    localContext: "Ideal for residents and out-of-town visitors staying in private luxury suites who require guaranteed privacy, peaceful surroundings, and verified call girl screening.",
     nearbyAreas: ["Mahalaxmi Nagar", "Vijay Nagar", "Bicholi Mardana", "Khajrana"],
     accessInformation: "Accessible via MR-10 and Ring Road. 5 minutes from Bombay Hospital Square and 25 minutes from Airport.",
     keyLandmarks: ["Apollo DB City", "Platinum Paradise", "Nipania Main Garden"],
@@ -418,20 +418,20 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Mahalaxmi Nagar",
     city: "Indore",
     title: "Mahalaxmi Nagar Indore Escorts | Call Girls near Bombay Hospital",
-    metaDescription: "Verified Mahalaxmi Nagar escorts in Indore. Elite companions near Bombay Hospital Square, Ring Road, and premium retail markets.",
+    metaDescription: "Verified Mahalaxmi Nagar escorts in Indore. Elite call girls near Bombay Hospital Square, Ring Road, and premium retail markets.",
     tagline: "Thriving Modern Residential & Healthcare Sector",
     pincode: "452010",
     zone: "North-Eastern Belt",
     introduction: "Mahalaxmi Nagar is a bustling, self-contained residential and medical district adjoining Bombay Hospital. It features upscale multi-story apartments, shopping markets, and lifestyle gyms.",
-    localContext: "Frequently visited by doctors, pharmaceutical delegates, and business travelers seeking comfortable serviced apartment stays with confidential companionship.",
+    localContext: "Frequently visited by doctors, pharmaceutical delegates, and business travelers seeking comfortable serviced apartment stays with confidential escort service.",
     nearbyAreas: ["Nipania", "Vijay Nagar", "Lasudia", "Khajrana"],
     accessInformation: "Connected directly to Ring Road and MR-10. 10 minutes from Vijay Nagar Square.",
     keyLandmarks: ["Bombay Hospital Indore", "Mahalaxmi Nagar Main Market", "Narayan Bagh Link"],
     luxuryHotelsNearby: ["Radisson Blu Hotel", "The Park Indore", "Sayaji Hotel"],
     faqs: [
       {
-        question: "How reliable is companion dispatch to Mahalaxmi Nagar?",
-        answer: "Companions can easily reach any society or hotel in Mahalaxmi Nagar in under 35 minutes."
+        question: "How reliable is call girl dispatch to Mahalaxmi Nagar?",
+        answer: "Call Girls can easily reach any society or hotel in Mahalaxmi Nagar in under 35 minutes."
       }
     ],
     relatedLocations: ["nipania", "vijay-nagar", "lasudia", "khajrana"],
@@ -447,15 +447,15 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     pincode: "452016",
     zone: "Eastern Ring Road",
     introduction: "Khajrana is nationally famous for the historic Khajrana Ganesh Temple. Expanding outward toward the Eastern Ring Road, it features lively markets and peaceful residential enclaves.",
-    localContext: "Good transit connectivity and peaceful atmosphere make it a popular residential base for independent companions serving eastern and central Indore.",
+    localContext: "Good transit connectivity and peaceful atmosphere make it a popular residential base for independent call girls serving eastern and central Indore.",
     nearbyAreas: ["Bengali Square", "Vijay Nagar", "Kanadia Road", "Saket Nagar"],
     accessInformation: "Directly accessible from Eastern Ring Road and Khajrana Main Road. 15 minutes from Railway Station.",
     keyLandmarks: ["Khajrana Ganesh Mandir Complex", "Khajrana Square", "Kailash Kuti Circle"],
     luxuryHotelsNearby: ["Hotel WOW Indore", "Ginger Hotel", "Effotel"],
     faqs: [
       {
-        question: "Can I book companion services near Khajrana Ring Road?",
-        answer: "Yes, hotels along the Eastern Ring Road provide quick access and discreet parking for companion dates."
+        question: "Can I book call girl services near Khajrana Ring Road?",
+        answer: "Yes, hotels along the Eastern Ring Road provide quick access and discreet parking for call girl dates."
       }
     ],
     relatedLocations: ["bengali-square", "vijay-nagar", "kanadia-road", "saket-nagar"],
@@ -466,12 +466,12 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Bengali Square",
     city: "Indore",
     title: "Bengali Square Indore Escorts | East Ring Road Call Girls",
-    metaDescription: "Verified Bengali Square escorts in Indore. Discreet companions near World Cup Square, Ring Road flyover, and Kanadia Road.",
+    metaDescription: "Verified Bengali Square escorts in Indore. Discreet call girls near World Cup Square, Ring Road flyover, and Kanadia Road.",
     tagline: "Eastern Ring Road Transit Crossroads",
     pincode: "452016",
     zone: "Eastern Indore",
     introduction: "Bengali Square is a bustling major intersection on the Eastern Ring Road, newly elevated with a modern multi-lane flyover that connects eastern suburbs to central business hubs.",
-    localContext: "Surrounded by modern retail stores, residential complexes, and business hotels, it is a strategic midpoint for coordinating companion meetings in East Indore.",
+    localContext: "Surrounded by modern retail stores, residential complexes, and business hotels, it is a strategic midpoint for coordinating call girl meetings in East Indore.",
     nearbyAreas: ["Khajrana", "Kanadia Road", "Saket Nagar", "Bicholi Mardana"],
     accessInformation: "Direct access to Eastern Ring Road and bypass link via Kanadia Road. 12 minutes to Vijay Nagar.",
     keyLandmarks: ["Bengali Square Flyover", "World Cup Square on Ring Road", "Goyal Nagar Link"],
@@ -490,12 +490,12 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Annapurna Road",
     city: "Indore",
     title: "Annapurna Road Indore Escorts | Call Girls near Annapurna Mandir",
-    metaDescription: "Book verified Annapurna Road escorts in Indore. Classy companions near Annapurna Temple, Sudama Nagar, and Choithram Circle with complete discretion.",
+    metaDescription: "Book verified Annapurna Road escorts in Indore. Classy call girls near Annapurna Temple, Sudama Nagar, and Choithram Circle with complete discretion.",
     tagline: "South-Western Heritage & Established Residential Quarter",
     pincode: "452009",
     zone: "South-Western District",
     introduction: "Annapurna Road is one of Indore's most established and peaceful residential boulevards, famous for the majestic white-marble Annapurna Temple and wide shaded avenues.",
-    localContext: "Quiet, respectable, and culturally rooted. Ideal for gentlemen seeking unhurried, private companionship in peaceful boutique hotels or residential apartments.",
+    localContext: "Quiet, respectable, and culturally rooted. Ideal for gentlemen seeking unhurried, private escort service in peaceful boutique hotels or residential apartments.",
     nearbyAreas: ["Sudama Nagar", "Choithram", "Kesar Bagh", "Rajendra Nagar"],
     accessInformation: "Connects Western Ring Road to central Indore. 15 minutes to Railway Station and 20 minutes to Airport.",
     keyLandmarks: ["Annapurna Temple", "Dussehra Maidan", "Choithram Hospital Circle", "Usha Nagar"],
@@ -538,7 +538,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Rau",
     city: "Indore",
     title: "Rau Indore Escorts | Call Girls near IIM Indore & Silicon City",
-    metaDescription: "Book verified Rau Indore escorts & call girls. Elite companions near IIM Indore, Silicon City, and Pithampur bypass highway.",
+    metaDescription: "Book verified Rau Indore escorts & call girls. Elite call girls near IIM Indore, Silicon City, and Pithampur bypass highway.",
     tagline: "Southern Academic & Industrial Gateway",
     pincode: "453331",
     zone: "South Indore & Bypass",
@@ -562,7 +562,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Rajendra Nagar",
     city: "Indore",
     title: "Rajendra Nagar Indore Escorts | Call Girls near RRCAT Indore",
-    metaDescription: "Verified Rajendra Nagar escorts in Indore. Discreet companions near Raja Ramanna Centre for Advanced Technology (RRCAT) and AB Road South.",
+    metaDescription: "Verified Rajendra Nagar escorts in Indore. Discreet call girls near Raja Ramanna Centre for Advanced Technology (RRCAT) and AB Road South.",
     tagline: "Premier Scientific Research & Quiet Suburbs",
     pincode: "452012",
     zone: "South-West AB Road",
@@ -575,7 +575,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     faqs: [
       {
         question: "Are hotel visits supported in Rajendra Nagar?",
-        answer: "Yes, companions can coordinate visits to business hotels along AB Road South near Rajendra Nagar."
+        answer: "Yes, call girls can coordinate visits to business hotels along AB Road South near Rajendra Nagar."
       }
     ],
     relatedLocations: ["rau", "annapurna-road", "choithram", "bhawarkuan"],
@@ -585,7 +585,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     slug: "bicholi-mardana",
     name: "Bicholi Mardana",
     city: "Indore",
-    title: "Bicholi Mardana Indore Escorts | Luxury Bypass Farmhouse Companions",
+    title: "Bicholi Mardana Indore Escorts | Luxury Bypass Farmhouse Call Girls",
     metaDescription: "Ultra-luxury VIP Bicholi Mardana escorts in Indore. Elite models for private farmhouse staycations, resorts, and Phoenix Citadel visits.",
     tagline: "Indore's Millionaire Mile & Luxury Farmhouses",
     pincode: "452016",
@@ -598,8 +598,8 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     luxuryHotelsNearby: ["Sheraton Grand Palace Indore", "The Grand Bhagwati", "Pride Hotel"],
     faqs: [
       {
-        question: "Can companions accompany me for a weekend staycation at Sheraton Grand Palace?",
-        answer: "Yes, our VIP companions are available for multi-day weekend bookings at five-star palace resorts and private farmhouses."
+        question: "Can call girls accompany me for a weekend staycation at Sheraton Grand Palace?",
+        answer: "Yes, our VIP call girls are available for multi-day weekend bookings at five-star palace resorts and private farmhouses."
       }
     ],
     relatedLocations: ["indore-bypass", "phoenix-citadel", "nipania", "kanadia-road"],
@@ -634,7 +634,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Saket Nagar",
     city: "Indore",
     title: "Saket Nagar Indore Escorts | Call Girls near Saket Club",
-    metaDescription: "Verified Saket Nagar escorts in Indore. Sophisticated companions near Saket Club, Anand Bazaar food walk, and tree-lined residential avenues.",
+    metaDescription: "Verified Saket Nagar escorts in Indore. Sophisticated call girls near Saket Club, Anand Bazaar food walk, and tree-lined residential avenues.",
     tagline: "Leafy Aristocratic Residential Haven",
     pincode: "452018",
     zone: "East-Central Corridor",
@@ -657,21 +657,21 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     slug: "tilak-nagar",
     name: "Tilak Nagar",
     city: "Indore",
-    title: "Tilak Nagar Indore Escorts | Anand Bazaar Food Walk Companions",
+    title: "Tilak Nagar Indore Escorts | Anand Bazaar Food Walk Call Girls",
     metaDescription: "Find charming Tilak Nagar escorts in Indore. Verified call girls near Anand Bazaar, Tilak Nagar Main Garden, and quiet residential lanes.",
     tagline: "Gourmet Street Food & Serene Living",
     pincode: "452018",
     zone: "East-Central District",
     introduction: "Tilak Nagar is famous throughout Indore for the lively Anand Bazaar evening food strip, beautiful public gardens, and peaceful residential bungalows.",
-    localContext: "Ideal for evening food crawls, coffee dates, and relaxed companion meetings away from crowded shopping malls.",
+    localContext: "Ideal for evening food crawls, coffee dates, and relaxed call girl meetings away from crowded shopping malls.",
     nearbyAreas: ["Saket Nagar", "Old Palasia", "LIG Colony", "Bengali Square"],
     accessInformation: "Linked via Anand Bazaar Road to Kanadia Road and Eastern Ring Road. 10 minutes to Indore Junction.",
     keyLandmarks: ["Anand Bazaar Street Food Strip", "Tilak Nagar Garden", "Patrakar Colony"],
     luxuryHotelsNearby: ["Hotel WOW", "Effotel", "Shreemaya Residency"],
     faqs: [
       {
-        question: "Can I book a companion for an evening street food walk at Anand Bazaar?",
-        answer: "Yes, our charming companions love exploring Anand Bazaar's fresh baked samosas, momos, and hot kulfis."
+        question: "Can I book a call girl for an evening street food walk at Anand Bazaar?",
+        answer: "Yes, our charming call girls love exploring Anand Bazaar's fresh baked samosas, momos, and hot kulfis."
       }
     ],
     relatedLocations: ["saket-nagar", "old-palasia", "lig-colony", "bengali-square"],
@@ -687,7 +687,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     pincode: "452001",
     zone: "Central Indore",
     introduction: "Geeta Bhawan Square on AB Road is one of central Indore's most recognizable landmarks, known for the historic Geeta Bhawan Temple complex and major healthcare institutions.",
-    localContext: "Central location with immediate access to Palasia, South Tukoganj, and Indore Junction, making companion dispatch extremely fast.",
+    localContext: "Central location with immediate access to Palasia, South Tukoganj, and Indore Junction, making call girl dispatch extremely fast.",
     nearbyAreas: ["Palasia", "South Tukoganj", "Manorama Ganj", "Navlakha"],
     accessInformation: "Geeta Bhawan i-Bus BRTS station on AB Road. 5 minutes from Railway Station.",
     keyLandmarks: ["Geeta Bhawan Temple", "Geeta Bhawan Square", "Manorama Ganj Enclave"],
@@ -718,8 +718,8 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     luxuryHotelsNearby: ["Lemon Tree Hotel Indore", "Hotel President", "Shreemaya Residency"],
     faqs: [
       {
-        question: "Can a companion join me for shopping at Treasure Island Mall?",
-        answer: "Yes, our fashionable companions are delighted to assist with luxury shopping and fashion choices at TI Mall."
+        question: "Can a call girl join me for shopping at Treasure Island Mall?",
+        answer: "Yes, our fashionable call girls are delighted to assist with luxury shopping and fashion choices at TI Mall."
       }
     ],
     relatedLocations: ["south-tukoganj", "race-course-road", "rajwada", "palasia"],
@@ -730,12 +730,12 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "AB Road Corridor",
     city: "Indore",
     title: "AB Road Indore Escorts | Central Arterial Corridor Call Girls",
-    metaDescription: "Exclusive AB Road Indore escorts & call girls directory. Verified companions along NH 52 and i-Bus BRTS corridor from Vijay Nagar to Bhawarkuan.",
+    metaDescription: "Exclusive AB Road Indore escorts & call girls directory. Verified call girls along NH 52 and i-Bus BRTS corridor from Vijay Nagar to Bhawarkuan.",
     tagline: "Indore's Lifeline Arterial Highway (NH 52)",
     pincode: "452001",
     zone: "Central Arterial Highway",
     introduction: "Agra-Bombay (AB) Road is the grand north-south arterial spine of Indore, hosting the city's dedicated air-conditioned i-Bus BRTS corridor and major commercial establishments.",
-    localContext: "Connecting Vijay Nagar to Bhawarkuan, AB Road is lined with top hotels, corporate offices, and shopping plazas, making travel effortless for companion dates.",
+    localContext: "Connecting Vijay Nagar to Bhawarkuan, AB Road is lined with top hotels, corporate offices, and shopping plazas, making travel effortless for call girl dates.",
     nearbyAreas: ["Vijay Nagar", "Palasia", "Geeta Bhawan", "Bhawarkuan"],
     accessInformation: "National Highway 52 with dedicated BRTS bus rapid transit lanes spanning the entire city.",
     keyLandmarks: ["Indore i-Bus Corridor", "Industry House", "Sayaji Square", "Bhawarkuan Square"],
@@ -754,7 +754,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "MR-10",
     city: "Indore",
     title: "MR-10 Indore Escorts | Luxury Hotel Call Girls near Radisson Blu",
-    metaDescription: "Book verified MR-10 Indore escorts & call girls. Elite hotel companions near Radisson Blu, The Park, and Brilliant Convention Centre.",
+    metaDescription: "Book verified MR-10 Indore escorts & call girls. Elite hotel call girls near Radisson Blu, The Park, and Brilliant Convention Centre.",
     tagline: "Expressway of 5-Star Hotels & Fast Airport Link",
     pincode: "452010",
     zone: "North Expressway",
@@ -766,7 +766,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     luxuryHotelsNearby: ["Radisson Blu Hotel Indore", "The Park Indore", "Sayaji Hotel"],
     faqs: [
       {
-        question: "Which five-star hotels on MR-10 are recommended for companion dates?",
+        question: "Which five-star hotels on MR-10 are recommended for call girl dates?",
         answer: "Both Radisson Blu and The Park on MR-10 offer ultra-discreet suites, fine dining restaurants, and private valet parking."
       }
     ],
@@ -778,7 +778,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "MR-9",
     city: "Indore",
     title: "MR-9 Indore Escorts | Nightlife & Malhar Mega Mall Call Girls",
-    metaDescription: "Verified MR-9 Indore escorts and social call girls. Companions near Malhar Mega Mall, premium cocktail lounges, and Vijay Nagar with complete privacy.",
+    metaDescription: "Verified MR-9 Indore escorts and social call girls. Call Girls near Malhar Mega Mall, premium cocktail lounges, and Vijay Nagar with complete privacy.",
     tagline: "Nightlife, Pubs & Shopping Strip",
     pincode: "452010",
     zone: "Vijay Nagar West",
@@ -790,7 +790,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     luxuryHotelsNearby: ["Sayaji Hotel", "Indore Marriott Hotel"],
     faqs: [
       {
-        question: "Can companions accompany me to night lounges on MR-9?",
+        question: "Can call girls accompany me to night lounges on MR-9?",
         answer: "Yes, our models dress in glamorous cocktail attire and fit right into high-end lounges like Mediterra and 10 Downing Street."
       }
     ],
@@ -802,12 +802,12 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Lasudia",
     city: "Indore",
     title: "Lasudia Indore Escorts | Call Girls in Lasudia Mori & Dewas Naka",
-    metaDescription: "Verified Lasudia Indore escorts & industrial corporate call girls. Discreet companions near Lasudia Mori, Dewas Naka, and AB Road bypass.",
+    metaDescription: "Verified Lasudia Indore escorts & industrial corporate call girls. Discreet call girls near Lasudia Mori, Dewas Naka, and AB Road bypass.",
     tagline: "Commercial Logistics & Highway Commerce",
     pincode: "452010",
     zone: "North Industrial Belt",
     introduction: "Lasudia Mori is a major industrial and logistics commercial hub on the northern edge of Indore, home to corporate warehouses, automobile dealerships, and business hotels.",
-    localContext: "Serving business owners, logistics executives, and highway travelers who need prompt, hassle-free companion coordination.",
+    localContext: "Serving business owners, logistics executives, and highway travelers who need prompt, hassle-free call girl coordination.",
     nearbyAreas: ["Dewas Naka", "Mahalaxmi Nagar", "Vijay Nagar", "Nipania"],
     accessInformation: "Situated on AB Road bypass link and Dewas Road. 10 minutes to Vijay Nagar.",
     keyLandmarks: ["Lasudia Police Station Circle", "Transport Nagar Link", "Dewas Naka Square"],
@@ -815,7 +815,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     faqs: [
       {
         question: "How fast can escorts arrive at hotels in Lasudia?",
-        answer: "From nearby Vijay Nagar, companions can reach Lasudia hotels in approximately 25 to 30 minutes."
+        answer: "From nearby Vijay Nagar, call girls can reach Lasudia hotels in approximately 25 to 30 minutes."
       }
     ],
     relatedLocations: ["dewas-naka", "mahalaxmi-nagar", "vijay-nagar"],
@@ -826,7 +826,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Dewas Naka",
     city: "Indore",
     title: "Dewas Naka Indore Escorts | Highway Junction Call Girls",
-    metaDescription: "Book genuine Dewas Naka escorts in Indore. Verified call girls and transit companions near Dewas Road junction and northern bypass.",
+    metaDescription: "Book genuine Dewas Naka escorts in Indore. Verified call girls and transit call girls near Dewas Road junction and northern bypass.",
     tagline: "Northern Highway Transit Node",
     pincode: "452010",
     zone: "North Indore Gateway",
@@ -838,8 +838,8 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     luxuryHotelsNearby: ["The Park Indore", "Sayaji Hotel"],
     faqs: [
       {
-        question: "Can companions meet at business hotels near Dewas Naka?",
-        answer: "Yes, companions can coordinate at recognized highway hotels and serviced accommodations in this zone."
+        question: "Can call girls meet at business hotels near Dewas Naka?",
+        answer: "Yes, call girls can coordinate at recognized highway hotels and serviced accommodations in this zone."
       }
     ],
     relatedLocations: ["lasudia", "mahalaxmi-nagar", "vijay-nagar"],
@@ -874,12 +874,12 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Choithram",
     city: "Indore",
     title: "Choithram Indore Escorts | Call Girls near Choithram Hospital",
-    metaDescription: "Verified Choithram Circle escorts in Indore. Discreet companions and call girls near Choithram Hospital & Research Centre and South-West Ring Road.",
+    metaDescription: "Verified Choithram Circle escorts in Indore. Discreet call girls and call girls near Choithram Hospital & Research Centre and South-West Ring Road.",
     tagline: "Healthcare Hub & South-West Arterial",
     pincode: "452014",
     zone: "South-West Indore",
     introduction: "Choithram Circle anchors one of central India's largest medical complexes, Choithram Hospital & Research Centre, connecting Manik Bagh, Annapurna, and Kesar Bagh.",
-    localContext: "Frequented by medical consultants, hospital visitors, and residents seeking calm, discreet companion appointments.",
+    localContext: "Frequented by medical consultants, hospital visitors, and residents seeking calm, discreet call girl appointments.",
     nearbyAreas: ["Annapurna Road", "Kesar Bagh", "Rajendra Nagar", "Bhawarkuan"],
     accessInformation: "Situated at the junction of Manik Bagh Road and Western Ring Road. 15 minutes to Airport.",
     keyLandmarks: ["Choithram Hospital & Research Centre", "Choithram Netralaya", "Manik Bagh Link"],
@@ -887,7 +887,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     faqs: [
       {
         question: "Can models coordinate visits near Choithram Circle?",
-        answer: "Yes, companions can meet at business hotels and serviced suites in the Choithram and Annapurna sector."
+        answer: "Yes, call girls can meet at business hotels and serviced suites in the Choithram and Annapurna sector."
       }
     ],
     relatedLocations: ["annapurna-road", "kesar-bagh", "rajendra-nagar", "bhawarkuan"],
@@ -903,14 +903,14 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     pincode: "452009",
     zone: "South-West Sector",
     introduction: "Kesar Bagh is named after the historic Holkar summer palace and lush garden estates, providing a quiet, green retreat between central and south-west Indore.",
-    localContext: "Quiet residential setting with minimal vehicular noise, well-suited for private and confidential companion meetings.",
+    localContext: "Quiet residential setting with minimal vehicular noise, well-suited for private and confidential call girl meetings.",
     nearbyAreas: ["Choithram", "Annapurna Road", "Bhawarkuan", "Rajwada"],
     accessInformation: "Directly accessible from Kesar Bagh Road and Manik Bagh. 10 minutes to Indore Railway Station.",
     keyLandmarks: ["Kesar Bagh Historic Palace Grounds", "Railway Crossing Flyover", "Manik Bagh Bridge"],
     luxuryHotelsNearby: ["Hotel Apna Palace", "Hotel Surya"],
     faqs: [
       {
-        question: "How private are companion visits in Kesar Bagh?",
+        question: "How private are call girl visits in Kesar Bagh?",
         answer: "Kesar Bagh's residential layout and low-traffic lanes ensure very high privacy."
       }
     ],
@@ -922,12 +922,12 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Chhawani",
     city: "Indore",
     title: "Chhawani Indore Escorts | Call Girls near Indore Junction Station",
-    metaDescription: "Verified Chhawani Indore escorts and call girls. Discreet companions near Chhawani Market, Murai Mohalla, and Indore Junction.",
+    metaDescription: "Verified Chhawani Indore escorts and call girls. Discreet call girls near Chhawani Market, Murai Mohalla, and Indore Junction.",
     tagline: "Historic Commercial Mandi & Rail Proximity",
     pincode: "452001",
     zone: "Central Indore",
     introduction: "Chhawani is one of Indore's oldest grain and agro-trading mandis, situated right between South Tukoganj, Navlakha, and Indore Junction Railway Station.",
-    localContext: "Centrally positioned, making it exceptionally fast for companions to meet clients arriving by train or staying in central commercial hotels.",
+    localContext: "Centrally positioned, making it exceptionally fast for call girls to meet clients arriving by train or staying in central commercial hotels.",
     nearbyAreas: ["South Tukoganj", "Navlakha", "Tower Square", "Siyaganj"],
     accessInformation: "5 minutes from Indore Railway Station. Direct connectivity to AB Road South.",
     keyLandmarks: ["Chhawani Grain Mandi", "Murai Mohalla", "Agrasen Square Link"],
@@ -935,7 +935,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     faqs: [
       {
         question: "Can models meet immediately upon arrival at Indore Junction?",
-        answer: "Yes, Chhawani's close proximity to Indore Junction allows companions to coordinate within 20 minutes of train arrival."
+        answer: "Yes, Chhawani's close proximity to Indore Junction allows call girls to coordinate within 20 minutes of train arrival."
       }
     ],
     relatedLocations: ["south-tukoganj", "navlakha", "tower-square", "siyaganj"],
@@ -946,12 +946,12 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Siyaganj",
     city: "Indore",
     title: "Siyaganj Indore Escorts | Historic Wholesale Market Call Girls",
-    metaDescription: "Find verified Siyaganj escorts in Indore. Discreet companions near Siyaganj wholesale trade market, Station Road, and Rajwada with complete privacy.",
+    metaDescription: "Find verified Siyaganj escorts in Indore. Discreet call girls near Siyaganj wholesale trade market, Station Road, and Rajwada with complete privacy.",
     tagline: "Wholesale Commerce & Railway Station Core",
     pincode: "452007",
     zone: "Central Railway Corridor",
     introduction: "Siyaganj is central India's premier wholesale trade market for spices, dry fruits, and hardware, located immediately outside Indore Junction Railway Station.",
-    localContext: "Frequently visited by merchant traders, industrial distributors, and outstation commercial buyers who appreciate convenient, fast companionship near their trade hotels.",
+    localContext: "Frequently visited by merchant traders, industrial distributors, and outstation commercial buyers who appreciate convenient, fast escort service near their trade hotels.",
     nearbyAreas: ["Rajwada", "Chhawani", "South Tukoganj"],
     accessInformation: "Located right on Station Road. 2 minutes from Indore Junction platforms.",
     keyLandmarks: ["Siyaganj Wholesale Market", "Indore Junction Front Plaza", "Shastri Bridge"],
@@ -975,7 +975,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     pincode: "452004",
     zone: "Central Heritage Quarter",
     introduction: "Juni Indore ('Old Indore') is the original settlement from which the modern city blossomed, situated along the Kahn river near Raoji Bazar and historic temples.",
-    localContext: "Rich in authentic Malwi cultural heritage and neighborhood warmth, ideal for guests wanting genuine local companionship.",
+    localContext: "Rich in authentic Malwi cultural heritage and neighborhood warmth, ideal for guests wanting genuine local escort service.",
     nearbyAreas: ["Rajwada", "Annapurna Road", "Kesar Bagh"],
     accessInformation: "Connected via Jawahar Marg and Raoji Bazar Road. 10 minutes to Indore Railway Station.",
     keyLandmarks: ["Kahn River Heritage Bank", "Raoji Bazar", "Juni Indore Police Station"],
@@ -983,7 +983,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     faqs: [
       {
         question: "What is the meeting procedure for Juni Indore?",
-        answer: "Companions can meet at star-rated hotels along nearby MG Road or Jawahar Marg for best comfort and discretion."
+        answer: "Call Girls can meet at star-rated hotels along nearby MG Road or Jawahar Marg for best comfort and discretion."
       }
     ],
     relatedLocations: ["rajwada", "annapurna-road", "kesar-bagh"],
@@ -1006,8 +1006,8 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     luxuryHotelsNearby: ["Effotel by Sayaji", "Hotel WOW", "Sayaji Hotel"],
     faqs: [
       {
-        question: "How fast is companion dispatch to LIG Square?",
-        answer: "Because LIG sits between Vijay Nagar and Palasia, companions can typically arrive within 20 to 30 minutes."
+        question: "How fast is call girl dispatch to LIG Square?",
+        answer: "Because LIG sits between Vijay Nagar and Palasia, call girls can typically arrive within 20 to 30 minutes."
       }
     ],
     relatedLocations: ["mig-colony", "palasia", "vijay-nagar", "tilak-nagar"],
@@ -1018,7 +1018,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "MIG Colony",
     city: "Indore",
     title: "MIG Colony Indore Escorts | Call Girls near Nehru Park",
-    metaDescription: "Book verified MIG Colony escorts in Indore. Discreet companions near Nehru Park, Shivaji Nagar, and AB Road.",
+    metaDescription: "Book verified MIG Colony escorts in Indore. Discreet call girls near Nehru Park, Shivaji Nagar, and AB Road.",
     tagline: "Tranquil Central Residential Enclave",
     pincode: "452001",
     zone: "Central-East Sector",
@@ -1054,7 +1054,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     luxuryHotelsNearby: ["Radisson Blu Hotel", "The Park Indore", "Hotel WOW"],
     faqs: [
       {
-        question: "Which hotels on Ring Road are best for companion meetings?",
+        question: "Which hotels on Ring Road are best for call girl meetings?",
         answer: "Radisson Blu, Hotel WOW, and The Park along Ring Road offer premium luxury, secure parking, and complete discretion."
       }
     ],
@@ -1066,7 +1066,7 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Silicon City",
     city: "Indore",
     title: "Silicon City Indore Escorts | Mega Township Call Girls near Rau",
-    metaDescription: "Find verified Silicon City escorts in Indore. Discreet companions in South Indore's premier mega-township on AB Road Rau.",
+    metaDescription: "Find verified Silicon City escorts in Indore. Discreet call girls in South Indore's premier mega-township on AB Road Rau.",
     tagline: "South Indore's Premier Mega-Township",
     pincode: "453331",
     zone: "South Indore",
@@ -1089,13 +1089,13 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     slug: "phoenix-citadel",
     name: "Phoenix Citadel",
     city: "Indore",
-    title: "Phoenix Citadel Indore Escorts | Mega-Mall Shopping Date Companions",
-    metaDescription: "Book charming companions near Phoenix Citadel Indore. Elite call girls for luxury shopping dates, movies, and fine dining at Central India's biggest mall.",
+    title: "Phoenix Citadel Indore Escorts | Mega-Mall Shopping Date Call Girls",
+    metaDescription: "Book charming call girls near Phoenix Citadel Indore. Elite call girls for luxury shopping dates, movies, and fine dining at Central India's biggest mall.",
     tagline: "Central India's Largest Luxury Shopping & Entertainment Mall",
     pincode: "452016",
     zone: "Indore Bypass",
     introduction: "Phoenix Citadel on the Indore Bypass is central India's largest shopping mall, featuring international luxury brands, IMAX multiplex, fine dining restaurants, and family entertainment.",
-    localContext: "The ultimate shopping date destination. Companions here are fashionable, charming, and stylish partners for movies, high-end shopping, and dinner.",
+    localContext: "The ultimate shopping date destination. Call Girls here are fashionable, charming, and stylish partners for movies, high-end shopping, and dinner.",
     nearbyAreas: ["Indore Bypass", "Bicholi Mardana", "Nipania"],
     accessInformation: "Directly located on Indore Bypass (AH47). 15 minutes from Vijay Nagar.",
     keyLandmarks: ["Phoenix Citadel Mega Mall", "Inox Megaplex", "Bypass Highway Plaza"],
@@ -1138,19 +1138,19 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Navlakha",
     city: "Indore",
     title: "Navlakha Indore Escorts | Call Girls near Navlakha Square & Bus Stand",
-    metaDescription: "Book verified Navlakha escorts in Indore. Reliable call girls and companions near Navlakha Square, South AB Road, and bus terminals.",
+    metaDescription: "Book verified Navlakha escorts in Indore. Reliable call girls and call girls near Navlakha Square, South AB Road, and bus terminals.",
     tagline: "South-Central Highway & Bus Transit Nexus",
     pincode: "452001",
     zone: "South AB Road",
     introduction: "Navlakha Square is a major transit crossroads in south Indore, home to inter-city private bus terminals, shopping complexes, and residential colonies.",
-    localContext: "Great for travelers arriving by private sleeper coach from Mumbai, Pune, or Ahmedabad seeking immediate companion coordination.",
+    localContext: "Great for travelers arriving by private sleeper coach from Mumbai, Pune, or Ahmedabad seeking immediate call girl coordination.",
     nearbyAreas: ["Bhawarkuan", "Chhawani", "Geeta Bhawan", "Tower Square"],
     accessInformation: "Directly on AB Road South, serviced by Navlakha i-Bus BRTS station. 7 minutes to Railway Station.",
     keyLandmarks: ["Navlakha Bus Terminal", "Navlakha Temple", "Agrasen Square Link"],
     luxuryHotelsNearby: ["Crown Palace Hotel", "Hotel Surya"],
     faqs: [
       {
-        question: "Can companions meet clients arriving at Navlakha bus stand?",
+        question: "Can call girls meet clients arriving at Navlakha bus stand?",
         answer: "Yes, models can receive clients at nearby hotel lounges or arrange coordinate arrivals quickly."
       }
     ],
@@ -1162,20 +1162,20 @@ export const INDORE_LOCATIONS: IndoreLocation[] = [
     name: "Pithampur Road",
     city: "Indore",
     title: "Pithampur Road Indore Escorts | Auto SEZ Industrial Call Girls",
-    metaDescription: "Verified Pithampur Road escorts in Indore. Executive companions for visiting plant heads, corporate delegates, and engineers in India's Detroit.",
+    metaDescription: "Verified Pithampur Road escorts in Indore. Executive call girls for visiting plant heads, corporate delegates, and engineers in India's Detroit.",
     tagline: "Automotive Industrial SEZ Executive Gateway",
     pincode: "453331",
     zone: "Industrial Sector Gateway",
     introduction: "Pithampur Road links Indore with the massive Pithampur industrial belt, known as the 'Detroit of India' for its dense cluster of automotive and pharmaceutical giants.",
-    localContext: "Catering to multinational plant directors, German and Japanese engineering delegates, and visiting auditors seeking high-caliber companions for evening relaxation.",
+    localContext: "Catering to multinational plant directors, German and Japanese engineering delegates, and visiting auditors seeking high-caliber call girls for evening relaxation.",
     nearbyAreas: ["Rau", "Silicon City", "Rajendra Nagar"],
     accessInformation: "4-lane expressway from Rau Circle to Pithampur Sectors 1, 2, and 3. 25 minutes to central Indore.",
     keyLandmarks: ["Pithampur SEZ Entry Gate", "Rau Toll Plaza", "Industrial Area Sector 1"],
     luxuryHotelsNearby: ["Papaya Tree Hotel", "Fortune Park Indore Bypass"],
     faqs: [
       {
-        question: "Are companions available for corporate dinners in Pithampur hotels?",
-        answer: "Yes, companions can coordinate at star-rated business resorts along the Rau-Pithampur highway."
+        question: "Are call girls available for corporate dinners in Pithampur hotels?",
+        answer: "Yes, call girls can coordinate at star-rated business resorts along the Rau-Pithampur highway."
       }
     ],
     relatedLocations: ["rau", "silicon-city", "rajendra-nagar"],

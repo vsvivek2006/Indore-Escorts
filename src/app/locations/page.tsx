@@ -65,7 +65,7 @@ export default function LocationsHubPage() {
           Indore Escorts &amp; Companions Locality Directory
         </h1>
         <p className="text-sm sm:text-base text-[#616161] leading-relaxed">
-          Indore is the commercial capital, educational hub, and cleanest city of India. We have cataloged our companion services across 48 distinct, geographically verified Indore localities, each featuring detailed transit connectivity, key landmarks, five-star hotel options, and localized coordination guidance.
+          Indore is the commercial centre, the educational centre and the cleanest city of India. We have inventoried our companion services in 48 different geographically verified localities of Indore with detailed transit connectivity, key landmarks, 5-star hotel options and localized coordination guidance.
         </p>
       </div>
 
@@ -76,7 +76,7 @@ export default function LocationsHubPage() {
           <span>Navigating Indore: Corridors, Highways &amp; Connectivity</span>
         </h2>
         <p className="text-xs sm:text-sm text-[#616161] leading-relaxed">
-          Indore is organized along major transportation axes: the central <strong>AB Road (NH 52)</strong> running north-south, the <strong>Ring Road</strong> encircling middle sectors, the multi-lane <strong>Bypass (AH47)</strong> hosting palatial five-star resorts and private clubs, and the <strong>Super Corridor</strong> providing a 15-minute signal-free conduit directly to Devi Ahilya Bai Holkar International Airport and major IT campuses.
+          Major transportation corridors, AB Road (NH52), Ring Road surrounding middle areas, palatial five-star resorts and private clubs along Bypass (AH47) and Super Corridor (direct link to Devi Ahilya Bai Holkar International Airport, major IT campuses), are all organized in Indore.
         </p>
       </div>
 

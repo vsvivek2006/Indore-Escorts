@@ -94,13 +94,13 @@ export default function AboutPage() {
           </h2>
           <div className="space-y-4 text-xs sm:text-sm text-[#616161] leading-relaxed">
             <p>
-              Indore has rapidly emerged as the commercial, financial, and educational powerhouse of Central India. With the expansion of the Super Corridor IT SEZ housing technology titans like TCS and Infosys, premier academic institutions like IIM and IIT, and bustling trade conventions at the Brilliant Convention Centre, the city welcomes thousands of traveling business executives, entrepreneurs, and global professionals every week.
+              Indore has become the commercial, financial and educative hub of Central India rather quickly. The city graces itself with thousands of traveling business executives, entrepreneurs and world professionals every week with its expansion of the Super Corridor IT SEZ, which houses technology giants like TCS and Infosys, top-of-the-ranking academic institutions like IIM and IIT, and the Brilliant Convention Centre brimming with trade conventions.
             </p>
             <p>
-              Historically, individuals seeking adult companionship in tier-2 Indian cities faced a minefield of digital fraud—unmoderated classified boards rife with stolen influencer photos, counterfeit profiles, and predatory syndicates demanding arbitrary advance payments under the guise of &quot;booking tokens,&quot; &quot;medical insurance cards,&quot; or &quot;transit fares.&quot; MySecretGirl69 Indore was established to fundamentally solve this issue by offering a curated, authentic, and dignified alternative.
+              Traditionally, those looking to find adult companions in tier-2 Indian cities have been caught in a pit of online fraud: unmoderated classified platforms that often have fake profiles, stolen influencers&apos; images, and scams designed to trick them into paying in advance for &quot;booking tokens&quot;, &quot;medical insurance cards&quot; or &quot;transit fares.&quot; With this in mind, MySecretGirl69 Indore was founded to provide an alternative that is exclusive, genuine, and respectful to the undercurrent of this issue.
             </p>
             <p>
-              We operate as a premium concierge directory connecting discerning gentlemen with independent, educated, and charming companions who take immense pride in their conversational skills, social poise, and emotional warmth. Every arrangement coordinated through our platform is built on mutual respect, complete personal safety, and unyielding privacy.
+              We are a high quality directory designed to match the most refined men with the most independent, educated, and polished female escorts who are extremely proud of their ability to talk and their social skills and emotional expression. All of our arrangements are fully respectful, safe and private.
             </p>
           </div>
         </section>
@@ -111,7 +111,7 @@ export default function AboutPage() {
             <ShieldCheck className="w-7 h-7 text-emerald-600" />
             <h3 className="text-lg font-bold text-[#45474f]">100% Face-to-Face Verified Profiles</h3>
             <p className="text-xs sm:text-sm text-[#616161] leading-relaxed">
-              Catfishing and counterfeit photos have no place on our roster. Every companion showcased on our website undergoes in-person verification with real photograph audits. The model you select on our directory is the exact person who greets you at your venue.
+              We don&apos;t want to see catfish and phony photos. All companions featured on our website are verified in person with actual picture audits. You are greeted by the model you choose from our directory, which is the same model you will have in your venue.
             </p>
           </div>
 
@@ -119,7 +119,7 @@ export default function AboutPage() {
             <Banknote className="w-7 h-7 text-emerald-700" />
             <h3 className="text-lg font-bold text-[#45474f]">Direct In-Person Settlement (Zero Advance)</h3>
             <p className="text-xs sm:text-sm text-[#616161] leading-relaxed">
-              We never ask for advance UPI transfers, bank deposits, or &quot;registration fees.&quot; All financial honorariums are settled directly in person upon your companion&apos;s arrival after mutual comfort is verified.
+              We do not request pre-payment of UPI transfers, bank deposits, or &quot;registration fees.&quot; All monetary honors are done in person, after you have been confirmed in comfort by your companion.
             </p>
           </div>
 
@@ -127,7 +127,7 @@ export default function AboutPage() {
             <Lock className="w-7 h-7 text-[#e31777]" />
             <h3 className="text-lg font-bold text-[#45474f]">Absolute Privacy &amp; Digital Hygiene</h3>
             <p className="text-xs sm:text-sm text-[#616161] leading-relaxed">
-              Your personal data, phone numbers, and reservation itineraries are never recorded, cataloged, or shared with third parties. Booking communications are handled confidentially via direct phone or WhatsApp lines.
+              No personal data, phone numbers, or reservation itineraries are recorded, cataloged or shared with third parties. Communications with the bookings are done confidentially by telephone or WhatsApp lines.
             </p>
           </div>
 
@@ -135,7 +135,7 @@ export default function AboutPage() {
             <Users className="w-7 h-7 text-sky-600" />
             <h3 className="text-lg font-bold text-[#45474f]">Consent &amp; Ethical Standards</h3>
             <p className="text-xs sm:text-sm text-[#616161] leading-relaxed">
-              Every companion listed on our directory is an independent consenting adult (21+ years old) who exercises full autonomy over her schedule, availability, and boundaries. We uphold absolute zero tolerance for exploitation or coercive practices.
+              Each companion on our directory is an independent consenting adult (21+ years old) who has complete freedom in her schedule and availability, as well as in setting her boundaries. Exploitation or coercive practices will not be tolerated at all.
             </p>
           </div>
         </section>
@@ -148,10 +148,10 @@ export default function AboutPage() {
           </h2>
           <div className="space-y-4 text-xs sm:text-sm text-[#616161] leading-relaxed">
             <p>
-              Unlike out-of-state call centers that possess no geographic awareness of Indore, our central dispatch desk operates locally from Scheme 54 in Vijay Nagar. Our coordinators understand local traffic flows across AB Road, MR-10, Ring Road, and the Super Corridor, allowing us to guarantee prompt 30-to-45-minute companion dispatch to five-star hotels and upscale residential suites.
+              No out-of-state call centres have geographic awareness about Indore, but our head office call centre is located in Vijay Nagar, Scheme 54. We know local traffic patterns throughout AB Road, MR-10, Ring Road and the Super Corridor and can ensure you will be accompanied to your five-star hotel and upscale residential suites within 30 to 45 minutes.
             </p>
             <p>
-              Whether you are lodged near C21 Mall in <Link href="/locations/vijay-nagar" className="text-[#e31777] font-semibold hover:underline">Vijay Nagar</Link>, attending a convention near <Link href="/locations/scheme-54" className="text-[#e31777] font-semibold hover:underline">Scheme 54</Link>, relaxing in upscale <Link href="/locations/palasia" className="text-[#e31777] font-semibold hover:underline">Palasia</Link>, or staying near corporate IT corridors along the <Link href="/locations/super-corridor" className="text-[#e31777] font-semibold hover:underline">Super Corridor</Link>, our verified network delivers comprehensive localized coverage.
+              Regardless of where you are staying in the vicinity of C21 Mall in <Link href="/locations/vijay-nagar" className="text-[#e31777] font-semibold hover:underline">Vijay Nagar</Link>, <Link href="/locations/scheme-54" className="text-[#e31777] font-semibold hover:underline">Scheme 54</Link> or in luxury <Link href="/locations/palasia" className="text-[#e31777] font-semibold hover:underline">Palasia</Link> or in the vicinity of corporate IT corridors along the <Link href="/locations/super-corridor" className="text-[#e31777] font-semibold hover:underline">Super Corridor</Link>, our verified network offers extensive local coverage.
             </p>
           </div>
           <div className="pt-2">

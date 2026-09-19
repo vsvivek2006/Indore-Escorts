@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           url: "/images/hero_banner.jpg",
           width: 1200,
           height: 675,
-          alt: `${location.name} Indore Escorts & Companions`
+          alt: `${location.name} Indore Escorts & Call Girls`
         }
       ]
     },
@@ -92,63 +92,23 @@ export default async function LocationDetailPage({ params }: PageProps) {
   );
 
   const whatsappMessage = encodeURIComponent(
-    `Hello MySecretGirl69, I'm interested in arranging a companion in ${location.name}, Indore.`
+    `Hello MySecretGirl69, I'm interested in arranging an escort in ${location.name}, Indore.`
   );
 
   const schemaData = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Place",
-        "@id": `https://mysecretgirl69.com/locations/${location.slug}#place`,
-        name: `${location.name}, Indore`,
-        description: location.metaDescription,
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: location.name,
-          addressLocality: "Indore",
-          addressRegion: "Madhya Pradesh",
-          postalCode: location.pincode,
-          addressCountry: "IN"
-        }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": `https://mysecretgirl69.com/locations/${location.slug}#breadcrumb`,
-        itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            name: "Home",
-            item: "https://mysecretgirl69.com"
-          },
-          {
-            "@type": "ListItem",
-            position: 2,
-            name: "Indore Locations",
-            item: "https://mysecretgirl69.com/locations"
-          },
-          {
-            "@type": "ListItem",
-            position: 3,
-            name: location.name,
-            item: `https://mysecretgirl69.com/locations/${location.slug}`
-          }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": `https://mysecretgirl69.com/locations/${location.slug}#faq`,
-        mainEntity: location.faqs.map((faq) => ({
-          "@type": "Question",
-          name: faq.question,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: faq.answer
-          }
-        }))
-      }
-    ]
+    "@type": "Place",
+    "@id": `https://mysecretgirl69.com/locations/${location.slug}#place`,
+    name: `${location.name}, Indore`,
+    description: location.metaDescription,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: location.name,
+      addressLocality: "Indore",
+      addressRegion: "Madhya Pradesh",
+      postalCode: location.pincode,
+      addressCountry: "IN"
+    }
   };
 
   return (
@@ -196,7 +156,7 @@ export default async function LocationDetailPage({ params }: PageProps) {
           {/* Heading in Pacifico Cursive */}
           <div className="space-y-2 max-w-4xl">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-heading text-white tracking-wide leading-tight">
-              {location.name} Escorts &amp; Companions in Indore
+              {location.name} Escorts &amp; Call Girls in Indore
             </h1>
             <p className="text-lg sm:text-xl text-pink-300 font-bold font-sans">
               {location.tagline}
@@ -246,14 +206,14 @@ export default async function LocationDetailPage({ params }: PageProps) {
                   Local Experience
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
-                  Refined Companionship in <span className="text-[#e31777]">{location.name}</span>
+                  Refined Escort Service in <span className="text-[#e31777]">{location.name}</span>
                 </h2>
               </div>
               <p className="text-sm text-slate-700 leading-relaxed">
-                {location.localContext} As one of Indore&apos;s most prominent districts, {location.name} is known for upscale lifestyle, fine dining, and prime hospitality. Whether you are in town for an important business conference, unwinding after a busy schedule, or simply looking for warm and intelligent company, our verified independent companions bring natural grace and cheerful conversation to your evening.
+                {location.localContext} As one of Indore&apos;s most prominent districts, {location.name} is known for upscale lifestyle, fine dining, and prime hospitality. Whether you are in town for an important business conference, unwinding after a busy schedule, or simply looking for warm and intelligent company, our verified independent call girls bring natural grace and cheerful conversation to your evening.
               </p>
               <p className="text-sm text-slate-700 leading-relaxed">
-                Every companion listed in {location.name} is hand-screened in person. You will enjoy genuine warmth, articulate conversation, and effortless elegance whether you are sharing dinner at an upscale restaurant, socializing at an executive gathering, or enjoying unhurried relaxation in your hotel suite.
+                Every call girl listed in {location.name} is hand-screened in person. You will enjoy genuine warmth, articulate conversation, and effortless elegance whether you are sharing dinner at an upscale restaurant, socializing at an executive gathering, or enjoying unhurried relaxation in your hotel suite.
               </p>
             </article>
 
@@ -319,7 +279,7 @@ export default async function LocationDetailPage({ params }: PageProps) {
                 </h2>
               </div>
               <p className="text-sm text-slate-700 leading-relaxed">
-                {location.accessInformation} Our central coordination desk manages private executive cab transit to all hotels and residential addresses in {location.name}. Once you confirm your preferred companion and hotel details, your companion will arrive directly at your room within 30 to 45 minutes.
+                {location.accessInformation} Our central coordination desk manages private executive cab transit to all hotels and residential addresses in {location.name}. Once you confirm your preferred call girl and hotel details, your escort will arrive directly at your room within 30 to 45 minutes.
               </p>
             </article>
 
@@ -332,7 +292,7 @@ export default async function LocationDetailPage({ params }: PageProps) {
                 </h3>
               </div>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                We believe in straightforward, honest service. You never transfer advance fees, booking charges, or online deposits. You only pay the agreed amount in person directly to your companion when she arrives at your venue and you are completely satisfied.
+                We believe in straightforward, honest service. You never transfer advance fees, booking charges, or online deposits. You only pay the agreed amount in person directly to your call girl when she arrives at your venue and you are completely satisfied.
               </p>
             </article>
           </div>
@@ -383,7 +343,7 @@ export default async function LocationDetailPage({ params }: PageProps) {
                   <ul className="space-y-2 text-xs text-slate-300">
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-pink-400 shrink-0 mt-0.5" />
-                      <span>1. Choose companion from verified photos</span>
+                      <span>1. Choose call girl from verified photos</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check className="w-4 h-4 text-pink-400 shrink-0 mt-0.5" />
@@ -441,7 +401,7 @@ export default async function LocationDetailPage({ params }: PageProps) {
                 Available Tonight
               </span>
               <h2 className="text-2xl sm:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
-                Verified Companions in <span className="text-[#e31777]">{location.name}</span>
+                Verified Escorts in <span className="text-[#e31777]">{location.name}</span>
               </h2>
               <p className="text-xs sm:text-sm text-slate-600">
                 100% genuine photos. Available for out-call hotel visits and dinner dates.
@@ -548,14 +508,14 @@ export default async function LocationDetailPage({ params }: PageProps) {
             ...location.faqs,
             {
               question: `Is advance payment required for bookings in ${location.name}?`,
-              answer: `No. We never ask for advance booking deposits or UPI transfers. You settle the agreed amount directly with your companion only upon her arrival at your venue in ${location.name}.`
+              answer: `No. We never ask for advance booking deposits or UPI transfers. You settle the agreed amount directly with your call girl only upon her arrival at your venue in ${location.name}.`
             },
             {
-              question: `How fast can a companion reach my hotel in ${location.name}?`,
-              answer: `Our companions typically arrive within 30 to 45 minutes of booking confirmation at any luxury hotel or suite in ${location.name}.`
+              question: `How fast can a call girl reach my hotel in ${location.name}?`,
+              answer: `Our call girls typically arrive within 30 to 45 minutes of booking confirmation at any luxury hotel or suite in ${location.name}.`
             }
           ]}
-          title={`${location.name} Companionship FAQs`}
+          title={`${location.name} Escort Service FAQs`}
           subtitle={`Clear answers regarding hotel visits, arrival timings, and direct payment in ${location.name}, Indore.`}
         />
       </section>
@@ -569,7 +529,7 @@ export default async function LocationDetailPage({ params }: PageProps) {
               <span>Explore Neighboring Indore Sectors</span>
             </h3>
             <p className="text-xs text-slate-600">
-              We also provide verified companion services across all surrounding corridors and hubs:
+              We also provide verified escort services across all surrounding corridors and hubs:
             </p>
           </div>
 

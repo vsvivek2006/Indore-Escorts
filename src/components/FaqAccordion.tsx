@@ -17,7 +17,7 @@ interface FaqAccordionProps {
 export default function FaqAccordion({
   faqs,
   title = "Frequently Asked Questions",
-  subtitle = "Clear, accurate answers regarding our companion directory, privacy standards, and local Indore coordination."
+  subtitle = "Clear, accurate answers regarding our escort directory, privacy standards, and local Indore coordination."
 }: FaqAccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 

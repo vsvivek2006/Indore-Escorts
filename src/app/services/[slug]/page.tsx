@@ -125,11 +125,11 @@ export default async function ServiceDetailPage({ params }: PageProps) {
     },
     {
       question: `Is advance payment or registration fee required for ${service.title}?`,
-      answer: `Never. We enforce a strict zero advance policy across all our services. You settle the honorarium directly upon meeting your verified companion.`
+      answer: `Never. We enforce a strict zero advance policy across all our services. You settle the honorarium directly upon meeting your verified call girl.`
     },
     {
-      question: `Can the companion accompany me to luxury hotel restaurants in Indore?`,
-      answer: `Yes, our companions are experienced in high-end social etiquette and comfortably accompany clients to five-star venues such as Mediterra at Sayaji Hotel, Indore Kitchen at Indore Marriott, and The Square at Novotel.`
+      question: `Can the call girl accompany me to luxury hotel restaurants in Indore?`,
+      answer: `Yes, our call girls are experienced in high-end social etiquette and comfortably accompany clients to five-star venues such as Mediterra at Sayaji Hotel, Indore Kitchen at Indore Marriott, and The Square at Novotel.`
     }
   ];
 
@@ -170,7 +170,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           {service.shortDescription}
         </p>
         <p className="text-xs sm:text-sm text-[#616161] leading-relaxed max-w-3xl">
-          Experience unrivaled discretion, warmth, and conversational charm with hand-selected independent companions tailored specifically for {service.title.toLowerCase()} across Indore&apos;s leading sectors.
+          Experience unrivaled discretion, warmth, and conversational charm with hand-selected independent call girls tailored specifically for {service.title.toLowerCase()} across Indore&apos;s leading sectors.
         </p>
 
         {/* Quick Booking CTAs */}
@@ -215,7 +215,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             Indore has evolved rapidly into central India&apos;s prime commercial and cultural capital. Between the high-density corporate offices of the Super Corridor, major industrial hubs in Pithampur and Sanwer Road, and premier convention venues like the Brilliant Convention Centre, visiting executives and discerning residents often find themselves seeking exceptional social company. Our dedicated service caters precisely to those who value intelligence, natural charm, and effortless social grace.
           </p>
           <p>
-            Every companion available for this offering is rigorously pre-screened to ensure absolute authenticity, emotional maturity, and the ability to seamlessly integrate into high-end public or private environments. Whether attending a formal dinner at a five-star hotel restaurant or enjoying quiet in-suite relaxation, you are assured of an unhurried, thoroughly enjoyable encounter.
+            Every call girl available for this offering is rigorously pre-screened to ensure absolute authenticity, emotional maturity, and the ability to seamlessly integrate into high-end public or private environments. Whether attending a formal dinner at a five-star hotel restaurant or enjoying quiet in-suite relaxation, you are assured of an unhurried, thoroughly enjoyable encounter.
           </p>
         </div>
       </section>
@@ -291,7 +291,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               Verified Companions
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#45474f] tracking-tight mt-1">
-              Top Companions Available for {service.title}
+              Top Escorts Available for {service.title}
             </h2>
             <p className="text-xs sm:text-sm text-[#616161] mt-1">
               Experienced, verified independent models ready for immediate appointment scheduling in Indore.
@@ -323,7 +323,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             Prime Indore Locations for {service.title}
           </h3>
           <p className="text-xs sm:text-sm text-[#616161] mt-1">
-            Our companions provide prompt out-call service to luxury hotels and executive residences across these key sectors:
+            Our call girls provide prompt out-call service to luxury hotels and executive residences across these key sectors:
           </p>
         </div>
 
@@ -358,7 +358,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
       {/* Other Services Matrix */}
       <section className="my-12 rounded-2xl bg-white border border-gray-200 p-6 sm:p-8 space-y-4 shadow-sm">
         <h3 className="text-lg font-bold text-[#45474f]">
-          Explore Other Bespoke Companionship Services in Indore
+          Explore Other Bespoke Escort Services in Indore
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {otherServices.map((oth) => (

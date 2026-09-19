@@ -100,29 +100,29 @@ export default function SafetyGuidePage() {
             </div>
           </div>
           <p className="text-xs sm:text-sm text-[#616161] leading-relaxed">
-            The single most pervasive danger in the online escort market is the <strong>Advance Fee Scam</strong>. Unregulated classified directories and anonymous messaging channels are filled with fake operators who steal photos from fashion models and demand upfront money via UPI, Paytm, or gift cards before vanishing.
+            The biggest scam in the online escort industry is the <strong>Advance Fee Scam</strong>. Unregulated classified websites and anonymous messaging systems are being flooded with fake operators, who steal fashion models&apos; pictures and ask for money upfront through UPI, Paytm or giftcards, before disappearing.
           </p>
           <div className="p-5 rounded-2xl bg-white border border-rose-200 space-y-3 text-xs sm:text-sm">
             <strong className="text-rose-900 block font-bold">
-              Common Fabricated Advance Charges to Immediately Reject:
+              Standard Fabricated Advance Charges to be immediately rejected:
             </strong>
             <ul className="space-y-2 text-gray-700">
               <li className="flex items-start gap-2">
                 <span className="text-rose-600 font-bold">•</span>
-                <span><strong>&quot;Medical Registration / Health Card Clearances&quot;</strong> — Claiming mandatory government disease screenings requiring ₹1,500 to ₹3,000 deposits. Completely fraudulent.</span>
+                <span><strong>&quot;Medical Registration / Health Card Clearances&quot;</strong> — Making mandatory government registrations which require deposits of between ₹1,500 and ₹3,000. Completely fraudulent.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-rose-600 font-bold">•</span>
-                <span><strong>&quot;Driver Transit / Petrol Allowances&quot;</strong> — Demanding ₹500 to ₹1,000 for private cab dispatch before arrival. Legitimate agencies cover their own transit.</span>
+                <span><strong>&quot;Driver Transit / Petrol Allowances&quot;</strong> — Requesting the payment of ₹500 to ₹1,000 before reaching the private cab service. It&apos;s okay if it&apos;s a legitimate agency, they will cover their own transportation.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-rose-600 font-bold">•</span>
-                <span><strong>&quot;Hotel Security &amp; Room Booking Tokens&quot;</strong> — Falsely alleging the hotel requires an advance security bond. Hotels never ask independent agencies for this.</span>
+                <span><strong>&quot;Hotel Security &amp; Room Booking Tokens&quot;</strong> — False pretenses that an advance security bond is required for the hotel. Independent agencies don&apos;t get the hotel&apos;s asking for it.</span>
               </li>
             </ul>
           </div>
           <p className="text-xs sm:text-sm text-gray-700 leading-relaxed font-medium">
-            At MySecretGirl69 Indore, <strong>you never transfer a single rupee prior to your companion&apos;s physical arrival</strong>. You inspect your companion in person, confirm mutual comfort, and settle the honorarium directly upon meeting.
+            MySecretGirl69 Indore doesn&apos;t send a single rupee until your date comes physically. You examine your companion in person and make sure that you are comfortable with each other, then give them the payment directly upon meeting.
           </p>
         </section>
 
@@ -143,7 +143,7 @@ export default function SafetyGuidePage() {
               </div>
               <h3 className="text-sm font-bold text-gray-900">Personalized Voice Note</h3>
               <p className="text-xs text-gray-600 leading-relaxed">
-                Request a quick audio voice message on WhatsApp mentioning your name and the current date. Scammers using bots cannot provide this.
+                Ask for a voice note on WhatsApp that says your name and the date. This can&apos;t be provided by scammers with bots.
               </p>
             </div>
 
@@ -153,7 +153,7 @@ export default function SafetyGuidePage() {
               </div>
               <h3 className="text-sm font-bold text-gray-900">Brief Video Call</h3>
               <p className="text-xs text-gray-600 leading-relaxed">
-                A 5-to-10-second live video greeting before dispatch removes 100% of catfishing doubt and confirms that real photographs match the person.
+                Before dispatch a 5-10 second live video greeting eliminates 100% of the catfishing doubt and helps to verify that real photos are of real people.
               </p>
             </div>
 
@@ -163,7 +163,7 @@ export default function SafetyGuidePage() {
               </div>
               <h3 className="text-sm font-bold text-gray-900">Local Dialect &amp; Landmarks</h3>
               <p className="text-xs text-gray-600 leading-relaxed">
-                Genuine Indore companions possess intimate knowledge of local sectors like Vijay Nagar, Chappan Dukan, and major hotels like Sayaji or Marriott.
+                True Indore buddies will know the local areas such as Vijay Nagar, Chappan Dukan, and big hotels such as Sayaji or Marriott.
               </p>
             </div>
           </div>
@@ -186,17 +186,17 @@ export default function SafetyGuidePage() {
                   Recommended 5-Star Properties
                 </strong>
                 <p className="text-xs text-gray-600 leading-relaxed">
-                  Sayaji Hotel (Vijay Nagar), Indore Marriott Hotel, Radisson Blu (MR-10), Sheraton Grand Palace (Bypass), and WOW Hotel provide round-the-clock security, private key-card elevators, and discrete lobby lounges.
+                  Sayaji Hotel (Vijay Nagar), Indore Marriott Hotel, Radisson Blu (MR-10), Sheraton Grand Palace (Bypass), and WOW Hotel offer 24-hour security, key-card elevators and quiet lounge areas in the lobby.
                 </p>
               </div>
 
               <div className="p-4 rounded-xl bg-white border border-pink-200 space-y-2">
                 <strong className="text-sm font-bold text-gray-900 flex items-center gap-1.5">
                   <AlertTriangle className="w-4 h-4 text-amber-600" />
-                  Venues to Strictly Avoid
+                  Avoid Locations
                 </strong>
                 <p className="text-xs text-gray-600 leading-relaxed">
-                  Never agree to meet in obscure roadside guest houses, secluded suburban outskirts, industrial factory areas, or unverified short-stay rentals where security infrastructure is absent.
+                  Anywhere other than a guest house with strong security, a short-term rental with security, or a traditional hotel.
                 </p>
               </div>
             </div>

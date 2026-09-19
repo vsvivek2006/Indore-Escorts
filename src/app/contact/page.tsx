@@ -76,19 +76,19 @@ export default function ContactPage() {
   const contactFaqs = [
     {
       question: "How fast will a coordinator respond on WhatsApp or phone?",
-      answer: "Our central booking desk operates 24 hours a day, 7 days a week. We typically respond to incoming WhatsApp messages and telephone inquiries in under 3 to 5 minutes."
+      answer: "We have 24 hour/7 day central booking. We usually reply to incoming WhatsApp messages and phone calls in less than 3 to 5 minutes."
     },
     {
-      question: "Do I need to pay any advance deposit or cab fare during booking?",
-      answer: "No. We enforce a zero upfront payment policy across Indore. You never pay any advance booking fees, registration charges, or taxi allowances. You settle the agreed honorarium directly upon meeting your companion."
+      question: "Is it required to pay in advance deposit/ cab fare on booking?",
+      answer: "No. Across Indore we have a ZERO UP FRONT payment policy. There are no advance booking fees, registration fees or taxi allowances to pay. The agreed honorarium is paid on the first meeting with the companion."
     },
     {
       question: "What details do I need to provide when placing a booking?",
-      answer: "Simply share your preferred meeting venue (hotel name and room number or residential area), preferred appointment timing, and the name or ID of the companion you wish to invite."
+      answer: "Just say the name and room number of the hotel or the name and address where you want to meet, what time you want to meet, and the name or ID of the companion you want to invite."
     },
     {
-      question: "Are out-call services available to five-star hotels in Indore?",
-      answer: "Yes, our companions routinely visit major star-rated hotels including Sayaji Hotel, Indore Marriott, Radisson Blu, Sheraton Grand Palace, and WOW Hotel with complete discretion."
+      question: "Is there any out call facility in 5-star hotel in Indore?",
+      answer: "Yes, our associates often go to big star-rated hotels, such as WOW Hotel, Sheraton Grand Palace, Radisson Blu, Indore Marriott, and Sayaji Hotel—without any hassle."
     }
   ];
 
@@ -201,7 +201,7 @@ export default function ContactPage() {
               <span className="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-bold">25–35 Mins</span>
             </strong>
             <p className="text-xs text-gray-600 leading-relaxed">
-              Immediate dispatch to Sayaji Hotel, C21 Mall, Malhar Mega Mall, and Brilliant Convention Centre.
+              Immediately dispatched to Sayaji Hotel, C21 Mall, Malhar Mega Mall and Brilliant Convention Centre.
             </p>
             <Link href="/locations/vijay-nagar" className="text-xs font-bold text-[#e31777] hover:underline block pt-1">
               Explore Vijay Nagar Guide →
@@ -214,7 +214,7 @@ export default function ContactPage() {
               <span className="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-bold">30–40 Mins</span>
             </strong>
             <p className="text-xs text-gray-600 leading-relaxed">
-              Rapid transit to 56 Dukan, Greater Kailash Road, private luxury apartments, and central boutique hotels.
+              Quick transport to 56 Dukan, Greater Kailash Road, Private luxury apartments and Central boutique hotels.
             </p>
             <Link href="/locations/palasia" className="text-xs font-bold text-[#e31777] hover:underline block pt-1">
               Explore Palasia Guide →
@@ -227,7 +227,7 @@ export default function ContactPage() {
               <span className="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-bold">30–45 Mins</span>
             </strong>
             <p className="text-xs text-gray-600 leading-relaxed">
-              Prompt coordination for Radisson Blu, corporate IT hubs (TCS/Infosys), and Devi Ahilya Airport hotels.
+              Coordinating prompt for Radisson Blu, corporate IT hubs (TCS/Infosys) and Devi Ahilya Airport hotels.
             </p>
             <Link href="/locations/super-corridor" className="text-xs font-bold text-[#e31777] hover:underline block pt-1">
               Explore Super Corridor Guide →
@@ -240,7 +240,7 @@ export default function ContactPage() {
               <span className="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-bold">35–45 Mins</span>
             </strong>
             <p className="text-xs text-gray-600 leading-relaxed">
-              Direct accompaniment to Sheraton Grand Palace, luxury farmhouses, and tranquil highway resorts.
+              Accompaniment directly to Sheraton Grand Palace, luxury farmhouses and serene highway resorts.
             </p>
             <Link href="/locations/indore-bypass" className="text-xs font-bold text-[#e31777] hover:underline block pt-1">
               Explore Bypass Road Guide →
@@ -253,7 +253,7 @@ export default function ContactPage() {
               <span className="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-bold">30–40 Mins</span>
             </strong>
             <p className="text-xs text-gray-600 leading-relaxed">
-              Convenient access to southern commercial sectors, university campuses, and Sapna Sangeeta dining.
+              Sectors in the south as well as University campuses and Sapna Sangeeta dining is available in nearby areas.
             </p>
             <Link href="/locations/bhawarkuan" className="text-xs font-bold text-[#e31777] hover:underline block pt-1">
               Explore Bhawarkuan Guide →
@@ -266,7 +266,7 @@ export default function ContactPage() {
               <span className="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-bold">45–60 Mins</span>
             </strong>
             <p className="text-xs text-gray-600 leading-relaxed">
-              Scheduled executive accompaniment to corporate manufacturing guest houses and highway hotels.
+              Corporate Manufacturing Guest House, Highway Hotel Executive Accompaniment.
             </p>
             <Link href="/locations/rau" className="text-xs font-bold text-[#e31777] hover:underline block pt-1">
               Explore Rau Guide →

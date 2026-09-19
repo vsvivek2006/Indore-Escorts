@@ -40,7 +40,22 @@ export const metadata: Metadata = {
     url: "https://mysecretgirl69.com",
     siteName: "Indore Girls Escorts Service",
     type: "website",
-    locale: "en_IN"
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://mysecretgirl69.com/images/hero_banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Escorts in Indore Call Girls"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Escorts in Indore Call Girls | Hot Call Girls in Indore Hotel Delivery",
+    description:
+      "Book the hottest Indore call girls and Escorts Service today. Elite call girls with fast hotel delivery across Vijay Nagar, Palasia, and 48 localities.",
+    images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
   }
 };
 
@@ -48,31 +63,31 @@ export default function HomePage() {
   const homeFaqs = [
     {
       question: "What areas in Indore does this companion directory cover?",
-      answer: "We provide comprehensive coverage across all 48 major zones in Indore, including Vijay Nagar, Scheme 54, Scheme 74, Palasia, New Palasia, Bhawarkuan, Super Corridor, Airport Road, South Tukoganj, Rau, and the Indore Bypass luxury resorts."
+      answer: "We cover all 48 major areas of Indore, including Vijay Nagar, Scheme 54, Scheme 74, Palasia, New Palasia, Bhawarkuan, Super Corridor, Airport Road, South Tukoganj, Rau and the Indore Bypass luxury resorts."
     },
     {
       question: "How long does local companion coordination typically take in Indore?",
-      answer: "For central and north-eastern hubs like Vijay Nagar, Palasia, and MR-10, verified companions can usually arrive at your hotel room or private accommodation within 30 to 45 minutes of direct confirmation."
+      answer: "In hubs in the centre and north east, verified companions will generally be able to get to your hotel room or private property within 30 - 45 minutes of direct confirmation."
     },
     {
-      question: "How do I contact or arrange a companion in Indore?",
-      answer: "You can reach out directly via WhatsApp or telephone to our concierge desk at +91 90062 36133. State your preferred Indore locality and desired schedule to coordinate available independent companions."
+      question: "How to get in touch with companions in Indore?",
+      answer: "You can contact our concierge directly on WhatsApp or on the phone at +91 90062 36133. Clearly state the place of your preference in Indore along with your preferred time to arrange independent escorts available in that area."
     },
     {
-      question: "Can companions accompany guests to corporate galas or events in Indore?",
-      answer: "Yes, many independent companions listed in our directory possess polished social etiquette, articulate English and Hindi fluency, and elegant attire suitable for business dinners, convention galas at the Brilliant Convention Centre, and executive social events."
+      question: "Can companions attend corporate galas or events in Indore?",
+      answer: "Yes, many independent companions on our directory have well-groomed social manners, fluent English and Hindi language skills, and beautiful looks for business dinners, convention galas at the Brilliant Convention Centre and executive social events."
     },
     {
       question: "What payment methods are accepted for companion bookings in Indore?",
-      answer: "We support flexible and transparent payment arrangements settled directly upon meeting your companion. Whether you prefer cash or digital transfer upon arrival, zero advance deposits or registration fees are required."
+      answer: "We offer flexible and clear payment options that are worked out directly with your partner. No advance deposits or registration fees are required – cash or digital transfer upon arrival."
     },
     {
-      question: "Which luxury hotels in Indore are companion-friendly and discreet?",
-      answer: "Indore's leading five-star establishments such as Sayaji Hotel, Radisson Blu, Indore Marriott, Sheraton Grand Palace, and boutique suites in Vijay Nagar and New Palasia offer discreet check-in procedures, spacious suites, and private in-room dining."
+      question: "Which luxury hotels in Indore are companion friendly and discreet?",
+      answer: "The top five star hotels in Indore, including Sayaji Hotel, Radisson Blu, Indore Marriott, Sheraton Grand Palace and boutique suites in Vijay Nagar and New Palasia have discreet check-in procedures, large suites, and private dining in rooms."
     },
     {
-      question: "How is client privacy and discretion handled?",
-      answer: "All interactions are handled with the utmost discretion. We do not retain personal identifying records, numbers are never shared with marketing third parties, and all communication via phone or WhatsApp is completely private and confidential."
+      question: "What measures are taken to ensure client privacy and discretion?",
+      answer: "All interactions are dealt with with the greatest confidentiality. We never store personal identifying records, numbers are not sold to marketing parties and all conversations on the phone and WhatsApp are 100% private and confidential."
     }
   ];
 
@@ -168,7 +183,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-white/90 text-sm sm:text-base max-w-2xl text-center mb-8 drop-shadow-md font-sans">
-            Verified independent companions for 5-star hotel suites, dinner dates, and executive stays in Vijay Nagar, Palasia &amp; 48 Indore zones. Fast 30–45 min dispatch.
+            Call Girls available in Vijay Nagar, Palasia &amp; 48 zones with 5-star hotel bookings, dinner dates and executive stay. Fast 30–45 min dispatch.
           </p>
 
           <div className="hero-cta-row">
@@ -216,6 +231,7 @@ export default function HomePage() {
                   src="/images/model_aarohi.jpg"
                   alt="Elite Indore Call Girl Premier Escort"
                   fill
+                  sizes="(max-width: 768px) 100vw, 448px"
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex items-end p-6">
@@ -242,10 +258,10 @@ export default function HomePage() {
               </div>
 
               <p className="text-sm text-slate-700 leading-relaxed">
-                Welcome to <strong>MySecretGirl69</strong>. We are here to make your time in Indore relaxing, exciting, and completely stress-free. Whether you are visiting for executive summits at the <strong>Brilliant Convention Centre</strong>, unwinding after a long day in your luxury hotel suite, or looking for a charming, well-spoken date for dinner, our handpicked independent companions are ready to spend quality, unhurried time with you.
+                Welcome to <strong>MySecretGirl69</strong>. We come here to make your stay in Indore stress free, entertaining and comfortable. From the executive summits at <strong>Brilliant Convention Centre</strong>, to a relaxing post-workout soiree in your luxury hotel suite or a lovely, polite date for dinner, our carefully selected independent companions will be able to spend quality time with you.
               </p>
               <p className="text-sm text-slate-700 leading-relaxed">
-                From romantic candlelit dining at <strong>Sayaji (Mediterra)</strong> or <strong>Radisson Blu</strong> to peaceful suite stays along the <strong>Indore Bypass</strong> and <strong>Vijay Nagar</strong>, our verified <Link href="/models" className="text-[#e31777] font-bold underline">Indore call girls</Link> bring natural warmth and elegance. You enjoy complete confidentiality and direct in-person payment with zero advance deposits.
+                Our verified <Link href="/models" className="text-[#e31777] font-bold underline">Indore call girls</Link> are natural and have an element of elegance and warmth, from romantic candle-lit dining at <strong>Sayaji (Mediterra)</strong> or <strong>Radisson Blu</strong> to peaceful suite-stay along <strong>Indore Bypass</strong> to <strong>Vijay Nagar</strong>. You are able to pay in person and there are no advance payments, and you have full confidence between you.
               </p>
 
               {/* 4 Feature Boxes (Gradient Glassmorphism) */}
@@ -327,10 +343,10 @@ export default function HomePage() {
                 </h2>
               </div>
               <p className="text-sm text-slate-700 leading-relaxed">
-                Indore is a captivating metropolis celebrating royal Holkar heritage, world-renowned culinary lanes at <strong>Sarafa Bazaar</strong> and <strong>56 Dukan</strong>, and a flourishing commercial IT corridor. The city offers the ultimate backdrop for unforgettable experiences with our independent companions.
+                Indore is a fascinating city, where royal Holkar tradition is alive and kicking, the city&apos;s bustling food lanes at <strong>Sarafa Bazaar</strong> and <strong>56 Dukan</strong> are famous, and, if you focus on the commercial side, you&apos;ll find that Indore is an active commercial IT hub. Experience unforgettable moments in this city with independently traveling companions.
               </p>
               <p className="text-sm text-slate-700 leading-relaxed">
-                <strong>Local Presence:</strong> Our <Link href="/models" className="text-[#e31777] font-bold underline">Indore call girls</Link> cater to guests in <strong>Vijay Nagar</strong>, Scheme 54, <strong>Palasia &amp; New Palasia</strong>, and five-star luxury suites along the <strong>Indore Bypass</strong> and <strong>MR-10</strong>.
+                <strong>Local Presences:</strong> Our <Link href="/models" className="text-[#e31777] font-bold underline">Indore call girls</Link> serve customers in <strong>Vijay Nagar</strong>, Scheme 54, <strong>Palasia &amp; New Palasia</strong>, and luxury suites in five-star hotels in <strong>Indore Bypass</strong> &amp; <strong>MR-10</strong>.
               </p>
 
               {/* 3 Sleek Feature Cards */}
@@ -371,8 +387,9 @@ export default function HomePage() {
               <div className="relative rounded-3xl overflow-hidden shadow-xl border-2 border-slate-200 aspect-[4/3]">
                 <Image
                   src="/images/model_natasha.jpg"
-                  alt="Indore Call Girls Luxury Suite Companion"
+                  alt="Indore Call Girls Luxury Suite Escort"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 448px"
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-5">
@@ -445,20 +462,20 @@ export default function HomePage() {
                   Private Hotel Suite Rendezvous
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Relaxing private company delivered directly to your hotel room or suite in Vijay Nagar, Palasia, or along the Bypass. Quick 30–45 minute arrival.
+                  Relaxing private company provided directly to your hotel room or suite in Vijay Nagar, Palasia or along the Bypass. Quick 30–45 minute arrival.
                 </p>
                 <ul className="space-y-1.5 text-xs text-slate-600 pt-1">
                   <li className="flex items-center gap-2">
                     <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>Prompt 30–45 Min In-Room Arrival</span>
+                    <span>Instant 30–45 Min In-Room Delivery</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>Discreet, Respectful &amp; Calm Vibe</span>
+                    <span>Quiet &amp; Relaxed Atmosphere</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>Zero Advance &bull; Pay In Person</span>
+                    <span>No Up-front Payment Required</span>
                   </li>
                 </ul>
               </div>
@@ -490,20 +507,20 @@ export default function HomePage() {
                   Dinner Dates &amp; Social Galas
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  An articulate, charming companion by your side for business banquets at Brilliant Convention Centre, rooftop dinners at Sayaji, or casual drinks.
+                  An eloquent, charming escort to accompany you on business dinners at Brilliant Convention Centre, at Sayaji&apos;s rooftop restaurant or for a casual drink.
                 </p>
                 <ul className="space-y-2 text-xs text-slate-200 pt-1">
                   <li className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-pink-400 shrink-0" />
-                    <span className="text-white font-medium">Fluent in English &amp; Hindi</span>
+                    <span className="text-white font-medium">Speak English &amp; Hindi Fluently</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-pink-400 shrink-0" />
-                    <span className="text-white font-medium">Elegant Social Presence &amp; Etiquette</span>
+                    <span className="text-white font-medium">Natural Sense of Elegance</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-pink-400 shrink-0" />
-                    <span className="text-white font-medium">Zero Advance &bull; Pay In Person</span>
+                    <span className="text-white font-medium">Pay As You Go &bull; Cash Accepted</span>
                   </li>
                 </ul>
               </div>
@@ -532,20 +549,20 @@ export default function HomePage() {
                   Full Night Overnight Stay
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Unhurried romance and comfortable company from night until morning at luxury hotels and private resort villas across the city.
+                  Unhurried romance and comfortable company from night until morning in luxury hotels and private resort villas throughout the city.
                 </p>
                 <ul className="space-y-1.5 text-xs text-slate-600 pt-1">
                   <li className="flex items-center gap-2">
                     <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>Full 10–12 Hours Peaceful Stay</span>
+                    <span>Peaceful Sleep for 10–12 Hours</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>Unhurried Romance &amp; Breakfast Company</span>
+                    <span>Breakfast &amp; Calm Company Included</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                    <span>Zero Advance &bull; Pay In Person</span>
+                    <span>Zero Advance &bull; Cash Payment</span>
                   </li>
                 </ul>
               </div>
@@ -600,7 +617,7 @@ export default function HomePage() {
                     Luxury 5-Star Hotels
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed mt-2">
-                    <strong>Sayaji Hotel</strong>, <strong>Radisson Blu</strong>, <strong>Indore Marriott</strong>, and <strong>Sheraton Grand Palace</strong>. Smooth room key access, 24/7 in-room dining, and high discretion.
+                    <strong>Sayaji Hotel</strong>, <strong>Radisson Blu</strong>, <strong>Indore Marriott</strong>, and <strong>Sheraton Grand Palace</strong>. Easy room key access, 24/7 room service and discretion.
                   </p>
                 </div>
               </div>
@@ -626,7 +643,7 @@ export default function HomePage() {
                     Boutique Stays &amp; Suites
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed mt-2">
-                    Cozy boutique properties in <strong>Vijay Nagar</strong>, <strong>New Palasia</strong>, and along <strong>MR-10</strong> offer quiet, peaceful rooms ideal for private and unhurried evenings.
+                    There are quiet and peaceful rooms available in cozy boutique properties around <strong>MR-10</strong>, <strong>Vijay Nagar</strong> and <strong>New Palasia</strong> for private and unhurried evenings.
                   </p>
                 </div>
               </div>
@@ -652,7 +669,7 @@ export default function HomePage() {
                     Business &amp; Transit Hotels
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed mt-2">
-                    Clean, reliable hotels near <strong>Indore Junction</strong>, <strong>Bhawarkuan</strong>, and <strong>Airport Road</strong> for dependable comfort, privacy, and hassle-free coordination.
+                    <strong>Indore Junction</strong>, <strong>Bhawarkuan</strong>, and <strong>Airport Road</strong> hotels are clean and dependable hotels that offer reliable comfort, privacy and smooth coordination.
                   </p>
                 </div>
               </div>
@@ -687,10 +704,10 @@ export default function HomePage() {
                   01
                 </div>
                 <strong className="block text-white font-sans text-sm group-hover:text-pink-300 transition-colors">
-                  Choose Companion
+                  Select Companion
                 </strong>
                 <p className="text-[11px] text-slate-300 leading-relaxed">
-                  Pick your favorite companion from verified in-person photos.
+                  Select your favourite companion from the verified photos on the in-person basis.
                 </p>
               </div>
 
@@ -702,7 +719,7 @@ export default function HomePage() {
                   Message or Call
                 </strong>
                 <p className="text-[11px] text-slate-300 leading-relaxed">
-                  Connect with our friendly desk on WhatsApp or phone.
+                  Get in touch with our friendly desk by message or call on WhatsApp.
                 </p>
               </div>
 
@@ -714,7 +731,7 @@ export default function HomePage() {
                   Share Location
                 </strong>
                 <p className="text-[11px] text-slate-300 leading-relaxed">
-                  Tell us your hotel or area and preferred meeting time.
+                  Inform us of the hotel or area that you are staying at and what time you prefer to meet.
                 </p>
               </div>
 
@@ -726,7 +743,7 @@ export default function HomePage() {
                   Quick Arrival
                 </strong>
                 <p className="text-[11px] text-slate-300 leading-relaxed">
-                  Your companion arrives at your door in 30–45 mins.
+                  Your companion will arrive at your door in 30–45 minutes.
                 </p>
               </div>
 
@@ -738,7 +755,7 @@ export default function HomePage() {
                   Meet &amp; Settle
                 </strong>
                 <p className="text-[11px] text-slate-300 leading-relaxed">
-                  Pay directly in person when you meet. Zero stress.
+                  Cash is paid at the time of meeting. Zero stress.
                 </p>
               </div>
             </div>
@@ -782,7 +799,7 @@ export default function HomePage() {
                   100% Real In-Person Photos
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Every companion is personally met and verified. The charming person you select in our gallery is exactly who greets you at your door.
+                  Each companion is met and verified with a personal visit. The person you choose in our gallery is the same one who will be at your door!
                 </p>
               </div>
             </div>
@@ -801,7 +818,7 @@ export default function HomePage() {
                   Pay Only When You Meet
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Never pay a single rupee in advance. You settle the agreed amount directly with your companion only after she arrives and you feel comfortable.
+                  Don&apos;t pay one rupee in advance. Only after your companion arrives and you feel like you can be near each other, do you pay the agreed upon amount.
                 </p>
               </div>
             </div>
@@ -820,7 +837,7 @@ export default function HomePage() {
                   Charming &amp; Courteous Companions
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Independent, articulate ladies aged 18+ who bring genuine warmth, elegance, and positive energy to your evening.
+                  Elegant, independent and well-educated women over 18, adding to your evening with authentic warmth, style and positive energy.
                 </p>
               </div>
             </div>
@@ -839,7 +856,7 @@ export default function HomePage() {
                   Complete Discretion &amp; Privacy
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Your contact details are strictly confidential. We never store personal records or contact details after your appointment.
+                  All communication with you is kept confidential. After your appointment, no personal records or contact information is stored.
                 </p>
               </div>
             </div>

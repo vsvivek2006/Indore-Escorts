@@ -45,8 +45,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${model.name} (${model.category}) | Indore Escorts & Companion Profile`,
-    description: `${model.name}, ${model.age} yrs. Verified social companion & elite escort in Indore. Serving ${model.locationsServed.join(", ")} for luxury stays, corporate dinners & VIP appointments.`,
+    title: `${model.name} (${model.category}) | Indore Escorts & Call Girl Profile`,
+    description: `${model.name}, ${model.age} yrs. Verified call girl & elite escort in Indore. Serving ${model.locationsServed.join(", ")} for luxury stays, corporate dinners & VIP appointments.`,
     alternates: {
       canonical: `https://mysecretgirl69.com/models/${model.id}`
     },
@@ -127,7 +127,7 @@ export default async function ModelProfilePage({ params }: PageProps) {
           {
             "@type": "ListItem",
             position: 2,
-            name: "Companion Models",
+            name: "Escort Models",
             item: "https://mysecretgirl69.com/models"
           },
           {
@@ -160,7 +160,7 @@ export default async function ModelProfilePage({ params }: PageProps) {
           <div className="relative aspect-[3/4] w-full rounded-3xl overflow-hidden bg-gray-100 border border-gray-200 shadow-xl">
             <Image
               src={model.image}
-              alt={`${model.name} - Verified Escort & Companion in Indore`}
+              alt={`${model.name} - Verified Escort & Call Girl in Indore`}
               fill
               priority
               sizes="(max-width: 768px) 100vw, 40vw"
@@ -209,7 +209,7 @@ export default async function ModelProfilePage({ params }: PageProps) {
           {/* Booking Attributes Box */}
           <div className="p-5 rounded-2xl bg-pink-50/60 border border-pink-100 space-y-3 text-xs">
             <span className="font-bold text-[#45474f] block text-sm">
-              Companion Quick Facts
+              Escort Quick Facts
             </span>
             <div className="space-y-2 text-gray-700">
               <div className="flex justify-between py-1 border-b border-pink-100">
@@ -247,7 +247,7 @@ export default async function ModelProfilePage({ params }: PageProps) {
               </span>
             </div>
             <h1 className="text-3xl sm:text-4xl font-black text-[#45474f] tracking-tight">
-              {model.name} - Indore Companion Profile
+              {model.name} - Indore Escort Profile
             </h1>
             <p className="text-sm text-[#616161] mt-1">
               Age: <strong className="text-gray-900">{model.age} Years</strong> • Height: <strong className="text-gray-900">{model.height}</strong> • Based in <strong className="text-gray-900">Indore, Madhya Pradesh</strong>
@@ -336,7 +336,7 @@ export default async function ModelProfilePage({ params }: PageProps) {
               <span>Social Presence &amp; Executive Accompaniment Etiquette</span>
             </h3>
             <p>
-              When coordinating time with {model.name}, you are engaging a companion who prides herself on conversational poise, emotional nuance, and impeccable dress sense. Whether accompanying you to high-profile executive gatherings, trade dinners at the Brilliant Convention Centre, or an intimate dinner date at Sayaji Hotel or Indore Marriott, {model.name} understands how to conduct herself with quiet grace that elevates your social stature.
+              When coordinating time with {model.name}, you are engaging an escort who prides herself on conversational poise, emotional nuance, and impeccable dress sense. Whether accompanying you to high-profile executive gatherings, trade dinners at the Brilliant Convention Centre, or an intimate dinner date at Sayaji Hotel or Indore Marriott, {model.name} understands how to conduct herself with quiet grace that elevates your social stature.
             </p>
             <p>
               She speaks fluent {model.languages.join(" and ")}, allowing effortless conversation across contemporary culture, business trends, travel, and personal passions. Clients frequently comment on her warm, unhurried demeanor that makes even the most stressful business trips feel relaxing and revitalizing.
@@ -431,7 +431,7 @@ export default async function ModelProfilePage({ params }: PageProps) {
         </div>
       </div>
 
-      {/* Cross-Link Section: Other Verified Companions in Indore */}
+      {/* Cross-Link Section: Other Verified Escorts in Indore */}
       <section className="my-16">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
           <div>
@@ -464,7 +464,7 @@ export default async function ModelProfilePage({ params }: PageProps) {
       {/* Interlink Footer Card */}
       <div className="rounded-2xl bg-gray-50 border border-gray-200 p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
         <div className="text-gray-700 leading-relaxed">
-          <strong>Need assistance choosing the ideal companion?</strong> Our booking coordinator provides personalized recommendations based on your preferences, schedule, and meeting location. Visit our <Link href="/about" className="text-[#e31777] font-semibold hover:underline">About Us</Link> page, or contact our <Link href="/contact" className="text-[#e31777] font-semibold hover:underline">24/7 Concierge Desk</Link>.
+          <strong>Need assistance choosing the ideal escort?</strong> Our booking coordinator provides personalized recommendations based on your preferences, schedule, and meeting location. Visit our <Link href="/about" className="text-[#e31777] font-semibold hover:underline">About Us</Link> page, or contact our <Link href="/contact" className="text-[#e31777] font-semibold hover:underline">24/7 Concierge Desk</Link>.
         </div>
         <a
           href={`https://wa.me/${model.whatsappNumber}?text=${whatsappMessage}`}

@@ -18,7 +18,7 @@ export const TESTIMONIALS: Testimonial[] = [
     locality: "Vijay Nagar (Sayaji Hotel)",
     rating: 5,
     reviewDate: "August 2026",
-    quote: "Visiting Indore for an annual tech summit at the Brilliant Convention Centre. Booked Aarohi for a private dinner at Mediterra. She arrived within 35 minutes looking stunning, spoke fluent English, and possessed genuine corporate etiquette. 100% genuine photos and zero hassle.",
+    quote: "Visited Indore for an annual tech summit at the Brilliant Convention Centre, booked Aarohi for a private dinner at Mediterra, she came looking dazzling, spoke English and had real corporate etiquette – no hassle, 100% genuine photos.",
     companionBooked: "Aarohi Sharma",
     verifiedBooking: true
   },
@@ -29,7 +29,7 @@ export const TESTIMONIALS: Testimonial[] = [
     locality: "Palasia & New Palasia",
     rating: 5,
     reviewDate: "August 2026",
-    quote: "As an Indore resident, privacy is my utmost priority. The concierge handled everything discreetly over WhatsApp. No unnecessary questions, no spam SMS, and absolute punctuality. Meera was warm, bubbly, and made the entire evening effortless.",
+    quote: "As the resident of Indore, privacy is the greatest thing I look for, the concierge did everything well, no questions asked, no spam SMS, and utmost punctuality, Meera was bubbly and warm, and made the entire evening so easy.",
     companionBooked: "Meera Kapoor",
     verifiedBooking: true
   },
@@ -40,7 +40,7 @@ export const TESTIMONIALS: Testimonial[] = [
     locality: "Super Corridor (Radisson Blu)",
     rating: 5,
     reviewDate: "July 2026",
-    quote: "Stayed on MR-10 near Vijay Nagar. The coordination was seamless from start to finish. Tara was an absolute delight—gracious, articulate, and stunning in person. Truly the best escort service in Indore with honest rates.",
+    quote: "Stayed on MR-10 near Vijay Nagar. From start to end, the coordination was flawless. Tara was nothing but a delight; gracious, articulate and beautiful in person, truly the best escort service in Indore with honest rates!",
     companionBooked: "Tara Deshmukh",
     verifiedBooking: true
   },
@@ -51,7 +51,7 @@ export const TESTIMONIALS: Testimonial[] = [
     locality: "Scheme 54, Vijay Nagar",
     rating: 5,
     reviewDate: "July 2026",
-    quote: "What sets this directory apart from others is the zero fake profile policy. The girl who arrived at my hotel was the exact same girl shown in the gallery. Friendly, attentive, and very respectful. Highly recommended.",
+    quote: "The only thing that makes this directory different from the rest is that there is no fake profile policy. The girl who came to my hotel was exactly the one in the gallery, and she was very friendly, attentive and respectful. Highly recommended.",
     companionBooked: "Ananya Sen",
     verifiedBooking: true
   },
@@ -62,7 +62,7 @@ export const TESTIMONIALS: Testimonial[] = [
     locality: "Indore Bypass (Sheraton Grand Palace)",
     rating: 5,
     reviewDate: "June 2026",
-    quote: "Booked an overnight companion for a weekend getaway along the Indore Bypass. Kavya was royalty personified. Impeccable styling, captivating conversation, and complete privacy throughout the stay. Exceeded all expectations.",
+    quote: "Booked an overnight companion for a weekend getaway along the Indore Bypass and Kavya was a personification of royalty in every aspect – impeccable styling, captivating conversation and complete privacy throughout the stay – exceeded all expectations.",
     companionBooked: "Kavya Malhotra",
     verifiedBooking: true
   },
@@ -73,7 +73,7 @@ export const TESTIMONIALS: Testimonial[] = [
     locality: "South Tukoganj (Indore Marriott)",
     rating: 5,
     reviewDate: "June 2026",
-    quote: "After stressful meetings, spending an unhurried evening with Natasha was the perfect stress relief. Seamless direct payment on meeting, no advance scam, and total professionalism. Will definitely coordinate again on my next Indore trip.",
+    quote: "Natasha was very professional and made the payment very easy from the meeting, no advance scam and a great stress reliever after the hectic meeting! Will definitely be coordinating on my next trip to Indore with Natasha.",
     companionBooked: "Natasha Singhania",
     verifiedBooking: true
   }

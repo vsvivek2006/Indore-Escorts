@@ -35,7 +35,21 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `https://mysecretgirl69.com/blog/${post.slug}`,
       type: "article",
       publishedTime: post.publishedDate,
-      authors: [post.author]
+      authors: [post.author],
+      images: [
+        {
+          url: "https://mysecretgirl69.com/images/hero_banner.jpg",
+          width: 1200,
+          height: 630,
+          alt: post.title
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.metaTitle,
+      description: post.metaDescription,
+      images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
     }
   };
 }
@@ -50,56 +64,28 @@ export default async function BlogDetailPage({ params }: PageProps) {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BlogPosting",
-        "@id": `https://mysecretgirl69.com/blog/${post.slug}#article`,
-        headline: post.title,
-        description: post.metaDescription,
-        datePublished: post.publishedDate,
-        dateModified: post.publishedDate,
-        author: {
-          "@type": "Person",
-          name: post.author
-        },
-        publisher: {
-          "@type": "Organization",
-          name: "MySecretGirl69 Indore",
-          logo: {
-            "@type": "ImageObject",
-            url: "https://mysecretgirl69.com/images/hero_banner.jpg"
-          }
-        },
-        mainEntityOfPage: {
-          "@type": "WebPage",
-          "@id": `https://mysecretgirl69.com/blog/${post.slug}`
-        }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": `https://mysecretgirl69.com/blog/${post.slug}#breadcrumb`,
-        itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            name: "Home",
-            item: "https://mysecretgirl69.com"
-          },
-          {
-            "@type": "ListItem",
-            position: 2,
-            name: "Blog",
-            item: "https://mysecretgirl69.com/blog"
-          },
-          {
-            "@type": "ListItem",
-            position: 3,
-            name: post.title,
-            item: `https://mysecretgirl69.com/blog/${post.slug}`
-          }
-        ]
+    "@type": "BlogPosting",
+    "@id": `https://mysecretgirl69.com/blog/${post.slug}#article`,
+    headline: post.title,
+    description: post.metaDescription,
+    datePublished: post.publishedDate,
+    dateModified: post.publishedDate,
+    author: {
+      "@type": "Person",
+      name: post.author
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "MySecretGirl69 Indore",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://mysecretgirl69.com/images/hero_banner.jpg"
       }
-    ]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://mysecretgirl69.com/blog/${post.slug}`
+    }
   };
 
   return (
@@ -152,7 +138,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
         {/* Post Footer CTA */}
         <div className="mt-10 p-6 rounded-2xl bg-gradient-to-r from-pink-50 to-rose-50 border border-pink-200 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
           <div>
-            <h3 className="text-base font-bold text-[#45474f]">Looking for Verified Companionship in Indore?</h3>
+            <h3 className="text-base font-bold text-[#45474f]">Looking for Verified Escort Service in Indore?</h3>
             <p className="text-xs text-[#616161]">Our concierge desk is ready 24/7 for discreet local coordination.</p>
           </div>
           <Link

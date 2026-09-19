@@ -13,11 +13,12 @@ export interface ServiceItem {
 export const SERVICES_DATA: ServiceItem[] = [
   {
     slug: "dinner-dates",
-    title: "Dinner & Social Companionship",
-    shortDescription: "Elegant companionship for romantic candlelit dinners, gourmet culinary tastings, and high-end evening soirees in Indore.",
-    fullDescription: "An evening of refined culinary indulgence deserves graceful company. Our dinner and social companions are charming, well-spoken, and culturally adept conversationalists who turn a solo meal into an unforgettable dining experience. Whether reserving a private table at Sayaji's Chopstick City or Mediterra in Vijay Nagar, enjoying intimate bistros in New Palasia, or embarking on a late-night street food adventure at Sarafa, your companion ensures seamless warmth and sophisticated presence.",
-    metaTitle: "Dinner Date Companions Indore | Fine Dining & Social Escorts",
-    metaDescription: "Reserve charming dinner date companions in Indore. Elegant, articulate social escorts for five-star dining in Vijay Nagar, Palasia, and luxury hotels.",
+    title: "Dinner & Social Escort Service",
+    shortDescription: "Elegant call girls for romantic candlelit dinners, gourmet culinary tastings, and high-end evening soirees in Indore.",
+    fullDescription:
+      "Perfect company for an evening of elegant culinary delight. Our dinner and social partners are handsome, eloquent and cultured conversationalists; a single meal becomes a memorable dining experience. From intimate bistros in New Palasia to the warmth of a private table at Chopstick City, Sayaji or Mediterranean in Vijay Nagar, Sarafa offers seamless warmth and sophisticated presence with your elite escort.",
+    metaTitle: "Dinner Date Escorts Indore | Fine Dining & Social Call Girls",
+    metaDescription: "Reserve charming dinner date escorts in Indore. Elegant, articulate social call girls for five-star dining in Vijay Nagar, Palasia, and luxury hotels.",
     features: [
       "Well-mannered, articulate conversationalists",
       "Impeccable dining etiquette and dress code adaptation",
@@ -39,12 +40,13 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     slug: "corporate-events",
     title: "Corporate & Business Travel Escorts",
-    shortDescription: "Poised, sophisticated companions for visiting executives, conference delegates, and corporate networking events.",
-    fullDescription: "Corporate travel can often feel exhausting and monotonous. Our corporate and business travel companions provide articulate, intelligent company for visiting executives, consultants, and trade delegates attending expos at the Brilliant Convention Centre or corporate meetings across the Super Corridor IT SEZ. With an innate understanding of professional decorum, our companions seamlessly accompany you to gala networking dinners, award nights, or quiet evening cocktail discussions.",
-    metaTitle: "Corporate Escorts Indore | Business Travel & Convention Companions",
-    metaDescription: "Professional corporate companions for visiting executives and delegates in Indore. Discreet company for Brilliant Convention Centre events & luxury hotel stays.",
+    shortDescription: "Poised, sophisticated call girls for visiting executives, conference delegates, and corporate networking events.",
+    fullDescription:
+      "Traveling for business is sometimes tiring and tedious. Our corporate and business travel partners are well-versed and intelligent call girls for visiting executives, consultants and trade delegates attending expos at the Brilliant Convention Centre or corporate meetings throughout the Super Corridor IT SEZ. Our escorts have a natural sense of professional etiquette and can join you for a gala networking dinner, an awards night or a quiet evening, socializing conversation.",
+    metaTitle: "Corporate Escorts Indore | Business Travel & Convention Call Girls",
+    metaDescription: "Professional corporate escorts for visiting executives and delegates in Indore. Discreet company for Brilliant Convention Centre events & luxury hotel stays.",
     features: [
-      "Educated, bilingual companions fluent in English and Hindi",
+      "Educated, bilingual call girls fluent in English and Hindi",
       "Executive business etiquette and understated elegance",
       "Familiarity with Brilliant Convention Centre, TCS, and Infosys hubs",
       "Prompt airport coordination and business hotel dispatch"
@@ -63,11 +65,12 @@ export const SERVICES_DATA: ServiceItem[] = [
   },
   {
     slug: "weekend-getaways",
-    title: "Weekend & Staycation Companionship",
-    shortDescription: "Relaxing companionship for luxury palace staycations, farmhouse weekend retreats, and Mandu/Ujjain outstation excursions.",
-    fullDescription: "Escape the weekly stress with an unhurried weekend retreat. Whether you are checking into the palatial Sheraton Grand Palace on the Indore Bypass, renting a private farmhouse in Bicholi Mardana, or planning a scenic heritage road trip to historic Mandu, Maheshwar, or spiritual Ujjain, our staycation companions provide attentive, heartwarming, and joyful partnership throughout your getaway.",
-    metaTitle: "Weekend Staycation Companions Indore | Outstation Luxury Escorts",
-    metaDescription: "Book weekend getaway companions in Indore. Luxury staycation escorts for Sheraton Grand Palace, private Bypass farmhouses, and outstation trips.",
+    title: "Weekend & Staycation Escort Service",
+    shortDescription: "Relaxing escort services for luxury palace staycations, farmhouse weekend retreats, and Mandu/Ujjain outstation excursions.",
+    fullDescription:
+      "Get out of the hectic rut of the week and relax over the weekend. From the moment you arrive in one of our luxury hotels (Sheraton Grand Palace on Indore Bypass, Private Farmhouse in Bicholi Mardana, and Scenic Heritage Road Trips to Mandu, Maheshwar or Spiritual Ujjain), our staycation escorts are attentive, heartwarming and joyful.",
+    metaTitle: "Weekend Staycation Escorts Indore | Outstation Luxury Call Girls",
+    metaDescription: "Book weekend getaway escorts in Indore. Luxury staycation call girls for Sheraton Grand Palace, private Bypass farmhouses, and outstation trips.",
     features: [
       "Flexible multi-day and full-weekend booking arrangements",
       "Enthusiastic travel partners familiar with MP tourism circuits",
@@ -89,15 +92,16 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     slug: "vip-concierge",
     title: "VIP Elite Concierge & Discretion",
-    shortDescription: "Ultra-exclusive, personalized companionship services for discerning dignitaries and high-net-worth visitors.",
-    fullDescription: "For discerning clients whose lifestyles demand absolute perfection and unyielding privacy, our VIP Elite Concierge service represents the pinnacle of luxury companionship in Indore. From coordinating presidential hotel suites to curating bespoke private itineraries, our top-tier companions embody timeless beauty, poise, and discretion.",
-    metaTitle: "VIP Elite Companionship Indore | High Profile Concierge Escorts",
+    shortDescription: "Ultra-exclusive, personalized escort services for discerning dignitaries and high-net-worth visitors.",
+    fullDescription:
+      "If you're a discerning client with a life that requires absolute perfection and uncompromising privacy, then our VIP Elite Concierge service is the ultimate luxury escort service in Indore. Our premium escorts are exemplars of ancient beauty, grace, and taste, from arranging presidential hotel rooms to organising special private tours.",
+    metaTitle: "VIP Elite Escort Service Indore | High Profile Concierge Call Girls",
     metaDescription: "Exclusive VIP concierge and luxury escort services in Indore. Total privacy, non-disclosure protocols, and top-tier models for high-net-worth clients.",
     features: [
       "Top-echelon celebrity and elite socialite models",
       "Guaranteed zero digital footprints and NDA-level privacy protocols",
       "Direct personal booking manager coordination via encrypted channels",
-      "Direct, private coordination with independent companions"
+      "Direct, private coordination with independent call girls"
     ],
     idealVenuesInIndore: [
       "Presidential & Luxury Suites at Sayaji & Marriott",
