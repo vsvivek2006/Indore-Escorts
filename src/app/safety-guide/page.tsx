@@ -19,6 +19,30 @@ export const metadata: Metadata = {
     "Comprehensive guide to client safety, digital discretion, avoiding advance fee scams, cash-on-delivery protocols, and 5-star hotel compliance in Indore, MP.",
   alternates: {
     canonical: "https://mysecretgirl69.com/safety-guide"
+  },
+  openGraph: {
+    title: "Client Safety & Anti-Fraud Advisory | MySecretGirl69 Indore",
+    description:
+      "Comprehensive guide to client safety, digital discretion, avoiding advance fee scams, cash-on-delivery protocols, and 5-star hotel compliance in Indore, MP.",
+    url: "https://mysecretgirl69.com/safety-guide",
+    siteName: "MySecretGirl69 Indore",
+    images: [
+      {
+        url: "https://mysecretgirl69.com/images/hero_banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Client Safety Advisory MySecretGirl69 Indore"
+      }
+    ],
+    locale: "en_IN",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Client Safety & Anti-Fraud Advisory | MySecretGirl69 Indore",
+    description:
+      "Comprehensive guide to client safety, digital discretion, avoiding advance fee scams, cash-on-delivery protocols, and 5-star hotel compliance in Indore, MP.",
+    images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
   }
 };
 
@@ -67,7 +91,7 @@ export default function SafetyGuidePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(safetySchema) }}
       />
-      <Breadcrumbs items={[{ label: "Safety Guide" }]} />
+      <Breadcrumbs items={[{ label: "Safety Guide" }]} includeSchema={false} />
 
       {/* Hero Header */}
       <div className="my-8 text-center space-y-3 max-w-3xl mx-auto">

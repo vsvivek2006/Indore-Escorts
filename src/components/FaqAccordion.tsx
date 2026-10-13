@@ -12,12 +12,14 @@ interface FaqAccordionProps {
   faqs: FaqItem[];
   title?: string;
   subtitle?: string;
+  includeSchema?: boolean;
 }
 
 export default function FaqAccordion({
   faqs,
   title = "Frequently Asked Questions",
-  subtitle = "Clear, accurate answers regarding our escort directory, privacy standards, and local Indore coordination."
+  subtitle = "Clear, accurate answers regarding our escort directory, privacy standards, and local Indore coordination.",
+  includeSchema = true
 }: FaqAccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
@@ -40,10 +42,12 @@ export default function FaqAccordion({
 
   return (
     <section className="my-12" aria-labelledby="faq-section-heading">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      {includeSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      )}
       <div className="text-center max-w-3xl mx-auto mb-8">
         <h2 id="faq-section-heading" className="text-xl sm:text-2xl lg:text-3xl font-heading text-[#45474f] tracking-wide leading-relaxed">
           {title}

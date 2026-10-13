@@ -71,7 +71,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
     headline: post.title,
     description: post.metaDescription,
     datePublished: post.publishedDate,
-    dateModified: post.publishedDate,
+    dateModified: new Date().toISOString().split("T")[0],
     author: {
       "@type": "Person",
       name: post.author
@@ -81,7 +81,9 @@ export default async function BlogDetailPage({ params }: PageProps) {
       name: "MySecretGirl69 Indore",
       logo: {
         "@type": "ImageObject",
-        url: "https://mysecretgirl69.com/images/hero_banner.jpg"
+        url: "https://mysecretgirl69.com/icon.png",
+        width: 180,
+        height: 180
       }
     },
     mainEntityOfPage: {

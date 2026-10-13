@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       siteName: "MySecretGirl69 Indore",
       images: [
         {
-          url: "/images/hero_banner.jpg",
+          url: "https://mysecretgirl69.com/images/hero_banner.jpg",
           width: 1200,
           height: 675,
           alt: `${tag.kw} - Indore Escorts & Call Girls`
@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: "summary_large_image",
       title: tag.title,
       description: tag.desc,
-      images: ["/images/hero_banner.jpg"]
+      images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
     }
   };
 }
@@ -89,10 +89,14 @@ export default async function TagDetailPage({ params }: PageProps) {
     tag.relatedLocalitySlugs.includes(loc.slug)
   );
 
-  // Related sibling tags in same category or others
-  const relatedTags = TAG_KEYWORDS_DATA.filter(
-    (t) => t.slug !== tag.slug && (t.category === tag.category || Math.random() > 0.5)
-  ).slice(0, 8);
+  // Related sibling tags in same category or fallback to other tags deterministically
+  const sameCategoryTags = TAG_KEYWORDS_DATA.filter(
+    (t) => t.slug !== tag.slug && t.category === tag.category
+  );
+  const otherCategoryTags = TAG_KEYWORDS_DATA.filter(
+    (t) => t.slug !== tag.slug && t.category !== tag.category
+  );
+  const relatedTags = [...sameCategoryTags, ...otherCategoryTags].slice(0, 8);
 
   const whatsappMessage = encodeURIComponent(
     `Hello MySecretGirl69, I saw your page for "${tag.kw}" in Indore. Please share available verified profiles for tonight.`
@@ -100,15 +104,57 @@ export default async function TagDetailPage({ params }: PageProps) {
 
   const webpageSchema = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    name: tag.title,
-    description: tag.desc,
-    url: `https://mysecretgirl69.com/tags/${tag.slug}`,
-    isPartOf: {
-      "@type": "WebSite",
-      name: "MySecretGirl69 Indore",
-      url: "https://mysecretgirl69.com"
-    }
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `https://mysecretgirl69.com/tags/${tag.slug}#webpage`,
+        url: `https://mysecretgirl69.com/tags/${tag.slug}`,
+        name: tag.title,
+        description: tag.desc,
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": "https://mysecretgirl69.com/#website",
+          name: "MySecretGirl69 Indore",
+          url: "https://mysecretgirl69.com"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `https://mysecretgirl69.com/tags/${tag.slug}#breadcrumb`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://mysecretgirl69.com"
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Tags Directory",
+            item: "https://mysecretgirl69.com/tags"
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: tag.kw,
+            item: `https://mysecretgirl69.com/tags/${tag.slug}`
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `https://mysecretgirl69.com/tags/${tag.slug}#faq`,
+        mainEntity: tag.faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer
+          }
+        }))
+      }
+    ]
   };
 
   return (
@@ -119,7 +165,7 @@ export default async function TagDetailPage({ params }: PageProps) {
       />
 
 
-      <main className="min-h-screen bg-[#0d0914] text-white">
+      <div className="min-h-screen bg-[#0d0914] text-white">
         {/* Breadcrumb container */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
           <Breadcrumbs
@@ -127,6 +173,7 @@ export default async function TagDetailPage({ params }: PageProps) {
               { label: "Tags Directory", href: "/tags" },
               { label: tag.kw }
             ]}
+            includeSchema={false}
           />
         </div>
 
@@ -312,7 +359,7 @@ export default async function TagDetailPage({ params }: PageProps) {
           </div>
 
           <div className="bg-[#150d24] border border-[#2d1b4e] rounded-2xl p-6 shadow-xl">
-            <FaqAccordion faqs={tag.faqs} />
+            <FaqAccordion faqs={tag.faqs} includeSchema={false} />
           </div>
         </section>
 
@@ -375,7 +422,7 @@ export default async function TagDetailPage({ params }: PageProps) {
             </div>
           </div>
         </section>
-      </main>
+      </div>
     </>
   );
 }

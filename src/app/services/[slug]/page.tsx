@@ -47,7 +47,22 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: service.metaTitle,
       description: service.metaDescription,
-      url: `https://mysecretgirl69.com/services/${service.slug}`
+      url: `https://mysecretgirl69.com/services/${service.slug}`,
+      siteName: "MySecretGirl69 Indore",
+      images: [
+        {
+          url: "https://mysecretgirl69.com/images/hero_banner.jpg",
+          width: 1200,
+          height: 630,
+          alt: `${service.title} - Indore Escort Service`
+        }
+      ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: service.metaTitle,
+      description: service.metaDescription,
+      images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
     }
   };
 }
@@ -72,6 +87,21 @@ export default async function ServiceDetailPage({ params }: PageProps) {
   const whatsappMessage = encodeURIComponent(
     `Hello MySecretGirl69 Indore, I am interested in inquiring about ${service.title} in Indore.`
   );
+
+  const serviceFaqs = [
+    {
+      question: `How far in advance should I book ${service.title} in Indore?`,
+      answer: `While immediate same-day bookings are dispatched within 30 to 45 minutes across major sectors like Vijay Nagar and Palasia, we recommend scheduling 2 to 4 hours in advance for specialized attire coordination, outstation travel, or multi-course dinner reservations.`
+    },
+    {
+      question: `Is advance payment or registration fee required for ${service.title}?`,
+      answer: `Never. We enforce a strict zero advance policy across all our services. You settle the honorarium directly upon meeting your verified call girl.`
+    },
+    {
+      question: `Can the call girl accompany me to luxury hotel restaurants in Indore?`,
+      answer: `Yes, our call girls are experienced in high-end social etiquette and comfortably accompany clients to five-star venues such as Mediterra at Sayaji Hotel, Indore Kitchen at Indore Marriott, and The Square at Novotel.`
+    }
+  ];
 
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -114,24 +144,21 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             item: `https://mysecretgirl69.com/services/${service.slug}`
           }
         ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `https://mysecretgirl69.com/services/${service.slug}#faq`,
+        mainEntity: serviceFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer
+          }
+        }))
       }
     ]
   };
-
-  const serviceFaqs = [
-    {
-      question: `How far in advance should I book ${service.title} in Indore?`,
-      answer: `While immediate same-day bookings are dispatched within 30 to 45 minutes across major sectors like Vijay Nagar and Palasia, we recommend scheduling 2 to 4 hours in advance for specialized attire coordination, outstation travel, or multi-course dinner reservations.`
-    },
-    {
-      question: `Is advance payment or registration fee required for ${service.title}?`,
-      answer: `Never. We enforce a strict zero advance policy across all our services. You settle the honorarium directly upon meeting your verified call girl.`
-    },
-    {
-      question: `Can the call girl accompany me to luxury hotel restaurants in Indore?`,
-      answer: `Yes, our call girls are experienced in high-end social etiquette and comfortably accompany clients to five-star venues such as Mediterra at Sayaji Hotel, Indore Kitchen at Indore Marriott, and The Square at Novotel.`
-    }
-  ];
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-white text-[#1c1c1c]">
@@ -144,6 +171,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           { label: "Services", href: "/services" },
           { label: service.title }
         ]}
+        includeSchema={false}
       />
 
       {/* Hero Header Box */}
@@ -352,6 +380,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           faqs={serviceFaqs}
           title={`${service.title} FAQs`}
           subtitle="Frequently asked questions regarding scheduling, dress code, safety, and payment policies in Indore."
+          includeSchema={false}
         />
       </section>
 

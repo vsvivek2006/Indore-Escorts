@@ -28,11 +28,47 @@ export const metadata: Metadata = {
     description:
       "24/7 confidential assistance for companion bookings in Indore. Direct coordination via phone or WhatsApp.",
     url: "https://mysecretgirl69.com/contact",
-    siteName: "MySecretGirl69 Indore"
+    siteName: "MySecretGirl69 Indore",
+    images: [
+      {
+        url: "https://mysecretgirl69.com/images/hero_banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Contact MySecretGirl69 Indore Concierge Desk"
+      }
+    ],
+    locale: "en_IN",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Concierge Desk | MySecretGirl69 Indore & Escorts",
+    description:
+      "24/7 confidential assistance for companion bookings in Indore. Direct coordination via phone or WhatsApp.",
+    images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
   }
 };
 
 export default function ContactPage() {
+  const contactFaqs = [
+    {
+      question: "How fast will a coordinator respond on WhatsApp or phone?",
+      answer: "We have 24 hour/7 day central booking. We usually reply to incoming WhatsApp messages and phone calls in less than 3 to 5 minutes."
+    },
+    {
+      question: "Is it required to pay in advance deposit/ cab fare on booking?",
+      answer: "No. Across Indore we have a ZERO UP FRONT payment policy. There are no advance booking fees, registration fees or taxi allowances to pay. The agreed honorarium is paid on the first meeting with the companion."
+    },
+    {
+      question: "What details do I need to provide when placing a booking?",
+      answer: "Just say the name and room number of the hotel or the name and address where you want to meet, what time you want to meet, and the name or ID of the companion you want to invite."
+    },
+    {
+      question: "Is there any out call facility in 5-star hotel in Indore?",
+      answer: "Yes, our associates often go to big star-rated hotels, such as WOW Hotel, Sheraton Grand Palace, Radisson Blu, Indore Marriott, and Sayaji Hotel—without any hassle."
+    }
+  ];
+
   const contactPageSchema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -69,28 +105,21 @@ export default function ContactPage() {
             item: "https://mysecretgirl69.com/contact"
           }
         ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://mysecretgirl69.com/contact#faq",
+        mainEntity: contactFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer
+          }
+        }))
       }
     ]
   };
-
-  const contactFaqs = [
-    {
-      question: "How fast will a coordinator respond on WhatsApp or phone?",
-      answer: "We have 24 hour/7 day central booking. We usually reply to incoming WhatsApp messages and phone calls in less than 3 to 5 minutes."
-    },
-    {
-      question: "Is it required to pay in advance deposit/ cab fare on booking?",
-      answer: "No. Across Indore we have a ZERO UP FRONT payment policy. There are no advance booking fees, registration fees or taxi allowances to pay. The agreed honorarium is paid on the first meeting with the companion."
-    },
-    {
-      question: "What details do I need to provide when placing a booking?",
-      answer: "Just say the name and room number of the hotel or the name and address where you want to meet, what time you want to meet, and the name or ID of the companion you want to invite."
-    },
-    {
-      question: "Is there any out call facility in 5-star hotel in Indore?",
-      answer: "Yes, our associates often go to big star-rated hotels, such as WOW Hotel, Sheraton Grand Palace, Radisson Blu, Indore Marriott, and Sayaji Hotel—without any hassle."
-    }
-  ];
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-white text-[#1c1c1c]">
@@ -98,7 +127,7 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}
       />
-      <Breadcrumbs items={[{ label: "Contact Us" }]} />
+      <Breadcrumbs items={[{ label: "Contact Us" }]} includeSchema={false} />
 
       {/* Hero Header */}
       <div className="my-8 text-center max-w-3xl mx-auto space-y-3">
@@ -287,6 +316,7 @@ export default function ContactPage() {
           faqs={contactFaqs}
           title="Concierge &amp; Booking Coordination FAQs"
           subtitle="Everything you need to know about placing a reservation, arrival logistics, and payment policies in Indore."
+          includeSchema={false}
         />
       </section>
 

@@ -8,6 +8,30 @@ export const metadata: Metadata = {
     "Statutory legal disclaimer, ITPA compliance, non-solicitation declaration, and adult directory status of MySecretGirl69 Indore.",
   alternates: {
     canonical: "https://mysecretgirl69.com/disclaimer"
+  },
+  openGraph: {
+    title: "Legal Disclaimer & ITPA Notice | MySecretGirl69 Indore",
+    description:
+      "Statutory legal disclaimer, ITPA compliance, non-solicitation declaration, and adult directory status of MySecretGirl69 Indore.",
+    url: "https://mysecretgirl69.com/disclaimer",
+    siteName: "MySecretGirl69 Indore",
+    images: [
+      {
+        url: "https://mysecretgirl69.com/images/hero_banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Legal Disclaimer MySecretGirl69 Indore"
+      }
+    ],
+    locale: "en_IN",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Legal Disclaimer & ITPA Notice | MySecretGirl69 Indore",
+    description:
+      "Statutory legal disclaimer, ITPA compliance, non-solicitation declaration, and adult directory status of MySecretGirl69 Indore.",
+    images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
   }
 };
 

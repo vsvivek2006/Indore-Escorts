@@ -33,28 +33,64 @@ export const metadata: Metadata = {
 };
 
 export default function ModelsDirectoryPage() {
-  const itemListSchema = {
+  const modelsSchema = {
     "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "Indore Verified Escorts Directory",
-    description: "Authentic, verified independent call girl profiles in Indore.",
-    numberOfItems: COMPANION_MODELS.length,
-    itemListElement: COMPANION_MODELS.map((model, idx) => ({
-      "@type": "ListItem",
-      position: idx + 1,
-      name: model.name,
-      url: `https://mysecretgirl69.com/models/${model.id}`,
-      image: `https://mysecretgirl69.com${model.image}`
-    }))
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://mysecretgirl69.com/models#collection",
+        url: "https://mysecretgirl69.com/models",
+        name: "Verified Escorts & Call Girls Directory",
+        description: "Browse 20+ verified call girls & companion profiles in Indore.",
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": "https://mysecretgirl69.com/#website",
+          name: "MySecretGirl69 Indore",
+          url: "https://mysecretgirl69.com"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mysecretgirl69.com/models#breadcrumb",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://mysecretgirl69.com"
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Escort Models",
+            item: "https://mysecretgirl69.com/models"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://mysecretgirl69.com/models#itemlist",
+        name: "Indore Verified Escorts Directory",
+        description: "Authentic, verified independent call girl profiles in Indore.",
+        numberOfItems: COMPANION_MODELS.length,
+        itemListElement: COMPANION_MODELS.map((model, idx) => ({
+          "@type": "ListItem",
+          position: idx + 1,
+          name: model.name,
+          url: `https://mysecretgirl69.com/models/${model.id}`,
+          image: `https://mysecretgirl69.com${model.image}`
+        }))
+      }
+    ]
   };
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-white text-[#1c1c1c]">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(modelsSchema) }}
       />
-      <Breadcrumbs items={[{ label: "Escort Models" }]} />
+      <Breadcrumbs items={[{ label: "Escort Models" }]} includeSchema={false} />
 
       {/* Header */}
       <div className="my-8 text-center max-w-3xl mx-auto space-y-3">

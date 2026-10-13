@@ -21,6 +21,30 @@ export const metadata: Metadata = {
     "About MySecretGirl69 Indore. Our founding mission, ethical screening standards, client privacy, cash-on-arrival guarantee, and responsible companionship.",
   alternates: {
     canonical: "https://mysecretgirl69.com/about"
+  },
+  openGraph: {
+    title: "About Us | MySecretGirl69 Indore & Concierge Directory",
+    description:
+      "About MySecretGirl69 Indore. Our founding mission, ethical screening standards, client privacy, cash-on-arrival guarantee, and responsible companionship.",
+    url: "https://mysecretgirl69.com/about",
+    siteName: "MySecretGirl69 Indore",
+    images: [
+      {
+        url: "https://mysecretgirl69.com/images/hero_banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "About MySecretGirl69 Indore Escorts Directory"
+      }
+    ],
+    locale: "en_IN",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | MySecretGirl69 Indore & Concierge Directory",
+    description:
+      "About MySecretGirl69 Indore. Our founding mission, ethical screening standards, client privacy, cash-on-arrival guarantee, and responsible companionship.",
+    images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
   }
 };
 
@@ -69,7 +93,7 @@ export default function AboutPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
       />
-      <Breadcrumbs items={[{ label: "About Us" }]} />
+      <Breadcrumbs items={[{ label: "About Us" }]} includeSchema={false} />
 
       {/* Hero Header */}
       <div className="my-8 text-center max-w-3xl mx-auto space-y-3">

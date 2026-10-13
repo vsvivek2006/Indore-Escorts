@@ -7,6 +7,28 @@ export const metadata: Metadata = {
   description: "Terms and conditions governing the use of MySecretGirl69 Indore directory, service scope, and code of conduct.",
   alternates: {
     canonical: "https://mysecretgirl69.com/terms"
+  },
+  openGraph: {
+    title: "Terms of Service | MySecretGirl69 Indore",
+    description: "Terms and conditions governing the use of MySecretGirl69 Indore directory, service scope, and code of conduct.",
+    url: "https://mysecretgirl69.com/terms",
+    siteName: "MySecretGirl69 Indore",
+    images: [
+      {
+        url: "https://mysecretgirl69.com/images/hero_banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Terms of Service MySecretGirl69 Indore"
+      }
+    ],
+    locale: "en_IN",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service | MySecretGirl69 Indore",
+    description: "Terms and conditions governing the use of MySecretGirl69 Indore directory, service scope, and code of conduct.",
+    images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
   }
 };
 

@@ -67,7 +67,7 @@ export const metadata: Metadata = {
       "Indore's premier companion directory. Verified social escorts for dinner dates, business travel, and luxury stays across Vijay Nagar, Palasia, and Bypass resorts.",
     images: [
       {
-        url: "/images/hero_banner.jpg",
+        url: "https://mysecretgirl69.com/images/hero_banner.jpg",
         width: 1200,
         height: 675,
         alt: "MySecretGirl69 Indore Luxury Directory"
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     title: "MySecretGirl69 Indore | Elite Escorts & Concierge Directory Indore MP",
     description:
       "Indore's trusted companion directory. Verified social companions in Vijay Nagar, Palasia, and luxury hotels with discreet local arrangements.",
-    images: ["/images/hero_banner.jpg"]
+    images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
   },
   robots: {
     index: true,
@@ -111,6 +111,7 @@ export default function RootLayout({
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://mysecretgirl69.com/#website",
     name: "MySecretGirl69 Indore",
     url: "https://mysecretgirl69.com",
     potentialAction: {
@@ -123,9 +124,15 @@ export default function RootLayout({
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://mysecretgirl69.com/#organization",
     name: "MySecretGirl69 Indore",
     url: "https://mysecretgirl69.com",
-    logo: "https://mysecretgirl69.com/images/hero_banner.jpg",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://mysecretgirl69.com/icon.png",
+      width: 180,
+      height: 180
+    },
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+91-9006236133",
@@ -136,7 +143,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${jost.variable} ${pacifico.variable} ${jost.className}`}>
+    <html lang="en" className={`${jost.variable} ${pacifico.variable}`}>
       <head>
         <script
           type="application/ld+json"

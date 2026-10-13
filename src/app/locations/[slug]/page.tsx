@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       siteName: "MySecretGirl69 Indore",
       images: [
         {
-          url: "/images/hero_banner.jpg",
+          url: "https://mysecretgirl69.com/images/hero_banner.jpg",
           width: 1200,
           height: 675,
           alt: `${location.name} Indore Escorts & Call Girls`
@@ -69,7 +69,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: "summary_large_image",
       title: location.title,
       description: location.metaDescription,
-      images: ["/images/hero_banner.jpg"]
+      images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
     }
   };
 }
@@ -95,20 +95,85 @@ export default async function LocationDetailPage({ params }: PageProps) {
     `Hello MySecretGirl69, I'm interested in arranging an escort in ${location.name}, Indore.`
   );
 
+  const pageFaqs = [
+    ...location.faqs,
+    {
+      question: `Is advance payment required for bookings in ${location.name}?`,
+      answer: `No. We never ask for advance booking deposits or UPI transfers. You settle the agreed amount directly with your call girl only upon her arrival at your venue in ${location.name}.`
+    },
+    {
+      question: `How fast can a call girl reach my hotel in ${location.name}?`,
+      answer: `Our call girls typically arrive within 30 to 45 minutes of booking confirmation at any luxury hotel or suite in ${location.name}.`
+    }
+  ];
+
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "Place",
-    "@id": `https://mysecretgirl69.com/locations/${location.slug}#place`,
-    name: `${location.name}, Indore`,
-    description: location.metaDescription,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: location.name,
-      addressLocality: "Indore",
-      addressRegion: "Madhya Pradesh",
-      postalCode: location.pincode,
-      addressCountry: "IN"
-    }
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `https://mysecretgirl69.com/locations/${location.slug}#webpage`,
+        url: `https://mysecretgirl69.com/locations/${location.slug}`,
+        name: location.title,
+        description: location.metaDescription,
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": "https://mysecretgirl69.com/#website",
+          name: "MySecretGirl69 Indore",
+          url: "https://mysecretgirl69.com"
+        }
+      },
+      {
+        "@type": "Place",
+        "@id": `https://mysecretgirl69.com/locations/${location.slug}#place`,
+        name: `${location.name}, Indore`,
+        description: location.metaDescription,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: location.name,
+          addressLocality: "Indore",
+          addressRegion: "Madhya Pradesh",
+          postalCode: location.pincode,
+          addressCountry: "IN"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `https://mysecretgirl69.com/locations/${location.slug}#breadcrumb`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://mysecretgirl69.com"
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Locations",
+            item: "https://mysecretgirl69.com/locations"
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: location.name,
+            item: `https://mysecretgirl69.com/locations/${location.slug}`
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `https://mysecretgirl69.com/locations/${location.slug}#faq`,
+        mainEntity: pageFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer
+          }
+        }))
+      }
+    ]
   };
 
   return (
@@ -132,6 +197,7 @@ export default async function LocationDetailPage({ params }: PageProps) {
                 { label: "Indore Locations", href: "/locations" },
                 { label: location.name }
               ]}
+              includeSchema={false}
             />
           </div>
 
@@ -517,6 +583,7 @@ export default async function LocationDetailPage({ params }: PageProps) {
           ]}
           title={`${location.name} Escort Service FAQs`}
           subtitle={`Clear answers regarding hotel visits, arrival timings, and direct payment in ${location.name}, Indore.`}
+          includeSchema={false}
         />
       </section>
 

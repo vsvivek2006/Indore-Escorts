@@ -11,6 +11,30 @@ export const metadata: Metadata = {
     "Explore verified call girls and escort services across all 48 Indore localities including Vijay Nagar, Palasia, Super Corridor, and Bypass. 24/7 dispatch.",
   alternates: {
     canonical: "https://mysecretgirl69.com/locations"
+  },
+  openGraph: {
+    title: "Indore Escorts & Companions Directory | 48 Verified Locality Hubs",
+    description:
+      "Explore verified call girls and escort services across all 48 Indore localities including Vijay Nagar, Palasia, Super Corridor, and Bypass. 24/7 dispatch.",
+    url: "https://mysecretgirl69.com/locations",
+    siteName: "MySecretGirl69 Indore",
+    images: [
+      {
+        url: "https://mysecretgirl69.com/images/hero_banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "48 Verified Indore Locality Escort Hubs"
+      }
+    ],
+    locale: "en_IN",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Indore Escorts & Companions Directory | 48 Verified Locality Hubs",
+    description:
+      "Explore verified call girls and escort services across all 48 Indore localities including Vijay Nagar, Palasia, Super Corridor, and Bypass.",
+    images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
   }
 };
 
@@ -34,26 +58,75 @@ export default function LocationsHubPage() {
     }
   ];
 
-  const hubFaqSchema = {
+  const hubSchema = {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: hubFaqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://mysecretgirl69.com/locations#collection",
+        url: "https://mysecretgirl69.com/locations",
+        name: "Indore Escorts & Companions Locality Directory",
+        description:
+          "Explore verified call girls and escort services across all 48 Indore localities including Vijay Nagar, Palasia, Super Corridor, and Bypass.",
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": "https://mysecretgirl69.com/#website",
+          name: "MySecretGirl69 Indore",
+          url: "https://mysecretgirl69.com"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mysecretgirl69.com/locations#breadcrumb",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://mysecretgirl69.com"
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Indore Locations",
+            item: "https://mysecretgirl69.com/locations"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://mysecretgirl69.com/locations#itemlist",
+        name: "48 Verified Indore Localities",
+        numberOfItems: INDORE_LOCATIONS.length,
+        itemListElement: INDORE_LOCATIONS.map((loc, idx) => ({
+          "@type": "ListItem",
+          position: idx + 1,
+          name: loc.name,
+          url: `https://mysecretgirl69.com/locations/${loc.slug}`
+        }))
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://mysecretgirl69.com/locations#faq",
+        mainEntity: hubFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer
+          }
+        }))
       }
-    }))
+    ]
   };
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-white text-[#1c1c1c]">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(hubFaqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(hubSchema) }}
       />
-      <Breadcrumbs items={[{ label: "Indore Locations" }]} />
+      <Breadcrumbs items={[{ label: "Indore Locations" }]} includeSchema={false} />
 
       {/* Header Section */}
       <div className="my-8 text-center max-w-3xl mx-auto space-y-4">
@@ -106,6 +179,7 @@ export default function LocationsHubPage() {
           faqs={hubFaqs}
           title="Indore Locality &amp; Travel FAQs"
           subtitle="Frequently asked questions regarding transit corridors, arrival times, and hotel coordination across Indore."
+          includeSchema={false}
         />
       </div>
     </div>

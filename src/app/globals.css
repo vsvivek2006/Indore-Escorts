@@ -40,7 +40,6 @@
     font-weight: 400;
     position: relative;
     overflow-x: hidden;
-    scroll-behavior: smooth;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
   }

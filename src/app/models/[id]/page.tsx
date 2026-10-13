@@ -56,12 +56,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `https://mysecretgirl69.com/models/${model.id}`,
       images: [
         {
-          url: model.image,
+          url: `https://mysecretgirl69.com${model.image}`,
           width: 800,
           height: 1067,
           alt: `${model.name} in Indore`
         }
       ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${model.name} (${model.category}) | MySecretGirl69 Indore`,
+      description: model.bio,
+      images: [`https://mysecretgirl69.com${model.image}`]
     }
   };
 }
@@ -152,6 +158,7 @@ export default async function ModelProfilePage({ params }: PageProps) {
           { label: "Models", href: "/models" },
           { label: model.name }
         ]}
+        includeSchema={false}
       />
 
       <div className="my-8 grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">

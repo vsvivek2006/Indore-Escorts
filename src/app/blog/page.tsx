@@ -10,13 +10,90 @@ export const metadata: Metadata = {
     "Guides to luxury 5-star hotels, rooftop lounges in Vijay Nagar, street food in Sarafa, and client safety advice in Indore, Madhya Pradesh.",
   alternates: {
     canonical: "https://mysecretgirl69.com/blog"
+  },
+  openGraph: {
+    title: "Indore Lifestyle & Luxury Stays Blog | MySecretGirl69 Indore",
+    description:
+      "Guides to luxury 5-star hotels, rooftop lounges in Vijay Nagar, street food in Sarafa, and client safety advice in Indore, Madhya Pradesh.",
+    url: "https://mysecretgirl69.com/blog",
+    siteName: "MySecretGirl69 Indore",
+    images: [
+      {
+        url: "https://mysecretgirl69.com/images/hero_banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Indore Lifestyle and Luxury Travel Blog"
+      }
+    ],
+    locale: "en_IN",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Indore Lifestyle & Luxury Stays Blog | MySecretGirl69 Indore",
+    description:
+      "Guides to luxury 5-star hotels, rooftop lounges in Vijay Nagar, street food in Sarafa, and client safety advice in Indore.",
+    images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
   }
 };
 
 export default function BlogHubPage() {
+  const blogHubSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Blog",
+        "@id": "https://mysecretgirl69.com/blog#blog",
+        name: "Indore Lifestyle, Stays & Safety Blog",
+        description:
+          "Expert articles on the best five-star hotels in Indore, nightlife in Vijay Nagar, midnight food at Sarafa, and anti-scam consumer safety.",
+        url: "https://mysecretgirl69.com/blog",
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": "https://mysecretgirl69.com/#website",
+          name: "MySecretGirl69 Indore",
+          url: "https://mysecretgirl69.com"
+        },
+        blogPost: BLOG_POSTS.map((post) => ({
+          "@type": "BlogPosting",
+          headline: post.title,
+          description: post.metaDescription,
+          url: `https://mysecretgirl69.com/blog/${post.slug}`,
+          datePublished: post.publishedDate,
+          author: {
+            "@type": "Person",
+            name: post.author
+          }
+        }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mysecretgirl69.com/blog#breadcrumb",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://mysecretgirl69.com"
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Blog & Guides",
+            item: "https://mysecretgirl69.com/blog"
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-white text-[#1c1c1c]">
-      <Breadcrumbs items={[{ label: "Blog & Guides" }]} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogHubSchema) }}
+      />
+      <Breadcrumbs items={[{ label: "Blog & Guides" }]} includeSchema={false} />
 
       <div className="my-8 text-center max-w-3xl mx-auto space-y-3">
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-pink-50 border border-pink-200 text-[#e31777] text-xs font-bold">

@@ -7,6 +7,28 @@ export const metadata: Metadata = {
   description: "Our commitment to user privacy, data minimization, cookie usage, and zero tracking of sensitive personal data.",
   alternates: {
     canonical: "https://mysecretgirl69.com/privacy-policy"
+  },
+  openGraph: {
+    title: "Privacy Policy | MySecretGirl69 Indore",
+    description: "Our commitment to user privacy, data minimization, cookie usage, and zero tracking of sensitive personal data.",
+    url: "https://mysecretgirl69.com/privacy-policy",
+    siteName: "MySecretGirl69 Indore",
+    images: [
+      {
+        url: "https://mysecretgirl69.com/images/hero_banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Privacy Policy MySecretGirl69 Indore"
+      }
+    ],
+    locale: "en_IN",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | MySecretGirl69 Indore",
+    description: "Our commitment to user privacy, data minimization, cookie usage, and zero tracking of sensitive personal data.",
+    images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
   }
 };
 

@@ -24,7 +24,24 @@ export const metadata: Metadata = {
     description:
       "Explore all 46 verified companion search categories, hotel visits, and verified escort services in Indore.",
     url: "https://mysecretgirl69.com/tags",
-    siteName: "MySecretGirl69 Indore"
+    siteName: "MySecretGirl69 Indore",
+    images: [
+      {
+        url: "https://mysecretgirl69.com/images/hero_banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Indore Escort Service Tags & Keyword Directory"
+      }
+    ],
+    locale: "en_IN",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Indore Escort Service Tags Directory | MySecretGirl69",
+    description:
+      "Explore all 46 verified companion search categories, hotel visits, and verified escort services in Indore.",
+    images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
   }
 };
 
@@ -36,11 +53,65 @@ export default function TagsIndexPage() {
     "Hello MySecretGirl69, I am browsing your Indore escort tag directory. Can you share today's verified portfolio?"
   );
 
+  const tagsHubSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://mysecretgirl69.com/tags#collection",
+        url: "https://mysecretgirl69.com/tags",
+        name: "Indore Escorts & Companionship Directory",
+        description:
+          "Browse our complete directory of 46 dedicated service categories, local search tags, and verified hotel outcall guides tailored for guests across Indore.",
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": "https://mysecretgirl69.com/#website",
+          name: "MySecretGirl69 Indore",
+          url: "https://mysecretgirl69.com"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mysecretgirl69.com/tags#breadcrumb",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://mysecretgirl69.com"
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Tags Directory",
+            item: "https://mysecretgirl69.com/tags"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://mysecretgirl69.com/tags#itemlist",
+        name: "Indore Companion Tag Keywords",
+        numberOfItems: TAG_KEYWORDS_DATA.length,
+        itemListElement: TAG_KEYWORDS_DATA.map((t, idx) => ({
+          "@type": "ListItem",
+          position: idx + 1,
+          name: t.kw,
+          url: `https://mysecretgirl69.com/tags/${t.slug}`
+        }))
+      }
+    ]
+  };
+
   return (
-    <main className="min-h-screen bg-[#0d0914] text-white">
+    <div className="min-h-screen bg-[#0d0914] text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(tagsHubSchema) }}
+      />
       {/* Breadcrumb */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
-        <Breadcrumbs items={[{ label: "Tags Directory" }]} />
+        <Breadcrumbs items={[{ label: "Tags Directory" }]} includeSchema={false} />
       </div>
 
       {/* Hero */}
@@ -141,6 +212,6 @@ export default function TagsIndexPage() {
           </p>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

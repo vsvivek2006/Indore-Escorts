@@ -93,43 +93,60 @@ export default function HomePage() {
 
   const localServiceSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "MySecretGirl69 Indore Escorts Service",
-    image: "https://mysecretgirl69.com/images/hero_banner.jpg",
-    telephone: "+91-9006236133",
-    url: "https://mysecretgirl69.com",
-    priceRange: "₹₹₹",
-    currenciesAccepted: "INR",
-    paymentAccepted: "Cash, UPI",
-    description:
-      "Premier verified escort services in Indore offering 24/7 hotel room delivery across Vijay Nagar, Palasia, Super Corridor, and 48 localities. 100% genuine photos and direct payment on meeting.",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Scheme 54, Vijay Nagar",
-      addressLocality: "Indore",
-      addressRegion: "Madhya Pradesh",
-      postalCode: "452010",
-      addressCountry: "IN"
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 22.7533,
-      longitude: 75.8937
-    },
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      opens: "00:00",
-      closes: "23:59"
-    }
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://mysecretgirl69.com/#localbusiness",
+        name: "MySecretGirl69 Indore Escorts Service",
+        image: "https://mysecretgirl69.com/images/hero_banner.jpg",
+        telephone: "+91-9006236133",
+        url: "https://mysecretgirl69.com",
+        priceRange: "₹₹₹",
+        currenciesAccepted: "INR",
+        paymentAccepted: "Cash, UPI",
+        description:
+          "Premier verified escort services in Indore offering 24/7 hotel room delivery across Vijay Nagar, Palasia, Super Corridor, and 48 localities. 100% genuine photos and direct payment on meeting.",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Scheme 54, Vijay Nagar",
+          addressLocality: "Indore",
+          addressRegion: "Madhya Pradesh",
+          postalCode: "452010",
+          addressCountry: "IN"
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 22.7533,
+          longitude: 75.8937
+        },
+        openingHoursSpecification: {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          opens: "00:00",
+          closes: "23:59"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://mysecretgirl69.com/#faq",
+        mainEntity: homeFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer
+          }
+        }))
+      }
+    ]
   };
 
   // Top 8 Featured Companions for homepage to prevent infinite scroll fatigue
@@ -153,6 +170,8 @@ export default function HomePage() {
               src="/images/banner-2.avif"
               alt="Indore Call Girls Escorts Service"
               fill
+              priority
+              fetchPriority="high"
               className="object-cover object-center"
               sizes="100vw"
             />
@@ -164,6 +183,7 @@ export default function HomePage() {
               alt="Indore Call Girls Escorts Service"
               fill
               priority
+              fetchPriority="high"
               className="object-cover object-top"
               sizes="100vw"
             />
@@ -911,6 +931,7 @@ export default function HomePage() {
           faqs={homeFaqs}
           title="Frequently Asked Questions"
           subtitle="Clear answers regarding companion arrangements, flexible in-person payment, hotel visits, and privacy in Indore."
+          includeSchema={false}
         />
       </section>
     </div>

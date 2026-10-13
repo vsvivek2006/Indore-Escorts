@@ -10,22 +10,82 @@ export const metadata: Metadata = {
     "Explore tailored companionship services in Indore. Professional social companions for candlelit dinners, corporate business travel, and luxury staycations.",
   alternates: {
     canonical: "https://mysecretgirl69.com/services"
+  },
+  openGraph: {
+    title: "Indore Escort Services | Dinner Dates & VIP Concierge",
+    description:
+      "Explore tailored companionship services in Indore. Professional social companions for candlelit dinners, corporate business travel, and luxury staycations.",
+    url: "https://mysecretgirl69.com/services",
+    siteName: "MySecretGirl69 Indore",
+    images: [
+      {
+        url: "https://mysecretgirl69.com/images/hero_banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Tailored Escort and Companion Services in Indore"
+      }
+    ],
+    locale: "en_IN",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Indore Escort Services | Dinner Dates & VIP Concierge",
+    description:
+      "Explore tailored companionship services in Indore. Professional social companions for candlelit dinners, corporate business travel, and luxury staycations.",
+    images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
   }
 };
 
 export default function ServicesHubPage() {
   const servicesSchema = {
     "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "Indore Companion & Concierge Services",
-    description: "Tailored companionship and executive concierge services across Indore.",
-    numberOfItems: SERVICES_DATA.length,
-    itemListElement: SERVICES_DATA.map((srv, idx) => ({
-      "@type": "ListItem",
-      position: idx + 1,
-      name: srv.title,
-      url: `https://mysecretgirl69.com/services/${srv.slug}`
-    }))
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://mysecretgirl69.com/services#collection",
+        url: "https://mysecretgirl69.com/services",
+        name: "Indore Companion & Concierge Services",
+        description: "Tailored companionship and executive concierge services across Indore.",
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": "https://mysecretgirl69.com/#website",
+          name: "MySecretGirl69 Indore",
+          url: "https://mysecretgirl69.com"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mysecretgirl69.com/services#breadcrumb",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://mysecretgirl69.com"
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Services",
+            item: "https://mysecretgirl69.com/services"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://mysecretgirl69.com/services#itemlist",
+        name: "Indore Companion & Concierge Services",
+        description: "Tailored companionship and executive concierge services across Indore.",
+        numberOfItems: SERVICES_DATA.length,
+        itemListElement: SERVICES_DATA.map((srv, idx) => ({
+          "@type": "ListItem",
+          position: idx + 1,
+          name: srv.title,
+          url: `https://mysecretgirl69.com/services/${srv.slug}`
+        }))
+      }
+    ]
   };
 
   return (
@@ -34,7 +94,7 @@ export default function ServicesHubPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
       />
-      <Breadcrumbs items={[{ label: "Services" }]} />
+      <Breadcrumbs items={[{ label: "Services" }]} includeSchema={false} />
 
       {/* Header */}
       <div className="my-8 text-center max-w-3xl mx-auto space-y-3">
