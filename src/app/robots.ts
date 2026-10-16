@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/"]
+        disallow: ["/api/", "/admin/", "/admin", "/login"]
       }
     ],
     sitemap: "https://mysecretgirl69.com/sitemap.xml",
