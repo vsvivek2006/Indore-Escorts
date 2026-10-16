@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { createAdminClient } from "@/lib/supabase/server";
 import { assertAdminUser, assertPermission, AuthorizationError } from "@/lib/authorization";
+import { selectRandomImage } from "@/lib/imagekit";
 
 export interface PostInput {
   title: string;
@@ -18,6 +19,7 @@ export interface PostInput {
   read_time?: string;
   source?: "manual" | "ai" | "ai-edited";
   published_at?: string;
+  cover_image?: string;
 }
 
 export async function createPostAction(input: PostInput) {
@@ -50,6 +52,7 @@ export async function createPostAction(input: PostInput) {
       status: input.status || "published",
       read_time: input.read_time || "5 min read",
       source: input.source || "ai",
+      cover_image: input.cover_image?.trim() || selectRandomImage(),
       published_at: input.status === "published"
         ? (input.published_at ? new Date(input.published_at).toISOString() : new Date().toISOString())
         : null,
@@ -190,6 +193,7 @@ export async function updatePostAction(id: string, input: Partial<PostInput>) {
     if (input.author !== undefined) updateFields.author = input.author;
     if (input.tags !== undefined) updateFields.tags = input.tags;
     if (input.read_time !== undefined) updateFields.read_time = input.read_time;
+    if (input.cover_image !== undefined) updateFields.cover_image = input.cover_image;
     if (input.status !== undefined) {
       updateFields.status = input.status;
       if (input.status === "published" && !input.published_at) {

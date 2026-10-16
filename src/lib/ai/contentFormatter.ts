@@ -4,6 +4,8 @@
  * Uses a zero-dependency server-safe HTML sanitizer compatible with Edge/Serverless runtimes.
  */
 
+import { selectRandomImage } from "@/lib/imagekit";
+
 // Allowed tags set
 const ALLOWED_TAGS = new Set([
   "h1", "h2", "h3", "h4", "h5", "h6",
@@ -118,7 +120,7 @@ export function cleanHtml(html: string): string {
   return clean;
 }
 
-export function normalizeContentToHtml(raw: string): string {
+export function normalizeContentToHtml(raw: string, title?: string): string {
   if (!raw || typeof raw !== "string") return "";
 
   // 1. Strip code block fences
@@ -254,7 +256,30 @@ export function normalizeContentToHtml(raw: string): string {
 
   let finalHtml = result.join("\n");
 
-  // 6. Cleanup empty or duplicate paragraphs
+  // 6. Inject contextual ImageKit in-content image after 2nd <h2> if no <img> tag present
+  if (!finalHtml.includes("<img")) {
+    const altText = title
+      ? `${title} - Indore Escorts VIP Service Guide`
+      : "Indore Luxury Escorts and VIP City Experience";
+    const imageTag = `<figure class="my-6"><img src="${selectRandomImage()}" alt="${altText}" loading="lazy" class="rounded-2xl w-full max-h-[420px] object-cover shadow-sm" /></figure>`;
+
+    let h2Count = 0;
+    const replaced = finalHtml.replace(/<\/h2>/gi, (match) => {
+      h2Count++;
+      if (h2Count === 2) {
+        return `${match}\n${imageTag}`;
+      }
+      return match;
+    });
+
+    if (h2Count >= 2) {
+      finalHtml = replaced;
+    } else if (h2Count === 1) {
+      finalHtml = finalHtml.replace(/<\/h2>/i, (match) => `${match}\n${imageTag}`);
+    }
+  }
+
+  // 7. Cleanup empty or duplicate paragraphs
   finalHtml = finalHtml
     .replace(/<p>\s*<\/p>/gi, "")
     .replace(/<p>&nbsp;<\/p>/gi, "")

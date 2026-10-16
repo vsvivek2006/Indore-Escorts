@@ -1,5 +1,6 @@
 import { BLOG_POSTS, BlogPost, getBlogPostBySlug as getStaticBlogPostBySlug } from "@/data/blogs";
 import { createAdminClient } from "@/lib/supabase/server";
+import { selectRandomImage } from "@/lib/imagekit";
 
 export interface UnifiedBlogPost {
   id?: string;
@@ -16,6 +17,7 @@ export interface UnifiedBlogPost {
   tags?: string[];
   status: "published" | "draft";
   source?: string;
+  cover_image?: string;
   created_at?: string;
   updated_at?: string;
 }
@@ -38,6 +40,7 @@ function mapDbRowToPost(row: any): UnifiedBlogPost {
     tags: Array.isArray(row.tags) ? row.tags : [],
     status: (row.status as "published" | "draft") || "published",
     source: row.source,
+    cover_image: row.cover_image || selectRandomImage(),
     created_at: row.created_at,
     updated_at: row.updated_at,
   };
@@ -59,6 +62,7 @@ function mapStaticToPost(staticPost: BlogPost): UnifiedBlogPost {
       : staticPost.content,
     tags: [],
     status: "published",
+    cover_image: selectRandomImage(),
   };
 }
 

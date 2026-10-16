@@ -16,6 +16,7 @@ export interface GenerateBlogPostOutput {
   metaDescription: string;
   content: string;          // Semantic HTML content
   suggestedTags: string[];
+  coverImage?: string;
 }
 
 export async function generateBlogPost(

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { getBlogPostBySlug, getPublishedBlogPosts } from "@/lib/blogs";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Calendar, Clock, User, ArrowLeft } from "lucide-react";
@@ -27,6 +28,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
+  const ogImageUrl = post.cover_image || "https://mysecretgirl69.com/images/hero_banner.jpg";
+
   return {
     title: post.metaTitle,
     description: post.metaDescription,
@@ -42,7 +45,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       authors: [post.author],
       images: [
         {
-          url: "https://mysecretgirl69.com/images/hero_banner.jpg",
+          url: ogImageUrl,
           width: 1200,
           height: 630,
           alt: post.title
@@ -53,7 +56,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: "summary_large_image",
       title: post.metaTitle,
       description: post.metaDescription,
-      images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
+      images: [ogImageUrl]
     }
   };
 }
@@ -75,6 +78,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
     "@id": `https://mysecretgirl69.com/blog/${post.slug}#article`,
     headline: post.title,
     description: post.metaDescription,
+    image: post.cover_image || "https://mysecretgirl69.com/images/hero_banner.jpg",
     datePublished: post.publishedDate,
     dateModified: new Date().toISOString().split("T")[0],
     author: {
@@ -153,6 +157,20 @@ export default async function BlogDetailPage({ params }: PageProps) {
           </p>
         </header>
 
+        {/* Hero Cover Image */}
+        {post.cover_image && (
+          <div className="relative w-full h-64 sm:h-96 md:h-[420px] rounded-3xl overflow-hidden mb-8 border border-gray-100 shadow-sm bg-gray-100">
+            <Image
+              src={post.cover_image}
+              alt={post.title}
+              fill
+              priority
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 896px"
+            />
+          </div>
+        )}
+
         {/* Content Paragraphs with Styled Internal Links */}
         <div
           className="rounded-3xl bg-white border border-gray-200 p-6 sm:p-10 space-y-5 text-sm sm:text-base text-[#616161] leading-relaxed shadow-sm [&_a]:text-[#e31777] [&_a]:font-semibold [&_a]:underline hover:[&_a]:text-[#c41164] hover:[&_a]:decoration-2 [&_a]:transition-colors [&_h2]:text-xl sm:[&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[#45474f] [&_h2]:mt-7 [&_h2]:mb-3 [&_h3]:text-lg [&_h3]:font-bold [&_h3]:text-[#45474f] [&_h3]:mt-5 [&_h3]:mb-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1.5 [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:space-y-1.5 [&_blockquote]:border-l-4 [&_blockquote]:border-[#e31777] [&_blockquote]:bg-pink-50/50 [&_blockquote]:p-4 [&_blockquote]:rounded-r-xl [&_blockquote]:italic [&_blockquote]:my-4"
@@ -216,18 +234,32 @@ export default async function BlogDetailPage({ params }: PageProps) {
                 <Link
                   key={rel.slug}
                   href={`/blog/${rel.slug}`}
-                  className="rounded-2xl border border-gray-200 hover:border-[#e31777] p-5 flex flex-col justify-between transition-all duration-300 shadow-2xs hover:shadow-md group bg-white"
+                  className="rounded-2xl border border-gray-200 hover:border-[#e31777] p-4 flex flex-col justify-between transition-all duration-300 shadow-2xs hover:shadow-md group bg-white overflow-hidden"
                 >
-                  <div className="space-y-2">
-                    <span className="text-[10px] font-bold text-[#e31777] uppercase">
-                      {rel.category}
-                    </span>
-                    <h4 className="text-sm font-bold text-gray-900 group-hover:text-[#e31777] transition line-clamp-2 leading-snug">
-                      {rel.title}
-                    </h4>
-                    <p className="text-xs text-gray-500 line-clamp-2">
-                      {rel.excerpt}
-                    </p>
+                  <div>
+                    {rel.cover_image && (
+                      <div className="relative w-full h-32 rounded-xl overflow-hidden mb-3 bg-gray-100 border border-gray-100">
+                        <Image
+                          src={rel.cover_image}
+                          alt={rel.title}
+                          fill
+                          loading="lazy"
+                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                          sizes="(max-width: 640px) 100vw, 33vw"
+                        />
+                      </div>
+                    )}
+                    <div className="space-y-1.5">
+                      <span className="text-[10px] font-bold text-[#e31777] uppercase">
+                        {rel.category}
+                      </span>
+                      <h4 className="text-sm font-bold text-gray-900 group-hover:text-[#e31777] transition line-clamp-2 leading-snug">
+                        {rel.title}
+                      </h4>
+                      <p className="text-xs text-gray-500 line-clamp-2">
+                        {rel.excerpt}
+                      </p>
+                    </div>
                   </div>
                   <span className="text-[11px] font-bold text-[#e31777] pt-3 flex items-center gap-1">
                     Read article →

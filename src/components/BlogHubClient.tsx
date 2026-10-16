@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Search, Calendar, Clock, ArrowRight, User, BookOpen, Sparkles, Filter } from "lucide-react";
 import type { UnifiedBlogPost } from "@/lib/blogs";
 import { formatBlogDate } from "@/lib/date";
@@ -100,9 +101,25 @@ export default function BlogHubClient({ posts }: BlogHubClientProps) {
 
       {/* Featured Post Card (if on Page 1 with no filters) */}
       {featuredPost && (
-        <div className="rounded-3xl border border-pink-200/80 bg-gradient-to-br from-white via-pink-50/20 to-rose-50/40 p-6 sm:p-10 shadow-sm hover:shadow-md transition-all group">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
-            <div className="space-y-3 max-w-2xl">
+        <div className="rounded-3xl border border-pink-200/80 bg-gradient-to-br from-white via-pink-50/20 to-rose-50/40 p-6 sm:p-8 shadow-sm hover:shadow-md transition-all group overflow-hidden">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
+            {featuredPost.cover_image && (
+              <Link
+                href={`/blog/${featuredPost.slug}`}
+                className="relative w-full lg:w-80 xl:w-96 h-56 sm:h-64 rounded-2xl overflow-hidden shrink-0 group-hover:opacity-95 transition bg-gray-100 border border-pink-100"
+              >
+                <Image
+                  src={featuredPost.cover_image}
+                  alt={featuredPost.title}
+                  fill
+                  priority
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 1024px) 100vw, 384px"
+                />
+              </Link>
+            )}
+
+            <div className="space-y-3 flex-1 w-full">
               <div className="flex items-center gap-2">
                 <span className="inline-flex items-center gap-1 text-[11px] font-bold px-3 py-1 rounded-full bg-[#e31777] text-white uppercase tracking-wider shadow-2xs">
                   <Sparkles className="w-3 h-3 text-amber-200" />
@@ -123,26 +140,28 @@ export default function BlogHubClient({ posts }: BlogHubClientProps) {
                 {featuredPost.excerpt}
               </p>
 
-              <div className="flex items-center gap-4 text-xs text-gray-500 pt-1">
-                <span className="flex items-center gap-1">
-                  <User className="w-3.5 h-3.5 text-[#e31777]" />
-                  {featuredPost.author}
-                </span>
-                <span>•</span>
-                <span className="flex items-center gap-1">
-                  <Clock className="w-3.5 h-3.5 text-gray-400" />
-                  {featuredPost.readTime}
-                </span>
+              <div className="flex flex-wrap items-center justify-between gap-4 pt-2">
+                <div className="flex items-center gap-4 text-xs text-gray-500">
+                  <span className="flex items-center gap-1">
+                    <User className="w-3.5 h-3.5 text-[#e31777]" />
+                    {featuredPost.author}
+                  </span>
+                  <span>•</span>
+                  <span className="flex items-center gap-1">
+                    <Clock className="w-3.5 h-3.5 text-gray-400" />
+                    {featuredPost.readTime}
+                  </span>
+                </div>
+
+                <Link
+                  href={`/blog/${featuredPost.slug}`}
+                  className="px-5 py-2.5 rounded-xl bg-[#e31777] hover:bg-[#c41164] text-white text-xs sm:text-sm font-bold shadow-md shadow-pink-500/20 inline-flex items-center gap-2 transition shrink-0"
+                >
+                  <span>Read Full Guide</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </div>
             </div>
-
-            <Link
-              href={`/blog/${featuredPost.slug}`}
-              className="px-6 py-3 rounded-2xl bg-[#e31777] hover:bg-[#c41164] text-white text-xs sm:text-sm font-bold shadow-md shadow-pink-500/20 inline-flex items-center gap-2 transition shrink-0"
-            >
-              <span>Read Full Guide</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
           </div>
         </div>
       )}
@@ -171,9 +190,25 @@ export default function BlogHubClient({ posts }: BlogHubClientProps) {
           {listPosts.map((post) => (
             <article
               key={post.slug}
-              className="rounded-2xl bg-white border border-gray-200 hover:border-[#e31777] p-6 flex flex-col justify-between transition-all duration-300 shadow-2xs hover:shadow-md group"
+              className="rounded-2xl bg-white border border-gray-200 hover:border-[#e31777] p-5 flex flex-col justify-between transition-all duration-300 shadow-2xs hover:shadow-md group overflow-hidden"
             >
               <div>
+                {post.cover_image && (
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="relative block w-full h-44 rounded-xl overflow-hidden mb-4 bg-gray-100 border border-gray-100"
+                  >
+                    <Image
+                      src={post.cover_image}
+                      alt={post.title}
+                      fill
+                      loading="lazy"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                  </Link>
+                )}
+
                 <div className="flex items-center justify-between text-[11px] text-gray-500 mb-3">
                   <span className="px-2.5 py-0.5 rounded-md bg-pink-50 border border-pink-100 text-[#e31777] font-semibold">
                     {post.category}

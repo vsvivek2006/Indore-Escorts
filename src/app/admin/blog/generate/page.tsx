@@ -4,11 +4,12 @@ import { useState } from "react";
 import Link from "next/link";
 import slugify from "slugify";
 import dynamic from "next/dynamic";
-import { Copy, Check, FileText, Code2, Eye, Edit3, Loader2, Link2, Calendar, Send, Save, ExternalLink, CheckCircle2 } from "lucide-react";
+import { Copy, Check, FileText, Code2, Eye, Edit3, Loader2, Link2, Calendar, Send, Save, ExternalLink, CheckCircle2, Image as ImageIcon, Shuffle } from "lucide-react";
 import { toast } from "sonner";
 import { AIGeneratorPanel } from "@/components/admin/AIGeneratorPanel";
 import type { GenerateBlogPostOutput } from "@/lib/ai/generateBlogPost";
 import { formatBlogDate, getTodayDateIso } from "@/lib/date";
+import { selectRandomImage } from "@/lib/imagekit";
 import { createPostAction } from "../actions";
 
 const TiptapEditor = dynamic(
@@ -27,6 +28,7 @@ const TiptapEditor = dynamic(
 export default function AdminBlogGeneratePage() {
   const [output, setOutput] = useState<GenerateBlogPostOutput | null>(null);
   const [slug, setSlug] = useState("");
+  const [coverImage, setCoverImage] = useState("");
   const [publishedDate, setPublishedDate] = useState<string>(getTodayDateIso());
   const [activeTab, setActiveTab] = useState<"editor" | "preview" | "code">("editor");
   const [copied, setCopied] = useState<string | null>(null);
@@ -36,6 +38,7 @@ export default function AdminBlogGeneratePage() {
   const handleGenerated = (res: GenerateBlogPostOutput) => {
     setOutput(res);
     setSlug(slugify(res.title || "", { lower: true, strict: true }));
+    setCoverImage(res.coverImage || selectRandomImage());
     setPublishedDate(getTodayDateIso());
     setPublishedStatus("idle");
   };
@@ -69,6 +72,7 @@ export default function AdminBlogGeneratePage() {
       published_at: publishedDate,
       category: "Luxury Travel",
       source: "ai",
+      cover_image: coverImage || selectRandomImage(),
     });
 
     setIsPublishing(false);
@@ -209,6 +213,58 @@ export default function AdminBlogGeneratePage() {
                 className="w-full px-3 py-2 rounded-lg bg-gray-50 border border-gray-200 text-xs font-mono text-gray-800 focus:outline-none focus:border-[#e31777]"
               />
             </div>
+          </div>
+
+          {/* Cover Image Preview & Shuffle */}
+          <div className="space-y-2 p-4 rounded-xl border border-gray-200 bg-gray-50/60">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-bold text-gray-700 uppercase tracking-wider flex items-center gap-1.5">
+                <ImageIcon className="w-3.5 h-3.5 text-[#e31777]" />
+                Cover Image (ImageKit CDN)
+              </span>
+              <button
+                type="button"
+                onClick={() => setCoverImage(selectRandomImage())}
+                className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-semibold rounded-lg bg-pink-50 text-[#e31777] hover:bg-pink-100 border border-pink-200 transition cursor-pointer"
+              >
+                <Shuffle className="w-3 h-3" />
+                Shuffle Image
+              </button>
+            </div>
+            {coverImage ? (
+              <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                <div className="relative w-full sm:w-48 h-28 rounded-lg overflow-hidden border border-gray-200 bg-gray-100 shrink-0">
+                  <img
+                    src={coverImage}
+                    alt="Cover preview"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="w-full space-y-1">
+                  <input
+                    type="text"
+                    value={coverImage}
+                    onChange={(e) => setCoverImage(e.target.value)}
+                    placeholder="Image URL"
+                    className="w-full px-3 py-2 rounded-lg bg-white border border-gray-200 text-xs font-mono text-gray-700 focus:outline-none focus:border-[#e31777]"
+                  />
+                  <p className="text-[11px] text-gray-500">
+                    Randomized from AlinaVIP ImageKit CDN. Displays as article banner &amp; card thumbnail.
+                  </p>
+                </div>
+              </div>
+            ) : (
+              <div className="flex items-center justify-between py-2">
+                <span className="text-xs text-gray-500">No cover image selected</span>
+                <button
+                  type="button"
+                  onClick={() => setCoverImage(selectRandomImage())}
+                  className="text-xs font-semibold text-[#e31777] hover:underline"
+                >
+                  Assign Random Image
+                </button>
+              </div>
+            )}
           </div>
 
           {/* Meta Description */}

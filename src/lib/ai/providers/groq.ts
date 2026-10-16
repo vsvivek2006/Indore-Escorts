@@ -4,6 +4,7 @@ import Groq from "groq-sdk";
 import { buildBlogPostPrompt, blogPostResponseSchema } from "../prompts/blogPost";
 import { normalizeContentToHtml } from "../contentFormatter";
 import { getValidModel } from "../models";
+import { selectRandomImage } from "@/lib/imagekit";
 import type { GenerateBlogPostInput, GenerateBlogPostOutput } from "../generateBlogPost";
 
 let groqInstance: Groq | null = null;
@@ -84,7 +85,7 @@ export async function generateBlogPostWithGroq(
   const parsed = safeParseJson(raw);
 
   // Normalize and clean HTML content ensuring full rich-text tag validity
-  const formattedHtml = normalizeContentToHtml(parsed.content || "");
+  const formattedHtml = normalizeContentToHtml(parsed.content || "", parsed.title);
 
   return {
     title: parsed.title ? String(parsed.title).trim() : "",
@@ -93,6 +94,7 @@ export async function generateBlogPostWithGroq(
     suggestedTags: Array.isArray(parsed.suggestedTags)
       ? parsed.suggestedTags.map((t: unknown) => String(t).trim()).filter(Boolean)
       : [],
+    coverImage: selectRandomImage(),
   };
 }
 

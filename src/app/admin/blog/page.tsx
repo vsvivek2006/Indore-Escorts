@@ -34,6 +34,7 @@ interface AdminPostItem {
   author?: string;
   category?: string;
   status?: "draft" | "published";
+  cover_image?: string;
   created_at?: string;
 }
 
@@ -267,11 +268,21 @@ export default function AdminBlogManagementPage() {
                 key={post.id || post.slug}
                 className="bg-white rounded-2xl p-5 sm:p-6 border border-gray-200 hover:border-pink-300 shadow-2xs hover:shadow-md transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-5 group"
               >
-                <div className="space-y-2 min-w-0 flex-1">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-pink-100 text-[#e31777] uppercase tracking-wider">
-                      {post.category || "Luxury Travel"}
-                    </span>
+                <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center flex-1 min-w-0">
+                  {post.cover_image && (
+                    <div className="relative w-full sm:w-28 h-20 rounded-xl overflow-hidden bg-gray-100 border border-gray-200 shrink-0">
+                      <img
+                        src={post.cover_image}
+                        alt={post.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  )}
+                  <div className="space-y-2 min-w-0 flex-1">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-pink-100 text-[#e31777] uppercase tracking-wider">
+                        {post.category || "Luxury Travel"}
+                      </span>
 
                     <span
                       className={`text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider ${
@@ -329,6 +340,7 @@ export default function AdminBlogManagementPage() {
                     </button>
                   </div>
                 </div>
+              </div>
 
                 {/* Action Buttons */}
                 <div className="flex flex-wrap sm:flex-nowrap items-center gap-2 shrink-0 pt-3 lg:pt-0 border-t lg:border-t-0 border-gray-100">
