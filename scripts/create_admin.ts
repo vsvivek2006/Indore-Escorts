@@ -25,8 +25,13 @@ const supabase = createClient(supabaseUrl, serviceRoleKey);
 
 async function createAdmin() {
   const args = process.argv.slice(2);
-  const email = args[0] || "admin@mysecretgirl69.com";
-  const password = args[1] || "Admin@Indore2026";
+  const email = args[0] || process.env.ADMIN_EMAIL;
+  const password = args[1] || process.env.ADMIN_PASSWORD;
+
+  if (!email || !password) {
+    console.error("Usage: npx tsx scripts/create_admin.ts <email> <password> or set ADMIN_EMAIL & ADMIN_PASSWORD in environment.");
+    process.exit(1);
+  }
 
   console.log(`Creating Admin user: ${email}...`);
 
