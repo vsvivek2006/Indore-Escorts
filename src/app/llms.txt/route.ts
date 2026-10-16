@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { INDORE_LOCATIONS } from "@/data/locations";
 import { SERVICES_DATA } from "@/data/services";
 import { COMPANION_MODELS } from "@/data/models";
-import { BLOG_POSTS } from "@/data/blogs";
+import { getPublishedBlogPosts } from "@/lib/blogs";
 import { TAG_KEYWORDS_DATA } from "@/data/tags";
 
 export const dynamic = "force-dynamic";
@@ -10,18 +10,19 @@ export const revalidate = 3600;
 
 export async function GET() {
   const baseUrl = "https://mysecretgirl69.com";
+  const publishedBlogs = await getPublishedBlogPosts();
 
   const lines = [
     "# MySecretGirl69 - Elite Indore Call Girls & Escorts Service",
     "",
-    "> Premium verified independent companion and executive escort directory in Indore, Madhya Pradesh. Providing transparent direct payment upon meeting, verified genuine photos, and fast 30 to 45-minute discreet outcall delivery to luxury 5-star hotel suites across Vijay Nagar, Palasia, Super Corridor, and 48 municipal sectors.",
+    "> Premium verified independent call girl and executive escort directory in Indore, Madhya Pradesh. Providing transparent direct cash payment upon arrival, verified genuine photos, and fast 30 to 45-minute discreet outcall delivery to luxury 5-star hotel suites across Vijay Nagar, Palasia, Super Corridor, and 48 municipal sectors.",
     "",
     "## Quick Contact & Verification",
     `- **Official Website**: ${baseUrl}`,
     "- **WhatsApp Concierge**: https://wa.me/919006236133",
     "- **Telephone Hotline**: +91 90062 36133",
     "- **Operating Hours**: 24 Hours, 7 Days a Week",
-    "- **Payment Policy**: Direct Payment Upon Meeting (Zero Advance). Settle directly with your companion or coordinator upon arrival. Zero upfront deposits, zero UPI registration fees, zero transit charges.",
+    "- **Payment Policy**: Direct Cash Payment Upon Meeting (Zero Advance). Settle directly upon arrival in your hotel room. Zero upfront deposits, zero UPI registration fees, zero transit charges.",
     "",
     "## Core Services & Booking Options",
     ...SERVICES_DATA.map(
@@ -34,7 +35,7 @@ export async function GET() {
       (t) => `- [${t.kw}](${baseUrl}/tags/${t.slug}): ${t.desc}`
     ),
     "",
-    `## Verified Companion Roster (${COMPANION_MODELS.length} Profiles)`,
+    `## Verified Call Girls & Escorts Roster (${COMPANION_MODELS.length} Profiles)`,
     ...COMPANION_MODELS.map(
       (m) =>
         `- [${m.name}](${baseUrl}/models/${m.id}): ${m.age} yrs, ${m.category}, ${m.locationsServed.slice(0, 2).join(" & ")}`
@@ -46,8 +47,8 @@ export async function GET() {
     ),
     `- [All ${INDORE_LOCATIONS.length} Localities](${baseUrl}/locations): Complete municipal coverage map.`,
     "",
-    "## Blog & Executive City Guides",
-    ...BLOG_POSTS.map(
+    `## Blog & Executive City Guides (${publishedBlogs.length} Articles)`,
+    ...publishedBlogs.map(
       (b) => `- [${b.title}](${baseUrl}/blog/${b.slug}): ${b.excerpt}`
     ),
     "",

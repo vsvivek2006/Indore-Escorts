@@ -10,6 +10,18 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "*",
         allow: "/",
         disallow: ["/api/", "/admin/", "/admin", "/login"]
+      },
+      {
+        userAgent: [
+          "GPTBot",
+          "ChatGPT-User",
+          "PerplexityBot",
+          "ClaudeBot",
+          "Google-Extended",
+          "Applebot"
+        ],
+        allow: ["/", "/llms.txt", "/llms-full.txt", "/sitemap.xml"],
+        disallow: ["/api/", "/admin/", "/admin", "/login"]
       }
     ],
     sitemap: "https://mysecretgirl69.com/sitemap.xml",

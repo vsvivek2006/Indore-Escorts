@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "MySecretGirl69 Indore Escorts",
+    name: "MySecretGirl69 Indore Call Girls & Escorts",
     short_name: "MySecretGirl69",
-    description: "Premier verified escort directory and companion service in Indore, MP.",
+    description: "Premier verified call girl directory and 5-star hotel luxury escort service in Indore, Madhya Pradesh.",
     start_url: "/",
     display: "standalone",
     background_color: "#0d0914",

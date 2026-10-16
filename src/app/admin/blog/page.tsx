@@ -354,13 +354,6 @@ export default function AdminBlogManagementPage() {
                     </Link>
                   )}
 
-                  <Link
-                    href={`/admin/blog/generate`}
-                    className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-pink-50 hover:bg-pink-100 text-[#e31777] font-bold text-xs border border-pink-200/80 transition"
-                  >
-                    <Sparkles className="w-3.5 h-3.5" />
-                    <span>Write Similar</span>
-                  </Link>
 
                   {post.id && (
                     <button
