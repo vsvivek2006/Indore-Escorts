@@ -1,11 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function AgeVerificationModal() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
+    if (pathname?.startsWith("/admin")) return;
     try {
       const isVerified = localStorage.getItem("indore_age_verified");
       if (!isVerified) {

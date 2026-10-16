@@ -1,9 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { MessageCircle, ArrowUp } from "lucide-react";
 
 export default function FloatingCTA() {
+  const pathname = usePathname();
   const [showScrollTop, setShowScrollTop] = useState(false);
   const whatsappNumber = "919006236133";
   const whatsappMessage = encodeURIComponent(
@@ -22,6 +24,10 @@ export default function FloatingCTA() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  if (pathname?.startsWith("/admin")) {
+    return null;
+  }
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });

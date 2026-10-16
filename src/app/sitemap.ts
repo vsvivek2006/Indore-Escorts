@@ -2,15 +2,16 @@ import { MetadataRoute } from "next";
 import { INDORE_LOCATIONS } from "@/data/locations";
 import { SERVICES_DATA } from "@/data/services";
 import { COMPANION_MODELS } from "@/data/models";
-import { BLOG_POSTS } from "@/data/blogs";
+import { getPublishedBlogPosts } from "@/lib/blogs";
 import { TAG_KEYWORDS_DATA } from "@/data/tags";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 3600;
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://mysecretgirl69.com";
   const now = new Date();
+  const publishedBlogs = await getPublishedBlogPosts();
 
   // Static Core Pages
   const staticPages: MetadataRoute.Sitemap = [
@@ -52,10 +53,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8
   }));
 
-  // Blog Pages
-  const blogPages: MetadataRoute.Sitemap = BLOG_POSTS.map((blog) => ({
+  // Dynamic Blog Pages from Database
+  const blogPages: MetadataRoute.Sitemap = publishedBlogs.map((blog) => ({
     url: `${baseUrl}/blog/${blog.slug}`,
-    lastModified: now,
+    lastModified: blog.updated_at ? new Date(blog.updated_at) : now,
     changeFrequency: "monthly",
     priority: 0.65
   }));

@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   Phone,
   MessageCircle,
@@ -14,6 +17,12 @@ import {
 import { TAG_KEYWORDS_DATA } from "@/data/tags";
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  if (pathname?.startsWith("/admin")) {
+    return null;
+  }
+
   return (
     <footer className="bg-[#0b172d] text-white text-xs border-t border-pink-900/30" role="contentinfo">
       {/* 1. Top Call-to-Action & Friendly Coordinator Connect */}

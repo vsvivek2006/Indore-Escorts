@@ -14,6 +14,10 @@ export default function Header() {
     setIsMenuOpen(false);
   }, [pathname]);
 
+  if (pathname?.startsWith("/admin")) {
+    return null;
+  }
+
   // Close menu on escape key
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {

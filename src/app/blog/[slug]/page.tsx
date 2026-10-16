@@ -1,23 +1,25 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { BLOG_POSTS, getBlogPostBySlug } from "@/data/blogs";
+import { getBlogPostBySlug, getPublishedBlogPosts } from "@/lib/blogs";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Calendar, Clock, User, ArrowLeft } from "lucide-react";
+import { formatBlogDate } from "@/lib/date";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
-  return BLOG_POSTS.map((post) => ({
+  const posts = await getPublishedBlogPosts();
+  return posts.map((post) => ({
     slug: post.slug
   }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const post = getBlogPostBySlug(slug);
+  const post = await getBlogPostBySlug(slug);
 
   if (!post) {
     return {
@@ -58,7 +60,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function BlogDetailPage({ params }: PageProps) {
   const { slug } = await params;
-  const post = getBlogPostBySlug(slug);
+  const post = await getBlogPostBySlug(slug);
 
   if (!post) {
     notFound();
@@ -113,7 +115,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
             </span>
             <span className="flex items-center gap-1">
               <Calendar className="w-3.5 h-3.5" />
-              {post.publishedDate}
+              {formatBlogDate(post.publishedDate)}
             </span>
             <span>•</span>
             <span className="flex items-center gap-1">
@@ -132,24 +134,29 @@ export default async function BlogDetailPage({ params }: PageProps) {
           </p>
         </header>
 
-        {/* Content Paragraphs */}
-        <div className="rounded-3xl bg-white border border-gray-200 p-6 sm:p-10 space-y-6 text-sm sm:text-base text-[#616161] leading-relaxed shadow-sm">
-          {post.content.map((para, idx) => (
-            <p key={idx}>{para}</p>
-          ))}
-        </div>
+        {/* Content Paragraphs with Styled Internal Links */}
+        <div
+          className="rounded-3xl bg-white border border-gray-200 p-6 sm:p-10 space-y-5 text-sm sm:text-base text-[#616161] leading-relaxed shadow-sm [&_a]:text-[#e31777] [&_a]:font-semibold [&_a]:underline hover:[&_a]:text-[#c41164] hover:[&_a]:decoration-2 [&_a]:transition-colors [&_h2]:text-xl sm:[&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[#45474f] [&_h2]:mt-7 [&_h2]:mb-3 [&_h3]:text-lg [&_h3]:font-bold [&_h3]:text-[#45474f] [&_h3]:mt-5 [&_h3]:mb-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1.5 [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:space-y-1.5 [&_blockquote]:border-l-4 [&_blockquote]:border-[#e31777] [&_blockquote]:bg-pink-50/50 [&_blockquote]:p-4 [&_blockquote]:rounded-r-xl [&_blockquote]:italic [&_blockquote]:my-4"
+          dangerouslySetInnerHTML={{
+            __html: typeof post.content === "string"
+              ? post.content
+              : Array.isArray(post.content)
+                ? (post.content as string[]).map((p) => `<p>${p}</p>`).join("")
+                : ""
+          }}
+        />
 
         {/* Post Footer CTA */}
         <div className="mt-10 p-6 rounded-2xl bg-gradient-to-r from-pink-50 to-rose-50 border border-pink-200 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
           <div>
-            <h2 className="text-base font-bold text-[#45474f]">Looking for Verified Escort Service in Indore?</h2>
-            <p className="text-xs text-[#616161]">Our concierge desk is ready 24/7 for discreet local coordination.</p>
+            <h2 className="text-base font-bold text-[#45474f]">Looking for Verified Call Girls & Escort Service in Indore?</h2>
+            <p className="text-xs text-[#616161]">100% verified photo models, cash-on-arrival, and 30-45 minute fast hotel outcalls across Indore.</p>
           </div>
           <Link
             href="/contact"
             className="py-2.5 px-5 rounded-xl bg-[#e31777] hover:bg-[#c41164] text-white font-bold text-xs transition shrink-0 shadow-md"
           >
-            Inquire Now
+            Book Call Girls Now
           </Link>
         </div>
 

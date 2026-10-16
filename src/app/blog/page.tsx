@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BLOG_POSTS } from "@/data/blogs";
+import { getPublishedBlogPosts } from "@/lib/blogs";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { BookOpen, Clock, ArrowRight, User } from "lucide-react";
+import { BookOpen, Clock, ArrowRight, User, Calendar } from "lucide-react";
+import { formatBlogDate } from "@/lib/date";
 
 export const metadata: Metadata = {
-  title: "Indore Lifestyle & Luxury Stays Blog | MySecretGirl69 Indore",
+  title: "Indore Call Girls & Escorts Blog | Luxury Stays & Safety Guides | MySecretGirl69",
   description:
-    "Guides to luxury 5-star hotels, rooftop lounges in Vijay Nagar, street food in Sarafa, and client safety advice in Indore, Madhya Pradesh.",
+    "Expert guides to luxury 5-star hotels in Indore for call girl stays, Vijay Nagar nightlife, anti-scam advice, and booking verified escorts in Indore.",
   alternates: {
     canonical: "https://mysecretgirl69.com/blog"
   },
   openGraph: {
-    title: "Indore Lifestyle & Luxury Stays Blog | MySecretGirl69 Indore",
+    title: "Indore Call Girls & Escorts Blog | Luxury Stays & Safety Guides",
     description:
-      "Guides to luxury 5-star hotels, rooftop lounges in Vijay Nagar, street food in Sarafa, and client safety advice in Indore, Madhya Pradesh.",
+      "Expert guides to luxury 5-star hotels in Indore for call girl stays, Vijay Nagar nightlife, anti-scam advice, and booking verified escorts in Indore.",
     url: "https://mysecretgirl69.com/blog",
     siteName: "MySecretGirl69 Indore",
     images: [
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
         url: "https://mysecretgirl69.com/images/hero_banner.jpg",
         width: 1200,
         height: 630,
-        alt: "Indore Lifestyle and Luxury Travel Blog"
+        alt: "Indore Call Girls and Escorts Blog"
       }
     ],
     locale: "en_IN",
@@ -30,23 +31,25 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Indore Lifestyle & Luxury Stays Blog | MySecretGirl69 Indore",
+    title: "Indore Call Girls & Escorts Blog | Luxury Stays & Safety Guides",
     description:
-      "Guides to luxury 5-star hotels, rooftop lounges in Vijay Nagar, street food in Sarafa, and client safety advice in Indore.",
+      "Expert guides to luxury 5-star hotels in Indore for call girl stays, Vijay Nagar nightlife, and client safety advice.",
     images: ["https://mysecretgirl69.com/images/hero_banner.jpg"]
   }
 };
 
-export default function BlogHubPage() {
+export default async function BlogHubPage() {
+  const posts = await getPublishedBlogPosts();
+
   const blogHubSchema = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Blog",
         "@id": "https://mysecretgirl69.com/blog#blog",
-        name: "Indore Lifestyle, Stays & Safety Blog",
+        name: "Indore Call Girls & Escorts Lifestyle, Stays & Safety Blog",
         description:
-          "Expert articles on the best five-star hotels in Indore, nightlife in Vijay Nagar, midnight food at Sarafa, and anti-scam consumer safety.",
+          "Authoritative guides on 5-star luxury hotels for call girl outcalls, Vijay Nagar nightlife & dinner dates, and client safety best practices in Indore.",
         url: "https://mysecretgirl69.com/blog",
         isPartOf: {
           "@type": "WebSite",
@@ -54,7 +57,7 @@ export default function BlogHubPage() {
           name: "MySecretGirl69 Indore",
           url: "https://mysecretgirl69.com"
         },
-        blogPost: BLOG_POSTS.map((post) => ({
+        blogPost: posts.map((post) => ({
           "@type": "BlogPosting",
           headline: post.title,
           description: post.metaDescription,
@@ -101,15 +104,15 @@ export default function BlogHubPage() {
           <span>Indore Guides &amp; Insights</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-[#45474f] tracking-tight">
-          Indore Lifestyle, Stays &amp; Safety Blog
+          Indore Call Girls &amp; Escorts Blog
         </h1>
         <p className="text-sm sm:text-base text-[#616161] leading-relaxed">
-          Expert articles on the best five-star hotels in Indore, nightlife in Vijay Nagar, midnight food at Sarafa, and anti-scam consumer safety.
+          Authoritative guides on the best 5-star luxury hotels for call girl stays, Vijay Nagar nightlife &amp; dinner dates, and client safety best practices in Indore.
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-10">
-        {BLOG_POSTS.map((post) => (
+        {posts.map((post) => (
           <article
             key={post.slug}
             className="rounded-2xl bg-white border border-gray-200 hover:border-[#e31777] p-6 flex flex-col justify-between transition-all duration-300 shadow-sm hover:shadow-md group"
@@ -119,9 +122,9 @@ export default function BlogHubPage() {
                 <span className="px-2.5 py-0.5 rounded-md bg-pink-50 border border-pink-100 text-[#e31777] font-semibold">
                   {post.category}
                 </span>
-                <span className="flex items-center gap-1">
-                  <Clock className="w-3 h-3 text-gray-400" />
-                  {post.readTime}
+                <span className="flex items-center gap-1 text-gray-500">
+                  <Calendar className="w-3 h-3 text-[#e31777]" />
+                  {formatBlogDate(post.publishedDate)}
                 </span>
               </div>
 
