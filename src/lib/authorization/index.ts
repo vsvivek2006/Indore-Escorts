@@ -60,15 +60,23 @@ export function verifyAdminRole(user: User | null | undefined): AdminUserContext
     );
   }
 
-  // Resolve role from app_metadata or fallback to superadmin/admin
+  // Resolve role from app_metadata or user_metadata
   let rawRole = (user.app_metadata?.role as string | undefined) || (user.user_metadata?.role as string | undefined);
   const validRoles: AdminRole[] = ["superadmin", "admin", "editor"];
 
   if (!rawRole) {
-    rawRole = "admin";
+    const adminEmailWhitelist = new Set([
+      "admin@mysecretgirl69.com",
+      (process.env.ADMIN_EMAIL || "").toLowerCase().trim(),
+    ].filter(Boolean));
+
+    const userEmail = (user.email ?? "").toLowerCase().trim();
+    if (userEmail && adminEmailWhitelist.has(userEmail)) {
+      rawRole = "admin";
+    }
   }
 
-  if (!validRoles.includes(rawRole as AdminRole)) {
+  if (!rawRole || !validRoles.includes(rawRole as AdminRole)) {
     throw new AuthorizationError(
       "Access denied: You do not have an authorized administrator role.",
       403,

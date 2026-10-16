@@ -2,7 +2,7 @@
 
 import { useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Lock, Mail, Eye, EyeOff, Loader2, ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
+import { Lock, Mail, Eye, EyeOff, Loader2, ArrowRight, ShieldCheck } from "lucide-react";
 import { toast } from "sonner";
 import { createClient } from "@/lib/supabase/client";
 
@@ -52,12 +52,6 @@ function LoginForm() {
       toast.error(msg);
       setIsLoading(false);
     }
-  };
-
-  const handleQuickFill = () => {
-    setEmail("admin@mysecretgirl69.com");
-    setPassword("Admin@Indore2026");
-    toast.info("Admin credentials autofilled!");
   };
 
   return (
@@ -148,19 +142,6 @@ function LoginForm() {
                 {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
               </button>
             </div>
-          </div>
-
-          {/* Quick autofill helper */}
-          <div className="flex items-center justify-between text-[11px] pt-1">
-            <span className="text-gray-400">First time sign-in?</span>
-            <button
-              type="button"
-              onClick={handleQuickFill}
-              className="text-[#e31777] hover:underline font-bold inline-flex items-center gap-1 cursor-pointer"
-            >
-              <Sparkles className="w-3 h-3 text-yellow-500" />
-              Autofill Credentials
-            </button>
           </div>
 
           <button

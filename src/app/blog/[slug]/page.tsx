@@ -6,6 +6,7 @@ import { getBlogPostBySlug, getPublishedBlogPosts } from "@/lib/blogs";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Calendar, Clock, User, ArrowLeft } from "lucide-react";
 import { formatBlogDate } from "@/lib/date";
+import { cleanHtml } from "@/lib/ai/contentFormatter";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -175,11 +176,13 @@ export default async function BlogDetailPage({ params }: PageProps) {
         <div
           className="rounded-3xl bg-white border border-gray-200 p-6 sm:p-10 space-y-5 text-sm sm:text-base text-[#616161] leading-relaxed shadow-sm [&_a]:text-[#e31777] [&_a]:font-semibold [&_a]:underline hover:[&_a]:text-[#c41164] hover:[&_a]:decoration-2 [&_a]:transition-colors [&_h2]:text-xl sm:[&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-[#45474f] [&_h2]:mt-7 [&_h2]:mb-3 [&_h3]:text-lg [&_h3]:font-bold [&_h3]:text-[#45474f] [&_h3]:mt-5 [&_h3]:mb-2 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1.5 [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:space-y-1.5 [&_blockquote]:border-l-4 [&_blockquote]:border-[#e31777] [&_blockquote]:bg-pink-50/50 [&_blockquote]:p-4 [&_blockquote]:rounded-r-xl [&_blockquote]:italic [&_blockquote]:my-4"
           dangerouslySetInnerHTML={{
-            __html: typeof post.content === "string"
-              ? post.content
-              : Array.isArray(post.content)
-                ? (post.content as string[]).map((p) => `<p>${p}</p>`).join("")
-                : ""
+            __html: cleanHtml(
+              typeof post.content === "string"
+                ? post.content
+                : Array.isArray(post.content)
+                  ? (post.content as string[]).map((p) => `<p>${p}</p>`).join("")
+                  : ""
+            )
           }}
         />
 

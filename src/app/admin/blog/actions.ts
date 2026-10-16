@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { createAdminClient } from "@/lib/supabase/server";
 import { assertAdminUser, assertPermission, AuthorizationError } from "@/lib/authorization";
 import { selectRandomImage } from "@/lib/imagekit";
+import { cleanHtml } from "@/lib/ai/contentFormatter";
 
 export interface PostInput {
   title: string;
@@ -42,7 +43,7 @@ export async function createPostAction(input: PostInput) {
     const newRecord = {
       title: input.title.trim(),
       slug: normalizedSlug,
-      content: input.content,
+      content: cleanHtml(input.content),
       excerpt: input.excerpt?.trim() || input.meta_description?.trim() || "",
       meta_title: input.meta_title?.trim() || input.title.trim(),
       meta_description: input.meta_description?.trim() || "",
@@ -185,7 +186,7 @@ export async function updatePostAction(id: string, input: Partial<PostInput>) {
         .replace(/[^a-z0-9]+/g, "-")
         .replace(/^-+|-+$/g, "");
     }
-    if (input.content !== undefined) updateFields.content = input.content;
+    if (input.content !== undefined) updateFields.content = cleanHtml(input.content);
     if (input.excerpt !== undefined) updateFields.excerpt = input.excerpt.trim();
     if (input.meta_title !== undefined) updateFields.meta_title = input.meta_title.trim();
     if (input.meta_description !== undefined) updateFields.meta_description = input.meta_description.trim();

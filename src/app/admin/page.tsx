@@ -9,8 +9,10 @@ import {
 } from "lucide-react";
 import { BLOG_POSTS } from "@/data/blogs";
 import { formatBlogDate, getTodayDateIso } from "@/lib/date";
+import { assertAdminUser } from "@/lib/authorization";
 
-export default function AdminDashboardPage() {
+export default async function AdminDashboardPage() {
+  await assertAdminUser();
   const todayIso = getTodayDateIso();
   const totalBlogs = BLOG_POSTS.length;
   const todayBlogs = BLOG_POSTS.filter((post) => post.publishedDate === todayIso).length;
