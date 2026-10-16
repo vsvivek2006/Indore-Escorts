@@ -16,6 +16,7 @@ import {
   Trash2,
   Loader2,
   RefreshCw,
+  Edit3,
 } from "lucide-react";
 import { formatBlogDate } from "@/lib/date";
 import { toast } from "sonner";
@@ -41,6 +42,7 @@ export default function AdminBlogManagementPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [deletingId, setDeletingId] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedStatus, setSelectedStatus] = useState<"ALL" | "published" | "draft">("ALL");
   const [selectedCategory, setSelectedCategory] = useState<string>("ALL");
   const [copiedSlug, setCopiedSlug] = useState<string | null>(null);
 
@@ -106,8 +108,16 @@ export default function AdminBlogManagementPage() {
     const matchesCategory =
       selectedCategory === "ALL" || post.category === selectedCategory;
 
-    return matchesSearch && matchesCategory;
+    const matchesStatus =
+      selectedStatus === "ALL" ||
+      (selectedStatus === "draft" && post.status === "draft") ||
+      (selectedStatus === "published" && post.status !== "draft");
+
+    return matchesSearch && matchesCategory && matchesStatus;
   });
+
+  const publishedCount = posts.filter((p) => p.status !== "draft").length;
+  const draftCount = posts.filter((p) => p.status === "draft").length;
 
   const handleCopySlug = (slug: string) => {
     navigator.clipboard.writeText(slug);
@@ -167,8 +177,45 @@ export default function AdminBlogManagementPage() {
           />
         </div>
 
+        {/* Status Filter Tabs */}
+        <div className="flex items-center gap-1 p-1 bg-gray-100 rounded-xl shrink-0">
+          <button
+            type="button"
+            onClick={() => setSelectedStatus("ALL")}
+            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition cursor-pointer ${
+              selectedStatus === "ALL"
+                ? "bg-white text-gray-900 shadow-2xs"
+                : "text-gray-600 hover:text-gray-900"
+            }`}
+          >
+            All ({posts.length})
+          </button>
+          <button
+            type="button"
+            onClick={() => setSelectedStatus("published")}
+            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition cursor-pointer ${
+              selectedStatus === "published"
+                ? "bg-white text-emerald-700 shadow-2xs"
+                : "text-gray-600 hover:text-emerald-700"
+            }`}
+          >
+            Live ({publishedCount})
+          </button>
+          <button
+            type="button"
+            onClick={() => setSelectedStatus("draft")}
+            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition cursor-pointer ${
+              selectedStatus === "draft"
+                ? "bg-white text-amber-700 shadow-2xs"
+                : "text-gray-600 hover:text-amber-700"
+            }`}
+          >
+            Drafts ({draftCount})
+          </button>
+        </div>
+
         {/* Category Filter Pills */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0 scrollbar-none">
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0 scrollbar-none shrink-0">
           <Filter className="w-3.5 h-3.5 text-gray-400 mr-1 hidden sm:block" />
           {categories.map((cat) => (
             <button
@@ -285,11 +332,22 @@ export default function AdminBlogManagementPage() {
 
                 {/* Action Buttons */}
                 <div className="flex flex-wrap sm:flex-nowrap items-center gap-2 shrink-0 pt-3 lg:pt-0 border-t lg:border-t-0 border-gray-100">
+                  {post.id && (
+                    <Link
+                      href={`/admin/blog/${post.id}/edit`}
+                      className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-800 text-xs font-semibold border border-gray-200 transition"
+                      title="Edit article"
+                    >
+                      <Edit3 className="w-3.5 h-3.5 text-gray-600" />
+                      <span>Edit</span>
+                    </Link>
+                  )}
+
                   {!isDraft && (
                     <Link
                       href={`/blog/${post.slug}`}
                       target="_blank"
-                      className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold text-xs transition"
+                      className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold text-xs transition"
                     >
                       <ExternalLink className="w-3.5 h-3.5" />
                       <span>View Live</span>
@@ -298,7 +356,7 @@ export default function AdminBlogManagementPage() {
 
                   <Link
                     href={`/admin/blog/generate`}
-                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-pink-50 hover:bg-pink-100 text-[#e31777] font-bold text-xs border border-pink-200/80 transition"
+                    className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-pink-50 hover:bg-pink-100 text-[#e31777] font-bold text-xs border border-pink-200/80 transition"
                   >
                     <Sparkles className="w-3.5 h-3.5" />
                     <span>Write Similar</span>

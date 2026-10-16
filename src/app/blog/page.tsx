@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getPublishedBlogPosts } from "@/lib/blogs";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { BookOpen, Clock, ArrowRight, User, Calendar } from "lucide-react";
-import { formatBlogDate } from "@/lib/date";
+import { BookOpen } from "lucide-react";
+import BlogHubClient from "@/components/BlogHubClient";
 
 export const metadata: Metadata = {
   title: "Indore Call Girls & Escorts Blog | Luxury Stays & Safety Guides | MySecretGirl69",
@@ -111,50 +111,7 @@ export default async function BlogHubPage() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-10">
-        {posts.map((post) => (
-          <article
-            key={post.slug}
-            className="rounded-2xl bg-white border border-gray-200 hover:border-[#e31777] p-6 flex flex-col justify-between transition-all duration-300 shadow-sm hover:shadow-md group"
-          >
-            <div>
-              <div className="flex items-center justify-between text-[11px] text-gray-500 mb-3">
-                <span className="px-2.5 py-0.5 rounded-md bg-pink-50 border border-pink-100 text-[#e31777] font-semibold">
-                  {post.category}
-                </span>
-                <span className="flex items-center gap-1 text-gray-500">
-                  <Calendar className="w-3 h-3 text-[#e31777]" />
-                  {formatBlogDate(post.publishedDate)}
-                </span>
-              </div>
-
-              <Link href={`/blog/${post.slug}`}>
-                <h2 className="text-lg font-bold text-[#45474f] group-hover:text-[#e31777] transition mb-2">
-                  {post.title}
-                </h2>
-              </Link>
-
-              <p className="text-xs text-[#616161] leading-relaxed line-clamp-3 mb-4">
-                {post.excerpt}
-              </p>
-            </div>
-
-            <div className="pt-4 border-t border-gray-100 flex items-center justify-between">
-              <span className="text-[11px] text-gray-500 flex items-center gap-1">
-                <User className="w-3 h-3" />
-                {post.author.split(" ")[0]}
-              </span>
-              <Link
-                href={`/blog/${post.slug}`}
-                className="text-xs font-bold text-[#e31777] group-hover:underline inline-flex items-center gap-1 transition"
-              >
-                <span>Read Guide</span>
-                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
-              </Link>
-            </div>
-          </article>
-        ))}
-      </div>
+      <BlogHubClient posts={posts} />
     </div>
   );
 }
