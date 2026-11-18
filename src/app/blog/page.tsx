@@ -5,6 +5,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { BookOpen } from "lucide-react";
 import BlogHubClient from "@/components/BlogHubClient";
 
+export const revalidate = 86400;
+
 export const metadata: Metadata = {
   title: "Indore Call Girls & Escorts Blog | Luxury Stays & Safety Guides | MySecretGirl69",
   description:

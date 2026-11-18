@@ -5,8 +5,8 @@ import { COMPANION_MODELS } from "@/data/models";
 import { getPublishedBlogPosts } from "@/lib/blogs";
 import { TAG_KEYWORDS_DATA } from "@/data/tags";
 
-export const dynamic = "force-dynamic";
-export const revalidate = 3600;
+export const dynamic = "force-static";
+export const revalidate = 86400;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://mysecretgirl69.com";
